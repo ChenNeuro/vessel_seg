@@ -1,0 +1,32 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+*.so
+*.egg-info/
+
+# Virtual environments
+env/
+.env/
+.venv/
+venv/
+
+# Data and generated outputs
+ASOCA2020/
+data/
+features/
+nnUNet_preprocessed/
+nnUNet_raw/
+nnUNet_results/
+outputs/
+segmentations/
+scripts/checkpoints/
+third_party/nnUNet/
+
+# IDE / OS noise
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

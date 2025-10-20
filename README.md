@@ -1,0 +1,28 @@
+Vessel segmentation toolkit
+
+- Conda environments
+  - Lightweight preprocessing env: `conda create -n vessel_seg -c conda-forge python=3.10 simpleitk numpy scipy scikit-image nibabel`.
+  - Full ASOCA training env: `conda env create -f env/asoca_nnunet.yaml` then `pip install -e third_party/nnUNet`.
+- Conversion utility
+  - Code lives in `vessel_seg/conversion.py` and exposes `convert_nrrd_to_nii`.
+  - Run from the command line: `python -m vessel_seg.conversion <nrrd_dir> <output_dir>`.
+  - Alternatively, import the function and call it directly as shown in the inline example comments.
+- Metadata normalisation
+  - `vessel_seg/metadata.py` defines `SegmentationMetadata` and helpers to harmonise label names into PascalCase.
+  - `vessel_seg/metadata_schema.json` captures the JSON schema used to keep segmentation metadata consistent across cases.
+- Leaderboard + literature
+  - `python scripts/fetch_asoca_leaderboard.py --limit 10` captures the current challenge standings into `data/asoca_leaderboard_top10.json`.
+  - The highest public Dice (0.8946) is achieved by user `hongqq` (submission 2024‑03‑12); no code release is available, so `nnUNetv2` serves as the best open baseline (5th place `junma`).
+- Training & inference (nnUNetv2)
+  - Prepare dataset with `nnUNetv2_plan_and_preprocess -d 103 -c 3d_fullres`, then launch `nnUNetv2_train 103 3d_fullres all`.
+  - Run predictions via `nnUNetv2_predict -d 103 -c 3d_fullres -i <CTA_dir> -o outputs/asoca_predictions`.
+- Evaluation
+  - Quick comparison script: `python scripts/compare_asoca.py --gt <gt_dir> --pred outputs/asoca_predictions --output outputs/asoca_metrics.json`.
+  - For native tooling use `nnUNetv2_evaluate_folder` to compute Dice/HD95/ASSD.
+- Shape-model roadmap
+  - Detailed workflow lives in `docs/asoca_pipeline_plan.md` (branch decomposition, polar descriptors, 3D reconstruction union).
+  - Near-term actions: validate TotalSegmentator online for coronary visibility, kick off nnUNetv2 training, and prototype centreline-based descriptors.
+- Dimensionality / reconstruction toolkit
+  - `python -m vessel_seg.shape extract --seg <mask.nii.gz> --out features/<case_id>` 提取中心线、极坐标截面与统计描述。
+  - `python -m vessel_seg.shape reconstruct --features features/<case_id> --output outputs/<case_id>.vtp` 将分支曲线扫掠为三维血管网格。
+  - 方法细节与实现提示参见 `docs/vessel_dimensionality_workflow.md`.

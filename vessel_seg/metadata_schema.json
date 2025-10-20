@@ -1,0 +1,68 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "VesselSegmentationMetadata",
+  "description": "Schema enforcing academically standardised metadata fields for coronary vessel segmentation outputs.",
+  "type": "object",
+  "required": [
+    "case_id",
+    "dataset",
+    "anatomy_region",
+    "segmentation_method",
+    "segmentation_version",
+    "voxel_spacing_mm",
+    "structure_labels"
+  ],
+  "properties": {
+    "case_id": {
+      "type": "string",
+      "description": "Unique subject identifier."
+    },
+    "dataset": {
+      "type": "string",
+      "description": "Source dataset (e.g., ASOCA)."
+    },
+    "anatomy_region": {
+      "type": "string",
+      "enum": ["CoronaryArteries", "CardiacChambers", "Aorta", "PulmonaryArteries"],
+      "description": "Primary anatomical focus represented in the segmentation."
+    },
+    "segmentation_method": {
+      "type": "string",
+      "description": "Segmentation algorithm or workflow (e.g., TotalSegmentator)."
+    },
+    "segmentation_version": {
+      "type": "string",
+      "description": "Version string associated with the segmentation pipeline."
+    },
+    "voxel_spacing_mm": {
+      "type": "array",
+      "items": {
+        "type": "number",
+        "minimum": 0.0
+      },
+      "minItems": 3,
+      "maxItems": 3,
+      "description": "Voxel spacing expressed in millimetres (X, Y, Z)."
+    },
+    "structure_labels": {
+      "type": "object",
+      "description": "Mapping of academically named vascular structures to integer labels.",
+      "additionalProperties": {
+        "type": "integer",
+        "minimum": 0
+      }
+    },
+    "reference_volume": {
+      "type": ["string", "null"],
+      "description": "Path to the reference intensity image used for segmentation."
+    },
+    "source_institution": {
+      "type": ["string", "null"],
+      "description": "Institution providing the data."
+    },
+    "notes": {
+      "type": ["string", "null"],
+      "description": "Free-form remarks."
+    }
+  }
+}
