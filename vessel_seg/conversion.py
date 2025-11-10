@@ -52,9 +52,8 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    main()
 
 # Example usage (command-line free):
-# input_folder = "/path/to/nrrd_folder"
-# output_folder = "/path/to/output_folder"
-# convert_nrrd_to_nii(input_folder, output_folder)
+    input_folder = "/Users/chenyihao/mycode/vessel_seg/ASOCA2020/Diseased/Annotations"
+    output_folder = "/Users/chenyihao/mycode/vessel_seg/ASOCA2020/Diseased/Annotations_nii"
+    convert_nrrd_to_nii(input_folder, output_folder)

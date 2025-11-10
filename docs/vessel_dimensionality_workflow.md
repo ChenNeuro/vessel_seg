@@ -198,6 +198,10 @@ This workflow maintains the conceptual requirements (branch-wise centreline, pol
 - **降维**
   - [ ] 构建三维中心线
   - [ ] 处理分支
+- **FGPM + Bayesian 融合**
+  - [ ] 使用 `python -m vessel_seg.fgpm fit` 为重点分支拟合 Fourier-GP 先验（order≈6, degree=2）。
+  - [ ] 通过 `vessel_seg.edge train/predict` 获得深度边缘概率，供 `fgpm infer` 融合。
+  - [ ] 将 `fgpm propagate` 生成的伪注释纳入交互后验，观察 Dice/ASSD 提升。
     - [ ] 完成连续的解剖学分割
     - [ ] 复用 VMTK 分支逻辑
   - [ ] 对齐学长论文的方法

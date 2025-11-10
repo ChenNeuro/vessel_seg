@@ -24,6 +24,9 @@ if str(REPO_ROOT) not in sys.path:
 
 from vessel_seg.shape import (
     BranchProfile,
+    CentrelineParams,
+    ProfileParams,
+    ReconstructionParams,
     compute_polar_profiles,
     export_branch_features,
     extract_branches,
@@ -204,25 +207,27 @@ def _run_pipeline(args: argparse.Namespace) -> None:
     features_dir = output_dir / "features_original"
     ml_dir = output_dir / "features_ml"
 
-    branches = extract_branches(
-        seg_path,
-        min_branch_length_mm=args.min_length,
+    centreline_params = CentrelineParams(
+        min_length_mm=args.min_length,
         closing_iterations=args.closing_iterations,
         smooth_sigma_mm=args.smooth_sigma_mm,
         adaptive_min_step_mm=args.adaptive_min_step,
         adaptive_max_step_mm=args.adaptive_max_step,
         curvature_alpha=args.adaptive_curvature_alpha,
     )
-    profiles = compute_polar_profiles(
-        seg_path,
-        branches,
+    branches = extract_branches(seg_path, centreline_params)
+
+    profile_params = ProfileParams(
         num_samples=args.num_samples,
         num_angle_bins=args.num_angle_bins,
         patch_radius_mm=args.patch_radius,
         half_thickness_mm=args.half_thickness,
         radius_clip_factor=args.radius_clip_factor,
         endpoint_trim_mm=args.endpoint_trim_mm,
+        junction_distance_mm=args.junction_distance,
+        junction_inherit_mm=args.junction_inherit,
     )
+    profiles = compute_polar_profiles(seg_path, branches, profile_params)
     summary_original = export_branch_features(profiles, features_dir)
 
     model = _fit_pca(
@@ -248,9 +253,7 @@ def _run_pipeline(args: argparse.Namespace) -> None:
     if args.mesh:
         mesh_path_original = output_dir / "mesh_original.vtp"
         mesh_path_ml = output_dir / "mesh_ml.vtp"
-        reconstruct_from_features(
-            features_dir,
-            mesh_path_original,
+        recon_params = ReconstructionParams(
             target_samples=args.mesh_target_samples,
             smoothing_factor=args.mesh_smoothing,
             min_valid_slices=args.mesh_min_valid,
@@ -261,19 +264,8 @@ def _run_pipeline(args: argparse.Namespace) -> None:
             angular_gap_fill_bins=args.mesh_angular_gap_fill,
             axial_gap_fill=args.mesh_axial_gap_fill,
         )
-        reconstruct_from_features(
-            ml_dir,
-            mesh_path_ml,
-            target_samples=args.mesh_target_samples,
-            smoothing_factor=args.mesh_smoothing,
-            min_valid_slices=args.mesh_min_valid,
-            interpolation_kind=args.mesh_interp_kind,
-            angular_upsample=args.mesh_angular_upsample,
-            angular_smoothing=args.mesh_angular_smoothing,
-            min_radius_ratio=args.mesh_min_radius_ratio,
-            angular_gap_fill_bins=args.mesh_angular_gap_fill,
-            axial_gap_fill=args.mesh_axial_gap_fill,
-        )
+        reconstruct_from_features(features_dir, mesh_path_original, recon_params)
+        reconstruct_from_features(ml_dir, mesh_path_ml, recon_params)
         result["meshes"] = {
             "original": str(mesh_path_original),
             "ml_reconstruction": str(mesh_path_ml),
@@ -327,6 +319,18 @@ def build_parser() -> argparse.ArgumentParser:
         type=float,
         default=1.5,
         help="Trim distance (mm) from each branch endpoint to suppress bifurcation artefacts.",
+    )
+    parser.add_argument(
+        "--junction-distance",
+        type=float,
+        default=1.5,
+        help="Distance threshold (mm) for blending branch junction cross-sections.",
+    )
+    parser.add_argument(
+        "--junction-inherit",
+        type=float,
+        default=1.5,
+        help="Arclength (mm) over which child branches inherit parent profiles near a junction.",
     )
     parser.add_argument(
         "--min-length",
