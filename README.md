@@ -79,3 +79,39 @@ Vessel segmentation toolkit
     --output outputs/case001_edges.nii.gz
   ```
 - 将生成的概率图传入 `vessel_seg.fgpm infer --edge-map`，即可完成类似论文中的边缘-形状 Bayesian 融合。
+- 旧版边缘检测流程已归档至 `archive/edge_legacy/`（核心代码仍在 `vessel_seg/edge.py`），主线推荐使用 RCF 生成的边缘并通过转换脚本融入管线。
+
+## RCF 边缘（third_party）融合
+
+1. 使用 `scripts/prepare_rcf_asoca.py` 生成 2D PNG 训练对并在 `third_party/RCF-PyTorch` 下细调 RCF。
+2. 得到的 RCF 预测 PNG（按切片顺序命名）可用转换脚本堆叠为 NIfTI，便于后续形状/分割：
+   ```bash
+   python scripts/rcf_to_nifti.py \
+     --rcf-dir third_party/RCF-PyTorch/results/RCF/ASOCA2020/epoch20-test \
+     --reference ASOCA2020/Normal/CTCA_nii/Normal_1.nii.gz \
+     --output outputs/Normal_1_rcf_edges.nii.gz
+   ```
+   生成的 `outputs/Normal_1_rcf_edges.nii.gz` 可直接作为 `--edge-map` 提供给 `vessel_seg.fgpm infer` 或其他后处理。
+
+## RCF fine-tuning on ASOCA2020
+
+1. 生成 RCF 需要的 2D PNG 训练对：
+   ```bash
+   python scripts/prepare_rcf_asoca.py \
+     --image-dirs ASOCA2020/Diseased/CTCA_nii ASOCA2020/Normal/CTCA_nii \
+     --label-dirs ASOCA2020/Diseased/Annotations_nii ASOCA2020/Normal/Annotations_nii \
+     --output-dir third_party/RCF-PyTorch/data/ASOCA2020_rcf \
+     --val-ratio 0.1 \
+     --target-height 256 --target-width 256
+   ```
+   该脚本会按病例划分训练/验证集，输出 `train.lst` 与 PNG 文件夹，并写入 `summary.json`。
+2. 在 `vesselfm` 环境下启动 RCF 细调（默认使用仓库内 `bsds500_pascal_model.pth` 作为初始化）：
+   ```bash
+   cd third_party/RCF-PyTorch
+   python Ktrain.py \
+     --dataset data/ASOCA2020_rcf \
+     --save-dir results/RCF/ASOCA2020 \
+     --batch-size 2 \
+     --gpu 0
+   ```
+   若已训练过可通过 `--resume results/RCF/ASOCA2020/checkpoint_epochX.pth` 继续。输出的日志、检查点与推理结果均保存在 `--save-dir`。
