@@ -1,32 +1,27 @@
 Vessel segmentation toolkit
 
-- Conda environments
-  - Lightweight preprocessing env: `conda create -n vessel_seg -c conda-forge python=3.10 simpleitk numpy scipy scikit-image nibabel`.
-  - Full ASOCA training env: `conda env create -f env/asoca_nnunet.yaml` then `pip install -e third_party/nnUNet`.
-- Conversion utility
-  - Code lives in `vessel_seg/conversion.py` and exposes `convert_nrrd_to_nii`.
-  - Run from the command line: `python -m vessel_seg.conversion <nrrd_dir> <output_dir>`.
-  - Alternatively, import the function and call it directly as shown in the inline example comments.
-- Metadata normalisation
-  - `vessel_seg/metadata.py` defines `SegmentationMetadata` and helpers to harmonise label names into PascalCase.
-  - `vessel_seg/metadata_schema.json` captures the JSON schema used to keep segmentation metadata consistent across cases.
-- Leaderboard + literature
-  - `python scripts/fetch_asoca_leaderboard.py --limit 10` captures the current challenge standings into `data/asoca_leaderboard_top10.json`.
-  - The highest public Dice (0.8946) is achieved by user `hongqq` (submission 2024‑03‑12); no code release is available, so `nnUNetv2` serves as the best open baseline (5th place `junma`).
-- Training & inference (nnUNetv2)
-  - Prepare dataset with `nnUNetv2_plan_and_preprocess -d 103 -c 3d_fullres`, then launch `nnUNetv2_train 103 3d_fullres all`.
-  - Run predictions via `nnUNetv2_predict -d 103 -c 3d_fullres -i <CTA_dir> -o outputs/asoca_predictions`.
-- Evaluation
-  - Quick comparison script: `python scripts/compare_asoca.py --gt <gt_dir> --pred outputs/asoca_predictions --output outputs/asoca_metrics.json`.
-  - For native tooling use `nnUNetv2_evaluate_folder` to compute Dice/HD95/ASSD.
-- Shape-model roadmap
-  - Detailed workflow lives in `docs/asoca_pipeline_plan.md` (branch decomposition, polar descriptors, 3D reconstruction union).
-  - Near-term actions: validate TotalSegmentator online for coronary visibility, kick off nnUNetv2 training, and prototype centreline-based descriptors.
-- Dimensionality / reconstruction toolkit
-  - `python -m vessel_seg.shape extract --seg <mask.nii.gz> --out features/<case_id>` 提取中心线、极坐标截面与统计描述。
-  - `python -m vessel_seg.shape reconstruct --features features/<case_id> --output outputs/<case_id>.vtp` 将分支曲线扫掠为三维血管网格。
-  - 方法细节与实现提示参见 `docs/vessel_dimensionality_workflow.md`.
+# 核心思路（当前阶段）
+- 从 ASOCA CTA + 冠脉 mask 出发，提取中心线树 → 统计/建模分支几何（后续接入形状先验）。
+- 代码结构已模块化：`vessel_seg/centerline.py`（中心线提取，支持骨架占位和 VTP 读取）、`graph_structure.py`（Branch/CoronaryTree）、`branch_model.py`（占位形状模型）、`tree_prior.py`（占位拓扑先验），附简单可视化和实验脚本。
+- 实验脚本：  
+  - `python -m vessel_seg.experiments.build_centerline_tree --volume <ct.nii.gz> --mask <mask.nii.gz> --output-json <tree.json>` （骨架占位）  
+  - `python -m vessel_seg.experiments.build_centerline_tree --volume <ct.nii.gz> --vtp <vmtk_centerline.vtp> --output-json <tree.json>` （读取已有 VMTK 中心线）  
+  - `python -m vessel_seg.experiments.analyze_tree_statistics --trees <tree.json ...>` 查看分支长度/度数/半径统计。
 
+# 目前的卡点
+- **VMTK 提取**：当前环境缺少可用的 VMTK（`vmtkcenterlines`/`vtkvmtk`），pip/conda (osx-arm64) 未找到可安装包，无法在本地直接运行 VMTK 生成中心线。暂时只能：
+  1) 使用数据集自带的 VMTK 中心线 `.vtp`（已支持读取）；或
+  2) 使用占位的 `skimage` 骨架提取（分支过多，质量有限）。
+- 若需要代码内直接跑 VMTK，请提供可用的 VMTK 环境/镜像（如 x86_64 或容器），再接入 VMTK 命令/API。
+
+# 环境提示
+- 轻量预处理：`conda create -n vessel_seg -c conda-forge python=3.10 simpleitk numpy scipy scikit-image nibabel matplotlib vtk`
+- ASOCA nnUNet 训练：`conda env create -f env/asoca_nnunet.yaml` 后 `pip install -e third_party/nnUNet`
+
+# 其他已有工具
+- NRRD→NIfTI 转换：`python -m vessel_seg.conversion <nrrd_dir> <output_dir>`
+- 元数据归一化：`vessel_seg/metadata.py` + `metadata_schema.json`
+- 文档：`docs/asoca_pipeline_plan.md`, `docs/fgpm_pipeline.md`, `docs/vessel_dimensionality_workflow.md`
 ## Probabilistic shape modelling (FGPM)
 
 - 设计细节参见 `docs/fgpm_pipeline.md`。
