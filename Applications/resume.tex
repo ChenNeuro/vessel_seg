@@ -110,8 +110,8 @@
 \section{Research Interests}
 
 \resumeSubHeadingListStart
-  \resumeItem{\textbf{Multimodal medical foundation models: imaging + clinical text/structured data; cross-modal reasoning.}}
-  \resumeItem{\textbf{Medical video temporal modeling (cine/DSA) and real-time 3D--2D alignment for interventional guidance.}}
+  \resumeItem{\textbf{Multimodal medical foundation models: imaging with clinical text/structured data; cross-modal reasoning.}}
+  \resumeItem{\textbf{Temporal modeling for medical video (cine/DSA) and real-time 3D--2D alignment for interventional guidance.}}
   \resumeItem{\textbf{Generative/probabilistic reconstruction and uncertainty-aware enhancement.}}
   \resumeItem{{\small \textit{(unordered; representative areas)}}\\[-2pt]}
 \resumeSubHeadingListEnd
@@ -137,9 +137,9 @@
   {Coronary 3D Reconstruction \& CT--DSA 3D--2D Registration}{Beijing, China}
   {Undergraduate Researcher, \textbf{Supervisor: Xuefeng Wang}}{2024 -- Present}
   \resumeItemListStart
-    \resumeItem{Built a coronary reconstruction pipeline from CCTA with U-Net segmentation fine-tuning + centerline/geometry priors for robustness under severe stenosis/calcification.}
-    \resumeItem{Developed a 3D--2D multimodal registration workflow to align preoperative 3D coronaries with intraoperative DSA/X-ray sequences using camera-geometry constraints and centerline/landmark cues; exploring real-time alignment.}
-    \resumeItem{Investigated deformation- and dynamics-aware alignment (cardiac phase matching, motion modeling, temporal consistency) to handle vessel deformation and time-varying cine sequences; maintained reproducible experiments and reports.}
+    \resumeItem{Built a coronary reconstruction pipeline from CCTA with U-Net fine-tuning and centerline/geometry priors, robust to severe stenosis/calcification.}
+    \resumeItem{Developed a 3D--2D multimodal registration workflow aligning preoperative 3D coronaries with intraoperative DSA/X-ray using camera-geometry constraints and centerline/landmark cues; exploring real-time alignment.}
+    \resumeItem{Investigated deformation- and dynamics-aware alignment (cardiac phase matching, motion modeling, temporal consistency) for time-varying cine sequences; maintained reproducible experiments and reports.}
   \resumeItemListEnd
 
   \resumeSubheading
@@ -154,7 +154,7 @@
     {Underwater Robotics Survey (Course Project, Introduction to Robotics)}{Beijing, China}
     {Project Lead, Instructor: \textbf{Guang Chen}}{2025}
     \resumeItemListStart
-      \resumeItem{Surveyed AUV/underwater manipulation systems from a systems robotics perspective; summarized deployment trade-offs (control, communication limits, perception/navigation) and delivered a structured report/presentation.}
+      \resumeItem{Surveyed AUV/underwater manipulation systems; summarized deployment trade-offs in control, communication limits, and perception/navigation; delivered a structured report/presentation.}
     \resumeItemListEnd
 
   \resumeSubheading
@@ -171,11 +171,12 @@
 \resumeSubHeadingListStart
 
   \resumeProjectHeading
-    {\textbf{Coronary Vessel Segmentation \& Topology Modeling (ASOCA2020)} $|$ \emph{Python, SimpleITK, VTK, PyTorch}}{2024 -- Present}
+    {\textbf{Coronary Vessel Segmentation \& Topology Modeling (ASOCA2020)}}{2024 -- Present}
     \resumeItemListStart
-      \resumeItem{Built an end-to-end pipeline from CCTA mask -> centerline -> topology tree; implemented bifurcation-based segmentation, parent-child attachment ($\lambda,\theta,\phi$), and overlap trimming.}
+      \resumeItem{Stack: Python, SimpleITK, VTK, PyTorch.}
+      \resumeItem{Built an end-to-end pipeline from CCTA mask to centerline/topology tree; implemented bifurcation-based segmentation, parent-child attachment ($\lambda,\theta,\phi$), and overlap trimming.}
       \resumeItem{Sampled branch radii with K$\times$M polar rays to form branch tensors; learned a PCA shape subspace on 80\% of Normal cases and evaluated reconstruction error on 10\%/10\% splits.}
-      \resumeItem{Quantified benchmarks: PCA RMSE train/val/test = 0.225/0.288/0.255; topology metrics are under two ongoing update tests.}
+      \resumeItem{PCA RMSE (train/val/test): 0.225/0.288/0.255; topology metrics under ongoing evaluation.}
       \resumeItem{Implemented Fourier--Gaussian Process shape modeling with edge-aware Bayesian fusion; added U-Net-style edge detector training/inference for contour probability maps.}
     \resumeItemListEnd
 
@@ -214,7 +215,7 @@
     \textbf{Medical Imaging \& Geometry}{: 3D Slicer; CT/X-ray (DSA) workflows; segmentation; centerlines/topology; 3D reconstruction; 3D--2D registration; NIfTI/NRRD; VTK, SimpleITK, nibabel} \\[2pt]
     \textbf{Robotics \& Control}{: Kinematics, Dynamics, State Estimation, Control, Optimization; contact interaction basics} \\[2pt]
     \textbf{Signal Processing \& Sensing}{: filtering/denoising, feature extraction; multimodal sensing (IMU/pressure/EMG/ECG); sensor fusion} \\[2pt]
-    \textbf{ML/Deep Learning}{: PyTorch; CNNs; Transformers/LLMs (coursework); HuggingFace; fine-tuning; probabilistic modeling (Gaussian processes), Bayesian inference; training/evaluation pipelines; experiment management and ablations} \\[2pt]
+    \textbf{ML/Deep Learning}{: PyTorch; CNNs; Transformers/LLMs (coursework); HuggingFace; fine-tuning; probabilistic modeling (Gaussian processes) and Bayesian inference; training/evaluation pipelines; experiment management; ablations} \\[2pt]
     \textbf{Hardware/Embedded}{: PCB schematic/layout, sensor integration, firmware debugging; basic \textbf{I2C} bring-up and timing/config troubleshooting} \\[2pt]
     \textbf{Tools}{: Git, Docker, VS Code, SolidWorks, LaTeX, 3D Slicer}
   }
@@ -225,7 +226,7 @@
 \begin{itemize}[leftmargin=0.15in, label={}]
   \small\item{
     \textbf{Chinese}{: Native} \\
-    \textbf{English}{: TOEFL: 97 ; Academic writing/presentation} \\
+    \textbf{English}{: TOEFL: 97; Academic writing/presentation} \\
     \textbf{Japanese}{: Beginner}
   }
 \end{itemize}
