@@ -110,9 +110,9 @@
 \section{Research Interests}
 
 \resumeSubHeadingListStart
-  \resumeItem{\textbf{Medical imaging and computational modeling (segmentation, centerlines/topology, 3D reconstruction, 3D--2D registration).}}
-  \resumeItem{\textbf{AI for healthcare: multimodal medical foundation models and clinical decision support.}}
-  \resumeItem{\textbf{Temporal modeling for medical video (cine/DSA) and generative/probabilistic methods for enhancement/uncertainty.}}
+  \resumeItem{\textbf{Multimodal medical foundation models: imaging + clinical text/structured data; cross-modal reasoning.}}
+  \resumeItem{\textbf{Medical video temporal modeling (cine/DSA) and real-time 3D--2D alignment for interventional guidance.}}
+  \resumeItem{\textbf{Generative/probabilistic reconstruction and uncertainty-aware enhancement.}}
   \resumeItem{{\small \textit{(unordered; representative areas)}}\\[-2pt]}
 \resumeSubHeadingListEnd
 
@@ -133,22 +133,28 @@
 \section{Research \& Engineering Experience}
 \resumeSubHeadingListStart
 
+\resumeSubheading
+  {Coronary 3D Reconstruction \& CT--DSA 3D--2D Registration}{Beijing, China}
+  {Undergraduate Researcher, \textbf{Supervisor: Xuefeng Wang}}{2024 -- Present}
+  \resumeItemListStart
+    \resumeItem{Built a coronary reconstruction pipeline from CCTA with U-Net segmentation fine-tuning + centerline/geometry priors for robustness under severe stenosis/calcification.}
+    \resumeItem{Developed a 3D--2D multimodal registration workflow to align preoperative 3D coronaries with intraoperative DSA/X-ray sequences using camera-geometry constraints and centerline/landmark cues; exploring real-time alignment.}
+    \resumeItem{Investigated deformation- and dynamics-aware alignment (cardiac phase matching, motion modeling, temporal consistency) to handle vessel deformation and time-varying cine sequences; maintained reproducible experiments and reports.}
+  \resumeItemListEnd
+
   \resumeSubheading
-    {Coronary 3D Reconstruction \& CT--DSA 3D--2D Registration}{Beijing, China}
-    {Undergraduate Researcher, \textbf{Supervisor: Xuefeng Wang}}{2024 -- Present}
+    {Peking University People's Hospital, Department of Cardiology}{Beijing, China}
+    {Clinical Observership (1 day)}{Jan 21, 2026}
     \resumeItemListStart
-      \resumeItem{Built a coronary reconstruction pipeline from CCTA with segmentation fine-tuning + centerline/geometry priors for robustness under severe stenosis/calcification.}
-      \resumeItem{Developed a 3D--2D multimodal registration workflow to align preoperative 3D coronaries with intraoperative DSA/X-ray sequences using camera-geometry constraints and centerline/landmark cues.}
-      \resumeItem{Investigated deformation- and dynamics-aware alignment (cardiac phase matching, motion modeling, temporal consistency) to handle vessel deformation and time-varying cine sequences; maintained reproducible experiments and reports.}
+      \resumeItem{Observed a percutaneous coronary intervention (PCI) stent procedure and cath-lab clinical workflow.}
+      \resumeItem{Assisted with basic clinical data organization and documentation.}
     \resumeItemListEnd
     
   \resumeSubheading
     {Underwater Robotics Survey (Course Project, Introduction to Robotics)}{Beijing, China}
     {Project Lead, Instructor: \textbf{Guang Chen}}{2025}
     \resumeItemListStart
-      \resumeItem{Surveyed AUV/underwater manipulation systems from a \textbf{systems robotics} perspective: control (PID to learning-based), underwater communication constraints, and perception/navigation (enhancement, SLAM, neural representations).}
-      \resumeItem{Synthesized key failure modes and engineering trade-offs for real deployment, emphasizing \textbf{contact interaction under uncertainty} and sensing/estimation bottlenecks in low-visibility, bandwidth-limited environments.}
-      \resumeItem{Delivered a structured report and presentation; received very positive evaluation in the course.}
+      \resumeItem{Surveyed AUV/underwater manipulation systems from a systems robotics perspective; summarized deployment trade-offs (control, communication limits, perception/navigation) and delivered a structured report/presentation.}
     \resumeItemListEnd
 
   \resumeSubheading
@@ -156,11 +162,10 @@
     {Student Researcher, Supervisor: \textbf{Ke Liu}}{Sep 2024 -- Spring 2025}
     \resumeItemListStart
       \resumeItem{Led PCB schematic/layout and multi-sensor integration (IMU/pressure/EMG/HR/temperature) for a wearable training monitor; improved robustness via cross-channel consistency checks.}
-      \resumeItem{Built filtering/feature pipelines and IMU-based motion detection (\textbf{sprint/jump/stop/cut/kick/squat}); validated at \textbf{50\,Hz} in a small lab pilot with reproducible scripts and documented failure cases.}
+      \resumeItem{Built filtering/feature pipelines and IMU-based motion detection; validated at \textbf{50\,Hz} in a small lab pilot with reproducible scripts and documented failure cases.}
     \resumeItemListEnd
 
 \resumeSubHeadingListEnd
-
 %-----------SELECTED PROJECTS-----------
 \section{Selected Projects}
 \resumeSubHeadingListStart
@@ -176,9 +181,8 @@
   \resumeProjectHeading
     {\textbf{3-DOF Delta Parallel Robot with Cam-Driven Actuation} $|$ \emph{MATLAB, SolidWorks, 3D Printing}}{Sep 2024}
     \resumeItemListStart
-      \resumeItem{Designed mechanism parameters based on forward kinematics and workspace constraints; derived actuation solution using inverse kinematics and constraint reasoning.}
-      \resumeItem{Validated feasibility via MATLAB simulation and SolidWorks collision checks; iterated tolerances and geometry to reduce interference and improve assembly reliability.}
-      \resumeItem{Prototyped via 3D printing and assembly; performed iterative tuning to improve stiffness and positioning consistency under load.}
+      \resumeItem{Designed mechanism parameters and actuation solution using forward/inverse kinematics; validated via MATLAB simulation and SolidWorks collision checks.}
+      \resumeItem{Prototyped via 3D printing and assembly; tuned tolerances/geometry to improve stiffness and positioning consistency.}
     \resumeItemListEnd
 
   \resumeProjectHeading
@@ -209,7 +213,7 @@
     \textbf{Medical Imaging \& Geometry}{: 3D Slicer; CT/X-ray (DSA) workflows; segmentation; centerlines/topology; 3D reconstruction; 3D--2D registration; NIfTI/NRRD; VTK, SimpleITK, nibabel} \\[2pt]
     \textbf{Robotics \& Control}{: Kinematics, Dynamics, State Estimation, Control, Optimization; contact interaction basics} \\[2pt]
     \textbf{Signal Processing \& Sensing}{: filtering/denoising, feature extraction; multimodal sensing (IMU/pressure/EMG/ECG); sensor fusion} \\[2pt]
-    \textbf{ML/Deep Learning}{: PyTorch; CNNs; probabilistic modeling (Gaussian processes), Bayesian inference; training/evaluation pipelines; experiment management and ablations} \\[2pt]
+    \textbf{ML/Deep Learning}{: PyTorch; CNNs; Transformers/LLMs (coursework); HuggingFace; fine-tuning; probabilistic modeling (Gaussian processes), Bayesian inference; training/evaluation pipelines; experiment management and ablations} \\[2pt]
     \textbf{Hardware/Embedded}{: PCB schematic/layout, sensor integration, firmware debugging; basic \textbf{I2C} bring-up and timing/config troubleshooting} \\[2pt]
     \textbf{Tools}{: Git, Docker, VS Code, SolidWorks, LaTeX, 3D Slicer}
   }
