@@ -174,7 +174,8 @@
     {\textbf{Coronary Vessel Segmentation \& Topology Modeling (ASOCA2020)} $|$ \emph{Python, SimpleITK, VTK, PyTorch}}{2024 -- Present}
     \resumeItemListStart
       \resumeItem{Built an end-to-end pipeline from CCTA mask -> centerline -> topology tree; implemented bifurcation-based segmentation, parent-child attachment ($\lambda,\theta,\phi$), and overlap trimming.}
-      \resumeItem{Sampled branch radii with K$\times$M polar rays to form branch tensors; ran PCA similarity and batch aggregation across cases.}
+      \resumeItem{Sampled branch radii with K$\times$M polar rays to form branch tensors; learned a PCA shape subspace on 80\% of Normal cases and evaluated reconstruction error on 10\%/10\% splits.}
+      \resumeItem{Quantified benchmarks: PCA RMSE train/val/test = 0.225/0.288/0.255; topology z-score L2 distance val/test = 3.82/2.38 (Normal set).}
       \resumeItem{Implemented Fourier--Gaussian Process shape modeling with edge-aware Bayesian fusion; added U-Net-style edge detector training/inference for contour probability maps.}
     \resumeItemListEnd
 
