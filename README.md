@@ -1,76 +1,78 @@
-Vessel segmentation toolkit
+# vessel_seg workflow
 
-# 核心思路（当前阶段）
-- 从 ASOCA CTA + 冠脉 mask 出发，提取中心线树 → 统计/建模分支几何（后续接入形状先验）。
-- 代码结构已模块化：`vessel_seg/centerline.py`（中心线提取，支持骨架占位和 VTP 读取）、`graph_structure.py`（Branch/CoronaryTree）、`branch_model.py`（占位形状模型）、`tree_prior.py`（占位拓扑先验），附简单可视化和实验脚本。
-- 实验脚本：  
-  - `python -m vessel_seg.experiments.build_centerline_tree --volume <ct.nii.gz> --mask <mask.nii.gz> --output-json <tree.json>` （骨架占位）  
-  - `python -m vessel_seg.experiments.build_centerline_tree --volume <ct.nii.gz> --vtp <vmtk_centerline.vtp> --output-json <tree.json>` （读取已有 VMTK 中心线）  
-  - `python -m vessel_seg.experiments.analyze_tree_statistics --trees <tree.json ...>` 查看分支长度/度数/半径统计。
+基于 ASOCA 冠脉数据的中心线树与分支形状建模流水线。
 
-# 目前的卡点
-- **VMTK 提取**：当前环境缺少可用的 VMTK（`vmtkcenterlines`/`vtkvmtk`），pip/conda (osx-arm64) 未找到可安装包，无法在本地直接运行 VMTK 生成中心线。暂时只能：
-  1) 使用数据集自带的 VMTK 中心线 `.vtp`（已支持读取）；或
-  2) 使用占位的 `skimage` 骨架提取（分支过多，质量有限）。
-- 若需要代码内直接跑 VMTK，请提供可用的 VMTK 环境/镜像（如 x86_64 或容器），再接入 VMTK 命令/API。
+## 环境
+```bash
+conda create -n vessel_seg -c conda-forge python=3.10 simpleitk scikit-image vtk matplotlib numpy scipy
+conda activate vessel_seg
+pip install meshio rich pyvista
+```
 
-# 环境提示
-- 轻量预处理：`conda create -n vessel_seg -c conda-forge python=3.10 simpleitk numpy scipy scikit-image nibabel matplotlib vtk`
-- ASOCA nnUNet 训练：`conda env create -f env/asoca_nnunet.yaml` 后 `pip install -e third_party/nnUNet`
+## 流水线
+1) **掩膜 → 中心线（基线骨架）**
+```bash
+python scripts/extract_centerline_from_mask.py \
+  --mask ASOCA2020/Normal/Annotations/Normal_1.nrrd \
+  --out ASOCA2020/Normal/Centerlines/Normal_1_extracted.vtp
+```
+或使用已有中心线：`ASOCA2020/Normal/Centerlines/Normal_1.vtp`
 
-# 其他已有工具
-- NRRD→NIfTI 转换：`python -m vessel_seg.conversion <nrrd_dir> <output_dir>`
-- 元数据归一化：`vessel_seg/metadata.py` + `metadata_schema.json`
-- 文档：`docs/asoca_pipeline_plan.md`, `docs/fgpm_pipeline.md`, `docs/vessel_dimensionality_workflow.md`
-## Probabilistic shape modelling (FGPM)
+2) **建树（父子/λ/θ/φ）**
+```bash
+python scripts/build_centerline_tree.py \
+  --vtp ASOCA2020/Normal/Centerlines/Normal_1.vtp \
+  --out outputs/normal1_tree.json
+```
 
-- 设计细节参见 `docs/fgpm_pipeline.md`。
-- 训练 Fourier-Gaussian-process 分支模型：
-  ```bash
-  python -m vessel_seg.fgpm fit \
-    --features-dirs features/case_* \
-    --branch Branch_00 \
-    --order 6 \
-    --output models/branch00_fgpm.json
-  ```
-  训练样本来自 `vessel_seg.shape extract` 导出的分支 `*.npz` 文件，脚本会自动收集高置信度切片并拟合多项式均值 + RBF 高斯过程。
-- 生成随机样本或运行 Bayesian 推理：
-  ```bash
-  python -m vessel_seg.fgpm sample --model models/branch00_fgpm.json \
-    --num-slices 80 --output outputs/branch00_samples.npz
+3) **生成分支张量（截面半径，自动对齐+可调截断）**
+```bash
+python scripts/build_branch_dataset.py \
+  --vtp ASOCA2020/Normal/Centerlines/Normal_1.vtp \
+  --mask ASOCA2020/Normal/Annotations/Normal_1.nrrd \
+  --tree outputs/normal1_tree.json \
+  --out outputs/normal1_branch_dataset.npz \
+  --branch_dir outputs/branches_normal1 \
+  --start_offset 3 \
+  --start_offset_percent 5     # 例如按分支长度百分比截断（可选，默认启用自动距离图对齐）
+```
 
-  python -m vessel_seg.fgpm infer \
-    --model models/branch00_fgpm.json \
-    --branch-features features/test_case/Branch_00.npz \
-    --annotations features/test_case_sparse/Branch_00.npz \
-    --edge-map outputs/test_case_edges.nii.gz \
-    --output outputs/branch00_fgpm_post.npz
-  ```
-  `infer` 会先根据稀疏注释（可用 `propagate` 将邻近切片自动配准扩增）获得交互后验，再结合深度边缘置信度进行 MAP 估计。
-- 注释传播（2D Demons 配准）：
-  ```bash
-  python -m vessel_seg.fgpm propagate \
-    --image volumes/case001.nii.gz \
-    --mask annotations/case001_sparse.nii.gz \
-    --source 30 --target 31 --axis 2 \
-    --output-mask annotations/case001_aug.nii.gz
-  ```
+4) **分支相似性 & PCA**
+```bash
+python scripts/branch_similarity.py \
+  --npz outputs/<case>/branch_dataset.npz \
+  --out_dir outputs/<case>/similarity \
+  --pca_dim 8 --heatmap
+```
 
-## Deep edge detection (DED)
+5) **可视化**
+- 中心线 vs 分割表面：`python scripts/plot_centerline_vs_gt.py --vtp ... --mask ...`
+- 中心线 vs 分割骨架：`python scripts/compare_centerline_vs_gt_centerline.py --vtp ... --mask ...`
+- 树的锥子图（含 parent/λ）：`python scripts/plot_tree_fs_cones.py --vtp ... --out ...`
+- Matplotlib 交互 3D：`python scripts/plot_centerline_matplotlib_interactive.py --vtp ... --mask ...`
 
-- 通过 `vessel_seg.edge` 训练 UAED 风格的多尺度边缘检测器：
-  ```bash
-  python -m vessel_seg.edge train \
-    --manifest data/edge_manifest.json \
-    --output weights/edge_net.pth \
-    --epochs 40 --batch-size 12 --device cuda
-  ```
-  `manifest` 为 JSON 数组，每条记录包含 `{"image": "...nii.gz", "edge": "...nii.gz"}`。
-- 推理阶段按轴切片生成整卷概率：
-  ```bash
-  python -m vessel_seg.edge predict \
-    --weights weights/edge_net.pth \
-    --volume volumes/case001.nii.gz \
-    --output outputs/case001_edges.nii.gz
-  ```
-- 将生成的概率图传入 `vessel_seg.fgpm infer --edge-map`，即可完成类似论文中的边缘-形状 Bayesian 融合。
+6) **批量运行多病例**
+```bash
+python scripts/run_pipeline.py \
+  --pattern ASOCA2020/Normal/Centerlines/Normal_*.vtp \
+  --mask_dir ASOCA2020/Normal/Annotations_nii \
+  --start_offset_percent 0 2.5 5 7.5 10  # 多种截断自动批跑（输出带 pct 后缀）
+```
+
+7) **跨病例聚合**
+```bash
+python scripts/aggregate_branch_datasets.py \
+  --npz_glob 'outputs/Normal_*/branch_dataset*.npz' \
+  --out outputs/aggregate/branch_dataset_normal_all.npz \
+  --pca_dim 8 --heatmap
+```
+
+## 目录说明
+- `ASOCA2020/Normal/`：示例 CTA、掩膜、官方中心线。
+- `outputs/`：树 JSON、分支数据、相似度矩阵、可视化 PNG 等。
+- `scripts/`：流水线各步骤脚本（提取中心线、建树、分支张量、相似性、可视化）。
+- `notebooks/workflow_demo.ipynb`：运行以上步骤的示例 Notebook（需 GUI/交互环境）。
+
+## 训练/建模思路（对应论文）
+- 树先验：统计 {parent, λ, 分叉角度}。
+- 分支形状先验：将 `radii(K×M)` 张量做降维（PCA/GP/Fourier），得到低维 latent，后续可训练生成/回归模型。
