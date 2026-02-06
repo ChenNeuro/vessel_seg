@@ -126,6 +126,7 @@
     \resumeItemListStart
       \resumeItem{College of Engineering, Zhou Peiyuan Honors Program}
       \resumeItem{Selected coursework: Signals and Systems; Probability \& Mathematical Statistics; Fundamentals of Mechanical Design; Elasticity; Data Structures and Algorithms (100/100)}
+      \resumeItem{Course projects: implemented Transformer/LLM pipelines and fine-tuning in ML foundations coursework.}
     \resumeItemListEnd
 \resumeSubHeadingListEnd
 
@@ -173,11 +174,11 @@
   \resumeProjectHeading
     {\textbf{Coronary Vessel Segmentation \& Topology Modeling (ASOCA2020)}}{2024 -- Present}
     \resumeItemListStart
-      \resumeItem{Stack: Python, SimpleITK, VTK, PyTorch.}
-      \resumeItem{Built an end-to-end pipeline from CCTA mask to centerline/topology tree; implemented bifurcation-based segmentation, parent-child attachment ($\lambda,\theta,\phi$), and overlap trimming.}
+      \resumeItem{Stack: Python, SimpleITK, VTK, PyTorch. Code: \href{https://github.com/ChenNeuro/vessel_seg/tree/advance}{github.com/ChenNeuro/vessel\_seg (advance)}.}
+      \resumeItem{Built an end-to-end pipeline on ASOCA2020 CCTA from mask to centerline/topology tree; implemented bifurcation-based segmentation, parent-child attachment ($\lambda,\theta,\phi$), and overlap trimming.}
       \resumeItem{Sampled branch radii with K$\times$M polar rays to form branch tensors; learned a PCA shape subspace on 80\% of Normal cases and evaluated reconstruction error on 10\%/10\% splits.}
       \resumeItem{PCA RMSE (train/val/test): 0.225/0.288/0.255; topology metrics under ongoing evaluation.}
-      \resumeItem{Implemented Fourier--Gaussian Process shape modeling with edge-aware Bayesian fusion; added U-Net-style edge detector training/inference for contour probability maps.}
+      \resumeItem{Implemented Fourier--Gaussian Process generative shape modeling with edge-aware Bayesian fusion; added U-Net-style edge detector training/inference for contour probability maps.}
     \resumeItemListEnd
 
   \resumeProjectHeading
