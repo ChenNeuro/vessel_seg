@@ -1,0 +1,72 @@
+{
+  "aggregate_metric_rules": [
+    {
+      "name": "pred2gt_mean",
+      "direction": "lower",
+      "rel_tol": 0.01,
+      "abs_tol": 0.005,
+      "required": true
+    },
+    {
+      "name": "pred2gt_p95",
+      "direction": "lower",
+      "rel_tol": 0.01,
+      "abs_tol": 0.02,
+      "required": true
+    },
+    {
+      "name": "gt2pred_mean",
+      "direction": "lower",
+      "rel_tol": 0.01,
+      "abs_tol": 0.005,
+      "required": true
+    },
+    {
+      "name": "coverage_pred@1mm",
+      "direction": "higher",
+      "rel_tol": 0.0,
+      "abs_tol": 0.002,
+      "required": true
+    },
+    {
+      "name": "coverage_gt@1mm",
+      "direction": "higher",
+      "rel_tol": 0.0,
+      "abs_tol": 0.001,
+      "required": true
+    }
+  ],
+  "runtime_rules": [
+    {
+      "name": "wall_time_sec",
+      "direction": "lower",
+      "rel_tol": 0.05,
+      "abs_tol": 2.0,
+      "required": false
+    },
+    {
+      "name": "peak_rss_mb",
+      "direction": "lower",
+      "rel_tol": 0.1,
+      "abs_tol": 128.0,
+      "required": false
+    }
+  ],
+  "per_case_rules": [
+    {
+      "name": "pred2gt_mean",
+      "direction": "lower",
+      "rel_tol": 0.05,
+      "abs_tol": 0.03,
+      "required": true
+    },
+    {
+      "name": "coverage_pred@1mm",
+      "direction": "higher",
+      "rel_tol": 0.0,
+      "abs_tol": 0.01,
+      "required": true
+    }
+  ],
+  "require_same_case_set": true
+}

@@ -1,0 +1,124 @@
+name: Perf Gate
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, labeled]
+  workflow_dispatch:
+    inputs:
+      candidate_csv:
+        description: "Candidate compare_summary.csv path on runner"
+        required: false
+        default: "outputs/vmtk_centerlines/compare_summary.csv"
+      baseline_json:
+        description: "Baseline benchmark JSON path"
+        required: false
+        default: "benchmarks/baseline_normal20.json"
+      contract_json:
+        description: "Performance contract JSON path"
+        required: false
+        default: "configs/perf_contract.example.json"
+
+permissions:
+  contents: read
+
+jobs:
+  smoke:
+    name: Perf Tooling Smoke
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Smoke Compare (baseline vs baseline)
+        run: |
+          set -euo pipefail
+          python scripts/perf/compare_benchmark.py \
+            --baseline benchmarks/baseline_normal20.json \
+            --candidate benchmarks/baseline_normal20.json \
+            --contract configs/perf_contract.example.json \
+            --output /tmp/perf_compare_smoke.json
+
+  gate:
+    name: Perf Contract Gate
+    if: ${{ github.event_name == 'workflow_dispatch' || contains(github.event.pull_request.labels.*.name, 'run-perf-gate') }}
+    runs-on: self-hosted
+    env:
+      PERF_CANDIDATE_CSV: ${{ vars.PERF_CANDIDATE_CSV }}
+      PERF_BASELINE_JSON: ${{ vars.PERF_BASELINE_JSON }}
+      PERF_CONTRACT_JSON: ${{ vars.PERF_CONTRACT_JSON }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Resolve Config
+        id: cfg
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          candidate_input="${{ github.event.inputs.candidate_csv }}"
+          baseline_input="${{ github.event.inputs.baseline_json }}"
+          contract_input="${{ github.event.inputs.contract_json }}"
+
+          candidate="${candidate_input:-}"
+          baseline="${baseline_input:-}"
+          contract="${contract_input:-}"
+
+          if [ -z "${candidate}" ]; then
+            candidate="${PERF_CANDIDATE_CSV:-outputs/vmtk_centerlines/compare_summary.csv}"
+          fi
+          if [ -z "${baseline}" ]; then
+            baseline="${PERF_BASELINE_JSON:-benchmarks/baseline_normal20.json}"
+          fi
+          if [ -z "${contract}" ]; then
+            contract="${PERF_CONTRACT_JSON:-configs/perf_contract.example.json}"
+          fi
+
+          echo "candidate_csv=${candidate}" >> "$GITHUB_OUTPUT"
+          echo "baseline_json=${baseline}" >> "$GITHUB_OUTPUT"
+          echo "contract_json=${contract}" >> "$GITHUB_OUTPUT"
+
+      - name: Validate Inputs
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f "${{ steps.cfg.outputs.candidate_csv }}" || { echo "Missing candidate CSV: ${{ steps.cfg.outputs.candidate_csv }}"; exit 1; }
+          test -f "${{ steps.cfg.outputs.baseline_json }}" || { echo "Missing baseline JSON: ${{ steps.cfg.outputs.baseline_json }}"; exit 1; }
+          test -f "${{ steps.cfg.outputs.contract_json }}" || { echo "Missing contract JSON: ${{ steps.cfg.outputs.contract_json }}"; exit 1; }
+
+      - name: Collect Candidate Benchmark
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p artifacts
+          python scripts/perf/collect_benchmark.py \
+            --name "candidate_${GITHUB_SHA}" \
+            --centerline-csv "${{ steps.cfg.outputs.candidate_csv }}" \
+            --output artifacts/candidate_benchmark.json
+
+      - name: Compare With Baseline
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/perf/compare_benchmark.py \
+            --baseline "${{ steps.cfg.outputs.baseline_json }}" \
+            --candidate artifacts/candidate_benchmark.json \
+            --contract "${{ steps.cfg.outputs.contract_json }}" \
+            --output artifacts/compare_report.json
+
+      - name: Upload Perf Artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: perf-gate-${{ github.run_id }}
+          path: artifacts/
