@@ -25,8 +25,32 @@ third_party/nnUNet/
 
 # IDE / OS noise
 .vscode/
+.idea/
 .DS_Store
 Thumbs.db
+
+# Jupyter / notebooks
+.ipynb_checkpoints/
+
+# Python tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.pytype/
+.cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Build artifacts
+build/
+dist/
+
+# Temporary files
+*.swp
+*.swo
+*.tmp
 
 # Logs
 *.log

@@ -1,0 +1,210 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez (template)
+% Edited : Chen Yihao
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands (spacing-tuned)
+%-------------------------
+
+% Bullet item: loosen internal line spacing a bit and reduce negative vspace
+\newcommand{\resumeItem}[1]{%
+  \item \small \setlength{\baselineskip}{13.2pt} #1 \vspace{-1pt}%
+}
+
+\newcommand{\resumeSubheading}[4]{%
+  \vspace{-1pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small #3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-3pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{%
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small #1 & #2 \\
+  \end{tabular*}\vspace{-3pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+% Lists: add itemsep/topsep to avoid cramped bullets (affects all your resumeItemListStart lists)
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}, topsep=2pt, itemsep=2pt, parsep=0pt, partopsep=0pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*, topsep=3pt, itemsep=3pt, parsep=0pt, partopsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{6pt}}
+
+
+%-------------------------------------------
+\begin{document}
+
+
+%----------HEADING with photo (uniform spacing)----------
+\noindent
+\begin{minipage}[t]{0.73\textwidth}
+  {\Huge \scshape Chen Yihao}\\[6pt]
+  {\small
+  \linespread{1.15}\selectfont
+  \textbf{Peking University} \quad Beijing, China\\[5pt]
+  \textbf{Zhou Peiyuan Honors Program}\\[5pt]
+  Major: \textbf{Theoretical \& Applied Mechanics} \quad
+  2nd Major: \textbf{Robotics Engineering}\\[5pt]
+  Email: \href{mailto:chenyihao@stu.pku.edu.cn}{\underline{chenyihao@stu.pku.edu.cn}}\\[5pt]
+  GitHub: \href{https://github.com/ChenNeuro}{\underline{github.com/ChenNeuro}}
+  \par}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.24\textwidth}
+  \raggedleft
+  \vspace{-2mm}
+  \includegraphics[width=1.10in]{photo.jpg}
+\end{minipage}
+\vspace{5mm}
+
+%-----------RESEARCH INTERESTS-----------
+\section{Research Interests}
+
+\resumeSubHeadingListStart
+  \resumeItem{\textbf{Medical image segmentation and geometry-driven modeling (centerlines, topology, 3D reconstruction).}}
+  \resumeItem{\textbf{3D--2D registration and temporal modeling for interventional guidance (cine/DSA).}}
+  \resumeItem{\textbf{Probabilistic shape priors and uncertainty-aware reconstruction/enhancement.}}
+  \resumeItem{{\small \textit{(unordered; representative areas)}}\\[-2pt]}
+\resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Peking University}{Beijing, China}
+    {B.Sc. in Theoretical and Applied Mechanics; B.Eng. (Second Major) in Robotics Engineering}{Aug 2023 -- Present}
+    \resumeItemListStart
+      \resumeItem{College of Engineering, Zhou Peiyuan Honors Program}
+      \resumeItem{Selected coursework: Signals and Systems; Probability \& Mathematical Statistics; Fundamentals of Mechanical Design; Elasticity; Data Structures and Algorithms (100/100)}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------RESEARCH EXPERIENCE-----------
+\section{Research \& Engineering Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {Coronary 3D Reconstruction \& CT--DSA 3D--2D Registration}{Beijing, China}
+  {Undergraduate Researcher, \textbf{Supervisor: Xuefeng Wang}}{2024 -- Present}
+  \resumeItemListStart
+    \resumeItem{Built CT--DSA 3D--2D registration using camera geometry + centerline/landmark cues to align preoperative CCTA with intraoperative DSA.}
+    \resumeItem{Developed motion-aware alignment with cardiac phase matching and temporal consistency for cine sequences.}
+    \resumeItem{Prepared CCTA segmentations/centerlines and geometry priors to improve robustness under stenosis/calcification.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {Peking University People's Hospital, Department of Cardiology}{Beijing, China}
+    {Clinical Observership (1 day)}{Jan 21, 2026}
+    \resumeItemListStart
+      \resumeItem{Shadowed PCI workflow to understand clinical constraints for CT--DSA alignment and evaluation.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Challenge Cup -- Sensorized Shin Guard for Soccer Training (Lab Prototype)}{Beijing, China}
+    {Student Researcher, Supervisor: \textbf{Ke Liu}}{Sep 2024 -- Spring 2025}
+    \resumeItemListStart
+      \resumeItem{Led PCB + multi-sensor integration (IMU/pressure/EMG/HR/temperature) and built motion-classification pipelines; validated at \textbf{50\,Hz}.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+%-----------SELECTED PROJECTS-----------
+\section{Selected Projects}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {\textbf{Coronary Vessel Segmentation \& Topology Modeling (ASOCA2020)} $|$ \emph{Python, SimpleITK, VTK, PyTorch}}{2024 -- Present}
+    \resumeItemListStart
+      \resumeItem{Built an end-to-end pipeline from CCTA mask to centerline/topology tree; bifurcation-based segmentation, parent-child attachment ($\lambda,\theta,\phi$), and overlap trimming.}
+      \resumeItem{Sampled branch radii with K$\times$M polar rays; learned PCA subspace (d=8) on 80\% Normal cases; RMSE train/val/test = 0.225/0.288/0.255.}
+      \resumeItem{Implemented Fourier--Gaussian Process shape modeling with edge-aware Bayesian fusion; trained a U-Net-style edge detector for contour probability maps.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------HONORS \& AWARDS-----------
+\section{Honors \& Awards}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small\item{
+    \textbf{Award for Academic Excellence}, Peking University \hfill 2024 \\
+    \textbf{Second Prize, Jiang Zehan Cup Mathematical Modeling Competition} \hfill 2024 \\
+    \textbf{Second/Third Prize, National Undergraduate Mathematics Competition (multiple years)} \hfill 2023--2025 \\
+    \textbf{Third Prize, Peking University Programming Contest} \hfill 2024--2025 \\
+    \textbf{Floorball Freshman Cup: 2nd Place (2024), 1st Place (2025)} \hfill 2024--2025
+  }
+\end{itemize}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small\item{
+    \textbf{Programming}{: Python, MATLAB, C++ (basic)} \\[2pt]
+    \textbf{Medical Imaging \& Geometry}{: 3D Slicer; CT/X-ray (DSA) workflows; segmentation; centerlines/topology; 3D reconstruction; 3D--2D registration; NIfTI/NRRD; VTK, SimpleITK, nibabel} \\[2pt]
+    \textbf{Robotics \& Control}{: Kinematics, Dynamics, State Estimation, Control, Optimization; contact interaction basics} \\[2pt]
+    \textbf{Signal Processing \& Sensing}{: filtering/denoising, feature extraction; multimodal sensing (IMU/pressure/EMG/ECG); sensor fusion} \\[2pt]
+    \textbf{ML/Deep Learning}{: PyTorch; CNNs; Transformers/LLMs (coursework); HuggingFace; fine-tuning; probabilistic modeling (Gaussian processes) and Bayesian inference; training/evaluation pipelines; experiment management; ablations} \\[2pt]
+    \textbf{Hardware/Embedded}{: PCB schematic/layout, sensor integration, firmware debugging; basic \textbf{I2C} bring-up and timing/config troubleshooting} \\[2pt]
+    \textbf{Tools}{: Git, Docker, VS Code, SolidWorks, LaTeX, 3D Slicer}
+  }
+\end{itemize}
+
+%-----------LANGUAGES-----------
+\section{Languages}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small\item{
+    \textbf{Chinese}{: Native} \\
+    \textbf{English}{: TOEFL: 97; Academic writing/presentation} \\
+    \textbf{Japanese}{: Beginner}
+  }
+\end{itemize}
+
+\end{document}

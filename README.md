@@ -1,68 +1,83 @@
-Vessel segmentation toolkit
+# vessel_seg workflow
 
-- Conda environments
-  - Lightweight preprocessing env: `conda create -n vessel_seg -c conda-forge python=3.10 simpleitk numpy scipy scikit-image nibabel`.
-  - Full ASOCA training env: `conda env create -f env/asoca_nnunet.yaml` then `pip install -e third_party/nnUNet`.
-- Conversion utility
-  - Code lives in `vessel_seg/conversion.py` and exposes `convert_nrrd_to_nii`.
-  - Run from the command line: `python -m vessel_seg.conversion <nrrd_dir> <output_dir>`.
-  - Alternatively, import the function and call it directly as shown in the inline example comments.
-- Metadata normalisation
-  - `vessel_seg/metadata.py` defines `SegmentationMetadata` and helpers to harmonise label names into PascalCase.
-  - `vessel_seg/metadata_schema.json` captures the JSON schema used to keep segmentation metadata consistent across cases.
-- Leaderboard + literature
-  - `python scripts/fetch_asoca_leaderboard.py --limit 10` captures the current challenge standings into `data/asoca_leaderboard_top10.json`.
-  - The highest public Dice (0.8946) is achieved by user `hongqq` (submission 2024‑03‑12); no code release is available, so `nnUNetv2` serves as the best open baseline (5th place `junma`).
-- Training & inference (nnUNetv2)
-  - Prepare dataset with `nnUNetv2_plan_and_preprocess -d 103 -c 3d_fullres`, then launch `nnUNetv2_train 103 3d_fullres all`.
-  - Run predictions via `nnUNetv2_predict -d 103 -c 3d_fullres -i <CTA_dir> -o outputs/asoca_predictions`.
-- Evaluation
-  - Quick comparison script: `python scripts/compare_asoca.py --gt <gt_dir> --pred outputs/asoca_predictions --output outputs/asoca_metrics.json`.
-  - For native tooling use `nnUNetv2_evaluate_folder` to compute Dice/HD95/ASSD.
-- Shape-model roadmap
-  - Detailed workflow lives in `docs/asoca_pipeline_plan.md` (branch decomposition, polar descriptors, 3D reconstruction union).
-  - Near-term actions: validate TotalSegmentator online for coronary visibility, kick off nnUNetv2 training, and prototype centreline-based descriptors.
-- Dimensionality / reconstruction toolkit
-  - `python -m vessel_seg.shape extract --seg <mask.nii.gz> --out features/<case_id>` 提取中心线、极坐标截面与统计描述。
-  - `python -m vessel_seg.shape reconstruct --features features/<case_id> --output outputs/<case_id>.vtp` 将分支曲线扫掠为三维血管网格。
-  - 方法细节与实现提示参见 `docs/vessel_dimensionality_workflow.md`.
+基于 ASOCA 冠脉数据的中心线树与分支形状建模流水线。
 
-## Probabilistic shape modelling (FGPM)
+## 环境
+```bash
+conda create -n vessel_seg -c conda-forge python=3.10 simpleitk scikit-image vtk matplotlib numpy scipy
+conda activate vessel_seg
+pip install meshio rich pyvista
+```
 
-- 设计细节参见 `docs/fgpm_pipeline.md`。
-- 训练 Fourier-Gaussian-process 分支模型：
-  ```bash
-  python -m vessel_seg.fgpm fit \
-    --features-dirs features/case_* \
-    --branch Branch_00 \
-    --order 6 \
-    --output models/branch00_fgpm.json
-  ```
-  训练样本来自 `vessel_seg.shape extract` 导出的分支 `*.npz` 文件，脚本会自动收集高置信度切片并拟合多项式均值 + RBF 高斯过程。
-- 生成随机样本或运行 Bayesian 推理：
-  ```bash
-  python -m vessel_seg.fgpm sample --model models/branch00_fgpm.json \
-    --num-slices 80 --output outputs/branch00_samples.npz
+## 流水线
+1) **掩膜 → 中心线（基线骨架）**
+```bash
+python scripts/extract_centerline_from_mask.py \
+  --mask ASOCA2020/Normal/Annotations/Normal_1.nrrd \
+  --out ASOCA2020/Normal/Centerlines/Normal_1_extracted.vtp
+```
+或使用已有中心线：`ASOCA2020/Normal/Centerlines/Normal_1.vtp`
 
-  python -m vessel_seg.fgpm infer \
-    --model models/branch00_fgpm.json \
-    --branch-features features/test_case/Branch_00.npz \
-    --annotations features/test_case_sparse/Branch_00.npz \
-    --edge-map outputs/test_case_edges.nii.gz \
-    --output outputs/branch00_fgpm_post.npz
-  ```
-  `infer` 会先根据稀疏注释（可用 `propagate` 将邻近切片自动配准扩增）获得交互后验，再结合深度边缘置信度进行 MAP 估计。
-- 注释传播（2D Demons 配准）：
-  ```bash
-  python -m vessel_seg.fgpm propagate \
-    --image volumes/case001.nii.gz \
-    --mask annotations/case001_sparse.nii.gz \
-    --source 30 --target 31 --axis 2 \
-    --output-mask annotations/case001_aug.nii.gz
-  ```
+2) **建树（父子/λ/θ/φ）**
+```bash
+python scripts/build_centerline_tree.py \
+  --vtp ASOCA2020/Normal/Centerlines/Normal_1.vtp \
+  --out outputs/normal1_tree.json
+```
 
-## Deep edge detection (DED)
+3) **生成分支张量（截面半径，自动对齐+可调截断）**
+```bash
+python scripts/build_branch_dataset.py \
+  --vtp ASOCA2020/Normal/Centerlines/Normal_1.vtp \
+  --mask ASOCA2020/Normal/Annotations/Normal_1.nrrd \
+  --tree outputs/normal1_tree.json \
+  --out outputs/normal1_branch_dataset.npz \
+  --branch_dir outputs/branches_normal1 \
+  --start_offset 3 \
+  --start_offset_percent 5     # 例如按分支长度百分比截断（可选，默认启用自动距离图对齐）
+```
 
+4) **分支相似性 & PCA**
+```bash
+python scripts/branch_similarity.py \
+  --npz outputs/<case>/branch_dataset.npz \
+  --out_dir outputs/<case>/similarity \
+  --pca_dim 8 --heatmap
+```
+
+5) **可视化**
+- 中心线 vs 分割表面：`python scripts/plot_centerline_vs_gt.py --vtp ... --mask ...`
+- 中心线 vs 分割骨架：`python scripts/compare_centerline_vs_gt_centerline.py --vtp ... --mask ...`
+- 树的锥子图（含 parent/λ）：`python scripts/plot_tree_fs_cones.py --vtp ... --out ...`
+- Matplotlib 交互 3D：`python scripts/plot_centerline_matplotlib_interactive.py --vtp ... --mask ...`
+
+6) **批量运行多病例**
+```bash
+python scripts/run_pipeline.py \
+  --pattern ASOCA2020/Normal/Centerlines/Normal_*.vtp \
+  --mask_dir ASOCA2020/Normal/Annotations_nii \
+  --start_offset_percent 0 2.5 5 7.5 10  # 多种截断自动批跑（输出带 pct 后缀）
+```
+
+7) **跨病例聚合**
+```bash
+python scripts/aggregate_branch_datasets.py \
+  --npz_glob 'outputs/Normal_*/branch_dataset*.npz' \
+  --out outputs/aggregate/branch_dataset_normal_all.npz \
+  --pca_dim 8 --heatmap
+```
+
+## 目录说明
+- `ASOCA2020/Normal/`：示例 CTA、掩膜、官方中心线。
+- `outputs/`：树 JSON、分支数据、相似度矩阵、可视化 PNG 等。
+- `scripts/`：流水线各步骤脚本（提取中心线、建树、分支张量、相似性、可视化）。
+- `notebooks/workflow_demo.ipynb`：运行以上步骤的示例 Notebook（需 GUI/交互环境）。
+
+## 训练/建模思路（对应论文）
+- 树先验：统计 {parent, λ, 分叉角度}。
+- 分支形状先验：将 `radii(K×M)` 张量做降维（PCA/GP/Fourier），得到低维 latent，后续可训练生成/回归模型。
+
+## 边缘检测（UAED 风格）
 - 通过 `vessel_seg.edge` 训练 UAED 风格的多尺度边缘检测器：
   ```bash
   python -m vessel_seg.edge train \
