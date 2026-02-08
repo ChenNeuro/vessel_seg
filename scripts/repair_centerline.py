@@ -26,7 +26,6 @@ from typing import List, Tuple
 
 import numpy as np
 import nibabel as nib
-from nibabel.affines import apply_affine
 from scipy import ndimage
 
 try:
@@ -156,12 +155,20 @@ def build_cost_volume(
 
 
 def world_to_voxel(points: np.ndarray, affine: np.ndarray) -> np.ndarray:
-    inv = np.linalg.inv(affine)
-    return apply_affine(inv, points)
+    # VMTK centerlines are typically written in image-origin + abs(spacing)*index
+    # coordinates, while NIfTI affine may contain axis flips. Use absolute
+    # spacing convention here to stay consistent with VMTK/polyline coordinates.
+    origin = np.asarray(affine[:3, 3], dtype=float)
+    spacing = np.sqrt((np.asarray(affine[:3, :3], dtype=float) ** 2).sum(axis=0))
+    spacing = np.where(spacing > 0, spacing, 1.0)
+    return (points - origin[None, :]) / spacing[None, :]
 
 
 def voxel_to_world(points: np.ndarray, affine: np.ndarray) -> np.ndarray:
-    return apply_affine(affine, points)
+    origin = np.asarray(affine[:3, 3], dtype=float)
+    spacing = np.sqrt((np.asarray(affine[:3, :3], dtype=float) ** 2).sum(axis=0))
+    spacing = np.where(spacing > 0, spacing, 1.0)
+    return origin[None, :] + points * spacing[None, :]
 
 
 def clamp_index(idx: np.ndarray, shape: Tuple[int, int, int]) -> np.ndarray:
@@ -193,6 +200,14 @@ def smooth_path(points: np.ndarray, window: int) -> np.ndarray:
     return smoothed
 
 
+def smooth_path_preserve_endpoints(points: np.ndarray, window: int) -> np.ndarray:
+    smoothed = smooth_path(points, window)
+    if smoothed.shape[0] >= 1:
+        smoothed[0] = points[0]
+        smoothed[-1] = points[-1]
+    return smoothed
+
+
 def max_curvature(path_world: np.ndarray) -> float:
     if path_world.shape[0] < 3:
         return 0.0
@@ -210,6 +225,133 @@ def max_curvature(path_world: np.ndarray) -> float:
         return 0.0
     curv = np.array(angles) / (np.array(lengths) + 1e-8)
     return float(np.max(curv))
+
+
+def polyline_length_mm(points: np.ndarray) -> float:
+    if points.shape[0] < 2:
+        return 0.0
+    return float(np.linalg.norm(np.diff(points, axis=0), axis=1).sum())
+
+
+def snap_nearby_endpoints(
+    polylines: List[np.ndarray],
+    *,
+    snap_tol_mm: float,
+    blend_steps: int,
+) -> Tuple[List[np.ndarray], dict]:
+    if snap_tol_mm <= 0 or not polylines:
+        return polylines, {"clusters": 0, "snapped_endpoints": 0}
+
+    records = []
+    for bid, poly in enumerate(polylines):
+        if poly.shape[0] == 0:
+            continue
+        records.append({"branch_id": bid, "end_idx": 0, "point": poly[0].copy()})
+        if poly.shape[0] > 1:
+            records.append({"branch_id": bid, "end_idx": -1, "point": poly[-1].copy()})
+
+    n = len(records)
+    if n < 2:
+        return polylines, {"clusters": 0, "snapped_endpoints": 0}
+
+    # Use seed-centric grouping (no transitive chaining) to avoid collapsing
+    # distant bifurcations through a chain of near neighbors.
+    remaining = set(range(n))
+    clusters: List[List[int]] = []
+    while remaining:
+        seed = min(remaining)
+        remaining.remove(seed)
+        seed_pt = records[seed]["point"]
+        cluster = [seed]
+        attached = []
+        for idx in remaining:
+            if float(np.linalg.norm(records[idx]["point"] - seed_pt)) <= snap_tol_mm:
+                attached.append(idx)
+        for idx in attached:
+            remaining.remove(idx)
+            cluster.append(idx)
+        clusters.append(cluster)
+
+    out = [poly.copy() for poly in polylines]
+    cluster_count = 0
+    snapped_count = 0
+    blend_steps = max(int(blend_steps), 0)
+
+    for members in clusters:
+        if len(members) < 2:
+            continue
+        pts = np.array([records[m]["point"] for m in members], dtype=float)
+        centroid = pts.mean(axis=0)
+        cluster_count += 1
+        snapped_count += len(members)
+
+        for m in members:
+            rec = records[m]
+            bid = int(rec["branch_id"])
+            end_idx = int(rec["end_idx"])
+            poly = out[bid]
+            if poly.shape[0] == 0:
+                continue
+
+            if end_idx == 0:
+                poly[0] = centroid
+                if blend_steps > 0 and poly.shape[0] > 1:
+                    span = min(blend_steps, poly.shape[0] - 1)
+                    for k in range(1, span + 1):
+                        alpha = float(span + 1 - k) / float(span + 1)
+                        poly[k] = alpha * poly[k] + (1.0 - alpha) * centroid
+            else:
+                poly[-1] = centroid
+                if blend_steps > 0 and poly.shape[0] > 1:
+                    span = min(blend_steps, poly.shape[0] - 1)
+                    for k in range(1, span + 1):
+                        alpha = float(span + 1 - k) / float(span + 1)
+                        idx = -1 - k
+                        poly[idx] = alpha * poly[idx] + (1.0 - alpha) * centroid
+
+    return out, {"clusters": cluster_count, "snapped_endpoints": snapped_count}
+
+
+def regularize_polylines_curvature(
+    polylines: List[np.ndarray],
+    *,
+    smooth_window: int,
+    max_curv: float | None,
+    iterations: int,
+) -> Tuple[List[np.ndarray], dict]:
+    out = []
+    max_before = 0.0
+    max_after = 0.0
+    adjusted = 0
+    iterations = max(int(iterations), 0)
+
+    for poly in polylines:
+        work = poly.copy()
+        if work.shape[0] < 3:
+            out.append(work)
+            continue
+
+        before = max_curvature(work)
+        after = before
+        if max_curv is not None and max_curv > 0:
+            n_iter = 0
+            while after > max_curv and n_iter < iterations:
+                work = smooth_path_preserve_endpoints(work, smooth_window)
+                after = max_curvature(work)
+                n_iter += 1
+            if n_iter > 0:
+                adjusted += 1
+        else:
+            work = smooth_path_preserve_endpoints(work, smooth_window)
+            after = max_curvature(work)
+            if after < before:
+                adjusted += 1
+
+        max_before = max(max_before, before)
+        max_after = max(max_after, after)
+        out.append(work)
+
+    return out, {"adjusted_branches": adjusted, "max_curvature_before": max_before, "max_curvature_after": max_after}
 
 
 def sample_radius(dist: np.ndarray, world_pt: np.ndarray, affine: np.ndarray) -> float:
@@ -248,6 +390,36 @@ def main() -> None:
     parser.add_argument("--max_curvature", type=float, default=0.4, help="Max allowed curvature (1/mm) after smoothing.")
     parser.add_argument("--murray_exp", type=float, default=3.0, help="Exponent for Murray-style radius consistency.")
     parser.add_argument("--murray_tol", type=float, default=0.5, help="Max allowed Murray deviation (0-1).")
+    parser.add_argument(
+        "--junction_snap_tol",
+        type=float,
+        default=1.0,
+        help="Snap nearby branch endpoints within this distance (mm). <=0 disables.",
+    )
+    parser.add_argument(
+        "--junction_blend_steps",
+        type=int,
+        default=3,
+        help="Number of interior points blended from each snapped endpoint.",
+    )
+    parser.add_argument(
+        "--regularize_curvature",
+        type=float,
+        default=0.45,
+        help="Post-repair max branch curvature (1/mm). <=0 disables curvature cap.",
+    )
+    parser.add_argument(
+        "--regularize_iterations",
+        type=int,
+        default=3,
+        help="Max smoothing iterations during curvature regularization.",
+    )
+    parser.add_argument(
+        "--min_branch_length",
+        type=float,
+        default=0.0,
+        help="Drop repaired branches shorter than this length (mm). <=0 keeps all.",
+    )
     args = parser.parse_args()
 
     prob_img = nib.load(str(args.prob))
@@ -255,7 +427,7 @@ def main() -> None:
     spacing = prob_img.header.get_zooms()[:3]
     affine = prob_img.affine
 
-    cost, _, dist = build_cost_volume(
+    cost, _, dist_map = build_cost_volume(
         prob=prob,
         spacing=spacing,
         prob_thresh=args.prob_thresh,
@@ -275,13 +447,13 @@ def main() -> None:
             b = endpoints[j]
             if a.branch_id == b.branch_id:
                 continue
-            dist = float(np.linalg.norm(a.point - b.point))
-            if dist > args.max_dist:
+            endpoint_dist = float(np.linalg.norm(a.point - b.point))
+            if endpoint_dist > args.max_dist:
                 continue
             angle = angle_deg_between(a.tangent, -b.tangent)
             if angle > args.max_angle_deg:
                 continue
-            pairs.append((dist, angle, i, j))
+            pairs.append((endpoint_dist, angle, i, j))
     pairs.sort(key=lambda x: (x[0], x[1]))
     if args.max_pairs > 0:
         pairs = pairs[: args.max_pairs]
@@ -291,7 +463,7 @@ def main() -> None:
     bridge_meta = []
     shape = prob.shape
 
-    for dist, angle, i, j in pairs:
+    for endpoint_dist, angle, i, j in pairs:
         if i in used or j in used:
             continue
         a = endpoints[i]
@@ -320,8 +492,8 @@ def main() -> None:
         if args.max_curvature is not None and curvature > args.max_curvature:
             continue
 
-        ra = endpoint_radius(a, branch_radii, dist, affine)
-        rb = endpoint_radius(b, branch_radii, dist, affine)
+        ra = endpoint_radius(a, branch_radii, dist_map, affine)
+        rb = endpoint_radius(b, branch_radii, dist_map, affine)
         r_parent = max(ra, rb)
         r_child = min(ra, rb)
         murray_dev = abs((r_parent ** args.murray_exp) - (r_child ** args.murray_exp)) / (
@@ -335,7 +507,7 @@ def main() -> None:
             {
                 "endpoint_a": {"branch": a.branch_id, "end_idx": a.end_idx, "point": a.point.tolist()},
                 "endpoint_b": {"branch": b.branch_id, "end_idx": b.end_idx, "point": b.point.tolist()},
-                "dist_mm": dist,
+                "dist_mm": endpoint_dist,
                 "angle_deg": angle,
                 "path_len_mm": length_mm,
                 "max_curvature": curvature,
@@ -350,6 +522,34 @@ def main() -> None:
 
     out_polylines = polylines + bridges
     bridge_flags = [0] * len(polylines) + [1] * len(bridges)
+
+    out_polylines, snap_stats = snap_nearby_endpoints(
+        out_polylines,
+        snap_tol_mm=args.junction_snap_tol,
+        blend_steps=args.junction_blend_steps,
+    )
+
+    reg_cap = args.regularize_curvature if args.regularize_curvature and args.regularize_curvature > 0 else None
+    out_polylines, regularize_stats = regularize_polylines_curvature(
+        out_polylines,
+        smooth_window=args.smooth_window,
+        max_curv=reg_cap,
+        iterations=args.regularize_iterations,
+    )
+
+    removed_short = 0
+    if args.min_branch_length and args.min_branch_length > 0:
+        keep_polys: List[np.ndarray] = []
+        keep_flags: List[int] = []
+        for poly, flag in zip(out_polylines, bridge_flags):
+            if polyline_length_mm(poly) < args.min_branch_length:
+                removed_short += 1
+                continue
+            keep_polys.append(poly)
+            keep_flags.append(flag)
+        out_polylines = keep_polys
+        bridge_flags = keep_flags
+
     args.out.parent.mkdir(parents=True, exist_ok=True)
     write_vtp_centerlines(out_polylines, args.out, bridge_flags)
     print(f"Saved repaired VTP -> {args.out} | added bridges: {len(bridges)}")
@@ -373,7 +573,15 @@ def main() -> None:
                 "max_curvature": args.max_curvature,
                 "murray_exp": args.murray_exp,
                 "murray_tol": args.murray_tol,
+                "junction_snap_tol": args.junction_snap_tol,
+                "junction_blend_steps": args.junction_blend_steps,
+                "regularize_curvature": args.regularize_curvature,
+                "regularize_iterations": args.regularize_iterations,
+                "min_branch_length": args.min_branch_length,
             },
+            "snap_stats": snap_stats,
+            "regularize_stats": regularize_stats,
+            "removed_short_branches": removed_short,
             "bridges": bridge_meta,
         }
         args.report.parent.mkdir(parents=True, exist_ok=True)

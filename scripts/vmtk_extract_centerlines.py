@@ -13,12 +13,17 @@ from __future__ import annotations
 import argparse
 import json
 import subprocess
+import sys
 from pathlib import Path
-from typing import List, Tuple
+from typing import Dict, List, Set, Tuple
 
 import numpy as np
 import nibabel as nib
 import scipy.ndimage as ndi
+
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
 
 try:
     import vtk  # type: ignore
@@ -243,20 +248,262 @@ def centerlineimage_to_vtp(image_path: Path, output_path: Path) -> int:
     i = idx % nx
     j = (idx // nx) % ny
     k = idx // (nx * ny)
-    coords = origin + spacing * np.vstack([i, j, k]).T
+    voxels_raw = np.vstack([i, j, k]).T.astype(np.int32)
+    volume = np.zeros((nx, ny, nz), dtype=bool)
+    volume[voxels_raw[:, 0], voxels_raw[:, 1], voxels_raw[:, 2]] = True
+
+    try:
+        from skimage.morphology import skeletonize_3d
+
+        volume = skeletonize_3d(volume > 0)
+    except Exception:
+        try:
+            from skimage.morphology import skeletonize
+
+            volume = skeletonize(volume > 0)
+        except Exception:
+            pass
+
+    labeled, num_labels = ndi.label(volume)
+    if num_labels > 1:
+        counts = ndi.sum(volume, labeled, index=range(1, num_labels + 1))
+        largest_label = int(np.argmax(counts) + 1)
+        volume = labeled == largest_label
+
+    voxels = np.argwhere(volume > 0).astype(np.int32)
+    if voxels.size == 0:
+        voxels = voxels_raw
+
+    coords = origin + spacing * voxels
 
     points = vtk.vtkPoints()
     points.SetNumberOfPoints(coords.shape[0])
     for n, (x, y, z) in enumerate(coords):
         points.SetPoint(n, float(x), float(y), float(z))
 
+    index_map: Dict[Tuple[int, int, int], int] = {
+        (int(vx), int(vy), int(vz)): int(pid)
+        for pid, (vx, vy, vz) in enumerate(voxels.tolist())
+    }
+    neighbors: Dict[int, Set[int]] = {pid: set() for pid in range(coords.shape[0])}
+
+    offsets = []
+    for dx in (-1, 0, 1):
+        for dy in (-1, 0, 1):
+            for dz in (-1, 0, 1):
+                if dx == dy == dz == 0:
+                    continue
+                offsets.append((dx, dy, dz))
+    for pid, (vx, vy, vz) in enumerate(voxels.tolist()):
+        for dx, dy, dz in offsets:
+            nid = index_map.get((vx + dx, vy + dy, vz + dz))
+            if nid is None or nid == pid:
+                continue
+            neighbors[pid].add(nid)
+
+    def edge_key(a: int, b: int) -> Tuple[int, int]:
+        return (a, b) if a < b else (b, a)
+
+    lines = vtk.vtkCellArray()
+    visited_edges: Set[Tuple[int, int]] = set()
+    special_nodes = [nid for nid, nbrs in neighbors.items() if len(nbrs) != 2]
+    if not special_nodes and neighbors:
+        special_nodes = [next(iter(neighbors.keys()))]
+
+    def add_path(path_nodes: List[int]) -> None:
+        if len(path_nodes) < 2:
+            return
+        polyline = vtk.vtkPolyLine()
+        polyline.GetPointIds().SetNumberOfIds(len(path_nodes))
+        for idx_node, pid in enumerate(path_nodes):
+            polyline.GetPointIds().SetId(idx_node, pid)
+        lines.InsertNextCell(polyline)
+
+    for start in special_nodes:
+        for nxt in neighbors[start]:
+            key = edge_key(start, nxt)
+            if key in visited_edges:
+                continue
+            path_nodes = [start]
+            prev = start
+            cur = nxt
+            visited_edges.add(key)
+            while True:
+                path_nodes.append(cur)
+                cur_neighbors = [nid for nid in neighbors[cur] if nid != prev]
+                if len(neighbors[cur]) != 2 or not cur_neighbors:
+                    break
+                next_node = cur_neighbors[0]
+                next_key = edge_key(cur, next_node)
+                if next_key in visited_edges:
+                    break
+                visited_edges.add(next_key)
+                prev, cur = cur, next_node
+            add_path(path_nodes)
+
+    # Capture any residual cycle edges that were not visited above.
+    for a, nbrs in neighbors.items():
+        for b in nbrs:
+            key = edge_key(a, b)
+            if key in visited_edges:
+                continue
+            path_nodes = [a, b]
+            visited_edges.add(key)
+            prev = a
+            cur = b
+            while True:
+                cur_neighbors = [nid for nid in neighbors[cur] if nid != prev]
+                if not cur_neighbors:
+                    break
+                next_node = cur_neighbors[0]
+                next_key = edge_key(cur, next_node)
+                if next_key in visited_edges:
+                    break
+                visited_edges.add(next_key)
+                path_nodes.append(next_node)
+                prev, cur = cur, next_node
+            add_path(path_nodes)
+
     poly = vtk.vtkPolyData()
     poly.SetPoints(points)
+    poly.SetLines(lines)
+
     writer = vtk.vtkXMLPolyDataWriter()
     writer.SetFileName(str(output_path))
     writer.SetInputData(poly)
     writer.Write()
-    return coords.shape[0]
+    return int(coords.shape[0])
+
+
+def write_vtp_polylines(polylines: List[np.ndarray], output_path: Path) -> dict:
+    points = vtk.vtkPoints()
+    lines = vtk.vtkCellArray()
+    total_points = 0
+    total_lines = 0
+
+    for poly in polylines:
+        if poly.shape[0] < 2:
+            continue
+        start_id = points.GetNumberOfPoints()
+        for p in poly:
+            points.InsertNextPoint(float(p[0]), float(p[1]), float(p[2]))
+        line = vtk.vtkPolyLine()
+        line.GetPointIds().SetNumberOfIds(poly.shape[0])
+        for i in range(poly.shape[0]):
+            line.GetPointIds().SetId(i, start_id + i)
+        lines.InsertNextCell(line)
+        total_lines += 1
+        total_points += int(poly.shape[0])
+
+    poly = vtk.vtkPolyData()
+    poly.SetPoints(points)
+    poly.SetLines(lines)
+
+    writer = vtk.vtkXMLPolyDataWriter()
+    writer.SetFileName(str(output_path))
+    writer.SetInputData(poly)
+    writer.Write()
+    return {"points": total_points, "lines": total_lines}
+
+
+def centerlines_from_mask_skeleton(mask_path: Path, output_path: Path) -> dict:
+    from vessel_seg.shape import CentrelineParams, extract_branches
+
+    params = CentrelineParams(
+        min_length_mm=5.0,
+        short_bridge_max_mm=6.0,
+        closing_iterations=1,
+        smooth_sigma_mm=0.8,
+        adaptive_min_step_mm=0.6,
+        adaptive_max_step_mm=2.5,
+        curvature_alpha=2.0,
+    )
+    branches = extract_branches(mask_path, params)
+    img = nib.load(str(mask_path))
+    affine = img.affine
+    origin = np.asarray(affine[:3, 3], dtype=float)
+    spacing = np.abs(np.diag(affine)[:3]).astype(float)
+
+    polylines = []
+    for branch in branches:
+        if branch.voxel_points.shape[0] < 2:
+            continue
+        points = origin[None, :] + branch.voxel_points.astype(float) * spacing[None, :]
+        polylines.append(points.astype(np.float32))
+
+    stats = write_vtp_polylines(polylines, output_path)
+    return {
+        "seed_mode": "mask_skeleton",
+        "branch_count": len(polylines),
+        "points": int(stats["points"]),
+        "lines": int(stats["lines"]),
+    }
+
+
+def _read_vtp_polylines(vtp_path: Path) -> List[np.ndarray]:
+    poly = read_polydata(vtp_path)
+    pts = poly.GetPoints()
+    if pts is None:
+        return []
+    lines = poly.GetLines()
+    lines.InitTraversal()
+    id_list = vtk.vtkIdList()
+    polylines: List[np.ndarray] = []
+    while lines.GetNextCell(id_list):
+        if id_list.GetNumberOfIds() < 2:
+            continue
+        line = np.array([pts.GetPoint(id_list.GetId(i)) for i in range(id_list.GetNumberOfIds())], dtype=float)
+        polylines.append(line)
+    return polylines
+
+
+def _resample_polyline(points: np.ndarray, step_mm: float) -> np.ndarray:
+    if points.shape[0] < 2 or step_mm <= 0:
+        return points
+    diffs = np.diff(points, axis=0)
+    seg_len = np.linalg.norm(diffs, axis=1)
+    s = np.zeros(points.shape[0], dtype=float)
+    s[1:] = np.cumsum(seg_len)
+    total = float(s[-1])
+    if total <= step_mm:
+        return points
+    targets = np.arange(0.0, total, step_mm, dtype=float)
+    if targets.size == 0 or abs(targets[-1] - total) > 1e-6:
+        targets = np.append(targets, total)
+    resampled = np.vstack([np.interp(targets, s, points[:, d]) for d in range(3)]).T
+    return resampled.astype(np.float32)
+
+
+def densify_centerline_vtp(vtp_path: Path, step_mm: float) -> Dict[str, int]:
+    polylines = _read_vtp_polylines(vtp_path)
+    if not polylines:
+        return {"lines": 0, "points": 0}
+
+    out_polylines = [_resample_polyline(poly, step_mm) for poly in polylines]
+
+    points = vtk.vtkPoints()
+    lines = vtk.vtkCellArray()
+    for poly in out_polylines:
+        if poly.shape[0] < 2:
+            continue
+        start_id = points.GetNumberOfPoints()
+        for p in poly:
+            points.InsertNextPoint(float(p[0]), float(p[1]), float(p[2]))
+        line = vtk.vtkPolyLine()
+        line.GetPointIds().SetNumberOfIds(poly.shape[0])
+        for i in range(poly.shape[0]):
+            line.GetPointIds().SetId(i, start_id + i)
+        lines.InsertNextCell(line)
+
+    polydata = vtk.vtkPolyData()
+    polydata.SetPoints(points)
+    polydata.SetLines(lines)
+
+    writer = vtk.vtkXMLPolyDataWriter()
+    writer.SetFileName(str(vtp_path))
+    writer.SetInputData(polydata)
+    writer.Write()
+    return {"lines": int(lines.GetNumberOfCells()), "points": int(points.GetNumberOfPoints())}
 
 
 def centerlines_from_surface_with_gt(
@@ -331,53 +578,11 @@ def centerlines_from_surface(surface_path: Path, output_path: Path, mask_path: P
             "target_points": [t.tolist() for t in targets],
         }
 
-    # Fallback: use vmtkcenterlineimage for closed surfaces.
-    seed_mode = "centerlineimage"
-    spacing_candidates = [
-        (0.3, 0.3, 0.3),
-        mask_spacing(mask_path),
-        (0.6, 0.6, 0.6),
-    ]
-    last_error = None
-    for spacing in spacing_candidates:
-        tmp_image = output_path.with_suffix(".centerlineimage.vti")
-        cmd = [
-            "conda",
-            "run",
-            "-n",
-            "vessel_seg",
-            "vmtkcenterlineimage",
-            "-ifile",
-            str(surface_path),
-            "-ofile",
-            str(tmp_image),
-            "-spacing",
-            f"{spacing[0]:.6f}",
-            f"{spacing[1]:.6f}",
-            f"{spacing[2]:.6f}",
-        ]
-        try:
-            run(cmd)
-            num_points = centerlineimage_to_vtp(tmp_image, output_path)
-            try:
-                tmp_image.unlink()
-            except OSError:
-                pass
-            return {
-                "seed_mode": seed_mode,
-                "profiles": 0,
-                "points": num_points,
-                "spacing": spacing,
-            }
-        except Exception as exc:  # pragma: no cover - best effort fallback
-            last_error = exc
-            try:
-                tmp_image.unlink()
-            except OSError:
-                pass
-            continue
-
-    raise RuntimeError(f"centerlineimage failed after retries: {last_error}") from last_error
+    # Fallback: use in-repo mask skeleton extraction when surface has no open profiles.
+    report = centerlines_from_mask_skeleton(mask_path, output_path)
+    report["profiles"] = 0
+    report["surface_fallback"] = True
+    return report
 
 
 def main() -> None:
@@ -398,6 +603,12 @@ def main() -> None:
         type=Path,
         default=None,
         help="Optional GT centerline VTP to seed vmtkcenterlines.",
+    )
+    parser.add_argument(
+        "--resample-step-mm",
+        type=float,
+        default=0.5,
+        help="Resample polyline spacing in mm for dense output (<=0 disables).",
     )
     args = parser.parse_args()
 
@@ -423,6 +634,12 @@ def main() -> None:
         report = centerlines_from_surface_with_gt(surface_path, out, args.mask, args.gt_centerline)
     else:
         report = centerlines_from_surface(surface_path, out, args.mask)
+
+    if args.resample_step_mm is not None and args.resample_step_mm > 0:
+        dense_stats = densify_centerline_vtp(out, args.resample_step_mm)
+        report["resample_step_mm"] = float(args.resample_step_mm)
+        report["resampled_points"] = dense_stats["points"]
+        report["resampled_lines"] = dense_stats["lines"]
 
     if args.report is not None:
         args.report.parent.mkdir(parents=True, exist_ok=True)

@@ -41,6 +41,7 @@ class CentrelineParams:
     """Tunable parameters for centreline extraction and resampling."""
 
     min_length_mm: float = 5.0
+    short_bridge_max_mm: float = 6.0
     closing_iterations: int = 1
     smooth_sigma_mm: float = 0.8
     adaptive_min_step_mm: float = 0.6
@@ -195,6 +196,53 @@ def _compute_length(points: np.ndarray) -> float:
     if points.shape[0] < 2:
         return 0.0
     return float(np.linalg.norm(np.diff(points, axis=0), axis=1).sum())
+
+
+def _prune_short_bridge_segments(
+    branch_items: List[Dict[str, object]],
+    *,
+    short_bridge_max_mm: float,
+) -> List[Dict[str, object]]:
+    """Remove very short junction-to-junction connector stubs.
+
+    Skeleton graphs around bifurcations may introduce tiny bridge segments
+    between neighboring high-degree nodes. These segments are usually not
+    meaningful anatomical branches and can inflate branch count by one.
+    """
+
+    if short_bridge_max_mm <= 0.0 or len(branch_items) < 3:
+        return branch_items
+
+    items = list(branch_items)
+    while len(items) >= 3:
+        endpoint_degree: Dict[int, int] = {}
+        for item in items:
+            start_node = int(item["start_node"])
+            end_node = int(item["end_node"])
+            endpoint_degree[start_node] = endpoint_degree.get(start_node, 0) + 1
+            endpoint_degree[end_node] = endpoint_degree.get(end_node, 0) + 1
+
+        candidates: List[Tuple[int, float]] = []
+        for idx, item in enumerate(items):
+            branch = item["branch"]
+            assert isinstance(branch, Branch)
+            start_node = int(item["start_node"])
+            end_node = int(item["end_node"])
+            if (
+                branch.length_mm <= short_bridge_max_mm
+                and endpoint_degree.get(start_node, 0) >= 2
+                and endpoint_degree.get(end_node, 0) >= 2
+            ):
+                candidates.append((idx, branch.length_mm))
+
+        if not candidates:
+            break
+
+        # Remove the shortest candidate first, then recompute incidence.
+        remove_idx, _ = min(candidates, key=lambda pair: (pair[1], pair[0]))
+        items.pop(remove_idx)
+
+    return items
 
 
 def _deduplicate_points(points: np.ndarray) -> np.ndarray:
@@ -878,7 +926,7 @@ def extract_branches(seg_path: str | Path, params: CentrelineParams | None = Non
     affine = image.affine
     inv_affine = np.linalg.inv(affine)
     spacing = image.header.get_zooms()[:3]
-    branches: List[Branch] = []
+    branch_items: List[Dict[str, object]] = []
 
     for idx, path in enumerate(branches_idx):
         coords = np.vstack([graph.nodes[node]["coord"] for node in path])
@@ -909,7 +957,19 @@ def extract_branches(seg_path: str | Path, params: CentrelineParams | None = Non
             length_mm=length,
             source="observed",
         )
-        branches.append(branch)
+        branch_items.append(
+            {
+                "branch": branch,
+                "start_node": int(path[0]),
+                "end_node": int(path[-1]),
+            }
+        )
+
+    branch_items = _prune_short_bridge_segments(
+        branch_items,
+        short_bridge_max_mm=params.short_bridge_max_mm,
+    )
+    branches = [item["branch"] for item in branch_items]
 
     if not branches:
         raise RuntimeError("No branches extracted. Verify segmentation quality and preprocessing steps.")
@@ -1189,6 +1249,7 @@ def reconstruct_from_features(
 def _run_extract(args: argparse.Namespace) -> None:
     centreline_params = CentrelineParams(
         min_length_mm=args.min_length,
+        short_bridge_max_mm=args.short_bridge_max_mm,
         closing_iterations=args.closing_iterations,
         smooth_sigma_mm=args.smooth_sigma_mm,
         adaptive_min_step_mm=args.adaptive_min_step,
@@ -1239,6 +1300,12 @@ def _build_parser() -> argparse.ArgumentParser:
     extract_parser.add_argument("--seg", required=True, help="Path to segmentation NIfTI file.")
     extract_parser.add_argument("--out", required=True, help="Output directory for features.")
     extract_parser.add_argument("--min-length", type=float, default=5.0, help="Minimum branch length to keep (mm).")
+    extract_parser.add_argument(
+        "--short-bridge-max-mm",
+        type=float,
+        default=6.0,
+        help="Remove short junction-to-junction bridge segments up to this length (<=0 disables).",
+    )
     extract_parser.add_argument(
         "--closing-iterations",
         type=int,
