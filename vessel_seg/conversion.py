@@ -48,12 +48,9 @@ def build_arg_parser() -> argparse.ArgumentParser:
 def main() -> None:
     """Command-line entry point for the converter."""
     args = build_arg_parser().parse_args()
+
     convert_nrrd_to_nii(args.input_dir, args.output_dir)
 
 
 if __name__ == "__main__":
-
-# Example usage (command-line free):
-    input_folder = "/Users/chenyihao/mycode/vessel_seg/ASOCA2020/Diseased/Annotations"
-    output_folder = "/Users/chenyihao/mycode/vessel_seg/ASOCA2020/Diseased/Annotations_nii"
-    convert_nrrd_to_nii(input_folder, output_folder)
+    main()
