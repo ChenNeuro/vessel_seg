@@ -22,6 +22,8 @@ outputs/
 segmentations/
 scripts/checkpoints/
 third_party/nnUNet/
+third_party/
+actions-runner/
 
 # IDE / OS noise
 .vscode/
