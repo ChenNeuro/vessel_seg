@@ -17,8 +17,10 @@ import numpy as np
 import SimpleITK as sitk
 try:
     from skimage.morphology import skeletonize_3d  # type: ignore
-except Exception:  # fallback for newer scikit-image
-    from skimage.morphology._skeletonize import skeletonize_3d  # type: ignore
+    _HAS_SKEL3D = True
+except Exception:
+    _HAS_SKEL3D = False
+    from skimage.morphology import skeletonize  # type: ignore
 import vtk
 
 
@@ -27,7 +29,12 @@ def mask_to_skeleton_points(mask_path: Path) -> tuple[np.ndarray, np.ndarray, np
     arr = sitk.GetArrayFromImage(img)  # z,y,x
     if arr.max() == 0:
         raise ValueError("Mask is empty.")
-    skel = skeletonize_3d(arr > 0)
+    if _HAS_SKEL3D:
+        skel = skeletonize_3d(arr > 0)
+    else:
+        # Fallback: slice-wise skeletonization (2D) along z-axis.
+        skel_slices = [skeletonize(arr[z] > 0) for z in range(arr.shape[0])]
+        skel = np.stack(skel_slices, axis=0)
     idx = np.argwhere(skel)  # (N,3) z,y,x
     if idx.size == 0:
         raise ValueError("Skeleton is empty.")
