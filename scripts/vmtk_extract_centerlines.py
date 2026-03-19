@@ -375,25 +375,36 @@ def centerlineimage_to_vtp(image_path: Path, output_path: Path) -> int:
     return int(coords.shape[0])
 
 
-def write_vtp_polylines(polylines: List[np.ndarray], output_path: Path) -> dict:
+def write_vtp_polylines(polylines: List[np.ndarray], output_path: Path, merge_point_tol: float = 1e-6) -> dict:
     points = vtk.vtkPoints()
     lines = vtk.vtkCellArray()
-    total_points = 0
     total_lines = 0
+    use_merge = float(merge_point_tol) > 0
+    inv_tol = 1.0 / float(merge_point_tol) if use_merge else 0.0
+    point_id_map: Dict[Tuple[int, int, int], int] = {}
 
     for poly in polylines:
         if poly.shape[0] < 2:
             continue
-        start_id = points.GetNumberOfPoints()
-        for p in poly:
-            points.InsertNextPoint(float(p[0]), float(p[1]), float(p[2]))
         line = vtk.vtkPolyLine()
         line.GetPointIds().SetNumberOfIds(poly.shape[0])
         for i in range(poly.shape[0]):
-            line.GetPointIds().SetId(i, start_id + i)
+            p = poly[i]
+            if use_merge:
+                key = (
+                    int(np.round(float(p[0]) * inv_tol)),
+                    int(np.round(float(p[1]) * inv_tol)),
+                    int(np.round(float(p[2]) * inv_tol)),
+                )
+                pid = point_id_map.get(key)
+                if pid is None:
+                    pid = int(points.InsertNextPoint(float(p[0]), float(p[1]), float(p[2])))
+                    point_id_map[key] = pid
+            else:
+                pid = int(points.InsertNextPoint(float(p[0]), float(p[1]), float(p[2])))
+            line.GetPointIds().SetId(i, pid)
         lines.InsertNextCell(line)
         total_lines += 1
-        total_points += int(poly.shape[0])
 
     poly = vtk.vtkPolyData()
     poly.SetPoints(points)
@@ -403,14 +414,15 @@ def write_vtp_polylines(polylines: List[np.ndarray], output_path: Path) -> dict:
     writer.SetFileName(str(output_path))
     writer.SetInputData(poly)
     writer.Write()
-    return {"points": total_points, "lines": total_lines}
+    return {"points": int(points.GetNumberOfPoints()), "lines": total_lines}
 
 
-def centerlines_from_mask_skeleton(mask_path: Path, output_path: Path) -> dict:
+def centerlines_from_mask_skeleton(mask_path: Path, output_path: Path, skeleton_max_components: int = 2) -> dict:
     from vessel_seg.shape import CentrelineParams, extract_branches
 
     params = CentrelineParams(
         min_length_mm=5.0,
+        max_components=max(1, int(skeleton_max_components)),
         short_bridge_max_mm=6.0,
         closing_iterations=1,
         smooth_sigma_mm=0.8,
@@ -431,9 +443,10 @@ def centerlines_from_mask_skeleton(mask_path: Path, output_path: Path) -> dict:
         points = origin[None, :] + branch.voxel_points.astype(float) * spacing[None, :]
         polylines.append(points.astype(np.float32))
 
-    stats = write_vtp_polylines(polylines, output_path)
+    stats = write_vtp_polylines(polylines, output_path, merge_point_tol=1e-6)
     return {
         "seed_mode": "mask_skeleton",
+        "skeleton_max_components": int(max(1, int(skeleton_max_components))),
         "branch_count": len(polylines),
         "points": int(stats["points"]),
         "lines": int(stats["lines"]),
@@ -480,30 +493,7 @@ def densify_centerline_vtp(vtp_path: Path, step_mm: float) -> Dict[str, int]:
         return {"lines": 0, "points": 0}
 
     out_polylines = [_resample_polyline(poly, step_mm) for poly in polylines]
-
-    points = vtk.vtkPoints()
-    lines = vtk.vtkCellArray()
-    for poly in out_polylines:
-        if poly.shape[0] < 2:
-            continue
-        start_id = points.GetNumberOfPoints()
-        for p in poly:
-            points.InsertNextPoint(float(p[0]), float(p[1]), float(p[2]))
-        line = vtk.vtkPolyLine()
-        line.GetPointIds().SetNumberOfIds(poly.shape[0])
-        for i in range(poly.shape[0]):
-            line.GetPointIds().SetId(i, start_id + i)
-        lines.InsertNextCell(line)
-
-    polydata = vtk.vtkPolyData()
-    polydata.SetPoints(points)
-    polydata.SetLines(lines)
-
-    writer = vtk.vtkXMLPolyDataWriter()
-    writer.SetFileName(str(vtp_path))
-    writer.SetInputData(polydata)
-    writer.Write()
-    return {"lines": int(lines.GetNumberOfCells()), "points": int(points.GetNumberOfPoints())}
+    return write_vtp_polylines(out_polylines, vtp_path, merge_point_tol=1e-6)
 
 
 def centerlines_from_surface_with_gt(
@@ -545,7 +535,12 @@ def centerlines_from_surface_with_gt(
     }
 
 
-def centerlines_from_surface(surface_path: Path, output_path: Path, mask_path: Path) -> dict:
+def centerlines_from_surface(
+    surface_path: Path,
+    output_path: Path,
+    mask_path: Path,
+    skeleton_max_components: int = 2,
+) -> dict:
     surface = read_polydata(surface_path)
     profiles = extract_open_profiles(surface)
     seed_mode = "openprofiles"
@@ -579,7 +574,11 @@ def centerlines_from_surface(surface_path: Path, output_path: Path, mask_path: P
         }
 
     # Fallback: use in-repo mask skeleton extraction when surface has no open profiles.
-    report = centerlines_from_mask_skeleton(mask_path, output_path)
+    report = centerlines_from_mask_skeleton(
+        mask_path,
+        output_path,
+        skeleton_max_components=skeleton_max_components,
+    )
     report["profiles"] = 0
     report["surface_fallback"] = True
     return report
@@ -610,6 +609,12 @@ def main() -> None:
         default=0.5,
         help="Resample polyline spacing in mm for dense output (<=0 disables).",
     )
+    parser.add_argument(
+        "--skeleton-max-components",
+        type=int,
+        default=2,
+        help="When using mask skeleton fallback, keep top-K largest connected components.",
+    )
     args = parser.parse_args()
 
     out = args.out
@@ -633,7 +638,12 @@ def main() -> None:
     if args.gt_centerline is not None:
         report = centerlines_from_surface_with_gt(surface_path, out, args.mask, args.gt_centerline)
     else:
-        report = centerlines_from_surface(surface_path, out, args.mask)
+        report = centerlines_from_surface(
+            surface_path,
+            out,
+            args.mask,
+            skeleton_max_components=args.skeleton_max_components,
+        )
 
     if args.resample_step_mm is not None and args.resample_step_mm > 0:
         dense_stats = densify_centerline_vtp(out, args.resample_step_mm)

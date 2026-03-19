@@ -4,6 +4,7 @@ from .conversion import convert_nrrd_to_nii
 from .coronary_tree import CoronaryTree, CoronaryTreeNode, SegmentAssignment
 from .branch_model import BranchShapeModel, SimpleLengthRadiusModel
 from .config import ProjectPaths
+from .clinical_completion import ClinicalCompletionConfig, run_clinical_completion_workflow
 from .graph_structure import Branch as TreeBranch
 from .graph_structure import CoronaryTree as CenterlineTree
 from .io import VolumeData, load_mask, load_volume, save_nifti
@@ -36,12 +37,14 @@ __all__ = [
     "SimpleLengthRadiusModel",
     "TreeBranch",
     "CenterlineTree",
+    "ClinicalCompletionConfig",
     "ProjectPaths",
     "VolumeData",
     "load_volume",
     "load_mask",
     "save_nifti",
     "CoronaryTreePrior",
+    "run_clinical_completion_workflow",
 ]
 
 # Optional heavy modules (scipy/networkx/pyvista-dependent) are loaded lazily.

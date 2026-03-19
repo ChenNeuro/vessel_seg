@@ -73,6 +73,29 @@ python scripts/aggregate_branch_datasets.py \
 - `scripts/`：流水线各步骤脚本（提取中心线、建树、分支张量、相似性、可视化）。
 - `notebooks/workflow_demo.ipynb`：运行以上步骤的示例 Notebook（需 GUI/交互环境）。
 
+## Agent 协作
+- 统一仓库协作规范：`AGENTS.md`
+- Claude 适配：`CLAUDE.md`
+- Gemini 适配：`GEMINI.md`
+- Cursor 适配：`.cursorrules`
+- GitHub Copilot 适配：`.github/copilot-instructions.md`
+- 项目总设计文档：`docs/coronary_analysis_master_blueprint.md`
+- 数据/输出整理规范：`docs/data_output_reorganization.md`
+
 ## 训练/建模思路（对应论文）
 - 树先验：统计 {parent, λ, 分叉角度}。
 - 分支形状先验：将 `radii(K×M)` 张量做降维（PCA/GP/Fourier），得到低维 latent，后续可训练生成/回归模型。
+
+## TotalSeg 量化流水线（Step1~Step5）
+- 文档：`docs/totalseg_quantitative_pipeline.md`
+- Slicer 实操：`docs/totalseg_slicer_guide.md`
+- 统一入口：`scripts/quant_pipeline.py`
+- 第 2 步（TotalSeg mask -> 中心线量化）：
+```bash
+python scripts/step2_centerline_totalseg.py \
+  --totalseg-mask <totalseg_mask.nii.gz> \
+  --gt-centerline <gt_centerline.vtp> \
+  --out-dir outputs/quant/<case> \
+  --backend skeleton \
+  --thr 1.0
+```

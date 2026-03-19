@@ -1,0 +1,125 @@
+{
+  "branch_count": 17,
+  "branch_meshes": [
+    {
+      "branch_name": "Branch_00",
+      "mesh_file": "Branch_00.vtp",
+      "n_points": 30118,
+      "n_cells": 59028,
+      "length_mm": 92.59572504037644
+    },
+    {
+      "branch_name": "Branch_01",
+      "mesh_file": "Branch_01.vtp",
+      "n_points": 30264,
+      "n_cells": 60032,
+      "length_mm": 84.48147872357487
+    },
+    {
+      "branch_name": "Branch_02",
+      "mesh_file": "Branch_02.vtp",
+      "n_points": 30245,
+      "n_cells": 59724,
+      "length_mm": 68.70803319093977
+    },
+    {
+      "branch_name": "Branch_03",
+      "mesh_file": "Branch_03.vtp",
+      "n_points": 30249,
+      "n_cells": 59822,
+      "length_mm": 65.00120877970195
+    },
+    {
+      "branch_name": "Branch_04",
+      "mesh_file": "Branch_04.vtp",
+      "n_points": 30243,
+      "n_cells": 60018,
+      "length_mm": 45.77169760762176
+    },
+    {
+      "branch_name": "Branch_05",
+      "mesh_file": "Branch_05.vtp",
+      "n_points": 30249,
+      "n_cells": 59982,
+      "length_mm": 39.18158561890654
+    },
+    {
+      "branch_name": "Branch_06",
+      "mesh_file": "Branch_06.vtp",
+      "n_points": 30245,
+      "n_cells": 60040,
+      "length_mm": 34.251914450874445
+    },
+    {
+      "branch_name": "Branch_07",
+      "mesh_file": "Branch_07.vtp",
+      "n_points": 30254,
+      "n_cells": 58670,
+      "length_mm": 32.82346727814119
+    },
+    {
+      "branch_name": "Branch_08",
+      "mesh_file": "Branch_08.vtp",
+      "n_points": 30313,
+      "n_cells": 60048,
+      "length_mm": 29.15412858928812
+    },
+    {
+      "branch_name": "Branch_10",
+      "mesh_file": "Branch_10.vtp",
+      "n_points": 30257,
+      "n_cells": 60038,
+      "length_mm": 25.239500289617787
+    },
+    {
+      "branch_name": "Branch_09",
+      "mesh_file": "Branch_09.vtp",
+      "n_points": 30247,
+      "n_cells": 60040,
+      "length_mm": 24.86733230963149
+    },
+    {
+      "branch_name": "Branch_11",
+      "mesh_file": "Branch_11.vtp",
+      "n_points": 30249,
+      "n_cells": 60048,
+      "length_mm": 24.25109762763398
+    },
+    {
+      "branch_name": "Branch_12",
+      "mesh_file": "Branch_12.vtp",
+      "n_points": 30243,
+      "n_cells": 60044,
+      "length_mm": 20.027419989112047
+    },
+    {
+      "branch_name": "Branch_14",
+      "mesh_file": "Branch_14.vtp",
+      "n_points": 30326,
+      "n_cells": 60016,
+      "length_mm": 15.064809351739411
+    },
+    {
+      "branch_name": "Branch_13",
+      "mesh_file": "Branch_13.vtp",
+      "n_points": 30246,
+      "n_cells": 60046,
+      "length_mm": 14.558566273082096
+    },
+    {
+      "branch_name": "Branch_15",
+      "mesh_file": "Branch_15.vtp",
+      "n_points": 30247,
+      "n_cells": 60046,
+      "length_mm": 12.464874168799707
+    },
+    {
+      "branch_name": "Branch_16",
+      "mesh_file": "Branch_16.vtp",
+      "n_points": 30245,
+      "n_cells": 60046,
+      "length_mm": 11.315914719074554
+    }
+  ],
+  "merged_mesh": "merged.vtp"
+}

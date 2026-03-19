@@ -1,0 +1,13 @@
+{
+  "stage": "step4_features",
+  "pred_features": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/quant/Normal_2/features_pred",
+  "gt_features": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/quant/Normal_2/features_gt",
+  "metrics": {
+    "pred_branch_count": 12,
+    "gt_branch_count": 12,
+    "branch_count_abs_diff": 0,
+    "descriptor_l1": 2.720516332269957,
+    "descriptor_l2": 6.931754755119991,
+    "descriptor_cosine": 0.958310426928619
+  }
+}

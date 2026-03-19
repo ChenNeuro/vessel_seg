@@ -1,0 +1,814 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at_utc": "2026-03-13T04:38:39.629332+00:00",
+  "case_id": "Normal_1",
+  "inputs": {
+    "ct_path": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/ASOCA2020/Normal/CTCA_nii/Normal_1.nii.gz",
+    "mask_path": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/ASOCA2020/Normal/Annotations_nii/Normal_1.nii.gz"
+  },
+  "config": {
+    "case_id": "Normal_1",
+    "ct_path": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/ASOCA2020/Normal/CTCA_nii/Normal_1.nii.gz",
+    "mask_path": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/ASOCA2020/Normal/Annotations_nii/Normal_1.nii.gz",
+    "out_dir": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/analysis/clinical_completion_default",
+    "centerline_backend": "vessel_sort",
+    "min_length_mm": 10.0,
+    "max_components": 2,
+    "closing_iterations": 2,
+    "smooth_sigma_mm": 0.8,
+    "adaptive_min_step_mm": 0.6,
+    "adaptive_max_step_mm": 2.5,
+    "adaptive_curvature_alpha": 2.0,
+    "num_samples": 120,
+    "num_angle_bins": 72,
+    "patch_radius_mm": 3.5,
+    "half_thickness_mm": 1.2,
+    "radius_clip_factor": 1.8,
+    "endpoint_trim_mm": 1.5,
+    "junction_distance_mm": 1.5,
+    "junction_inherit_mm": 1.5,
+    "pca_components": 8,
+    "confidence_threshold": 0.4,
+    "mesh_target_samples": 140,
+    "mesh_smoothing": 0.0,
+    "mesh_min_valid": 3,
+    "mesh_interp_kind": "cubic",
+    "mesh_angular_upsample": 3,
+    "mesh_angular_smoothing": 1.0,
+    "mesh_min_radius_ratio": 0.08,
+    "mesh_angular_gap_fill": 2,
+    "mesh_axial_gap_fill": 1,
+    "top_unfold_branches": 3,
+    "longitudinal_width_mm": 10.0,
+    "longitudinal_slab_mm": 3.0,
+    "longitudinal_out_width_px": 128,
+    "wall_sample_relative_radii": [
+      0.7,
+      0.85,
+      1.0
+    ],
+    "high_hu_threshold": 350.0
+  },
+  "stages": {
+    "centerline_extraction": {
+      "backend": "vessel_sort",
+      "branch_count": 17,
+      "branch_names": [
+        "Branch_00",
+        "Branch_01",
+        "Branch_02",
+        "Branch_03",
+        "Branch_04",
+        "Branch_05",
+        "Branch_06",
+        "Branch_07",
+        "Branch_08",
+        "Branch_10",
+        "Branch_09",
+        "Branch_11",
+        "Branch_12",
+        "Branch_14",
+        "Branch_13",
+        "Branch_15",
+        "Branch_16"
+      ],
+      "lengths_mm": [
+        92.59572504037644,
+        84.48147872357487,
+        68.70803319093977,
+        65.00120877970195,
+        45.77169760762176,
+        39.18158561890654,
+        34.251914450874445,
+        32.82346727814119,
+        29.15412858928812,
+        25.239500289617787,
+        24.86733230963149,
+        24.25109762763398,
+        20.027419989112047,
+        15.064809351739411,
+        14.558566273082096,
+        12.464874168799707,
+        11.315914719074554
+      ],
+      "tree_json": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/analysis/clinical_completion_default/centerline_sort/tree.json",
+      "branches_dir": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/analysis/clinical_completion_default/centerline_sort/branches",
+      "source_extractor": "vessel_seg.shape.extract_branches",
+      "source_branch_count": 17,
+      "coordinate_transform": "native nibabel RAS world coordinates",
+      "dropped_start_clusters": {},
+      "dropped_parent_overlap": {},
+      "branch_records": [
+        {
+          "branch_id": 0,
+          "name": "Branch_00",
+          "length_mm": 92.59572504037644,
+          "parent_id": null,
+          "lambda_pos": null,
+          "theta_deg": null,
+          "phi_deg": null
+        },
+        {
+          "branch_id": 1,
+          "name": "Branch_01",
+          "length_mm": 84.48147872357487,
+          "parent_id": 0,
+          "lambda_pos": 0.9999999998920036,
+          "theta_deg": 20.272746605183492,
+          "phi_deg": -116.0354522657247
+        },
+        {
+          "branch_id": 2,
+          "name": "Branch_02",
+          "length_mm": 68.70803319093977,
+          "parent_id": null,
+          "lambda_pos": null,
+          "theta_deg": null,
+          "phi_deg": null
+        },
+        {
+          "branch_id": 3,
+          "name": "Branch_03",
+          "length_mm": 65.00120877970195,
+          "parent_id": null,
+          "lambda_pos": null,
+          "theta_deg": null,
+          "phi_deg": null
+        },
+        {
+          "branch_id": 4,
+          "name": "Branch_04",
+          "length_mm": 45.77169760762176,
+          "parent_id": 0,
+          "lambda_pos": 0.0,
+          "theta_deg": 113.50599215649264,
+          "phi_deg": 112.05918706175326
+        },
+        {
+          "branch_id": 5,
+          "name": "Branch_05",
+          "length_mm": 39.18158561890654,
+          "parent_id": 0,
+          "lambda_pos": 0.0,
+          "theta_deg": 143.86152084227965,
+          "phi_deg": -20.95689340615324
+        },
+        {
+          "branch_id": 6,
+          "name": "Branch_06",
+          "length_mm": 34.251914450874445,
+          "parent_id": null,
+          "lambda_pos": null,
+          "theta_deg": null,
+          "phi_deg": null
+        },
+        {
+          "branch_id": 7,
+          "name": "Branch_07",
+          "length_mm": 32.82346727814119,
+          "parent_id": null,
+          "lambda_pos": null,
+          "theta_deg": null,
+          "phi_deg": null
+        },
+        {
+          "branch_id": 8,
+          "name": "Branch_08",
+          "length_mm": 29.15412858928812,
+          "parent_id": null,
+          "lambda_pos": null,
+          "theta_deg": null,
+          "phi_deg": null
+        },
+        {
+          "branch_id": 10,
+          "name": "Branch_10",
+          "length_mm": 25.239500289617787,
+          "parent_id": 8,
+          "lambda_pos": 0.0,
+          "theta_deg": 49.42909936992914,
+          "phi_deg": 115.25549014922441
+        },
+        {
+          "branch_id": 9,
+          "name": "Branch_09",
+          "length_mm": 24.86733230963149,
+          "parent_id": 7,
+          "lambda_pos": 0.9999999996953399,
+          "theta_deg": 85.44697379514605,
+          "phi_deg": -144.1476914171877
+        },
+        {
+          "branch_id": 11,
+          "name": "Branch_11",
+          "length_mm": 24.25109762763398,
+          "parent_id": 6,
+          "lambda_pos": 0.005283808235137605,
+          "theta_deg": 79.63427858213143,
+          "phi_deg": 21.148164172776085
+        },
+        {
+          "branch_id": 12,
+          "name": "Branch_12",
+          "length_mm": 20.027419989112047,
+          "parent_id": null,
+          "lambda_pos": null,
+          "theta_deg": null,
+          "phi_deg": null
+        },
+        {
+          "branch_id": 14,
+          "name": "Branch_14",
+          "length_mm": 15.064809351739411,
+          "parent_id": null,
+          "lambda_pos": null,
+          "theta_deg": null,
+          "phi_deg": null
+        },
+        {
+          "branch_id": 13,
+          "name": "Branch_13",
+          "length_mm": 14.558566273082096,
+          "parent_id": 0,
+          "lambda_pos": 0.9999999998920036,
+          "theta_deg": 71.90173188950504,
+          "phi_deg": 52.00599349447004
+        },
+        {
+          "branch_id": 15,
+          "name": "Branch_15",
+          "length_mm": 12.464874168799707,
+          "parent_id": 2,
+          "lambda_pos": 0.0009860153923306168,
+          "theta_deg": 75.76089511253358,
+          "phi_deg": 139.74307491316688
+        },
+        {
+          "branch_id": 16,
+          "name": "Branch_16",
+          "length_mm": 11.315914719074554,
+          "parent_id": 8,
+          "lambda_pos": 0.9999999996569955,
+          "theta_deg": 94.11895296867723,
+          "phi_deg": 168.86226586825296
+        }
+      ]
+    },
+    "wall_feature_extraction": {
+      "branch_count": 17,
+      "branches": [
+        {
+          "name": "Branch_00",
+          "length_mm": 92.59572504037644,
+          "confidence": 0.9249999523162842,
+          "feature_file": "Branch_00.npz"
+        },
+        {
+          "name": "Branch_01",
+          "length_mm": 84.48147872357487,
+          "confidence": 1.0,
+          "feature_file": "Branch_01.npz"
+        },
+        {
+          "name": "Branch_02",
+          "length_mm": 68.70803319093977,
+          "confidence": 0.5395833253860474,
+          "feature_file": "Branch_02.npz"
+        },
+        {
+          "name": "Branch_03",
+          "length_mm": 65.00120877970195,
+          "confidence": 0.46932870149612427,
+          "feature_file": "Branch_03.npz"
+        },
+        {
+          "name": "Branch_04",
+          "length_mm": 45.77169760762176,
+          "confidence": 1.0,
+          "feature_file": "Branch_04.npz"
+        },
+        {
+          "name": "Branch_05",
+          "length_mm": 39.18158561890654,
+          "confidence": 1.0,
+          "feature_file": "Branch_05.npz"
+        },
+        {
+          "name": "Branch_06",
+          "length_mm": 34.251914450874445,
+          "confidence": 0.40509262681007385,
+          "feature_file": "Branch_06.npz"
+        },
+        {
+          "name": "Branch_07",
+          "length_mm": 32.82346727814119,
+          "confidence": 0.5055555701255798,
+          "feature_file": "Branch_07.npz"
+        },
+        {
+          "name": "Branch_08",
+          "length_mm": 29.15412858928812,
+          "confidence": 0.8488425016403198,
+          "feature_file": "Branch_08.npz"
+        },
+        {
+          "name": "Branch_10",
+          "length_mm": 25.239500289617787,
+          "confidence": 0.3296296000480652,
+          "feature_file": "Branch_10.npz"
+        },
+        {
+          "name": "Branch_09",
+          "length_mm": 24.86733230963149,
+          "confidence": 1.0,
+          "feature_file": "Branch_09.npz"
+        },
+        {
+          "name": "Branch_11",
+          "length_mm": 24.25109762763398,
+          "confidence": 1.0,
+          "feature_file": "Branch_11.npz"
+        },
+        {
+          "name": "Branch_12",
+          "length_mm": 20.027419989112047,
+          "confidence": 0.3802083432674408,
+          "feature_file": "Branch_12.npz"
+        },
+        {
+          "name": "Branch_14",
+          "length_mm": 15.064809351739411,
+          "confidence": 1.0,
+          "feature_file": "Branch_14.npz"
+        },
+        {
+          "name": "Branch_13",
+          "length_mm": 14.558566273082096,
+          "confidence": 1.0,
+          "feature_file": "Branch_13.npz"
+        },
+        {
+          "name": "Branch_15",
+          "length_mm": 12.464874168799707,
+          "confidence": 1.0,
+          "feature_file": "Branch_15.npz"
+        },
+        {
+          "name": "Branch_16",
+          "length_mm": 11.315914719074554,
+          "confidence": 1.0,
+          "feature_file": "Branch_16.npz"
+        }
+      ],
+      "global_descriptor": "global_descriptor.npy"
+    },
+    "shape_modeling": {
+      "branch_count": 17,
+      "branches": [
+        {
+          "name": "Branch_00",
+          "length_mm": 92.59572504037644,
+          "confidence": 0.9249999523162842,
+          "feature_file": "Branch_00.npz",
+          "reconstruction_mse": 0.19515632092952728,
+          "reconstruction_mae": 0.25183987617492676
+        },
+        {
+          "name": "Branch_01",
+          "length_mm": 84.48147872357487,
+          "confidence": 1.0,
+          "feature_file": "Branch_01.npz",
+          "reconstruction_mse": 0.04535964876413345,
+          "reconstruction_mae": 0.16087548434734344
+        },
+        {
+          "name": "Branch_02",
+          "length_mm": 68.70803319093977,
+          "confidence": 0.5395833253860474,
+          "feature_file": "Branch_02.npz",
+          "reconstruction_mse": 0.10840214043855667,
+          "reconstruction_mae": 0.17502272129058838
+        },
+        {
+          "name": "Branch_03",
+          "length_mm": 65.00120877970195,
+          "confidence": 0.46932870149612427,
+          "feature_file": "Branch_03.npz",
+          "reconstruction_mse": 0.058869101107120514,
+          "reconstruction_mae": 0.1346508115530014
+        },
+        {
+          "name": "Branch_04",
+          "length_mm": 45.77169760762176,
+          "confidence": 1.0,
+          "feature_file": "Branch_04.npz",
+          "reconstruction_mse": 0.038364581763744354,
+          "reconstruction_mae": 0.15193305909633636
+        },
+        {
+          "name": "Branch_05",
+          "length_mm": 39.18158561890654,
+          "confidence": 1.0,
+          "feature_file": "Branch_05.npz",
+          "reconstruction_mse": 0.07816888391971588,
+          "reconstruction_mae": 0.20057590305805206
+        },
+        {
+          "name": "Branch_06",
+          "length_mm": 34.251914450874445,
+          "confidence": 0.40509262681007385,
+          "feature_file": "Branch_06.npz",
+          "reconstruction_mse": 0.2096501886844635,
+          "reconstruction_mae": 0.18963487446308136
+        },
+        {
+          "name": "Branch_07",
+          "length_mm": 32.82346727814119,
+          "confidence": 0.5055555701255798,
+          "feature_file": "Branch_07.npz",
+          "reconstruction_mse": 0.28315797448158264,
+          "reconstruction_mae": 0.27313485741615295
+        },
+        {
+          "name": "Branch_08",
+          "length_mm": 29.15412858928812,
+          "confidence": 0.8488425016403198,
+          "feature_file": "Branch_08.npz",
+          "reconstruction_mse": 0.6246114373207092,
+          "reconstruction_mae": 0.42106038331985474
+        },
+        {
+          "name": "Branch_10",
+          "length_mm": 25.239500289617787,
+          "confidence": 0.3296296000480652,
+          "feature_file": "Branch_10.npz",
+          "reconstruction_mse": 0.36798417568206787,
+          "reconstruction_mae": 0.21804790198802948
+        },
+        {
+          "name": "Branch_09",
+          "length_mm": 24.86733230963149,
+          "confidence": 1.0,
+          "feature_file": "Branch_09.npz",
+          "reconstruction_mse": 0.07999466359615326,
+          "reconstruction_mae": 0.21558965742588043
+        },
+        {
+          "name": "Branch_11",
+          "length_mm": 24.25109762763398,
+          "confidence": 1.0,
+          "feature_file": "Branch_11.npz",
+          "reconstruction_mse": 0.07646828889846802,
+          "reconstruction_mae": 0.2085927128791809
+        },
+        {
+          "name": "Branch_12",
+          "length_mm": 20.027419989112047,
+          "confidence": 0.3802083432674408,
+          "feature_file": "Branch_12.npz",
+          "reconstruction_mse": 0.10213041305541992,
+          "reconstruction_mae": 0.1812131553888321
+        },
+        {
+          "name": "Branch_14",
+          "length_mm": 15.064809351739411,
+          "confidence": 1.0,
+          "feature_file": "Branch_14.npz",
+          "reconstruction_mse": 0.09778346866369247,
+          "reconstruction_mae": 0.23951156437397003
+        },
+        {
+          "name": "Branch_13",
+          "length_mm": 14.558566273082096,
+          "confidence": 1.0,
+          "feature_file": "Branch_13.npz",
+          "reconstruction_mse": 0.057257622480392456,
+          "reconstruction_mae": 0.18540723621845245
+        },
+        {
+          "name": "Branch_15",
+          "length_mm": 12.464874168799707,
+          "confidence": 1.0,
+          "feature_file": "Branch_15.npz",
+          "reconstruction_mse": 0.033354535698890686,
+          "reconstruction_mae": 0.13225144147872925
+        },
+        {
+          "name": "Branch_16",
+          "length_mm": 11.315914719074554,
+          "confidence": 1.0,
+          "feature_file": "Branch_16.npz",
+          "reconstruction_mse": 0.03681176155805588,
+          "reconstruction_mae": 0.13445128500461578
+        }
+      ],
+      "global_descriptor": "global_descriptor.npy",
+      "model": {
+        "components": 8,
+        "explained_variance_ratio": [
+          0.0927555039525032,
+          0.08507481962442398,
+          0.06701134890317917,
+          0.04800992086529732,
+          0.034979455173015594,
+          0.030352279543876648,
+          0.026899823918938637,
+          0.0248473659157753
+        ],
+        "confidence_threshold": 0.4000000059604645,
+        "model_file": "pca_model.npz"
+      }
+    },
+    "mesh_reconstruction": {
+      "original": {
+        "branch_count": 17,
+        "branch_meshes": [
+          {
+            "branch_name": "Branch_00",
+            "mesh_file": "Branch_00.vtp",
+            "n_points": 30118,
+            "n_cells": 59028,
+            "length_mm": 92.59572504037644
+          },
+          {
+            "branch_name": "Branch_01",
+            "mesh_file": "Branch_01.vtp",
+            "n_points": 30264,
+            "n_cells": 60032,
+            "length_mm": 84.48147872357487
+          },
+          {
+            "branch_name": "Branch_02",
+            "mesh_file": "Branch_02.vtp",
+            "n_points": 30245,
+            "n_cells": 59724,
+            "length_mm": 68.70803319093977
+          },
+          {
+            "branch_name": "Branch_03",
+            "mesh_file": "Branch_03.vtp",
+            "n_points": 30249,
+            "n_cells": 59822,
+            "length_mm": 65.00120877970195
+          },
+          {
+            "branch_name": "Branch_04",
+            "mesh_file": "Branch_04.vtp",
+            "n_points": 30243,
+            "n_cells": 60018,
+            "length_mm": 45.77169760762176
+          },
+          {
+            "branch_name": "Branch_05",
+            "mesh_file": "Branch_05.vtp",
+            "n_points": 30249,
+            "n_cells": 59982,
+            "length_mm": 39.18158561890654
+          },
+          {
+            "branch_name": "Branch_06",
+            "mesh_file": "Branch_06.vtp",
+            "n_points": 30245,
+            "n_cells": 60040,
+            "length_mm": 34.251914450874445
+          },
+          {
+            "branch_name": "Branch_07",
+            "mesh_file": "Branch_07.vtp",
+            "n_points": 30254,
+            "n_cells": 58670,
+            "length_mm": 32.82346727814119
+          },
+          {
+            "branch_name": "Branch_08",
+            "mesh_file": "Branch_08.vtp",
+            "n_points": 30313,
+            "n_cells": 60048,
+            "length_mm": 29.15412858928812
+          },
+          {
+            "branch_name": "Branch_10",
+            "mesh_file": "Branch_10.vtp",
+            "n_points": 30257,
+            "n_cells": 60038,
+            "length_mm": 25.239500289617787
+          },
+          {
+            "branch_name": "Branch_09",
+            "mesh_file": "Branch_09.vtp",
+            "n_points": 30247,
+            "n_cells": 60040,
+            "length_mm": 24.86733230963149
+          },
+          {
+            "branch_name": "Branch_11",
+            "mesh_file": "Branch_11.vtp",
+            "n_points": 30249,
+            "n_cells": 60048,
+            "length_mm": 24.25109762763398
+          },
+          {
+            "branch_name": "Branch_12",
+            "mesh_file": "Branch_12.vtp",
+            "n_points": 30243,
+            "n_cells": 60044,
+            "length_mm": 20.027419989112047
+          },
+          {
+            "branch_name": "Branch_14",
+            "mesh_file": "Branch_14.vtp",
+            "n_points": 30326,
+            "n_cells": 60016,
+            "length_mm": 15.064809351739411
+          },
+          {
+            "branch_name": "Branch_13",
+            "mesh_file": "Branch_13.vtp",
+            "n_points": 30246,
+            "n_cells": 60046,
+            "length_mm": 14.558566273082096
+          },
+          {
+            "branch_name": "Branch_15",
+            "mesh_file": "Branch_15.vtp",
+            "n_points": 30247,
+            "n_cells": 60046,
+            "length_mm": 12.464874168799707
+          },
+          {
+            "branch_name": "Branch_16",
+            "mesh_file": "Branch_16.vtp",
+            "n_points": 30245,
+            "n_cells": 60046,
+            "length_mm": 11.315914719074554
+          }
+        ],
+        "merged_mesh": "merged.vtp"
+      },
+      "modeled": {
+        "branch_count": 17,
+        "branch_meshes": [
+          {
+            "branch_name": "Branch_00",
+            "mesh_file": "Branch_00.vtp",
+            "n_points": 30124,
+            "n_cells": 59056,
+            "length_mm": 92.59572504037644
+          },
+          {
+            "branch_name": "Branch_01",
+            "mesh_file": "Branch_01.vtp",
+            "n_points": 30262,
+            "n_cells": 60048,
+            "length_mm": 84.48147872357487
+          },
+          {
+            "branch_name": "Branch_02",
+            "mesh_file": "Branch_02.vtp",
+            "n_points": 30241,
+            "n_cells": 59854,
+            "length_mm": 68.70803319093977
+          },
+          {
+            "branch_name": "Branch_03",
+            "mesh_file": "Branch_03.vtp",
+            "n_points": 30246,
+            "n_cells": 59906,
+            "length_mm": 65.00120877970195
+          },
+          {
+            "branch_name": "Branch_04",
+            "mesh_file": "Branch_04.vtp",
+            "n_points": 30244,
+            "n_cells": 60048,
+            "length_mm": 45.77169760762176
+          },
+          {
+            "branch_name": "Branch_05",
+            "mesh_file": "Branch_05.vtp",
+            "n_points": 30257,
+            "n_cells": 60036,
+            "length_mm": 39.18158561890654
+          },
+          {
+            "branch_name": "Branch_06",
+            "mesh_file": "Branch_06.vtp",
+            "n_points": 30248,
+            "n_cells": 60044,
+            "length_mm": 34.251914450874445
+          },
+          {
+            "branch_name": "Branch_07",
+            "mesh_file": "Branch_07.vtp",
+            "n_points": 30254,
+            "n_cells": 58472,
+            "length_mm": 32.82346727814119
+          },
+          {
+            "branch_name": "Branch_08",
+            "mesh_file": "Branch_08.vtp",
+            "n_points": 30308,
+            "n_cells": 60046,
+            "length_mm": 29.15412858928812
+          },
+          {
+            "branch_name": "Branch_10",
+            "mesh_file": "Branch_10.vtp",
+            "n_points": 30265,
+            "n_cells": 60038,
+            "length_mm": 25.239500289617787
+          },
+          {
+            "branch_name": "Branch_09",
+            "mesh_file": "Branch_09.vtp",
+            "n_points": 30248,
+            "n_cells": 60048,
+            "length_mm": 24.86733230963149
+          },
+          {
+            "branch_name": "Branch_11",
+            "mesh_file": "Branch_11.vtp",
+            "n_points": 30244,
+            "n_cells": 60048,
+            "length_mm": 24.25109762763398
+          },
+          {
+            "branch_name": "Branch_12",
+            "mesh_file": "Branch_12.vtp",
+            "n_points": 30248,
+            "n_cells": 60048,
+            "length_mm": 20.027419989112047
+          },
+          {
+            "branch_name": "Branch_14",
+            "mesh_file": "Branch_14.vtp",
+            "n_points": 30331,
+            "n_cells": 60044,
+            "length_mm": 15.064809351739411
+          },
+          {
+            "branch_name": "Branch_13",
+            "mesh_file": "Branch_13.vtp",
+            "n_points": 30250,
+            "n_cells": 60048,
+            "length_mm": 14.558566273082096
+          },
+          {
+            "branch_name": "Branch_15",
+            "mesh_file": "Branch_15.vtp",
+            "n_points": 30247,
+            "n_cells": 60048,
+            "length_mm": 12.464874168799707
+          },
+          {
+            "branch_name": "Branch_16",
+            "mesh_file": "Branch_16.vtp",
+            "n_points": 30251,
+            "n_cells": 60048,
+            "length_mm": 11.315914719074554
+          }
+        ],
+        "merged_mesh": "merged.vtp"
+      }
+    },
+    "metric_analysis": {
+      "branch_metrics_json": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/analysis/clinical_completion_default/branch_metrics.json",
+      "branch_metrics_csv": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/analysis/clinical_completion_default/branch_metrics.csv",
+      "case_summary_json": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/analysis/clinical_completion_default/case_summary.json",
+      "wall_maps_npz": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/analysis/clinical_completion_default/wall_maps.npz",
+      "longitudinal_sections_npz": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/analysis/clinical_completion_default/longitudinal_sections.npz",
+      "longitudinal_sections_dir": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/analysis/clinical_completion_default/longitudinal_sections"
+    },
+    "dashboard": {
+      "dashboard_png": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/analysis/clinical_completion_default/dashboard.png"
+    }
+  },
+  "durations_sec": {
+    "centerline_extraction": 6.769717678998859,
+    "wall_feature_extraction": 5.582981831999859,
+    "shape_modeling": 0.24068831099975796,
+    "mesh_reconstruction": 18.464476360000845,
+    "metric_analysis": 16.387190438999824,
+    "dashboard": 4.26157172800049
+  },
+  "case_summary": {
+    "branch_count": 17,
+    "total_length_mm": 639.7587540081162,
+    "weighted_mean_diameter_mm": 2.045348905518935,
+    "global_min_diameter_mm": 0.5600763559341431,
+    "global_min_diameter_branch": "Branch_10",
+    "max_stenosis_pct": 71.36055576515001,
+    "max_stenosis_branch": "Branch_10",
+    "max_curvature": 2.933062275699817,
+    "max_curvature_branch": "Branch_16",
+    "mean_wall_hu": 299.0930445053998,
+    "mean_high_hu_wall_fraction": 0.19426742919389978,
+    "top_length_branches": [
+      "Branch_00",
+      "Branch_01",
+      "Branch_02",
+      "Branch_03",
+      "Branch_04"
+    ]
+  }
+}

@@ -110,14 +110,20 @@ def build_parser() -> argparse.ArgumentParser:
         default="vmtk",
         help="Centerline extraction backend in step2.",
     )
+    parser.add_argument(
+        "--step2-skeleton-max-components",
+        type=int,
+        default=2,
+        help="When step2 vmtk fallback uses skeleton extraction, keep top-K connected components.",
+    )
     parser.add_argument("--thr", type=float, default=1.0, help="Distance threshold in mm for coverage metrics.")
 
     parser.add_argument("--repair-prob", type=Path, default=None, help="Probability map for repair; defaults to pred mask.")
     parser.add_argument("--prob-thresh", type=float, default=0.2)
-    parser.add_argument("--max-dist", type=float, default=10.0)
-    parser.add_argument("--max-bridge-len", type=float, default=25.0)
-    parser.add_argument("--max-angle-deg", type=float, default=90.0)
-    parser.add_argument("--max-pairs", type=int, default=50)
+    parser.add_argument("--max-dist", type=float, default=8.0)
+    parser.add_argument("--max-bridge-len", type=float, default=20.0)
+    parser.add_argument("--max-angle-deg", type=float, default=85.0)
+    parser.add_argument("--max-pairs", type=int, default=40)
     parser.add_argument("--w-prob", type=float, default=1.0)
     parser.add_argument("--w-dist", type=float, default=0.6)
     parser.add_argument("--outside-penalty", type=float, default=10.0)
@@ -125,6 +131,21 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--max-curvature", type=float, default=0.4)
     parser.add_argument("--murray-exp", type=float, default=3.0)
     parser.add_argument("--murray-tol", type=float, default=0.5)
+    parser.add_argument("--coord-mode", choices=["auto", "abs_spacing", "affine"], default="auto")
+    parser.add_argument("--no-align-centerline", action="store_true", help="Disable step3 global translation alignment.")
+    parser.add_argument("--align-max-points", type=int, default=8000)
+    parser.add_argument("--align-outside-penalty", type=float, default=20.0)
+    parser.add_argument("--align-steps", default="10,5,2,1,0.5,0.25")
+    parser.add_argument("--densify-step-mm", type=float, default=0.5)
+    parser.add_argument("--bridge-min-count", type=int, default=1)
+    parser.add_argument("--no-bridge-relax-if-none", action="store_true")
+    parser.add_argument("--bridge-relax-dist-factor", type=float, default=1.5)
+    parser.add_argument("--bridge-relax-angle-add", type=float, default=20.0)
+    parser.add_argument("--bridge-relax-len-factor", type=float, default=1.4)
+    parser.add_argument("--bridge-relax-curvature-factor", type=float, default=1.5)
+    parser.add_argument("--bridge-relax-murray-add", type=float, default=0.15)
+    parser.add_argument("--bridge-smooth-iterations", type=int, default=4)
+    parser.add_argument("--regularize-scope", choices=["all", "bridges", "none"], default="bridges")
 
     parser.add_argument("--pred-features-dir", type=Path, default=None, help="Override output dir for predicted features.")
     parser.add_argument("--gt-features-dir", type=Path, default=None, help="Override output dir for GT features.")
@@ -175,6 +196,7 @@ def main() -> None:
             "task": args.task,
             "pred_file": args.pred_file,
             "step2_backend": args.step2_backend,
+            "step2_skeleton_max_components": args.step2_skeleton_max_components,
             "thr": args.thr,
             "skip_existing": bool(args.skip_existing),
             "dry_run": bool(args.dry_run),
@@ -256,13 +278,35 @@ def main() -> None:
                 str(pred_mask),
                 "--out",
                 str(fallback_centerline),
-                "--gt-centerline",
-                str(gt_centerline_path),
                 "--report",
                 str(fallback_report),
+                "--skeleton-max-components",
+                str(max(1, int(args.step2_skeleton_max_components))),
             ]
             _run(cmd, dry_run=args.dry_run)
-            baseline_centerline = fallback_centerline
+
+            fallback_stats = _vtp_stats(fallback_centerline)
+            summary["stages"]["step2_centerline_poly_vtp"] = fallback_stats
+            if (fallback_stats.get("lines") or 0) > 0:
+                baseline_centerline = fallback_centerline
+            else:
+                graph_centerline = out_dir / "step2_centerline" / "pred_centerline_graph.vtp"
+                graph_report = out_dir / "step2_centerline" / "pred_centerline_graph_report.json"
+                cmd = [
+                    sys.executable,
+                    str(ROOT / "scripts/reconstruct_centerline_lines.py"),
+                    "--in-vtp",
+                    str(baseline_centerline),
+                    "--out-vtp",
+                    str(graph_centerline),
+                    "--report",
+                    str(graph_report),
+                ]
+                _run(cmd, dry_run=args.dry_run)
+                graph_stats = _vtp_stats(graph_centerline)
+                summary["stages"]["step2_centerline_graph_vtp"] = graph_stats
+                if (graph_stats.get("lines") or 0) > 0:
+                    baseline_centerline = graph_centerline
 
     if not args.dry_run:
         _ensure_path(baseline_centerline, label="Step2 baseline centerline")
@@ -315,7 +359,37 @@ def main() -> None:
             str(args.murray_exp),
             "--murray_tol",
             str(args.murray_tol),
+            "--coord_mode",
+            str(args.coord_mode),
+            "--align_max_points",
+            str(args.align_max_points),
+            "--align_outside_penalty",
+            str(args.align_outside_penalty),
+            "--align_steps",
+            str(args.align_steps),
+            "--densify_step_mm",
+            str(args.densify_step_mm),
+            "--bridge_min_count",
+            str(args.bridge_min_count),
+            "--bridge_relax_dist_factor",
+            str(args.bridge_relax_dist_factor),
+            "--bridge_relax_angle_add",
+            str(args.bridge_relax_angle_add),
+            "--bridge_relax_len_factor",
+            str(args.bridge_relax_len_factor),
+            "--bridge_relax_curvature_factor",
+            str(args.bridge_relax_curvature_factor),
+            "--bridge_relax_murray_add",
+            str(args.bridge_relax_murray_add),
+            "--bridge_smooth_iterations",
+            str(args.bridge_smooth_iterations),
+            "--regularize_scope",
+            str(args.regularize_scope),
         ]
+        if args.no_align_centerline:
+            cmd.append("--no_align_centerline")
+        if args.no_bridge_relax_if_none:
+            cmd.append("--no_bridge_relax_if_none")
         _run(cmd, dry_run=args.dry_run)
 
         cmd = [

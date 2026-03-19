@@ -22,9 +22,9 @@ import sys
 
 
 def run(cmd, cwd):
-    full_cmd = f"{sys.executable} {cmd}"
-    print(">>>", full_cmd)
-    subprocess.run(full_cmd, shell=True, check=True, cwd=cwd)
+    full_cmd = [sys.executable, *[str(part) for part in cmd]]
+    print(">>>", " ".join(full_cmd))
+    subprocess.run(full_cmd, check=True, cwd=cwd)
 
 
 def main():
@@ -70,24 +70,41 @@ def main():
         out_root.mkdir(parents=True, exist_ok=True)
 
         # 1) tree
-        run(f"scripts/build_centerline_tree.py --vtp {vtp} --out {tree_json} --case {case}", cwd=root)
+        run(["scripts/build_centerline_tree.py", "--vtp", vtp, "--out", tree_json, "--case", case], cwd=root)
         percents = args.start_offset_percent if args.start_offset_percent is not None else [None]
         for pct in percents:
             suffix = "" if pct is None else f"_pct{str(pct).replace('.', 'p')}"
             npz_path = branch_npz if pct is None else out_root / f"branch_dataset{suffix}.npz"
             bdir = branch_dir if pct is None else out_root / f"branches{suffix}"
             sdir = sim_dir if pct is None else out_root / f"similarity{suffix}"
-            pct_arg = f"--start_offset_percent {pct}" if pct is not None else ""
-            align_flag = "" if args.align else "--no_align"
+            pct_args = ["--start_offset_percent", str(pct)] if pct is not None else []
+            align_args = [] if args.align else ["--no_align"]
             # 2) branch dataset
-            run(
-                f"scripts/build_branch_dataset.py --vtp {vtp} --mask {mask} --tree {tree_json} "
-                f"--out {npz_path} --branch_dir {bdir} --case {case} "
-                f"--start_offset {args.start_offset} {pct_arg} --K {args.K} --M {args.M} {align_flag}",
-                cwd=root,
-            )
+            run([
+                "scripts/build_branch_dataset.py",
+                "--vtp",
+                vtp,
+                "--mask",
+                mask,
+                "--tree",
+                tree_json,
+                "--out",
+                npz_path,
+                "--branch_dir",
+                bdir,
+                "--case",
+                case,
+                "--start_offset",
+                args.start_offset,
+                "--K",
+                args.K,
+                "--M",
+                args.M,
+                *pct_args,
+                *align_args,
+            ], cwd=root)
             # 3) similarity
-            run(f"scripts/branch_similarity.py --npz {npz_path} --out_dir {sdir} --pca_dim 8 --heatmap", cwd=root)
+            run(["scripts/branch_similarity.py", "--npz", npz_path, "--out_dir", sdir, "--pca_dim", 8, "--heatmap"], cwd=root)
 
     print("Batch pipeline done.")
 

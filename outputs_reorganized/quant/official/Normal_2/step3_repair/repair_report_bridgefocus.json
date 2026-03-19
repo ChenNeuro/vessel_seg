@@ -1,0 +1,300 @@
+{
+  "prob": "outputs/quant/Normal_2/step1_segmentation/totalseg_output/coronary_arteries.nii.gz",
+  "vtp": "outputs/quant/Normal_2/step2_centerline/pred_centerline.vtp",
+  "out": "outputs/quant/Normal_2/step3_repair/repaired_bridgefocus.vtp",
+  "num_branches": 12,
+  "num_bridges": 6,
+  "params": {
+    "prob_thresh": 0.2,
+    "max_dist": 10.0,
+    "max_bridge_len": 25.0,
+    "max_angle_deg": 90.0,
+    "w_prob": 1.0,
+    "w_dist": 0.6,
+    "outside_penalty": 10.0,
+    "smooth_window": 5,
+    "max_curvature": 0.4,
+    "murray_exp": 3.0,
+    "murray_tol": 0.5,
+    "junction_snap_tol": 1.0,
+    "junction_blend_steps": 3,
+    "regularize_curvature": 0.45,
+    "regularize_iterations": 3,
+    "min_branch_length": 0.0,
+    "coord_mode": "auto",
+    "align_centerline": true,
+    "align_max_points": 8000,
+    "align_outside_penalty": 20.0,
+    "align_steps": "10,5,2,1,0.5,0.25",
+    "densify_step_mm": 0.5,
+    "bridge_min_count": 1,
+    "bridge_relax_if_none": true,
+    "bridge_relax_dist_factor": 1.5,
+    "bridge_relax_angle_add": 20.0,
+    "bridge_relax_len_factor": 1.4,
+    "bridge_relax_curvature_factor": 1.5,
+    "bridge_relax_murray_add": 0.15,
+    "bridge_smooth_iterations": 4,
+    "regularize_scope": "bridges"
+  },
+  "coordinate_mode_info": {
+    "selected_mode": "abs_spacing",
+    "candidates": {
+      "abs_spacing": {
+        "score": 0.003860977165487278,
+        "inside_ratio": 0.9980694980694981,
+        "mean_prob": 0.9980695247650146
+      },
+      "affine": {
+        "score": Infinity,
+        "inside_ratio": 0.0,
+        "mean_prob": 0.0
+      }
+    }
+  },
+  "alignment": {
+    "enabled": true,
+    "init_shift_world": [
+      -18.799816608428955,
+      -0.028562724590301514,
+      -5.077610015869141
+    ],
+    "best_shift_world": [
+      0.20018339157104492,
+      -0.2785627245903015,
+      -0.07761001586914062
+    ],
+    "best_score": 0.0,
+    "inside_ratio": 1.0,
+    "mean_prob": 1.0,
+    "num_samples": 518,
+    "steps_mm": [
+      10.0,
+      5.0,
+      2.0,
+      1.0,
+      0.5,
+      0.25
+    ]
+  },
+  "alignment_applied_to_output": true,
+  "snap_stats": {
+    "clusters": 12,
+    "snapped_endpoints": 31
+  },
+  "regularize_stats": {
+    "adjusted_branches": 4,
+    "max_curvature_before": 19.03256347990121,
+    "max_curvature_after": 0.38486230058395954,
+    "scope_count": 6,
+    "scope": "bridges"
+  },
+  "removed_short_branches": 0,
+  "candidate_stats": {
+    "candidate_pairs_prefiltered": 15,
+    "valid_routes": 6,
+    "selected_routes": 6,
+    "rejected_reasons": {
+      "routing_failed": 0,
+      "bridge_len_outside_range": 5,
+      "curvature_too_high": 1,
+      "murray_too_high": 3
+    },
+    "passes": [
+      {
+        "name": "strict",
+        "candidate_pairs_prefiltered": 15,
+        "valid_routes": 6,
+        "rejected_reasons": {
+          "routing_failed": 0,
+          "bridge_len_outside_range": 5,
+          "curvature_too_high": 1,
+          "murray_too_high": 3
+        },
+        "params": {
+          "max_dist": 10.0,
+          "max_angle_deg": 90.0,
+          "max_bridge_len": 25.0,
+          "max_curvature": 0.4,
+          "murray_tol": 0.5
+        }
+      }
+    ]
+  },
+  "bridges": [
+    {
+      "endpoint_a": {
+        "branch": 1,
+        "end_idx": 0,
+        "point": [
+          215.88185453414917,
+          249.34842091798782,
+          -88.95261001586914
+        ]
+      },
+      "endpoint_b": {
+        "branch": 6,
+        "end_idx": -1,
+        "point": [
+          216.69044828414917,
+          251.77420216798782,
+          -87.70261001586914
+        ]
+      },
+      "dist_mm": 2.846179636880045,
+      "angle_deg": 27.061839214916933,
+      "path_len_mm": 3.3760951160873938,
+      "max_curvature": 0.24136165865744563,
+      "radius_a": 1.099047450128215,
+      "radius_b": 1.1435245848749078,
+      "murray_deviation": 0.11220476185912365,
+      "cost": 3.491060262856249,
+      "score": 1.6936634600225775
+    },
+    {
+      "endpoint_a": {
+        "branch": 2,
+        "end_idx": 0,
+        "point": [
+          205.37013578414917,
+          289.3738115429878,
+          -83.95261001586914
+        ]
+      },
+      "endpoint_b": {
+        "branch": 3,
+        "end_idx": 0,
+        "point": [
+          205.37013578414917,
+          289.7781084179878,
+          -84.57761001586914
+        ]
+      },
+      "dist_mm": 0.7443661485685426,
+      "angle_deg": 84.94758071232988,
+      "path_len_mm": 0.7443662133161784,
+      "max_curvature": 0.0,
+      "radius_a": 1.3644521009328239,
+      "radius_b": 1.3031782212012792,
+      "murray_deviation": 0.12876250563101083,
+      "cost": 0.6360246671066512,
+      "score": 1.8427438114065149
+    },
+    {
+      "endpoint_a": {
+        "branch": 0,
+        "end_idx": 0,
+        "point": [
+          221.13771390914917,
+          220.23903065919876,
+          -120.20261001586914
+        ]
+      },
+      "endpoint_b": {
+        "branch": 1,
+        "end_idx": -1,
+        "point": [
+          219.52052640914917,
+          224.28199940919876,
+          -113.32761001586914
+        ]
+      },
+      "dist_mm": 8.137967603992585,
+      "angle_deg": 7.5567585207835455,
+      "path_len_mm": 8.479499790720642,
+      "max_curvature": 0.1609900998517269,
+      "radius_a": 0.8085939884185791,
+      "radius_b": 0.8085939884185791,
+      "murray_deviation": 0.0,
+      "cost": 10.193862057176531,
+      "score": 2.1237395112334627
+    },
+    {
+      "endpoint_a": {
+        "branch": 4,
+        "end_idx": 0,
+        "point": [
+          223.96779203414917,
+          311.20587331056595,
+          -116.45261001586914
+        ]
+      },
+      "endpoint_b": {
+        "branch": 9,
+        "end_idx": -1,
+        "point": [
+          223.96779203414917,
+          309.18438893556595,
+          -112.07761001586914
+        ]
+      },
+      "dist_mm": 4.819442299516526,
+      "angle_deg": 48.12926138277446,
+      "path_len_mm": 5.177249895360321,
+      "max_curvature": 0.23326899327831627,
+      "radius_a": 0.9040355621508103,
+      "radius_b": 0.9040355621508103,
+      "murray_deviation": 0.0,
+      "cost": 5.91369701513918,
+      "score": 2.152137200437269
+    },
+    {
+      "endpoint_a": {
+        "branch": 5,
+        "end_idx": -1,
+        "point": [
+          210.62599515914917,
+          269.9675615429878,
+          -86.45261001586914
+        ]
+      },
+      "endpoint_b": {
+        "branch": 6,
+        "end_idx": 0,
+        "point": [
+          211.03029203414917,
+          269.5632646679878,
+          -86.45261001586914
+        ]
+      },
+      "dist_mm": 0.5717621238500599,
+      "angle_deg": 80.56516720440996,
+      "path_len_mm": 0.5717622924374539,
+      "max_curvature": 0.0,
+      "radius_a": 1.2128909826278687,
+      "radius_b": 1.457713543137561,
+      "murray_deviation": 0.4239651794743143,
+      "cost": 0.6403556561862064,
+      "score": 2.1947768390168987
+    },
+    {
+      "endpoint_a": {
+        "branch": 4,
+        "end_idx": -1,
+        "point": [
+          224.37208890914917,
+          307.5671709179878,
+          -138.32761001586914
+        ]
+      },
+      "endpoint_b": {
+        "branch": 10,
+        "end_idx": 0,
+        "point": [
+          223.56349515914917,
+          306.3542802929878,
+          -140.82761001586914
+        ]
+      },
+      "dist_mm": 2.8939467031636834,
+      "angle_deg": 62.647073863467,
+      "path_len_mm": 3.063517468727964,
+      "max_curvature": 0.33026424516234637,
+      "radius_a": 0.5717622924374539,
+      "radius_b": 0.625,
+      "murray_deviation": 0.23439196176613825,
+      "cost": 5.699092536412478,
+      "score": 2.959423747227027
+    }
+  ]
+}

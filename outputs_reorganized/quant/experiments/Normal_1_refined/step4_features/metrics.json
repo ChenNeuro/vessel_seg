@@ -1,0 +1,13 @@
+{
+  "stage": "step4_features",
+  "pred_features": "outputs/quant/Normal_1_refined/features_pred",
+  "gt_features": "outputs/quant/Normal_1_refined/features_gt",
+  "metrics": {
+    "pred_branch_count": 7,
+    "gt_branch_count": 7,
+    "branch_count_abs_diff": 0,
+    "descriptor_l1": 2.13724829784284,
+    "descriptor_l2": 5.472163831289248,
+    "descriptor_cosine": 0.9833165196185294
+  }
+}

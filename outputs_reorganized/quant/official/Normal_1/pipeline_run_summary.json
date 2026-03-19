@@ -1,0 +1,138 @@
+{
+  "started_at_utc": "2026-02-08T09:50:37.316118+00:00",
+  "root": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg",
+  "config": {
+    "ct": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/ASOCA2020/Normal/CTCA_nii/Normal_1.nii.gz",
+    "gt_mask": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/ASOCA2020/Normal/Annotations_nii/Normal_1.nii.gz",
+    "gt_centerline": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/ASOCA2020/Normal/Centerlines/Normal_1.vtp",
+    "out_dir": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/quant/Normal_1",
+    "task": "coronary_arteries",
+    "pred_file": "coronary_arteries.nii.gz",
+    "step2_backend": "vmtk",
+    "thr": 1.0,
+    "skip_existing": true,
+    "dry_run": false
+  },
+  "stages": {
+    "step1": {
+      "stage": "step1_segmentation",
+      "pred_mask": "outputs/quant/Normal_1/step1_segmentation/totalseg_output/coronary_arteries.nii.gz",
+      "gt_mask": "ASOCA2020/Normal/Annotations_nii/Normal_1.nii.gz",
+      "spacing_mm": [
+        0.41601601243019104,
+        0.41601601243019104,
+        0.625
+      ],
+      "metrics": {
+        "pred_voxels": 37610,
+        "gt_voxels": 36104,
+        "dice": 0.8450497870146784,
+        "iou": 0.7316763766209359,
+        "volume_pred_mm3": 4068.210764326686,
+        "volume_gt_mm3": 3905.30926443102,
+        "volume_abs_diff_mm3": 162.9014998956659,
+        "asd_mm": 0.3426136196497899,
+        "hd95_mm": 0.625,
+        "hdmax_mm": 15.484566881941092
+      }
+    },
+    "step2": {
+      "stage": "step2_centerline",
+      "backend": "vmtk",
+      "seg_mask": "outputs/quant/Normal_1/step1_segmentation/totalseg_output/coronary_arteries.nii.gz",
+      "gt_centerline": "ASOCA2020/Normal/Centerlines/Normal_1.vtp",
+      "pred_centerline_vtp": "outputs/quant/Normal_1/step2_centerline/pred_centerline.vtp",
+      "metrics": {
+        "pred_points": 2604,
+        "gt_points": 14607,
+        "pred2gt_mean": 0.7312265693030786,
+        "pred2gt_median": 0.3292748187290161,
+        "pred2gt_p95": 2.0228721195770065,
+        "pred2gt_max": 20.519054146960308,
+        "gt2pred_mean": 0.4896206315544933,
+        "gt2pred_median": 0.23901151623499026,
+        "gt2pred_p95": 1.2352402978453423,
+        "gt2pred_max": 12.833824511045261,
+        "coverage_pred@1mm": 0.8191244239631337,
+        "coverage_gt@1mm": 0.9473540083521599,
+        "thr_mm": 1.0
+      }
+    },
+    "step3": {
+      "stage": "step3_repair",
+      "repaired_centerline": "outputs/quant/Normal_1/step3_repair/repaired.vtp",
+      "gt_centerline": "ASOCA2020/Normal/Centerlines/Normal_1.vtp",
+      "metrics": {
+        "pred_points": 36,
+        "gt_points": 14607,
+        "pred2gt_mean": 0.5652686899570651,
+        "pred2gt_median": 0.37024059037579693,
+        "pred2gt_p95": 1.3934028387136401,
+        "pred2gt_max": 1.7466641589707161,
+        "gt2pred_mean": 18.53606803983766,
+        "gt2pred_median": 17.898702027003544,
+        "gt2pred_p95": 41.20055141205851,
+        "gt2pred_max": 46.10787527039927,
+        "coverage_pred@1mm": 0.8333333333333334,
+        "coverage_gt@1mm": 0.009789826795372082,
+        "thr_mm": 1.0
+      },
+      "baseline_centerline": "outputs/quant/Normal_1/step2_centerline/pred_centerline_poly.vtp",
+      "baseline_metrics": {
+        "pred_points": 36,
+        "gt_points": 14607,
+        "pred2gt_mean": 0.5652686899570653,
+        "pred2gt_median": 0.37024059037579693,
+        "pred2gt_p95": 1.3934028387136401,
+        "pred2gt_max": 1.7466641589707161,
+        "gt2pred_mean": 18.53606803983766,
+        "gt2pred_median": 17.898702027003544,
+        "gt2pred_p95": 41.20055141205851,
+        "gt2pred_max": 46.10787527039927,
+        "coverage_pred@1mm": 0.8333333333333334,
+        "coverage_gt@1mm": 0.009789826795372082,
+        "thr_mm": 1.0
+      },
+      "delta": {
+        "pred2gt_mean_delta": 1.1102230246251565e-16,
+        "pred2gt_p95_delta": 0.0,
+        "coverage_pred@1mm_delta": 0.0
+      }
+    },
+    "step4": {
+      "stage": "step4_features",
+      "pred_features": "outputs/quant/Normal_1/features_pred",
+      "gt_features": "outputs/quant/Normal_1/features_gt",
+      "metrics": {
+        "pred_branch_count": 8,
+        "gt_branch_count": 7,
+        "branch_count_abs_diff": 1,
+        "descriptor_l1": 2.9780439923051745,
+        "descriptor_l2": 7.16704334222603,
+        "descriptor_cosine": 0.9678089237885314
+      }
+    },
+    "step5": {
+      "stage": "step5_render",
+      "pred_mesh": null,
+      "pred_features": "outputs/quant/Normal_1/features_pred",
+      "gt_mask": "ASOCA2020/Normal/Annotations_nii/Normal_1.nii.gz",
+      "metrics": {
+        "pred_points": 57523,
+        "gt_points": 18440,
+        "pred2gt_mean": 0.3616851625738212,
+        "pred2gt_median": 0.3307438795667442,
+        "pred2gt_p95": 0.6998753278404388,
+        "pred2gt_max": 2.3462784507150634,
+        "gt2pred_mean": 24.126087350107113,
+        "gt2pred_median": 7.678842474069233,
+        "gt2pred_p95": 60.78345302071599,
+        "gt2pred_max": 66.60810382088853,
+        "coverage_pred@1mm": 0.9860229821115032,
+        "coverage_gt@1mm": 0.4707700650759219,
+        "thr_mm": 1.0
+      }
+    }
+  },
+  "finished_at_utc": "2026-02-08T09:50:37.364653+00:00"
+}

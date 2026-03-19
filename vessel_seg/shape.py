@@ -41,6 +41,7 @@ class CentrelineParams:
     """Tunable parameters for centreline extraction and resampling."""
 
     min_length_mm: float = 5.0
+    max_components: int = 1
     short_bridge_max_mm: float = 6.0
     closing_iterations: int = 1
     smooth_sigma_mm: float = 0.8
@@ -122,11 +123,24 @@ def _largest_component(mask: np.ndarray) -> np.ndarray:
     return labeled == largest_label
 
 
-def _binary_cleanup(mask: np.ndarray, iterations: int) -> np.ndarray:
+def _top_components(mask: np.ndarray, max_components: int) -> np.ndarray:
+    labeled, num = ndimage.label(mask)
+    if num <= 1 or max_components <= 0 or num <= max_components:
+        return mask
+    counts = ndimage.sum(mask, labeled, index=range(1, num + 1))
+    order = np.argsort(np.asarray(counts, dtype=float))[::-1]
+    keep_labels = {int(idx + 1) for idx in order[:max_components]}
+    keep = np.isin(labeled, list(keep_labels))
+    return keep
+
+
+def _binary_cleanup(mask: np.ndarray, iterations: int, max_components: int = 1) -> np.ndarray:
     structure = ndimage.generate_binary_structure(rank=3, connectivity=2)
     closed = ndimage.binary_closing(mask, structure=structure, iterations=iterations)
     filled = ndimage.binary_fill_holes(closed)
-    return _largest_component(filled)
+    if max_components == 1:
+        return _largest_component(filled)
+    return _top_components(filled, max_components)
 
 
 def _iter_neighbors(coord: Sequence[int]) -> Iterable[Tuple[int, int, int]]:
@@ -918,7 +932,7 @@ def extract_branches(seg_path: str | Path, params: CentrelineParams | None = Non
     seg_path = Path(seg_path)
     image = nib.load(str(seg_path))
     mask = image.get_fdata() > 0.5
-    cleaned = _binary_cleanup(mask, params.closing_iterations)
+    cleaned = _binary_cleanup(mask, params.closing_iterations, params.max_components)
     skeleton = skeletonize(cleaned)
     graph = _build_graph(skeleton)
     branches_idx = _trace_branches(graph)
@@ -1249,6 +1263,7 @@ def reconstruct_from_features(
 def _run_extract(args: argparse.Namespace) -> None:
     centreline_params = CentrelineParams(
         min_length_mm=args.min_length,
+        max_components=args.max_components,
         short_bridge_max_mm=args.short_bridge_max_mm,
         closing_iterations=args.closing_iterations,
         smooth_sigma_mm=args.smooth_sigma_mm,
@@ -1300,6 +1315,12 @@ def _build_parser() -> argparse.ArgumentParser:
     extract_parser.add_argument("--seg", required=True, help="Path to segmentation NIfTI file.")
     extract_parser.add_argument("--out", required=True, help="Output directory for features.")
     extract_parser.add_argument("--min-length", type=float, default=5.0, help="Minimum branch length to keep (mm).")
+    extract_parser.add_argument(
+        "--max-components",
+        type=int,
+        default=1,
+        help="Keep top-K largest connected components during mask cleanup (default 1 keeps only largest).",
+    )
     extract_parser.add_argument(
         "--short-bridge-max-mm",
         type=float,

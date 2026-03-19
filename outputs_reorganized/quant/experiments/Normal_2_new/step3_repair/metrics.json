@@ -1,0 +1,41 @@
+{
+  "stage": "step3_repair",
+  "repaired_centerline": "outputs/quant/Normal_2/step3_repair/repaired_new.vtp",
+  "gt_centerline": "ASOCA2020/Normal/Centerlines/Normal_2.vtp",
+  "metrics": {
+    "pred_points": 637,
+    "gt_points": 7970,
+    "pred2gt_mean": 0.3541080813155329,
+    "pred2gt_median": 0.32760490413670196,
+    "pred2gt_p95": 0.684073279997962,
+    "pred2gt_max": 1.9583023158533572,
+    "gt2pred_mean": 15.9174215549862,
+    "gt2pred_median": 0.5478847926880115,
+    "gt2pred_p95": 73.70472130299576,
+    "gt2pred_max": 79.4158460218757,
+    "coverage_pred@1mm": 0.9874411302982732,
+    "coverage_gt@1mm": 0.596612296110414,
+    "thr_mm": 1.0
+  },
+  "baseline_centerline": "outputs/quant/Normal_2/step2_centerline/pred_centerline.vtp",
+  "baseline_metrics": {
+    "pred_points": 518,
+    "gt_points": 7970,
+    "pred2gt_mean": 0.277596665780998,
+    "pred2gt_median": 0.22650978150832385,
+    "pred2gt_p95": 0.6650075460848851,
+    "pred2gt_max": 2.1077960107065277,
+    "gt2pred_mean": 15.940868440596189,
+    "gt2pred_median": 0.5626564486061547,
+    "gt2pred_p95": 73.47645676161842,
+    "gt2pred_max": 79.39812443967949,
+    "coverage_pred@1mm": 0.9864864864864865,
+    "coverage_gt@1mm": 0.5958594730238393,
+    "thr_mm": 1.0
+  },
+  "delta": {
+    "pred2gt_mean_delta": -0.07651141553453489,
+    "pred2gt_p95_delta": -0.019065733913076865,
+    "coverage_pred@1mm_delta": 0.0009546438117866707
+  }
+}

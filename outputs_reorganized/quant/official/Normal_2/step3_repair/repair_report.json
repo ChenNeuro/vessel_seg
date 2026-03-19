@@ -1,0 +1,121 @@
+{
+  "prob": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/quant/Normal_2/step1_segmentation/totalseg_output/coronary_arteries.nii.gz",
+  "vtp": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/quant/Normal_2/step2_centerline/pred_centerline.vtp",
+  "out": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/quant/Normal_2/step3_repair/repaired.vtp",
+  "num_branches": 12,
+  "num_bridges": 3,
+  "params": {
+    "prob_thresh": 0.2,
+    "max_dist": 10.0,
+    "max_bridge_len": 25.0,
+    "max_angle_deg": 90.0,
+    "w_prob": 1.0,
+    "w_dist": 0.6,
+    "outside_penalty": 10.0,
+    "smooth_window": 5,
+    "max_curvature": 0.4,
+    "murray_exp": 3.0,
+    "murray_tol": 0.5,
+    "junction_snap_tol": 1.0,
+    "junction_blend_steps": 3,
+    "regularize_curvature": 0.45,
+    "regularize_iterations": 3,
+    "min_branch_length": 0.0
+  },
+  "snap_stats": {
+    "clusters": 9,
+    "snapped_endpoints": 22
+  },
+  "regularize_stats": {
+    "adjusted_branches": 14,
+    "max_curvature_before": 25.12687147253822,
+    "max_curvature_after": 0.4133949774075918
+  },
+  "removed_short_branches": 0,
+  "bridges": [
+    {
+      "endpoint_a": {
+        "branch": 2,
+        "end_idx": 0,
+        "point": [
+          205.16995239257812,
+          289.6523742675781,
+          -83.875
+        ]
+      },
+      "endpoint_b": {
+        "branch": 3,
+        "end_idx": 0,
+        "point": [
+          205.16995239257812,
+          290.0566711425781,
+          -84.5
+        ]
+      },
+      "dist_mm": 0.7443661485685426,
+      "angle_deg": 84.94758071232988,
+      "path_len_mm": 0.7443662133161784,
+      "max_curvature": 0.0,
+      "radius_a": 1.694151255411786,
+      "radius_b": 1.5860497387681958,
+      "murray_deviation": 0.17947113674217985,
+      "cost": 0.5176097244674135
+    },
+    {
+      "endpoint_a": {
+        "branch": 4,
+        "end_idx": -1,
+        "point": [
+          224.17190551757812,
+          307.8457336425781,
+          -138.25
+        ]
+      },
+      "endpoint_b": {
+        "branch": 10,
+        "end_idx": 0,
+        "point": [
+          223.36331176757812,
+          306.6328430175781,
+          -140.75
+        ]
+      },
+      "dist_mm": 2.8939467031636834,
+      "angle_deg": 62.647073863467,
+      "path_len_mm": 3.080174267654428,
+      "max_curvature": 0.20213593901358334,
+      "radius_a": 0.8085939884185791,
+      "radius_b": 0.7443662133161784,
+      "murray_deviation": 0.2198673851786307,
+      "cost": 5.107373298086511
+    },
+    {
+      "endpoint_a": {
+        "branch": 0,
+        "end_idx": 0,
+        "point": [
+          220.93753051757812,
+          220.51759338378906,
+          -120.125
+        ]
+      },
+      "endpoint_b": {
+        "branch": 1,
+        "end_idx": -1,
+        "point": [
+          219.32034301757812,
+          224.56056213378906,
+          -113.25
+        ]
+      },
+      "dist_mm": 8.137967603992585,
+      "angle_deg": 7.5567585207835455,
+      "path_len_mm": 8.764430571613753,
+      "max_curvature": 0.21724828436393545,
+      "radius_a": 0.847075627705893,
+      "radius_b": 0.9040355621508103,
+      "murray_deviation": 0.1773596340388656,
+      "cost": 10.202326070337135
+    }
+  ]
+}

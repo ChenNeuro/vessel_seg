@@ -1,0 +1,22 @@
+{
+  "stage": "step1_segmentation",
+  "pred_mask": "outputs/quant/Normal_1/step1_segmentation/totalseg_output/coronary_arteries.nii.gz",
+  "gt_mask": "ASOCA2020/Normal/Annotations_nii/Normal_1.nii.gz",
+  "spacing_mm": [
+    0.41601601243019104,
+    0.41601601243019104,
+    0.625
+  ],
+  "metrics": {
+    "pred_voxels": 37610,
+    "gt_voxels": 36104,
+    "dice": 0.8450497870146784,
+    "iou": 0.7316763766209359,
+    "volume_pred_mm3": 4068.210764326686,
+    "volume_gt_mm3": 3905.30926443102,
+    "volume_abs_diff_mm3": 162.9014998956659,
+    "asd_mm": 0.3426136196497899,
+    "hd95_mm": 0.625,
+    "hdmax_mm": 15.484566881941092
+  }
+}

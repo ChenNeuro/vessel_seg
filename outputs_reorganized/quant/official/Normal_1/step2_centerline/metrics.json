@@ -1,0 +1,22 @@
+{
+  "stage": "step2_centerline",
+  "backend": "vmtk",
+  "seg_mask": "outputs/quant/Normal_1/step1_segmentation/totalseg_output/coronary_arteries.nii.gz",
+  "gt_centerline": "ASOCA2020/Normal/Centerlines/Normal_1.vtp",
+  "pred_centerline_vtp": "outputs/quant/Normal_1/step2_centerline/pred_centerline.vtp",
+  "metrics": {
+    "pred_points": 1132,
+    "gt_points": 14607,
+    "pred2gt_mean": 0.36554093392013803,
+    "pred2gt_median": 0.23640127765839627,
+    "pred2gt_p95": 0.6412472685420427,
+    "pred2gt_max": 8.344712914524893,
+    "gt2pred_mean": 1.0564666232507822,
+    "gt2pred_median": 0.2849670025696116,
+    "gt2pred_p95": 5.14118285341983,
+    "gt2pred_max": 25.967930479387334,
+    "coverage_pred@1mm": 0.9673144876325088,
+    "coverage_gt@1mm": 0.9118230985144109,
+    "thr_mm": 1.0
+  }
+}

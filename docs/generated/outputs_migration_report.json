@@ -1,0 +1,4050 @@
+[
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1_rcf_edges.nii.gz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/legacy_root/Normal_1_rcf_edges.nii.gz",
+    "category": "loose_output_file",
+    "action": "copy",
+    "size_mb": 57.79,
+    "status": "skipped_exists"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1_rcf_edges_simplified.nii.gz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/legacy_root/Normal_1_rcf_edges_simplified.nii.gz",
+    "category": "loose_output_file",
+    "action": "copy",
+    "size_mb": 20.795,
+    "status": "skipped_exists"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/coronary_arteries.nii.gz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/archive/legacy_outputs_root/misc/coronary_arteries.nii.gz",
+    "category": "loose_output_file",
+    "action": "copy",
+    "size_mb": 0.245,
+    "status": "skipped_exists"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/coronary_arteries_centerline.vtp",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/archive/legacy_outputs_root/misc/coronary_arteries_centerline.vtp",
+    "category": "loose_output_file",
+    "action": "copy",
+    "size_mb": 0.0,
+    "status": "skipped_exists"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/coronary_arteries_prob.nii.gz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/archive/legacy_outputs_root/misc/coronary_arteries_prob.nii.gz",
+    "category": "loose_output_file",
+    "action": "copy",
+    "size_mb": 0.26,
+    "status": "skipped_exists"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/normal1_branch_dataset.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/legacy_root/normal1_branch_dataset.npz",
+    "category": "loose_output_file",
+    "action": "copy",
+    "size_mb": 0.041,
+    "status": "skipped_exists"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/normal1_branch_lengths.png",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/legacy_root/normal1_branch_lengths.png",
+    "category": "loose_output_file",
+    "action": "copy",
+    "size_mb": 0.067,
+    "status": "skipped_exists"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/normal1_centerline_vs_gt.png",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/legacy_root/normal1_centerline_vs_gt.png",
+    "category": "loose_output_file",
+    "action": "copy",
+    "size_mb": 0.343,
+    "status": "skipped_exists"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/normal1_centerline_vs_gt_centerline.png",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/legacy_root/normal1_centerline_vs_gt_centerline.png",
+    "category": "loose_output_file",
+    "action": "copy",
+    "size_mb": 0.36,
+    "status": "skipped_exists"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/normal1_fs_cones.png",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/legacy_root/normal1_fs_cones.png",
+    "category": "loose_output_file",
+    "action": "copy",
+    "size_mb": 0.145,
+    "status": "skipped_exists"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/normal1_left_fs_cones.png",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/legacy_root/normal1_left_fs_cones.png",
+    "category": "loose_output_file",
+    "action": "copy",
+    "size_mb": 0.1,
+    "status": "skipped_exists"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/normal1_right_fs_cones.png",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/legacy_root/normal1_right_fs_cones.png",
+    "category": "loose_output_file",
+    "action": "copy",
+    "size_mb": 0.12,
+    "status": "skipped_exists"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/normal1_tree.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/legacy_root/normal1_tree.json",
+    "category": "loose_output_file",
+    "action": "copy",
+    "size_mb": 0.005,
+    "status": "skipped_exists"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/normal1_tree_fs_cones.png",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/legacy_root/normal1_tree_fs_cones.png",
+    "category": "loose_output_file",
+    "action": "copy",
+    "size_mb": 0.119,
+    "status": "skipped_exists"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/normal1_tree_matplotlib.png",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/legacy_root/normal1_tree_matplotlib.png",
+    "category": "loose_output_file",
+    "action": "copy",
+    "size_mb": 0.291,
+    "status": "skipped_exists"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/normal1_tree_plot.png",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/legacy_root/normal1_tree_plot.png",
+    "category": "loose_output_file",
+    "action": "copy",
+    "size_mb": 0.341,
+    "status": "skipped_exists"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/preview_coronary_arteries.png",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/archive/legacy_outputs_root/misc/preview_coronary_arteries.png",
+    "category": "loose_output_file",
+    "action": "copy",
+    "size_mb": 0.015,
+    "status": "skipped_exists"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/shape_diseased_1.vtp",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Diseased_1/legacy_root/shape_diseased_1.vtp",
+    "category": "loose_output_file",
+    "action": "copy",
+    "size_mb": 5.58,
+    "status": "skipped_exists"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/quant/Normal_1",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/quant/official/Normal_1",
+    "category": "quant_official",
+    "action": "copy",
+    "size_mb": 4.345,
+    "status": "skipped_exists"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/quant/Normal_1_clean_eval",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/quant/experiments/Normal_1_clean_eval",
+    "category": "quant_experiment",
+    "action": "copy",
+    "size_mb": 0.002,
+    "status": "skipped_exists"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/quant/Normal_1_connectivity_test",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/quant/experiments/Normal_1_connectivity_test",
+    "category": "quant_experiment",
+    "action": "copy",
+    "size_mb": 0.002,
+    "status": "skipped_exists"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/quant/Normal_1_debug2",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/quant/experiments/Normal_1_debug2",
+    "category": "quant_experiment",
+    "action": "copy",
+    "size_mb": 0.002,
+    "status": "skipped_exists"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/quant/Normal_1_dryrun_check",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/quant/experiments/Normal_1_dryrun_check",
+    "category": "quant_experiment",
+    "action": "copy",
+    "size_mb": 0.0,
+    "status": "skipped_exists"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/quant/Normal_1_dryrun_check2",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/quant/experiments/Normal_1_dryrun_check2",
+    "category": "quant_experiment",
+    "action": "copy",
+    "size_mb": 0.0,
+    "status": "skipped_exists"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/quant/Normal_1_from_openprofiles",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/quant/experiments/Normal_1_from_openprofiles",
+    "category": "quant_experiment",
+    "action": "copy",
+    "size_mb": 0.002,
+    "status": "skipped_exists"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/quant/Normal_1_graph",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/quant/experiments/Normal_1_graph",
+    "category": "quant_experiment",
+    "action": "copy",
+    "size_mb": 0.002,
+    "status": "skipped_exists"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/quant/Normal_1_refined",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/quant/experiments/Normal_1_refined",
+    "category": "quant_experiment",
+    "action": "copy",
+    "size_mb": 1.281,
+    "status": "skipped_exists"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/quant/Normal_2",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/quant/official/Normal_2",
+    "category": "quant_official",
+    "action": "copy",
+    "size_mb": 2.011,
+    "status": "skipped_exists"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/quant/Normal_2_bridgefocus",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/quant/experiments/Normal_2_bridgefocus",
+    "category": "quant_experiment",
+    "action": "copy",
+    "size_mb": 0.002,
+    "status": "skipped_exists"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/quant/Normal_2_new",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/quant/experiments/Normal_2_new",
+    "category": "quant_experiment",
+    "action": "copy",
+    "size_mb": 0.002,
+    "status": "skipped_exists"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1/alignment.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/alignment/alignment.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.001,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1/branch_dataset.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/datasets/default/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.042,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1/branch_dataset_aligned.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/datasets/aligned/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.042,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1/branch_dataset_official.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/datasets/official/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.082,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1/branch_dataset_p5.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/datasets/p5/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.043,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1/branch_dataset_pct0p0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/datasets/pct0p0/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.043,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1/branch_dataset_pct10p0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/datasets/pct10p0/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.043,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1/branch_dataset_pct2p5.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/datasets/pct2p5/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.043,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1/branch_dataset_pct5p0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/datasets/pct5p0/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.043,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1/branch_dataset_pct7p5.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/datasets/pct7p5/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.043,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1/branch_tree",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/topology/branch_tree",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 2.977,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1/branch_tree_prior",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/topology/branch_tree_prior",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.0,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1/branch_tree_vtp",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/topology/branch_tree_vtp",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.972,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1/branches",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/branches/default",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.401,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1/branches_aligned",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/branches/aligned",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.401,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1/branches_official",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/branches/official",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.442,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1/branches_official_trim",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/branches/official_trim",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.96,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1/branches_official_trim15",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/branches/official_trim15",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.961,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1/branches_official_trim15_normal_all",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/branches/official_trim15_normal_all",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.69,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1/branches_official_trim_overlap",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/branches/official_trim_overlap",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.39,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1/branches_p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/branches/p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.39,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1/branches_pct0p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/branches/pct0p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.4,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1/branches_pct10p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/branches/pct10p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.374,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1/branches_pct2p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/branches/pct2p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.398,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1/branches_pct5p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/branches/pct5p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.39,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1/branches_pct7p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/branches/pct7p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.382,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1/branches_trim_overlap0_tree",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/branches/trim_overlap0_tree",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.301,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1/branches_trim_overlap_tree",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/branches/trim_overlap_tree",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.28,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1/centerline_extracted.vtp",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/centerline/extracted/centerline.vtp",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.01,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1/centerline_repair_report.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/centerline/repaired/repair_report.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.001,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1/centerline_repaired.vtp",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/centerline/repaired/repaired.vtp",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.187,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1/centerlines_plot.png",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/analysis/centerlines_plot.png",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.276,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1/coronary_tree_guess",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/topology/coronary_tree_guess",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.0,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1/cpr",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/cpr/default",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.942,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1/fgpm_official",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/fgpm/fgpm_official",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.083,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1/frenet_branch0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/analysis/frenet_branch0.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.009,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1/frenet_compare_branch0_1.png",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/analysis/frenet_compare_branch0_1.png",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.286,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1/prior_coronary",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/priors/coronary",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.57,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1/prior_coronary_k64",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/priors/coronary_k64",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 2.201,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1/prior_coronary_k64_caps",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/priors/coronary_k64_caps",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 1.124,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1/prior_coronary_k64_caps_ext",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/priors/coronary_k64_caps_ext",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 1.125,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1/prior_coronary_k64_caps_refresh",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/priors/coronary_k64_caps_refresh",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 1.125,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1/prior_normal_all_trim15_k32",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/priors/normal_all_trim15_k32",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.578,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1/prior_official_k64",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/priors/official_k64",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 1.124,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1/prior_official_k64_trim",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/priors/official_k64_trim",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 1.121,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1/prior_official_k64_trim15",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/priors/official_k64_trim15",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 1.123,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1/prob_from_mask.nii.gz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/centerline/probability/prob_from_mask.nii.gz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.499,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1/similarity",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/similarity/default",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.078,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1/similarity_aligned",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/similarity/aligned",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.078,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1/similarity_pct0p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/similarity/pct0p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.078,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1/similarity_pct10p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/similarity/pct10p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.077,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1/similarity_pct2p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/similarity/pct2p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.078,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1/similarity_pct5p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/similarity/pct5p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.078,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1/similarity_pct7p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/similarity/pct7p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.078,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1/tree.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/tree/default/tree.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.005,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1/tree_new.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/tree/new/tree.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.0,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1/tree_official.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/tree/official/tree.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.005,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1/tree_trim_overlap0.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_1/tree/trim_overlap0/tree.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.005,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_10/alignment.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_10/alignment/alignment.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.001,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_10/branch_dataset.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_10/datasets/default/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.042,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_10/branch_dataset_pct0p0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_10/datasets/pct0p0/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.043,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_10/branch_dataset_pct10p0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_10/datasets/pct10p0/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.043,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_10/branch_dataset_pct2p5.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_10/datasets/pct2p5/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.043,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_10/branch_dataset_pct5p0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_10/datasets/pct5p0/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.043,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_10/branch_dataset_pct7p5.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_10/datasets/pct7p5/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.043,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_10/branches",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_10/branches/default",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.406,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_10/branches_pct0p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_10/branches/pct0p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.404,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_10/branches_pct10p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_10/branches/pct10p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.381,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_10/branches_pct2p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_10/branches/pct2p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.403,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_10/branches_pct5p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_10/branches/pct5p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.396,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_10/branches_pct7p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_10/branches/pct7p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.389,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_10/branches_trim_overlap0_tree",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_10/branches/trim_overlap0_tree",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.275,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_10/similarity",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_10/similarity/default",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.077,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_10/similarity_pct0p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_10/similarity/pct0p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.077,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_10/similarity_pct10p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_10/similarity/pct10p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.077,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_10/similarity_pct2p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_10/similarity/pct2p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.077,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_10/similarity_pct5p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_10/similarity/pct5p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.078,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_10/similarity_pct7p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_10/similarity/pct7p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.078,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_10/tree.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_10/tree/default/tree.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.005,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_10/tree_trim_overlap0.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_10/tree/trim_overlap0/tree.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.005,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_11/alignment.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_11/alignment/alignment.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.001,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_11/branch_dataset.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_11/datasets/default/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.05,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_11/branch_dataset_pct0p0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_11/datasets/pct0p0/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.05,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_11/branch_dataset_pct10p0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_11/datasets/pct10p0/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.05,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_11/branch_dataset_pct2p5.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_11/datasets/pct2p5/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.05,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_11/branch_dataset_pct5p0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_11/datasets/pct5p0/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.05,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_11/branch_dataset_pct7p5.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_11/datasets/pct7p5/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.05,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_11/branches",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_11/branches/default",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.41,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_11/branches_pct0p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_11/branches/pct0p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.409,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_11/branches_pct10p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_11/branches/pct10p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.389,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_11/branches_pct2p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_11/branches/pct2p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.408,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_11/branches_pct5p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_11/branches/pct5p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.404,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_11/branches_pct7p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_11/branches/pct7p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.397,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_11/branches_trim_overlap0_tree",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_11/branches/trim_overlap0_tree",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.325,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_11/similarity",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_11/similarity/default",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.08,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_11/similarity_pct0p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_11/similarity/pct0p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.08,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_11/similarity_pct10p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_11/similarity/pct10p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.08,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_11/similarity_pct2p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_11/similarity/pct2p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.079,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_11/similarity_pct5p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_11/similarity/pct5p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.08,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_11/similarity_pct7p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_11/similarity/pct7p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.08,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_11/tree.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_11/tree/default/tree.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.006,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_11/tree_trim_overlap0.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_11/tree/trim_overlap0/tree.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.006,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_12/alignment.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_12/alignment/alignment.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.001,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_12/branch_dataset.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_12/datasets/default/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.027,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_12/branch_dataset_pct0p0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_12/datasets/pct0p0/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.027,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_12/branch_dataset_pct10p0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_12/datasets/pct10p0/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.027,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_12/branch_dataset_pct2p5.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_12/datasets/pct2p5/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.027,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_12/branch_dataset_pct5p0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_12/datasets/pct5p0/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.027,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_12/branch_dataset_pct7p5.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_12/datasets/pct7p5/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.027,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_12/branches",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_12/branches/default",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.209,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_12/branches_pct0p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_12/branches/pct0p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.208,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_12/branches_pct10p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_12/branches/pct10p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.198,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_12/branches_pct2p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_12/branches/pct2p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.208,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_12/branches_pct5p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_12/branches/pct5p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.206,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_12/branches_pct7p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_12/branches/pct7p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.202,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_12/branches_trim_overlap0_tree",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_12/branches/trim_overlap0_tree",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.182,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_12/similarity",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_12/similarity/default",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.113,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_12/similarity_pct0p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_12/similarity/pct0p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.062,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_12/similarity_pct10p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_12/similarity/pct10p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.062,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_12/similarity_pct2p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_12/similarity/pct2p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.062,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_12/similarity_pct5p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_12/similarity/pct5p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.069,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_12/similarity_pct7p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_12/similarity/pct7p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.062,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_12/tree.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_12/tree/default/tree.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.003,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_12/tree_trim_overlap0.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_12/tree/trim_overlap0/tree.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.003,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_13/alignment.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_13/alignment/alignment.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.001,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_13/branch_dataset.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_13/datasets/default/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.039,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_13/branch_dataset_pct0p0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_13/datasets/pct0p0/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.039,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_13/branch_dataset_pct10p0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_13/datasets/pct10p0/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.039,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_13/branch_dataset_pct2p5.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_13/datasets/pct2p5/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.039,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_13/branch_dataset_pct5p0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_13/datasets/pct5p0/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.039,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_13/branch_dataset_pct7p5.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_13/datasets/pct7p5/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.039,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_13/branches",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_13/branches/default",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.367,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_13/branches_pct0p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_13/branches/pct0p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.365,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_13/branches_pct10p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_13/branches/pct10p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.344,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_13/branches_pct2p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_13/branches/pct2p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.365,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_13/branches_pct5p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_13/branches/pct5p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.358,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_13/branches_pct7p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_13/branches/pct7p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.351,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_13/branches_trim_overlap0_tree",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_13/branches/trim_overlap0_tree",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.284,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_13/similarity",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_13/similarity/default",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.077,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_13/similarity_pct0p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_13/similarity/pct0p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.077,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_13/similarity_pct10p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_13/similarity/pct10p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.078,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_13/similarity_pct2p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_13/similarity/pct2p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.075,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_13/similarity_pct5p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_13/similarity/pct5p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.078,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_13/similarity_pct7p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_13/similarity/pct7p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.076,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_13/tree.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_13/tree/default/tree.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.005,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_13/tree_trim_overlap0.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_13/tree/trim_overlap0/tree.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.005,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_14/alignment.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_14/alignment/alignment.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.001,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_14/branch_dataset.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_14/datasets/default/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.035,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_14/branch_dataset_pct0p0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_14/datasets/pct0p0/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.035,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_14/branch_dataset_pct10p0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_14/datasets/pct10p0/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.035,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_14/branch_dataset_pct2p5.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_14/datasets/pct2p5/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.035,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_14/branch_dataset_pct5p0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_14/datasets/pct5p0/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.035,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_14/branch_dataset_pct7p5.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_14/datasets/pct7p5/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.035,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_14/branches",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_14/branches/default",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.337,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_14/branches_pct0p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_14/branches/pct0p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.336,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_14/branches_pct10p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_14/branches/pct10p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.317,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_14/branches_pct2p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_14/branches/pct2p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.335,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_14/branches_pct5p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_14/branches/pct5p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.33,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_14/branches_pct7p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_14/branches/pct7p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.324,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_14/branches_trim_overlap0_tree",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_14/branches/trim_overlap0_tree",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.275,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_14/similarity",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_14/similarity/default",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.074,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_14/similarity_pct0p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_14/similarity/pct0p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.074,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_14/similarity_pct10p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_14/similarity/pct10p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.075,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_14/similarity_pct2p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_14/similarity/pct2p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.074,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_14/similarity_pct5p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_14/similarity/pct5p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.075,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_14/similarity_pct7p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_14/similarity/pct7p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.075,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_14/tree.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_14/tree/default/tree.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.004,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_14/tree_trim_overlap0.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_14/tree/trim_overlap0/tree.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.004,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_15/alignment.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_15/alignment/alignment.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.001,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_15/branch_dataset.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_15/datasets/default/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.027,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_15/branch_dataset_pct0p0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_15/datasets/pct0p0/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.027,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_15/branch_dataset_pct10p0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_15/datasets/pct10p0/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.027,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_15/branch_dataset_pct2p5.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_15/datasets/pct2p5/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.027,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_15/branch_dataset_pct5p0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_15/datasets/pct5p0/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.027,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_15/branch_dataset_pct7p5.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_15/datasets/pct7p5/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.027,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_15/branches",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_15/branches/default",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.214,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_15/branches_pct0p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_15/branches/pct0p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.214,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_15/branches_pct10p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_15/branches/pct10p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.2,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_15/branches_pct2p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_15/branches/pct2p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.213,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_15/branches_pct5p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_15/branches/pct5p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.21,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_15/branches_pct7p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_15/branches/pct7p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.205,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_15/branches_trim_overlap0_tree",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_15/branches/trim_overlap0_tree",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.182,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_15/similarity",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_15/similarity/default",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.063,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_15/similarity_pct0p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_15/similarity/pct0p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.063,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_15/similarity_pct10p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_15/similarity/pct10p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.063,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_15/similarity_pct2p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_15/similarity/pct2p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.063,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_15/similarity_pct5p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_15/similarity/pct5p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.063,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_15/similarity_pct7p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_15/similarity/pct7p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.063,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_15/tree.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_15/tree/default/tree.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.003,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_15/tree_trim_overlap0.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_15/tree/trim_overlap0/tree.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.003,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_16/alignment.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_16/alignment/alignment.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.001,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_16/branch_dataset.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_16/datasets/default/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.031,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_16/branch_dataset_pct0p0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_16/datasets/pct0p0/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.031,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_16/branch_dataset_pct10p0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_16/datasets/pct10p0/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.031,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_16/branch_dataset_pct2p5.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_16/datasets/pct2p5/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.031,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_16/branch_dataset_pct5p0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_16/datasets/pct5p0/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.031,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_16/branch_dataset_pct7p5.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_16/datasets/pct7p5/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.031,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_16/branches",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_16/branches/default",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.242,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_16/branches_pct0p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_16/branches/pct0p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.241,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_16/branches_pct10p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_16/branches/pct10p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.23,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_16/branches_pct2p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_16/branches/pct2p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.24,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_16/branches_pct5p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_16/branches/pct5p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.238,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_16/branches_pct7p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_16/branches/pct7p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.234,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_16/branches_trim_overlap0_tree",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_16/branches/trim_overlap0_tree",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.203,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_16/similarity",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_16/similarity/default",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.068,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_16/similarity_pct0p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_16/similarity/pct0p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.068,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_16/similarity_pct10p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_16/similarity/pct10p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.068,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_16/similarity_pct2p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_16/similarity/pct2p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.068,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_16/similarity_pct5p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_16/similarity/pct5p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.069,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_16/similarity_pct7p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_16/similarity/pct7p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.069,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_16/tree.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_16/tree/default/tree.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.004,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_16/tree_trim_overlap0.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_16/tree/trim_overlap0/tree.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.004,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_17/alignment.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_17/alignment/alignment.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.001,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_17/branch_dataset.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_17/datasets/default/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.035,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_17/branch_dataset_pct0p0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_17/datasets/pct0p0/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.035,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_17/branch_dataset_pct10p0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_17/datasets/pct10p0/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.035,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_17/branch_dataset_pct2p5.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_17/datasets/pct2p5/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.035,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_17/branch_dataset_pct5p0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_17/datasets/pct5p0/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.035,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_17/branch_dataset_pct7p5.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_17/datasets/pct7p5/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.035,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_17/branches",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_17/branches/default",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.249,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_17/branches_pct0p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_17/branches/pct0p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.248,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_17/branches_pct10p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_17/branches/pct10p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.237,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_17/branches_pct2p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_17/branches/pct2p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.248,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_17/branches_pct5p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_17/branches/pct5p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.246,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_17/branches_pct7p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_17/branches/pct7p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.242,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_17/branches_trim_overlap0_tree",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_17/branches/trim_overlap0_tree",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.221,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_17/similarity",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_17/similarity/default",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.074,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_17/similarity_pct0p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_17/similarity/pct0p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.074,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_17/similarity_pct10p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_17/similarity/pct10p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.075,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_17/similarity_pct2p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_17/similarity/pct2p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.074,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_17/similarity_pct5p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_17/similarity/pct5p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.074,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_17/similarity_pct7p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_17/similarity/pct7p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.075,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_17/tree.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_17/tree/default/tree.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.004,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_17/tree_trim_overlap0.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_17/tree/trim_overlap0/tree.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.004,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_18/alignment.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_18/alignment/alignment.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.001,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_18/branch_dataset.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_18/datasets/default/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.054,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_18/branch_dataset_pct0p0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_18/datasets/pct0p0/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.054,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_18/branch_dataset_pct10p0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_18/datasets/pct10p0/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.054,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_18/branch_dataset_pct2p5.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_18/datasets/pct2p5/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.054,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_18/branch_dataset_pct5p0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_18/datasets/pct5p0/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.054,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_18/branch_dataset_pct7p5.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_18/datasets/pct7p5/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.054,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_18/branches",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_18/branches/default",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.437,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_18/branches_pct0p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_18/branches/pct0p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.435,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_18/branches_pct10p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_18/branches/pct10p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.41,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_18/branches_pct2p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_18/branches/pct2p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.435,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_18/branches_pct5p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_18/branches/pct5p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.428,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_18/branches_pct7p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_18/branches/pct7p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.418,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_18/branches_trim_overlap0_tree",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_18/branches/trim_overlap0_tree",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.336,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_18/similarity",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_18/similarity/default",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.084,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_18/similarity_pct0p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_18/similarity/pct0p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.084,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_18/similarity_pct10p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_18/similarity/pct10p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.084,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_18/similarity_pct2p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_18/similarity/pct2p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.084,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_18/similarity_pct5p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_18/similarity/pct5p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.084,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_18/similarity_pct7p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_18/similarity/pct7p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.083,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_18/tree.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_18/tree/default/tree.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.007,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_18/tree_trim_overlap0.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_18/tree/trim_overlap0/tree.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.007,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_19/alignment.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_19/alignment/alignment.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.001,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_19/branch_dataset.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_19/datasets/default/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.031,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_19/branch_dataset_pct0p0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_19/datasets/pct0p0/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.031,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_19/branch_dataset_pct10p0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_19/datasets/pct10p0/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.031,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_19/branch_dataset_pct2p5.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_19/datasets/pct2p5/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.031,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_19/branch_dataset_pct5p0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_19/datasets/pct5p0/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.031,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_19/branch_dataset_pct7p5.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_19/datasets/pct7p5/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.031,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_19/branches",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_19/branches/default",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.244,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_19/branches_pct0p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_19/branches/pct0p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.243,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_19/branches_pct10p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_19/branches/pct10p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.23,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_19/branches_pct2p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_19/branches/pct2p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.242,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_19/branches_pct5p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_19/branches/pct5p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.239,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_19/branches_pct7p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_19/branches/pct7p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.235,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_19/branches_trim_overlap0_tree",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_19/branches/trim_overlap0_tree",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.183,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_19/similarity",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_19/similarity/default",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.073,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_19/similarity_pct0p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_19/similarity/pct0p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.073,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_19/similarity_pct10p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_19/similarity/pct10p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.068,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_19/similarity_pct2p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_19/similarity/pct2p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.073,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_19/similarity_pct5p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_19/similarity/pct5p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.075,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_19/similarity_pct7p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_19/similarity/pct7p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.075,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_19/tree.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_19/tree/default/tree.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.004,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_19/tree_trim_overlap0.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_19/tree/trim_overlap0/tree.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.004,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_2/alignment.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_2/alignment/alignment.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.001,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_2/branch_dataset.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_2/datasets/default/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.035,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_2/branch_dataset_pct0p0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_2/datasets/pct0p0/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.035,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_2/branch_dataset_pct10p0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_2/datasets/pct10p0/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.035,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_2/branch_dataset_pct2p5.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_2/datasets/pct2p5/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.035,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_2/branch_dataset_pct5p0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_2/datasets/pct5p0/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.035,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_2/branch_dataset_pct7p5.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_2/datasets/pct7p5/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.035,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_2/branches",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_2/branches/default",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.235,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_2/branches_pct0p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_2/branches/pct0p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.234,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_2/branches_pct10p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_2/branches/pct10p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.223,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_2/branches_pct2p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_2/branches/pct2p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.234,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_2/branches_pct5p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_2/branches/pct5p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.231,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_2/branches_pct7p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_2/branches/pct7p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.228,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_2/branches_trim_overlap0_tree",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_2/branches/trim_overlap0_tree",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.211,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_2/similarity",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_2/similarity/default",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.076,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_2/similarity_pct0p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_2/similarity/pct0p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.076,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_2/similarity_pct10p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_2/similarity/pct10p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.076,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_2/similarity_pct2p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_2/similarity/pct2p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.076,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_2/similarity_pct5p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_2/similarity/pct5p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.076,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_2/similarity_pct7p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_2/similarity/pct7p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.076,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_2/tree.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_2/tree/default/tree.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.004,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_2/tree_trim_overlap0.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_2/tree/trim_overlap0/tree.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.004,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_20/alignment.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_20/alignment/alignment.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.001,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_20/branch_dataset.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_20/datasets/default/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.042,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_20/branch_dataset_pct0p0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_20/datasets/pct0p0/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.043,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_20/branch_dataset_pct10p0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_20/datasets/pct10p0/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.043,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_20/branch_dataset_pct2p5.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_20/datasets/pct2p5/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.043,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_20/branch_dataset_pct5p0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_20/datasets/pct5p0/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.043,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_20/branch_dataset_pct7p5.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_20/datasets/pct7p5/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.043,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_20/branches",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_20/branches/default",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.341,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_20/branches_pct0p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_20/branches/pct0p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.34,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_20/branches_pct10p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_20/branches/pct10p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.321,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_20/branches_pct2p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_20/branches/pct2p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.339,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_20/branches_pct5p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_20/branches/pct5p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.334,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_20/branches_pct7p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_20/branches/pct7p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.328,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_20/branches_trim_overlap0_tree",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_20/branches/trim_overlap0_tree",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.247,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_20/similarity",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_20/similarity/default",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.078,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_20/similarity_pct0p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_20/similarity/pct0p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.078,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_20/similarity_pct10p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_20/similarity/pct10p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.078,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_20/similarity_pct2p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_20/similarity/pct2p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.078,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_20/similarity_pct5p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_20/similarity/pct5p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.078,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_20/similarity_pct7p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_20/similarity/pct7p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.077,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_20/tree.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_20/tree/default/tree.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.005,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_20/tree_trim_overlap0.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_20/tree/trim_overlap0/tree.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.005,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_3/alignment.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_3/alignment/alignment.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.001,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_3/branch_dataset.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_3/datasets/default/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.05,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_3/branch_dataset_pct0p0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_3/datasets/pct0p0/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.05,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_3/branch_dataset_pct10p0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_3/datasets/pct10p0/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.05,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_3/branch_dataset_pct2p5.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_3/datasets/pct2p5/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.05,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_3/branch_dataset_pct5p0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_3/datasets/pct5p0/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.05,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_3/branch_dataset_pct7p5.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_3/datasets/pct7p5/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.05,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_3/branches",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_3/branches/default",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.422,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_3/branches_pct0p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_3/branches/pct0p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.42,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_3/branches_pct10p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_3/branches/pct10p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.397,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_3/branches_pct2p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_3/branches/pct2p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.419,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_3/branches_pct5p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_3/branches/pct5p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.414,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_3/branches_pct7p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_3/branches/pct7p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.406,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_3/branches_trim_overlap0_tree",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_3/branches/trim_overlap0_tree",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.303,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_3/similarity",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_3/similarity/default",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.082,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_3/similarity_pct0p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_3/similarity/pct0p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.082,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_3/similarity_pct10p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_3/similarity/pct10p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.082,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_3/similarity_pct2p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_3/similarity/pct2p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.082,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_3/similarity_pct5p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_3/similarity/pct5p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.081,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_3/similarity_pct7p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_3/similarity/pct7p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.081,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_3/tree.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_3/tree/default/tree.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.006,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_3/tree_trim_overlap0.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_3/tree/trim_overlap0/tree.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.007,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_4/alignment.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_4/alignment/alignment.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.001,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_4/branch_dataset.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_4/datasets/default/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.027,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_4/branch_dataset_pct0p0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_4/datasets/pct0p0/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.027,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_4/branch_dataset_pct10p0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_4/datasets/pct10p0/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.027,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_4/branch_dataset_pct2p5.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_4/datasets/pct2p5/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.027,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_4/branch_dataset_pct5p0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_4/datasets/pct5p0/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.027,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_4/branch_dataset_pct7p5.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_4/datasets/pct7p5/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.027,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_4/branches",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_4/branches/default",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.246,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_4/branches_pct0p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_4/branches/pct0p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.245,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_4/branches_pct10p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_4/branches/pct10p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.23,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_4/branches_pct2p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_4/branches/pct2p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.244,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_4/branches_pct5p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_4/branches/pct5p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.24,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_4/branches_pct7p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_4/branches/pct7p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.236,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_4/branches_trim_overlap0_tree",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_4/branches/trim_overlap0_tree",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.202,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_4/similarity",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_4/similarity/default",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.067,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_4/similarity_pct0p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_4/similarity/pct0p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.067,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_4/similarity_pct10p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_4/similarity/pct10p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.067,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_4/similarity_pct2p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_4/similarity/pct2p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.067,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_4/similarity_pct5p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_4/similarity/pct5p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.065,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_4/similarity_pct7p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_4/similarity/pct7p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.062,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_4/tree.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_4/tree/default/tree.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.003,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_4/tree_trim_overlap0.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_4/tree/trim_overlap0/tree.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.003,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_5/alignment.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_5/alignment/alignment.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.001,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_5/branch_dataset.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_5/datasets/default/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.035,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_5/branch_dataset_pct0p0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_5/datasets/pct0p0/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.035,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_5/branch_dataset_pct10p0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_5/datasets/pct10p0/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.035,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_5/branch_dataset_pct2p5.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_5/datasets/pct2p5/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.035,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_5/branch_dataset_pct5p0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_5/datasets/pct5p0/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.035,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_5/branch_dataset_pct7p5.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_5/datasets/pct7p5/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.035,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_5/branches",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_5/branches/default",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.264,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_5/branches_pct0p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_5/branches/pct0p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.263,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_5/branches_pct10p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_5/branches/pct10p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.25,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_5/branches_pct2p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_5/branches/pct2p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.263,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_5/branches_pct5p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_5/branches/pct5p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.259,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_5/branches_pct7p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_5/branches/pct7p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.255,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_5/branches_trim_overlap0_tree",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_5/branches/trim_overlap0_tree",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.244,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_5/similarity",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_5/similarity/default",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.075,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_5/similarity_pct0p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_5/similarity/pct0p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.075,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_5/similarity_pct10p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_5/similarity/pct10p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.074,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_5/similarity_pct2p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_5/similarity/pct2p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.075,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_5/similarity_pct5p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_5/similarity/pct5p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.075,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_5/similarity_pct7p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_5/similarity/pct7p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.075,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_5/tree.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_5/tree/default/tree.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.004,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_5/tree_trim_overlap0.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_5/tree/trim_overlap0/tree.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.004,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_6/alignment.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_6/alignment/alignment.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.001,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_6/branch_dataset.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_6/datasets/default/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.023,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_6/branch_dataset_pct0p0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_6/datasets/pct0p0/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.023,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_6/branch_dataset_pct10p0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_6/datasets/pct10p0/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.023,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_6/branch_dataset_pct2p5.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_6/datasets/pct2p5/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.023,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_6/branch_dataset_pct5p0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_6/datasets/pct5p0/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.023,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_6/branch_dataset_pct7p5.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_6/datasets/pct7p5/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.023,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_6/branches",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_6/branches/default",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.213,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_6/branches_pct0p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_6/branches/pct0p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.213,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_6/branches_pct10p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_6/branches/pct10p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.2,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_6/branches_pct2p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_6/branches/pct2p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.212,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_6/branches_pct5p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_6/branches/pct5p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.208,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_6/branches_pct7p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_6/branches/pct7p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.204,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_6/branches_trim_overlap0_tree",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_6/branches/trim_overlap0_tree",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.177,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_6/similarity",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_6/similarity/default",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.059,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_6/similarity_pct0p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_6/similarity/pct0p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.059,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_6/similarity_pct10p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_6/similarity/pct10p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.062,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_6/similarity_pct2p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_6/similarity/pct2p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.062,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_6/similarity_pct5p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_6/similarity/pct5p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.062,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_6/similarity_pct7p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_6/similarity/pct7p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.057,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_6/tree.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_6/tree/default/tree.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.003,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_6/tree_trim_overlap0.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_6/tree/trim_overlap0/tree.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.003,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_7/alignment.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_7/alignment/alignment.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.001,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_7/branch_dataset.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_7/datasets/default/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.039,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_7/branch_dataset_pct0p0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_7/datasets/pct0p0/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.039,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_7/branch_dataset_pct10p0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_7/datasets/pct10p0/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.039,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_7/branch_dataset_pct2p5.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_7/datasets/pct2p5/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.039,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_7/branch_dataset_pct5p0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_7/datasets/pct5p0/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.039,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_7/branch_dataset_pct7p5.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_7/datasets/pct7p5/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.039,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_7/branches",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_7/branches/default",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.325,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_7/branches_pct0p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_7/branches/pct0p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.324,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_7/branches_pct10p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_7/branches/pct10p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.307,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_7/branches_pct2p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_7/branches/pct2p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.323,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_7/branches_pct5p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_7/branches/pct5p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.319,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_7/branches_pct7p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_7/branches/pct7p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.313,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_7/branches_trim_overlap0_tree",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_7/branches/trim_overlap0_tree",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.273,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_7/similarity",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_7/similarity/default",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.075,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_7/similarity_pct0p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_7/similarity/pct0p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.075,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_7/similarity_pct10p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_7/similarity/pct10p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.075,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_7/similarity_pct2p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_7/similarity/pct2p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.075,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_7/similarity_pct5p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_7/similarity/pct5p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.075,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_7/similarity_pct7p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_7/similarity/pct7p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.075,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_7/tree.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_7/tree/default/tree.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.005,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_7/tree_trim_overlap0.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_7/tree/trim_overlap0/tree.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.005,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_8/alignment.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_8/alignment/alignment.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.001,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_8/branch_dataset.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_8/datasets/default/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.046,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_8/branch_dataset_pct0p0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_8/datasets/pct0p0/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.047,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_8/branch_dataset_pct10p0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_8/datasets/pct10p0/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.047,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_8/branch_dataset_pct2p5.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_8/datasets/pct2p5/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.047,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_8/branch_dataset_pct5p0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_8/datasets/pct5p0/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.047,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_8/branch_dataset_pct7p5.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_8/datasets/pct7p5/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.047,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_8/branches",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_8/branches/default",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.424,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_8/branches_pct0p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_8/branches/pct0p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.423,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_8/branches_pct10p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_8/branches/pct10p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.394,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_8/branches_pct2p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_8/branches/pct2p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.42,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_8/branches_pct5p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_8/branches/pct5p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.411,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_8/branches_pct7p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_8/branches/pct7p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.403,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_8/branches_trim_overlap0_tree",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_8/branches/trim_overlap0_tree",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.27,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_8/similarity",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_8/similarity/default",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.079,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_8/similarity_pct0p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_8/similarity/pct0p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.079,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_8/similarity_pct10p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_8/similarity/pct10p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.08,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_8/similarity_pct2p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_8/similarity/pct2p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.079,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_8/similarity_pct5p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_8/similarity/pct5p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.08,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_8/similarity_pct7p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_8/similarity/pct7p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.081,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_8/tree.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_8/tree/default/tree.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.006,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_8/tree_trim_overlap0.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_8/tree/trim_overlap0/tree.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.006,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_9/alignment.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_9/alignment/alignment.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.001,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_9/branch_dataset.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_9/datasets/default/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.035,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_9/branch_dataset_pct0p0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_9/datasets/pct0p0/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.035,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_9/branch_dataset_pct10p0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_9/datasets/pct10p0/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.035,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_9/branch_dataset_pct2p5.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_9/datasets/pct2p5/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.035,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_9/branch_dataset_pct5p0.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_9/datasets/pct5p0/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.035,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_9/branch_dataset_pct7p5.npz",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_9/datasets/pct7p5/branch_dataset.npz",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.035,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_9/branches",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_9/branches/default",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.283,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_9/branches_pct0p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_9/branches/pct0p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.282,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_9/branches_pct10p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_9/branches/pct10p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.267,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_9/branches_pct2p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_9/branches/pct2p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.282,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_9/branches_pct5p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_9/branches/pct5p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.278,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_9/branches_pct7p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_9/branches/pct7p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.272,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_9/branches_trim_overlap0_tree",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_9/branches/trim_overlap0_tree",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.235,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_9/similarity",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_9/similarity/default",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.078,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_9/similarity_pct0p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_9/similarity/pct0p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.078,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_9/similarity_pct10p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_9/similarity/pct10p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.079,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_9/similarity_pct2p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_9/similarity/pct2p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.078,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_9/similarity_pct5p0",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_9/similarity/pct5p0",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.08,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_9/similarity_pct7p5",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_9/similarity/pct7p5",
+    "category": "case_dir",
+    "action": "copy",
+    "size_mb": 0.079,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_9/tree.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_9/tree/default/tree.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.004,
+    "status": "copied"
+  },
+  {
+    "source": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_9/tree_trim_overlap0.json",
+    "target": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs_reorganized/cases/Normal_9/tree/trim_overlap0/tree.json",
+    "category": "case_file",
+    "action": "copy",
+    "size_mb": 0.004,
+    "status": "copied"
+  }
+]

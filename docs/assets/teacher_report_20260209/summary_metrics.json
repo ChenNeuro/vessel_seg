@@ -1,0 +1,49 @@
+{
+  "cases": [
+    {
+      "case": "Normal_1",
+      "step1_dice": 0.8450497870146784,
+      "step1_hd95_mm": 0.625,
+      "step2_p95": 2.0228721195770065,
+      "step3_p95": 0.5931986026667768,
+      "step3_cov_pred1": 0.9780952380952381,
+      "step4_cos": 0.9678089237885314,
+      "step4_branch_diff": 1,
+      "step5_p95": 0.6998753278404388
+    },
+    {
+      "case": "Normal_2",
+      "step1_dice": 0.7274363697253852,
+      "step1_hd95_mm": 10.255635759217745,
+      "step2_p95": 0.6650075460848851,
+      "step3_p95": 0.6281954709710222,
+      "step3_cov_pred1": 0.9869888475836431,
+      "step4_cos": 0.958310426928619,
+      "step4_branch_diff": 0,
+      "step5_p95": 0.7537797122824841
+    }
+  ],
+  "normal1_step3_connectivity_legacy": {
+    "points": 1586,
+    "lines": 113,
+    "components": 60,
+    "largest_components": [
+      122,
+      86,
+      83,
+      81,
+      74,
+      70,
+      52,
+      48,
+      45,
+      43
+    ],
+    "line_len_median": 13.0
+  },
+  "normal1_step3_connectivity_current": {
+    "points": 1050,
+    "lines": 8,
+    "components": 2
+  }
+}

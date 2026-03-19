@@ -1,0 +1,22 @@
+{
+  "stage": "step1_segmentation",
+  "pred_mask": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/quant/Normal_2/step1_segmentation/totalseg_output/coronary_arteries.nii.gz",
+  "gt_mask": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/ASOCA2020/Normal/Annotations_nii/Normal_2.nii.gz",
+  "spacing_mm": [
+    0.40429699420928955,
+    0.40429699420928955,
+    0.625
+  ],
+  "metrics": {
+    "pred_voxels": 26626,
+    "gt_voxels": 21150,
+    "dice": 0.7274363697253852,
+    "iou": 0.5716306457449258,
+    "volume_pred_mm3": 2720.1131505981357,
+    "volume_gt_mm3": 2160.68478686812,
+    "volume_abs_diff_mm3": 559.4283637300155,
+    "asd_mm": 1.6304459174081747,
+    "hd95_mm": 10.255635759217745,
+    "hdmax_mm": 46.221878947937505
+  }
+}

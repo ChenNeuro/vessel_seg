@@ -1,0 +1,35 @@
+{
+  "in_vtp": "outputs/quant/Normal_1/step2_centerline/pred_centerline.vtp",
+  "out_vtp": "outputs/quant/Normal_1/step2_centerline/pred_centerline_graph_min06.vtp",
+  "input_points": 2604,
+  "input_lines": 0,
+  "mode": "reconstructed_from_points",
+  "reconstruction": {
+    "input_points": 2604,
+    "nn_median_mm": 0.4242575950931961,
+    "component_radius_mm": 0.8485151901863922,
+    "edge_radius_mm": 1.187921266260949,
+    "components_kept": 3,
+    "component_summaries": [
+      {
+        "points": 1228,
+        "edges": 1227,
+        "paths": 340
+      },
+      {
+        "points": 1305,
+        "edges": 1304,
+        "paths": 328
+      },
+      {
+        "points": 11,
+        "edges": 10,
+        "paths": 1
+      }
+    ],
+    "output_lines": 669,
+    "output_points": 3713
+  },
+  "output_lines": 669,
+  "output_points": 3713
+}

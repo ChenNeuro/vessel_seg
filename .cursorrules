@@ -1,0 +1,25 @@
+Read AGENTS.md first and follow it as the canonical repo guide.
+
+Project focus:
+- coronary centerline trees
+- topology prior
+- branch shape prior
+- SCCT18 labeling
+- CPR / curved MIP visualization
+
+Rules:
+- user-facing chat in Chinese by default
+- do not modify ASOCA2020 raw data unless explicitly asked
+- prefer outputs_reorganized over loose outputs
+- prefer vessel_seg package code over new one-off scripts
+- when output structure changes, update docs and tests
+- do not create ad-hoc naming like final2/debug_new/tmp_case
+
+Preferred docs:
+- docs/coronary_analysis_master_blueprint.md
+- docs/data_output_reorganization.md
+
+Preferred locations:
+- stable code -> vessel_seg/
+- wrappers/migrations -> scripts/
+- exploratory notes -> docs/ or notebooks/

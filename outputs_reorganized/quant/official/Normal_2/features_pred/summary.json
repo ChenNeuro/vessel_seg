@@ -1,0 +1,78 @@
+{
+  "branch_count": 12,
+  "branches": [
+    {
+      "name": "Branch_00",
+      "length_mm": 37.08827737316759,
+      "confidence": 0.6329166889190674,
+      "feature_file": "Branch_00.npz"
+    },
+    {
+      "name": "Branch_01",
+      "length_mm": 36.6458138205151,
+      "confidence": 0.8137500286102295,
+      "feature_file": "Branch_01.npz"
+    },
+    {
+      "name": "Branch_02",
+      "length_mm": 35.658843747794165,
+      "confidence": 1.0,
+      "feature_file": "Branch_02.npz"
+    },
+    {
+      "name": "Branch_03",
+      "length_mm": 33.416789037305236,
+      "confidence": 0.8972221612930298,
+      "feature_file": "Branch_03.npz"
+    },
+    {
+      "name": "Branch_04",
+      "length_mm": 23.280874497879605,
+      "confidence": 0.6040277481079102,
+      "feature_file": "Branch_04.npz"
+    },
+    {
+      "name": "Branch_05",
+      "length_mm": 21.112503004680995,
+      "confidence": 0.9569444060325623,
+      "feature_file": "Branch_05.npz"
+    },
+    {
+      "name": "Branch_06",
+      "length_mm": 19.530485782904638,
+      "confidence": 1.0,
+      "feature_file": "Branch_06.npz"
+    },
+    {
+      "name": "Branch_07",
+      "length_mm": 13.712481426133214,
+      "confidence": 1.0,
+      "feature_file": "Branch_07.npz"
+    },
+    {
+      "name": "Branch_08",
+      "length_mm": 8.490047493122189,
+      "confidence": 1.0,
+      "feature_file": "Branch_08.npz"
+    },
+    {
+      "name": "Branch_09",
+      "length_mm": 7.005593669302082,
+      "confidence": 1.0,
+      "feature_file": "Branch_09.npz"
+    },
+    {
+      "name": "Branch_10",
+      "length_mm": 6.604233941108378,
+      "confidence": 0.3240278363227844,
+      "feature_file": "Branch_10.npz"
+    },
+    {
+      "name": "Branch_11",
+      "length_mm": 6.534141350862189,
+      "confidence": 1.0,
+      "feature_file": "Branch_11.npz"
+    }
+  ],
+  "global_descriptor": "global_descriptor.npy"
+}

@@ -1,0 +1,41 @@
+{
+  "stage": "step3_repair",
+  "repaired_centerline": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/quant/Normal_2/step3_repair/repaired.vtp",
+  "gt_centerline": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/ASOCA2020/Normal/Centerlines/Normal_2.vtp",
+  "metrics": {
+    "pred_points": 538,
+    "gt_points": 7970,
+    "pred2gt_mean": 0.28122787578318337,
+    "pred2gt_median": 0.2351120111563607,
+    "pred2gt_p95": 0.6281954709710222,
+    "pred2gt_max": 2.1077960107065277,
+    "gt2pred_mean": 15.951052894216632,
+    "gt2pred_median": 0.5552062399606312,
+    "gt2pred_p95": 73.53554302057897,
+    "gt2pred_max": 79.41051490318023,
+    "coverage_pred@1mm": 0.9869888475836431,
+    "coverage_gt@1mm": 0.5958594730238393,
+    "thr_mm": 1.0
+  },
+  "baseline_centerline": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/quant/Normal_2/step2_centerline/pred_centerline.vtp",
+  "baseline_metrics": {
+    "pred_points": 518,
+    "gt_points": 7970,
+    "pred2gt_mean": 0.277596665780998,
+    "pred2gt_median": 0.22650978150832385,
+    "pred2gt_p95": 0.6650075460848851,
+    "pred2gt_max": 2.1077960107065277,
+    "gt2pred_mean": 15.940868440596189,
+    "gt2pred_median": 0.5626564486061547,
+    "gt2pred_p95": 73.47645676161842,
+    "gt2pred_max": 79.39812443967949,
+    "coverage_pred@1mm": 0.9864864864864865,
+    "coverage_gt@1mm": 0.5958594730238393,
+    "thr_mm": 1.0
+  },
+  "delta": {
+    "pred2gt_mean_delta": -0.003631210002185359,
+    "pred2gt_p95_delta": 0.03681207511386286,
+    "coverage_pred@1mm_delta": 0.0005023610971566228
+  }
+}

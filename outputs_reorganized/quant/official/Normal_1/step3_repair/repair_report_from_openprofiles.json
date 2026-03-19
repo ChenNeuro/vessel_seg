@@ -1,0 +1,155 @@
+{
+  "prob": "outputs/quant/Normal_1/step1_segmentation/totalseg_output/coronary_arteries.nii.gz",
+  "vtp": "outputs/quant/Normal_1/step2_centerline/pred_centerline_openprofiles.vtp",
+  "out": "outputs/quant/Normal_1/step3_repair/repaired_from_openprofiles.vtp",
+  "num_branches": 7,
+  "num_bridges": 1,
+  "params": {
+    "prob_thresh": 0.2,
+    "max_dist": 10.0,
+    "max_bridge_len": 25.0,
+    "max_angle_deg": 90.0,
+    "w_prob": 1.0,
+    "w_dist": 0.6,
+    "outside_penalty": 10.0,
+    "smooth_window": 5,
+    "max_curvature": 0.4,
+    "murray_exp": 3.0,
+    "murray_tol": 0.5,
+    "junction_snap_tol": 1.5,
+    "junction_blend_steps": 3,
+    "regularize_curvature": 0.45,
+    "regularize_iterations": 3,
+    "min_branch_length": 0.0,
+    "coord_mode": "auto",
+    "align_centerline": true,
+    "align_max_points": 8000,
+    "align_outside_penalty": 20.0,
+    "align_steps": "10,5,2,1,0.5,0.25",
+    "densify_step_mm": 0.4,
+    "bridge_min_count": 1,
+    "bridge_relax_if_none": false,
+    "bridge_relax_dist_factor": 1.5,
+    "bridge_relax_angle_add": 20.0,
+    "bridge_relax_len_factor": 1.4,
+    "bridge_relax_curvature_factor": 1.5,
+    "bridge_relax_murray_add": 0.15,
+    "bridge_smooth_iterations": 4,
+    "regularize_scope": "bridges"
+  },
+  "coordinate_mode_info": {
+    "selected_mode": "abs_spacing",
+    "candidates": {
+      "abs_spacing": {
+        "score": 0.007504696022949786,
+        "inside_ratio": 0.9962476547842402,
+        "mean_prob": 0.9962476491928101
+      },
+      "affine": {
+        "score": Infinity,
+        "inside_ratio": 0.0,
+        "mean_prob": 0.0
+      }
+    }
+  },
+  "alignment": {
+    "enabled": true,
+    "init_shift_world": [
+      8.106906950473785,
+      9.058973282575607,
+      7.8125
+    ],
+    "best_shift_world": [
+      -0.3930930495262146,
+      -0.1910267174243927,
+      -0.1875
+    ],
+    "best_score": 0.0,
+    "inside_ratio": 1.0,
+    "mean_prob": 1.0,
+    "num_samples": 533,
+    "steps_mm": [
+      10.0,
+      5.0,
+      2.0,
+      1.0,
+      0.5,
+      0.25
+    ]
+  },
+  "alignment_applied_to_output": true,
+  "snap_stats": {
+    "clusters": 3,
+    "snapped_endpoints": 10
+  },
+  "regularize_stats": {
+    "adjusted_branches": 0,
+    "max_curvature_before": 0.0,
+    "max_curvature_after": 0.0,
+    "scope_count": 1,
+    "scope": "bridges"
+  },
+  "removed_short_branches": 0,
+  "candidate_stats": {
+    "candidate_pairs_prefiltered": 7,
+    "valid_routes": 3,
+    "selected_routes": 1,
+    "rejected_reasons": {
+      "routing_failed": 0,
+      "bridge_len_outside_range": 3,
+      "curvature_too_high": 0,
+      "murray_too_high": 1
+    },
+    "passes": [
+      {
+        "name": "strict",
+        "candidate_pairs_prefiltered": 7,
+        "valid_routes": 3,
+        "rejected_reasons": {
+          "routing_failed": 0,
+          "bridge_len_outside_range": 3,
+          "curvature_too_high": 0,
+          "murray_too_high": 1
+        },
+        "params": {
+          "max_dist": 10.0,
+          "max_angle_deg": 90.0,
+          "max_bridge_len": 25.0,
+          "max_curvature": 0.4,
+          "murray_tol": 0.5
+        }
+      }
+    ]
+  },
+  "bridges": [
+    {
+      "endpoint_a": {
+        "branch": 0,
+        "end_idx": 0,
+        "point": [
+          204.6022987961769,
+          224.64500233530998,
+          -170.1875
+        ]
+      },
+      "endpoint_b": {
+        "branch": 1,
+        "end_idx": -1,
+        "point": [
+          204.1862831711769,
+          224.22898671030998,
+          -170.8125
+        ]
+      },
+      "dist_mm": 0.8583489969052689,
+      "angle_deg": 22.208191818002092,
+      "path_len_mm": 0.8583493724565969,
+      "max_curvature": 0.0,
+      "radius_a": 1.3323586532111145,
+      "radius_b": 1.315558142380324,
+      "murray_deviation": 0.037353801297798694,
+      "cost": 0.7843810673013817,
+      "score": 1.240417597987787
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "seed_mode": "mask_skeleton",
+  "branch_count": 7,
+  "points": 292,
+  "lines": 7,
+  "profiles": 0,
+  "surface_fallback": true,
+  "resample_step_mm": 0.5,
+  "resampled_points": 533,
+  "resampled_lines": 7
+}

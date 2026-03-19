@@ -1,0 +1,93 @@
+{
+  "prob": "outputs/quant/Normal_1_refined/step1_segmentation/totalseg_output/coronary_arteries.nii.gz",
+  "vtp": "outputs/quant/Normal_1_refined/step2_centerline/pred_centerline.vtp",
+  "out": "outputs/quant/Normal_1_refined/step3_repair/repaired.vtp",
+  "num_branches": 7,
+  "num_bridges": 2,
+  "params": {
+    "prob_thresh": 0.2,
+    "max_dist": 10.0,
+    "max_bridge_len": 25.0,
+    "max_angle_deg": 90.0,
+    "w_prob": 1.0,
+    "w_dist": 0.6,
+    "outside_penalty": 10.0,
+    "smooth_window": 5,
+    "max_curvature": 0.4,
+    "murray_exp": 3.0,
+    "murray_tol": 0.5,
+    "junction_snap_tol": 1.0,
+    "junction_blend_steps": 3,
+    "regularize_curvature": 0.45,
+    "regularize_iterations": 3,
+    "min_branch_length": 0.0
+  },
+  "snap_stats": {
+    "clusters": 5,
+    "snapped_endpoints": 14
+  },
+  "regularize_stats": {
+    "adjusted_branches": 8,
+    "max_curvature_before": 26.35469866769522,
+    "max_curvature_after": 0.4474756390448294
+  },
+  "removed_short_branches": 0,
+  "bridges": [
+    {
+      "endpoint_a": {
+        "branch": 1,
+        "end_idx": -1,
+        "point": [
+          204.57937622070312,
+          224.42001342773438,
+          -170.625
+        ]
+      },
+      "endpoint_b": {
+        "branch": 2,
+        "end_idx": 0,
+        "point": [
+          204.99539184570312,
+          224.42001342773438,
+          -170.625
+        ]
+      },
+      "dist_mm": 0.416015625,
+      "angle_deg": 73.88606700218061,
+      "path_len_mm": 0.41601601243019104,
+      "max_curvature": 0.0,
+      "radius_a": 1.499967064231118,
+      "radius_b": 1.315558142380324,
+      "murray_deviation": 0.325339984184405,
+      "cost": 0.4277380257844925
+    },
+    {
+      "endpoint_a": {
+        "branch": 1,
+        "end_idx": 0,
+        "point": [
+          182.94654846191406,
+          184.06646728515625,
+          -153.125
+        ]
+      },
+      "endpoint_b": {
+        "branch": 6,
+        "end_idx": 0,
+        "point": [
+          182.94654846191406,
+          185.73052978515625,
+          -148.125
+        ]
+      },
+      "dist_mm": 5.269639836260753,
+      "angle_deg": 22.81780542952691,
+      "path_len_mm": 5.71829033066255,
+      "max_curvature": 0.2588301475492364,
+      "radius_a": 1.8255967474147698,
+      "radius_b": 1.499967064231118,
+      "murray_deviation": 0.44533519465943705,
+      "cost": 3.784320352892194
+    }
+  ]
+}

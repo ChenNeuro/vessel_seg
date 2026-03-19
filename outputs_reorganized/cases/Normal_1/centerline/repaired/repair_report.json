@@ -1,0 +1,21 @@
+{
+  "prob": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1/prob_from_mask.nii.gz",
+  "vtp": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/ASOCA2020/Normal/Centerlines/Normal_1.vtp",
+  "out": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/Normal_1/centerline_repaired.vtp",
+  "num_branches": 10,
+  "num_bridges": 0,
+  "params": {
+    "prob_thresh": 0.2,
+    "max_dist": 10.0,
+    "max_bridge_len": 25.0,
+    "max_angle_deg": 75.0,
+    "w_prob": 1.0,
+    "w_dist": 0.6,
+    "outside_penalty": 10.0,
+    "smooth_window": 5,
+    "max_curvature": 0.4,
+    "murray_exp": 3.0,
+    "murray_tol": 0.5
+  },
+  "bridges": []
+}

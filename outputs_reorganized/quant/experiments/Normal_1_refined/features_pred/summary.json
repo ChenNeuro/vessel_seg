@@ -1,0 +1,48 @@
+{
+  "branch_count": 7,
+  "branches": [
+    {
+      "name": "Major_00",
+      "length_mm": 74.18428836901155,
+      "confidence": 0.6301388740539551,
+      "feature_file": "Major_00.npz"
+    },
+    {
+      "name": "Major_01",
+      "length_mm": 58.85562666343803,
+      "confidence": 1.0,
+      "feature_file": "Major_01.npz"
+    },
+    {
+      "name": "Branch_02",
+      "length_mm": 38.02951892294207,
+      "confidence": 1.0,
+      "feature_file": "Branch_02.npz"
+    },
+    {
+      "name": "Branch_03",
+      "length_mm": 35.72070479969308,
+      "confidence": 0.9750000238418579,
+      "feature_file": "Branch_03.npz"
+    },
+    {
+      "name": "Branch_04",
+      "length_mm": 25.377652304989642,
+      "confidence": 1.0,
+      "feature_file": "Branch_04.npz"
+    },
+    {
+      "name": "Branch_05",
+      "length_mm": 22.925473528379715,
+      "confidence": 1.0,
+      "feature_file": "Branch_05.npz"
+    },
+    {
+      "name": "Branch_06",
+      "length_mm": 6.325750486107756,
+      "confidence": 1.0,
+      "feature_file": "Branch_06.npz"
+    }
+  ],
+  "global_descriptor": "global_descriptor.npy"
+}

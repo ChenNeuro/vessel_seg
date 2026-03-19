@@ -1,0 +1,21 @@
+{
+  "stage": "step5_render",
+  "pred_mesh": null,
+  "pred_features": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/outputs/quant/Normal_2/features_pred",
+  "gt_mask": "/mnt/c/Users/chenyihao/Documents/GitHub/vessel_seg/ASOCA2020/Normal/Annotations_nii/Normal_2.nii.gz",
+  "metrics": {
+    "pred_points": 86327,
+    "gt_points": 12618,
+    "pred2gt_mean": 0.38806181180512195,
+    "pred2gt_median": 0.35540435347668253,
+    "pred2gt_p95": 0.7537797122824841,
+    "pred2gt_max": 2.476207231388499,
+    "gt2pred_mean": 15.726979961300032,
+    "gt2pred_median": 0.2948068822380447,
+    "gt2pred_p95": 71.94302555734234,
+    "gt2pred_max": 78.49690208345191,
+    "coverage_pred@1mm": 0.9862615404218842,
+    "coverage_gt@1mm": 0.6035821841813283,
+    "thr_mm": 1.0
+  }
+}

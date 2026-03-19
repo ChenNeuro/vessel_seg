@@ -1,0 +1,21 @@
+{
+  "stage": "step5_render",
+  "pred_mesh": null,
+  "pred_features": "outputs/quant/Normal_1/features_pred",
+  "gt_mask": "ASOCA2020/Normal/Annotations_nii/Normal_1.nii.gz",
+  "metrics": {
+    "pred_points": 165474,
+    "gt_points": 18440,
+    "pred2gt_mean": 0.3627241446952611,
+    "pred2gt_median": 0.33531381300296353,
+    "pred2gt_p95": 0.6990230573624154,
+    "pred2gt_max": 2.3462784507150634,
+    "gt2pred_mean": 0.9044441306999588,
+    "gt2pred_median": 0.18490834022039998,
+    "gt2pred_p95": 5.21063619797829,
+    "gt2pred_max": 27.054328751917563,
+    "coverage_pred@1mm": 0.9871762331242371,
+    "coverage_gt@1mm": 0.9023861171366594,
+    "thr_mm": 1.0
+  }
+}
