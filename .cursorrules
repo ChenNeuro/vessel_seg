@@ -1,25 +1,25 @@
-Read AGENTS.md first and follow it as the canonical repo guide.
+先读 AGENTS.md，并将其视为唯一主规范。
 
-Project focus:
-- coronary centerline trees
-- topology prior
-- branch shape prior
-- SCCT18 labeling
-- CPR / curved MIP visualization
+项目焦点：
+- 冠脉中心线树
+- 拓扑先验
+- 分支形状先验
+- SCCT18 标注
+- CPR / curved MIP 可视化
+- 五阶段工程流水线
 
-Rules:
-- user-facing chat in Chinese by default
-- do not modify ASOCA2020 raw data unless explicitly asked
-- prefer outputs_reorganized over loose outputs
-- prefer vessel_seg package code over new one-off scripts
-- when output structure changes, update docs and tests
-- do not create ad-hoc naming like final2/debug_new/tmp_case
+规则：
+- 默认用中文与用户沟通
+- 不修改外部原始数据 `../ASOCA2020`
+- 新输出优先写入 `outputs_reorganized`
+- 稳定代码优先写入 `vessel_seg/`
+- 主线入口优先写入 `vessel_seg/pipeline/` 或 `scripts/pipeline/`
+- 绘图脚本统一放在 `scripts/visualization/`
+- 历史 notebook、文档、演示脚本应继续归档
+- 目录结构变更后，必须更新文档并跑基线测试
+- 不要创建 `final2`、`debug_new`、`tmp_case` 这类随意命名
 
-Preferred docs:
-- docs/coronary_analysis_master_blueprint.md
-- docs/data_output_reorganization.md
-
-Preferred locations:
-- stable code -> vessel_seg/
-- wrappers/migrations -> scripts/
-- exploratory notes -> docs/ or notebooks/
+优先文档：
+- `docs/coronary_analysis_master_blueprint.md`
+- `docs/data_output_reorganization.md`
+- `docs/rebuild_repo_plan.md`

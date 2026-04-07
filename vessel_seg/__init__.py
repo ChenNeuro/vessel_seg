@@ -9,6 +9,7 @@ from .graph_structure import Branch as TreeBranch
 from .graph_structure import CoronaryTree as CenterlineTree
 from .io import VolumeData, load_mask, load_volume, save_nifti
 from .metadata import SegmentationMetadata, harmonise_label_names, load_metadata, save_metadata
+from .pipeline import CaseInputs, PipelineConfig, PipelineRunSummary, StageArtifact, run_case_pipeline
 from .tree_prior import CoronaryTreePrior
 
 __all__ = [
@@ -38,12 +39,17 @@ __all__ = [
     "TreeBranch",
     "CenterlineTree",
     "ClinicalCompletionConfig",
+    "CaseInputs",
+    "PipelineConfig",
+    "PipelineRunSummary",
+    "StageArtifact",
     "ProjectPaths",
     "VolumeData",
     "load_volume",
     "load_mask",
     "save_nifti",
     "CoronaryTreePrior",
+    "run_case_pipeline",
     "run_clinical_completion_workflow",
 ]
 

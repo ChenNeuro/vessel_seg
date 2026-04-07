@@ -1,40 +1,8 @@
-# Python artifacts
+# Python
 __pycache__/
 *.py[cod]
-*.pyo
 *.so
 *.egg-info/
-
-# Virtual environments
-env/
-.env/
-.venv/
-venv/
-
-# Data and generated outputs
-ASOCA2020/
-data/
-features/
-nnUNet_preprocessed/
-nnUNet_raw/
-nnUNet_results/
-outputs/
-segmentations/
-scripts/checkpoints/
-third_party/nnUNet/
-third_party/
-actions-runner/
-
-# IDE / OS noise
-.vscode/
-.idea/
-.DS_Store
-Thumbs.db
-
-# Jupyter / notebooks
-.ipynb_checkpoints/
-
-# Python tooling caches
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
@@ -45,14 +13,68 @@ Thumbs.db
 coverage.xml
 htmlcov/
 
-# Build artifacts
-build/
-dist/
+# Environments
+.env/
+.venv/
+env/
+venv/
 
-# Temporary files
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
 *.swp
 *.swo
-*.tmp
 
-# Logs
+# Temporary and local tooling
+*.tmp
 *.log
+.sisyphus/
+
+# Build and third-party
+build/
+dist/
+/actions-runner/
+/archive/infra/actions-runner/
+/third_party/
+
+# Data roots
+/ASOCA2020/
+/data/raw/**
+/data/interim/**
+/data/processed/**
+/data/external/*.cache
+!/data/raw/.gitkeep
+!/data/interim/.gitkeep
+!/data/processed/.gitkeep
+
+# Pipeline and research outputs
+/outputs/
+/outputs_reorganized/
+/outputs_reorganized_runs/
+/benchmarks/
+/curved_mip.png
+/straightened.png
+
+# Large generated binaries
+*.nii
+*.nii.gz
+*.nrrd
+*.mha
+*.mhd
+*.vtk
+*.vtp
+*.vti
+*.stl
+*.obj
+*.ply
+*.npy
+*.npz
+
+# Slides
+/Applications/*.pptx
+/docs/*.pptx
+
+# Jupyter
+.ipynb_checkpoints/

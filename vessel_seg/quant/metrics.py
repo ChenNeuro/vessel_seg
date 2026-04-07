@@ -26,6 +26,98 @@ def summarize_distances(dist: np.ndarray) -> dict[str, Optional[float]]:
     }
 
 
+def _skeletonize_binary(mask: np.ndarray) -> np.ndarray:
+    """对二值体做骨架化，优先使用 3D skeletonize，缺失时退化到逐层 2D。"""
+    volume = np.asarray(mask, dtype=bool)
+    try:
+        from skimage.morphology import skeletonize_3d  # type: ignore
+
+        return skeletonize_3d(volume).astype(bool)
+    except Exception:
+        try:
+            from skimage.morphology._skeletonize_3d import skeletonize_3d  # type: ignore
+
+            return skeletonize_3d(volume).astype(bool)
+        except Exception:
+            from skimage.morphology import skeletonize  # type: ignore
+
+            slices = [skeletonize(volume[:, :, i]) for i in range(volume.shape[2])]
+            return np.stack(slices, axis=2).astype(bool)
+
+
+def _component_count(mask: np.ndarray, connectivity: int) -> int:
+    structure = ndimage.generate_binary_structure(rank=3, connectivity=connectivity)
+    _, num = ndimage.label(mask.astype(bool), structure=structure)
+    return int(num)
+
+
+def _largest_component_ratio(mask: np.ndarray, connectivity: int) -> Optional[float]:
+    structure = ndimage.generate_binary_structure(rank=3, connectivity=connectivity)
+    labels, num = ndimage.label(mask.astype(bool), structure=structure)
+    if num == 0:
+        return None
+    counts = np.bincount(labels.ravel())
+    foreground = counts[1:]
+    if foreground.size == 0:
+        return None
+    return float(foreground.max() / foreground.sum())
+
+
+def segmentation_consistency_metrics(mask: np.ndarray) -> dict[str, Any]:
+    """返回不依赖 GT 的分割一致性统计。"""
+    pred = np.asarray(mask, dtype=bool)
+    skeleton = _skeletonize_binary(pred)
+    return {
+        "mask_components_6": _component_count(pred, connectivity=1),
+        "mask_components_26": _component_count(pred, connectivity=3),
+        "mask_largest_component_ratio_26": _largest_component_ratio(pred, connectivity=3),
+        "skeleton_voxels": int(skeleton.sum(dtype=np.int64)),
+        "skeleton_components_6": _component_count(skeleton, connectivity=1),
+        "skeleton_components_26": _component_count(skeleton, connectivity=3),
+    }
+
+
+def cldice_metric(pred_mask: np.ndarray, gt_mask: np.ndarray) -> dict[str, Optional[float]]:
+    """计算管状结构常用的 clDice 及其中间项。"""
+    pred = np.asarray(pred_mask, dtype=bool)
+    gt = np.asarray(gt_mask, dtype=bool)
+
+    if pred.shape != gt.shape:
+        raise ValueError(f"Shape mismatch: pred {pred.shape} vs gt {gt.shape}")
+
+    if not pred.any() and not gt.any():
+        return {"cldice": 1.0, "topology_precision": 1.0, "topology_sensitivity": 1.0}
+
+    pred_skeleton = _skeletonize_binary(pred)
+    gt_skeleton = _skeletonize_binary(gt)
+
+    pred_skeleton_count = int(pred_skeleton.sum(dtype=np.int64))
+    gt_skeleton_count = int(gt_skeleton.sum(dtype=np.int64))
+
+    topology_precision = None
+    if pred_skeleton_count > 0:
+        topology_precision = float(np.logical_and(pred_skeleton, gt).sum(dtype=np.int64) / pred_skeleton_count)
+
+    topology_sensitivity = None
+    if gt_skeleton_count > 0:
+        topology_sensitivity = float(np.logical_and(gt_skeleton, pred).sum(dtype=np.int64) / gt_skeleton_count)
+
+    if topology_precision is None or topology_sensitivity is None:
+        cldice = None
+    elif topology_precision + topology_sensitivity == 0.0:
+        cldice = 0.0
+    else:
+        cldice = float(
+            2.0 * topology_precision * topology_sensitivity / (topology_precision + topology_sensitivity)
+        )
+
+    return {
+        "cldice": cldice,
+        "topology_precision": topology_precision,
+        "topology_sensitivity": topology_sensitivity,
+    }
+
+
 def symmetric_point_distances(a: np.ndarray, b: np.ndarray) -> Tuple[np.ndarray, np.ndarray]:
     if a.size == 0 or b.size == 0:
         return np.array([], dtype=float), np.array([], dtype=float)
@@ -105,6 +197,10 @@ def segmentation_metrics(
     dist_pred_gt, dist_gt_pred = _surface_distances(pred, gt, spacing)
     all_surface = np.concatenate([dist_pred_gt, dist_gt_pred]) if dist_pred_gt.size and dist_gt_pred.size else np.array([], dtype=float)
 
+    pred_consistency = segmentation_consistency_metrics(pred)
+    gt_consistency = segmentation_consistency_metrics(gt)
+    cldice = cldice_metric(pred, gt)
+
     return {
         "pred_voxels": int(pred.sum(dtype=np.int64)),
         "gt_voxels": int(gt.sum(dtype=np.int64)),
@@ -116,6 +212,13 @@ def segmentation_metrics(
         "asd_mm": _safe_stat(all_surface, np.mean),
         "hd95_mm": _safe_stat(all_surface, lambda x: np.percentile(x, 95)),
         "hdmax_mm": _safe_stat(all_surface, np.max),
+        **{f"pred_{key}": value for key, value in pred_consistency.items()},
+        **{f"gt_{key}": value for key, value in gt_consistency.items()},
+        "component_diff_26": abs(pred_consistency["mask_components_26"] - gt_consistency["mask_components_26"]),
+        "skeleton_component_diff_26": abs(
+            pred_consistency["skeleton_components_26"] - gt_consistency["skeleton_components_26"]
+        ),
+        **cldice,
     }
 
 

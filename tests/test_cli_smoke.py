@@ -39,6 +39,11 @@ def test_package_clinical_demo_help() -> None:
     assert "clinical dashboard workflow" in completed.stdout
 
 
+def test_package_pipeline_case_help() -> None:
+    completed = _run_ok("-m", "vessel_seg", "pipeline-case", "--help")
+    assert "--case-id" in completed.stdout
+
+
 def test_legacy_quant_wrapper_help() -> None:
     completed = _run_ok("scripts/quant_pipeline.py", "--help")
     assert "Coronary 5-step quantitative pipeline." in completed.stdout

@@ -1,27 +1,31 @@
 # GitHub Copilot Instructions
 
-Follow `AGENTS.md` in the repository root as the primary coding guide.
+以仓库根目录的 `AGENTS.md` 作为最高优先级规范。
 
-Important repository-specific expectations:
+仓库特定要求：
 
-- This is a coronary analysis repository, not only a segmentation repo.
-- Prefer extending reusable logic in `vessel_seg/`.
-- Keep `scripts/` thin when possible.
-- Use `outputs_reorganized/` for newly standardized output layouts.
-- Do not break legacy paths in `outputs/` without an explicit migration path.
-- Keep `ASOCA2020/` treated as read-only raw input.
+- 这是冠脉分析仓库，不是单纯分割仓库。
+- 稳定逻辑优先进入 `vessel_seg/`。
+- 五阶段主线优先进入 `vessel_seg/pipeline/` 和 `scripts/pipeline/`。
+- 绘图与对比脚本集中在 `scripts/visualization/`。
+- 新标准化输出使用 `outputs_reorganized/`。
+- 不允许无迁移方案地破坏 `outputs/` 旧路径。
+- `../ASOCA2020` 视为只读原始输入。
+- 历史 notebook、文档、演示脚本应继续保留在 `archive/` 或 `docs/archive/`。
 
-Before larger refactors, inspect:
+开始较大重构前，优先检查：
 
+- `README.md`
+- `docs/rebuild_repo_plan.md`
 - `docs/coronary_analysis_master_blueprint.md`
 - `docs/data_output_reorganization.md`
-- `README.md`
 
-Preferred development themes:
+当前推荐的开发主题：
 
-1. clean centerline tree
-2. topology canonicalization
-3. branch shape prior
-4. SCCT18 labeling
-5. CPR / clinical visualization
-6. evaluation contracts
+1. 干净中心线树
+2. 拓扑规范化
+3. 分支形状先验
+4. SCCT18 标注
+5. CPR / 临床可视化
+6. 评估契约与可复现性
+7. 仓库去杂物化与归档

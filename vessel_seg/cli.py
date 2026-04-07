@@ -4,6 +4,15 @@ import argparse
 from pathlib import Path
 
 from vessel_seg.clinical_completion import add_clinical_completion_arguments, run_clinical_completion_command
+from vessel_seg.config import ProjectPaths
+from vessel_seg.pipeline import CaseInputs, PipelineConfig, run_case_pipeline
+from vessel_seg.pipeline.stages import (
+    CenterlineExtractionStageConfig,
+    CenterlineRepairStageConfig,
+    CtSegmentationStageConfig,
+    RenderingStageConfig,
+    WallFeatureStageConfig,
+)
 from vessel_seg.quant.pipeline import (
     evaluate_step1_segmentation,
     evaluate_step2_centerline_from_mask,
@@ -110,6 +119,22 @@ def build_parser() -> argparse.ArgumentParser:
     )
     add_clinical_completion_arguments(clinical_parser)
 
+    pipeline_parser = subparsers.add_parser(
+        "pipeline-case",
+        help="Run the rebuilt five-stage pipeline for one case.",
+        description="Run the rebuilt five-stage pipeline for one case.",
+    )
+    pipeline_parser.add_argument("--case-id", required=True)
+    pipeline_parser.add_argument("--ct", type=Path, required=True)
+    pipeline_parser.add_argument("--mask", type=Path, default=None)
+    pipeline_parser.add_argument("--centerline-vtp", type=Path, default=None)
+    pipeline_parser.add_argument("--probability-map", type=Path, default=None)
+    pipeline_parser.add_argument("--output-root", type=Path, default=Path("outputs_reorganized"))
+    pipeline_parser.add_argument("--seg-backend", choices=["existing_mask", "totalseg", "dummy"], default="existing_mask")
+    pipeline_parser.add_argument("--centerline-backend", choices=["mask_skeleton", "vtp_copy"], default="mask_skeleton")
+    pipeline_parser.add_argument("--repair-mode", choices=["topology_only", "probability_bridge"], default="topology_only")
+    pipeline_parser.add_argument("--dry-run", action="store_true")
+
     return parser
 
 
@@ -126,6 +151,33 @@ def main(argv: list[str] | None = None) -> None:
 
     if args.command == "clinical-demo":
         run_clinical_completion_command(args)
+        return
+
+    if args.command == "pipeline-case":
+        project_paths = ProjectPaths.from_root(Path(__file__).resolve().parents[1])
+        summary = run_case_pipeline(
+            CaseInputs(
+                case_id=args.case_id,
+                ct_path=args.ct.resolve(),
+                mask_path=None if args.mask is None else args.mask.resolve(),
+                centerline_vtp_path=None if args.centerline_vtp is None else args.centerline_vtp.resolve(),
+                probability_map_path=None if args.probability_map is None else args.probability_map.resolve(),
+            ),
+            project_paths=project_paths,
+            pipeline_config=PipelineConfig(
+                output_root=(project_paths.root / args.output_root).resolve() if not args.output_root.is_absolute() else args.output_root,
+                segmentation_backend=args.seg_backend,
+                centerline_backend=args.centerline_backend,
+                repair_mode=args.repair_mode,
+                dry_run=args.dry_run,
+            ),
+            ct_config=CtSegmentationStageConfig(backend=args.seg_backend),
+            extraction_config=CenterlineExtractionStageConfig(backend=args.centerline_backend),
+            repair_config=CenterlineRepairStageConfig(mode=args.repair_mode),
+            wall_config=WallFeatureStageConfig(),
+            rendering_config=RenderingStageConfig(),
+        )
+        print(summary.output_root / "cases" / args.case_id / "pipeline_summary.json")
         return
 
     raise SystemExit(f"Unsupported command: {args.command}")

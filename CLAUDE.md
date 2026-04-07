@@ -1,23 +1,25 @@
 # CLAUDE.md
 
-Read `AGENTS.md` first. Treat it as the canonical repo contract.
+先读 `AGENTS.md`，它是仓库唯一的主规范。
 
-Additional Claude-specific guidance:
+Claude 适配要求：
 
-- Prefer concise, high-signal summaries during exploration.
-- When making architectural suggestions, anchor them to:
+- 探索阶段保持高信息密度，先说结论，再说证据。
+- 讨论架构时，优先锚定：
   - `docs/coronary_analysis_master_blueprint.md`
   - `docs/data_output_reorganization.md`
-- If a task touches outputs or schemas, explicitly mention:
-  - legacy compatibility
-  - target path under `outputs_reorganized/`
-  - whether tests/docs were updated
+  - `docs/rebuild_repo_plan.md`
+- 如果任务涉及路径、输出、schema、归档，必须明确说明：
+  - 是否影响旧路径兼容
+  - 是否写入 `outputs_reorganized/`
+  - 是否更新了文档
+  - 是否跑了当前基线测试
 
-Default mental model:
+默认心智模型：
 
-1. stable centerline tree
-2. stable topology representation
-3. stable SCCT18 labeling
-4. stable visualization and reports
+1. 干净中心线树
+2. 稳定拓扑表示
+3. 五阶段流水线
+4. 可复用可视化与报告
 
-Do not introduce a parallel architecture unless necessary.
+不要再引入并行架构，也不要把归档内容重新扶正为主入口。
