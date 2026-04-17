@@ -1,0 +1,179 @@
+{
+  "name": "ASOCA",
+  "description": "Automated Segmentation of Coronary Arteries (ASOCA) challenge dataset",
+  "reference": "https://asoca.grand-challenge.org/",
+  "licence": "Challenge dataset (research use only)",
+  "release": "2020",
+  "modality": {
+    "0": "CT"
+  },
+  "labels": {
+    "background": 0,
+    "coronary_arteries": 1
+  },
+  "numTraining": 40,
+  "numTest": 0,
+  "training": [
+    {
+      "image": "./imagesTr/Diseased_1_0000.nii.gz",
+      "label": "./labelsTr/Diseased_1.nii.gz"
+    },
+    {
+      "image": "./imagesTr/Diseased_10_0000.nii.gz",
+      "label": "./labelsTr/Diseased_10.nii.gz"
+    },
+    {
+      "image": "./imagesTr/Diseased_11_0000.nii.gz",
+      "label": "./labelsTr/Diseased_11.nii.gz"
+    },
+    {
+      "image": "./imagesTr/Diseased_12_0000.nii.gz",
+      "label": "./labelsTr/Diseased_12.nii.gz"
+    },
+    {
+      "image": "./imagesTr/Diseased_13_0000.nii.gz",
+      "label": "./labelsTr/Diseased_13.nii.gz"
+    },
+    {
+      "image": "./imagesTr/Diseased_14_0000.nii.gz",
+      "label": "./labelsTr/Diseased_14.nii.gz"
+    },
+    {
+      "image": "./imagesTr/Diseased_15_0000.nii.gz",
+      "label": "./labelsTr/Diseased_15.nii.gz"
+    },
+    {
+      "image": "./imagesTr/Diseased_16_0000.nii.gz",
+      "label": "./labelsTr/Diseased_16.nii.gz"
+    },
+    {
+      "image": "./imagesTr/Diseased_17_0000.nii.gz",
+      "label": "./labelsTr/Diseased_17.nii.gz"
+    },
+    {
+      "image": "./imagesTr/Diseased_18_0000.nii.gz",
+      "label": "./labelsTr/Diseased_18.nii.gz"
+    },
+    {
+      "image": "./imagesTr/Diseased_19_0000.nii.gz",
+      "label": "./labelsTr/Diseased_19.nii.gz"
+    },
+    {
+      "image": "./imagesTr/Diseased_2_0000.nii.gz",
+      "label": "./labelsTr/Diseased_2.nii.gz"
+    },
+    {
+      "image": "./imagesTr/Diseased_20_0000.nii.gz",
+      "label": "./labelsTr/Diseased_20.nii.gz"
+    },
+    {
+      "image": "./imagesTr/Diseased_3_0000.nii.gz",
+      "label": "./labelsTr/Diseased_3.nii.gz"
+    },
+    {
+      "image": "./imagesTr/Diseased_4_0000.nii.gz",
+      "label": "./labelsTr/Diseased_4.nii.gz"
+    },
+    {
+      "image": "./imagesTr/Diseased_5_0000.nii.gz",
+      "label": "./labelsTr/Diseased_5.nii.gz"
+    },
+    {
+      "image": "./imagesTr/Diseased_6_0000.nii.gz",
+      "label": "./labelsTr/Diseased_6.nii.gz"
+    },
+    {
+      "image": "./imagesTr/Diseased_7_0000.nii.gz",
+      "label": "./labelsTr/Diseased_7.nii.gz"
+    },
+    {
+      "image": "./imagesTr/Diseased_8_0000.nii.gz",
+      "label": "./labelsTr/Diseased_8.nii.gz"
+    },
+    {
+      "image": "./imagesTr/Diseased_9_0000.nii.gz",
+      "label": "./labelsTr/Diseased_9.nii.gz"
+    },
+    {
+      "image": "./imagesTr/Normal_1_0000.nii.gz",
+      "label": "./labelsTr/Normal_1.nii.gz"
+    },
+    {
+      "image": "./imagesTr/Normal_10_0000.nii.gz",
+      "label": "./labelsTr/Normal_10.nii.gz"
+    },
+    {
+      "image": "./imagesTr/Normal_11_0000.nii.gz",
+      "label": "./labelsTr/Normal_11.nii.gz"
+    },
+    {
+      "image": "./imagesTr/Normal_12_0000.nii.gz",
+      "label": "./labelsTr/Normal_12.nii.gz"
+    },
+    {
+      "image": "./imagesTr/Normal_13_0000.nii.gz",
+      "label": "./labelsTr/Normal_13.nii.gz"
+    },
+    {
+      "image": "./imagesTr/Normal_14_0000.nii.gz",
+      "label": "./labelsTr/Normal_14.nii.gz"
+    },
+    {
+      "image": "./imagesTr/Normal_15_0000.nii.gz",
+      "label": "./labelsTr/Normal_15.nii.gz"
+    },
+    {
+      "image": "./imagesTr/Normal_16_0000.nii.gz",
+      "label": "./labelsTr/Normal_16.nii.gz"
+    },
+    {
+      "image": "./imagesTr/Normal_17_0000.nii.gz",
+      "label": "./labelsTr/Normal_17.nii.gz"
+    },
+    {
+      "image": "./imagesTr/Normal_18_0000.nii.gz",
+      "label": "./labelsTr/Normal_18.nii.gz"
+    },
+    {
+      "image": "./imagesTr/Normal_19_0000.nii.gz",
+      "label": "./labelsTr/Normal_19.nii.gz"
+    },
+    {
+      "image": "./imagesTr/Normal_2_0000.nii.gz",
+      "label": "./labelsTr/Normal_2.nii.gz"
+    },
+    {
+      "image": "./imagesTr/Normal_20_0000.nii.gz",
+      "label": "./labelsTr/Normal_20.nii.gz"
+    },
+    {
+      "image": "./imagesTr/Normal_3_0000.nii.gz",
+      "label": "./labelsTr/Normal_3.nii.gz"
+    },
+    {
+      "image": "./imagesTr/Normal_4_0000.nii.gz",
+      "label": "./labelsTr/Normal_4.nii.gz"
+    },
+    {
+      "image": "./imagesTr/Normal_5_0000.nii.gz",
+      "label": "./labelsTr/Normal_5.nii.gz"
+    },
+    {
+      "image": "./imagesTr/Normal_6_0000.nii.gz",
+      "label": "./labelsTr/Normal_6.nii.gz"
+    },
+    {
+      "image": "./imagesTr/Normal_7_0000.nii.gz",
+      "label": "./labelsTr/Normal_7.nii.gz"
+    },
+    {
+      "image": "./imagesTr/Normal_8_0000.nii.gz",
+      "label": "./labelsTr/Normal_8.nii.gz"
+    },
+    {
+      "image": "./imagesTr/Normal_9_0000.nii.gz",
+      "label": "./labelsTr/Normal_9.nii.gz"
+    }
+  ],
+  "test": []
+}

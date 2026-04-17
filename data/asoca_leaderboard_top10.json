@@ -1,0 +1,82 @@
+[
+  {
+    "rank": "1st",
+    "user": "hongqq",
+    "date": "12 March 2024",
+    "dice": 0.8946,
+    "hd95": 1.8879,
+    "evaluation_url": "https://asoca.grand-challenge.org/evaluation/ed9bc28a-f641-4955-b630-7ce078d1054d/"
+  },
+  {
+    "rank": "2nd",
+    "user": "stianfmo",
+    "date": "4 June 2024",
+    "dice": 0.8899,
+    "hd95": 2.4026,
+    "evaluation_url": "https://asoca.grand-challenge.org/evaluation/fd9e6d9b-75d7-4d74-96b7-764aa1ea0e30/"
+  },
+  {
+    "rank": "3rd",
+    "user": "simojens",
+    "date": "23 May 2024",
+    "dice": 0.8867,
+    "hd95": 3.1026,
+    "evaluation_url": "https://asoca.grand-challenge.org/evaluation/67f270e8-7782-4703-b715-6feb63eec901/"
+  },
+  {
+    "rank": "4th",
+    "user": "liruikun",
+    "date": "26 March 2021",
+    "dice": 0.8856,
+    "hd95": 3.4128,
+    "evaluation_url": "https://asoca.grand-challenge.org/evaluation/657c0fca-ba87-4695-b246-572b0370f7dd/"
+  },
+  {
+    "rank": "5th",
+    "user": "junma",
+    "date": "23 Sept. 2020",
+    "dice": 0.88,
+    "hd95": 2.6875,
+    "evaluation_url": "https://asoca.grand-challenge.org/evaluation/35da551f-ab78-4661-b2b3-573dc5a18476/"
+  },
+  {
+    "rank": "6th",
+    "user": "shenl19",
+    "date": "22 Sept. 2020",
+    "dice": 0.8794,
+    "hd95": 4.4087,
+    "evaluation_url": "https://asoca.grand-challenge.org/evaluation/6a4cdccc-10ee-47f1-8a93-46ffa60fa790/"
+  },
+  {
+    "rank": "7th",
+    "user": "bigPYJ",
+    "date": "21 Sept. 2020",
+    "dice": 0.8736,
+    "hd95": 3.383,
+    "evaluation_url": "https://asoca.grand-challenge.org/evaluation/8702832b-a7bf-417d-aa6b-614aa01372d1/"
+  },
+  {
+    "rank": "8th",
+    "user": "dcxhun3",
+    "date": "19 May 2023",
+    "dice": 0.8728,
+    "hd95": 6.2743,
+    "evaluation_url": "https://asoca.grand-challenge.org/evaluation/95803b54-b515-498f-897b-22fd595dafec/"
+  },
+  {
+    "rank": "9th",
+    "user": "RuochenGao",
+    "date": "3 Oct. 2020",
+    "dice": 0.8711,
+    "hd95": 2.1455,
+    "evaluation_url": "https://asoca.grand-challenge.org/evaluation/99aacac3-56bc-444b-89df-db56f0924624/"
+  },
+  {
+    "rank": "10th",
+    "user": "michael.larsen90",
+    "date": "2 May 2023",
+    "dice": 0.8663,
+    "hd95": 5.7943,
+    "evaluation_url": "https://asoca.grand-challenge.org/evaluation/3a263720-ca4c-4039-8886-d86bc16822cc/"
+  }
+]

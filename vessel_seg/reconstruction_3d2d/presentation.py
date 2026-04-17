@@ -128,9 +128,9 @@ def _build_reference_slide(slide) -> None:
         4.9,
         "参考系",
         [
-            "世界系 W：手术台、患者、C 臂统一参考系。",
-            "心脏系 H：主动脉根/双开口附近的局部参考系。",
-            "观察系 C：由 LAO/RAO、CRA/CAU、SID/SOD 决定的投影系。",
+            "床零位世界系 W0：给出统一的全局参考基准。",
+            "床台系 B 与心脏系 H：分别表示床体运动和冠脉解剖局部参考系。",
+            "机械系 C 与观测系 O：由 alpha / beta / d_SD / d_SI 决定投影几何。",
         ],
     )
     _add_bullet_list(
@@ -141,7 +141,7 @@ def _build_reference_slide(slide) -> None:
         4.9,
         "状态量 z_t",
         [
-            "T_WH：心脏在世界系的位姿。",
+            "^W0T_B 与 ^B T_H：床台与心脏的刚体位姿。",
             "q_L / q_R：左右冠的运动学或段级参数。",
             "beta_soft：柔性形变低维系数。",
             "phi_ecg：心动周期相位。",

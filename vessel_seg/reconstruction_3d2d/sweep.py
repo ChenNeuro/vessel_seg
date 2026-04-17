@@ -7,7 +7,7 @@ from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageOps
 
-from .contracts import BranchLatentState, CArmConfig, DetectorConfig, HeartState, Pose3D
+from .contracts import BedConfig, BranchLatentState, CArmConfig, DetectorConfig, HeartState, Pose3D
 from .synthetic_projection import (
     project_case_centerlines,
     render_projection_preview,
@@ -21,8 +21,8 @@ class ProjectionViewSpec:
     """One named synthetic C-arm view."""
 
     name: str
-    lao_rao_deg: float
-    cra_cau_deg: float
+    alpha_lao_rao_deg: float
+    beta_cra_cau_deg: float
 
 
 DEFAULT_VIEW_SPECS: tuple[ProjectionViewSpec, ...] = (
@@ -41,11 +41,16 @@ def run_projection_sweep(
     centerline_vtp_path: Path,
     output_dir: Path,
     view_specs: tuple[ProjectionViewSpec, ...] = DEFAULT_VIEW_SPECS,
-    heart_translation_mm: tuple[float, float, float] = (0.0, 0.0, 0.0),
-    heart_rpy_deg: tuple[float, float, float] = (0.0, 0.0, 0.0),
+    bed_longitudinal_mm: float = 0.0,
+    bed_lateral_mm: float = 0.0,
+    bed_height_mm: float = 0.0,
+    bed_tilt_deg: float = 0.0,
+    bed_from_heart_translation_mm: tuple[float, float, float] = (0.0, 0.0, 0.0),
+    bed_from_heart_rpy_deg: tuple[float, float, float] = (0.0, 0.0, 0.0),
+    coronary_frame_rpy_deg: tuple[float, float, float] = (0.0, 0.0, 0.0),
     ecg_phase: float = 0.0,
-    sid_mm: float = 1200.0,
-    sod_mm: float = 750.0,
+    source_to_detector_mm: float = 1000.0,
+    source_to_isocenter_mm: float = 765.0,
     detector_width_px: int = 1024,
     detector_height_px: int = 1024,
     pixel_spacing_mm: float = 0.30,
@@ -56,10 +61,10 @@ def run_projection_sweep(
     for view in view_specs:
         view_dir = output_dir / view.name
         c_arm = CArmConfig(
-            lao_rao_deg=float(view.lao_rao_deg),
-            cra_cau_deg=float(view.cra_cau_deg),
-            sid_mm=float(sid_mm),
-            sod_mm=float(sod_mm),
+            alpha_lao_rao_deg=float(view.alpha_lao_rao_deg),
+            beta_cra_cau_deg=float(view.beta_cra_cau_deg),
+            source_to_detector_mm=float(source_to_detector_mm),
+            source_to_isocenter_mm=float(source_to_isocenter_mm),
             detector=DetectorConfig(
                 width_px=int(detector_width_px),
                 height_px=int(detector_height_px),
@@ -67,13 +72,20 @@ def run_projection_sweep(
             ),
         )
         heart_state = HeartState(
-            world_pose=Pose3D(
-                translation_mm=tuple(float(value) for value in heart_translation_mm),
-                rpy_deg=tuple(float(value) for value in heart_rpy_deg),
+            bed_from_heart=Pose3D(
+                translation_mm=tuple(float(value) for value in bed_from_heart_translation_mm),
+                rpy_deg=tuple(float(value) for value in bed_from_heart_rpy_deg),
+            ),
+            bed_config=BedConfig(
+                longitudinal_mm=float(bed_longitudinal_mm),
+                lateral_mm=float(bed_lateral_mm),
+                height_mm=float(bed_height_mm),
+                tilt_deg=float(bed_tilt_deg),
             ),
             ecg_phase=float(ecg_phase),
-            left_state=BranchLatentState(side_group="LCA"),
-            right_state=BranchLatentState(side_group="RCA"),
+            coronary_frame_rpy_deg=tuple(float(value) for value in coronary_frame_rpy_deg),
+            left_branch_state=BranchLatentState(side_group="LCA"),
+            right_branch_state=BranchLatentState(side_group="RCA"),
         )
         result = project_case_centerlines(tree_json_path, centerline_vtp_path, c_arm, heart_state=heart_state)
         result_json = view_dir / "synthetic_projection.json"

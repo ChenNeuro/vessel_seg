@@ -1,0 +1,162 @@
+{
+  "generated_at": "2026-02-10T08:19:10.009237+00:00",
+  "image_path": null,
+  "ocr_text": "",
+  "queries": [
+    "AI-empowered",
+    "CCTA prognostic prediction for CVD"
+  ],
+  "results": [
+    {
+      "query": "AI-empowered",
+      "count": 0,
+      "sort_mode": "year_journal",
+      "items": [],
+      "note": "Skipped generic query (insufficient discriminative keywords)."
+    },
+    {
+      "query": "CCTA prognostic prediction for CVD",
+      "count": 1,
+      "sort_mode": "year_journal",
+      "items": [
+        {
+          "source": "pubmed",
+          "title": "AI-Guided Quantitative Plaque Staging Predicts Long-Term Cardiovascular Outcomes in Patients at Risk for Atherosclerotic CVD.",
+          "journal": "JACC. Cardiovascular imaging",
+          "year": 2024,
+          "doi": "10.1016/j.jcmg.2023.05.020",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37480907/",
+          "authors": [
+            "Nurmohamed NS",
+            "Bom MJ",
+            "Jukema RA",
+            "de Groot RJ",
+            "Driessen RS"
+          ],
+          "keywords": [
+            "Humans",
+            "Male",
+            "Female",
+            "Plaque, Atherosclerotic",
+            "Coronary Artery Disease",
+            "Artificial Intelligence",
+            "Follow-Up Studies",
+            "Predictive Value of Tests",
+            "Arteries",
+            "Coronary Angiography",
+            "AI-QCT",
+            "ASCVD",
+            "CAD",
+            "CCTA",
+            "MACE",
+            "atherosclerosis"
+          ],
+          "abstract": "BACKGROUND: The recent development of artificial intelligence-guided quantitative coronary computed tomography angiography analysis (AI-QCT) has enabled rapid analysis of atherosclerotic plaque burden and characteristics. OBJECTIVES: This study set out to investigate the 10-year prognostic value of atherosclerotic burden derived from AI-QCT and to compare the spectrum of plaque to manually assessed coronary computed tomography angiography (CCTA), coronary artery calcium scoring (CACS), and clinical risk characteristics. METHODS: This was a long-term follow-up study of 536 patients referred for suspected coronary artery disease. CCTA scans were analyzed with AI-QCT and plaque burden was classified with a plaque staging system (stage 0: 0% percentage atheroma volume [PAV]; stage 1: >0%-5% PAV; stage 2: >5%-15% PAV; stage 3: >15% PAV). The primary major adverse cardiac event (MACE) outcome was a composite of nonfatal myocardial infarction, nonfatal stroke, coronary revascularization, and all-cause mortality. RESULTS: The mean age at baseline was 58.6 years and 297 patients (55%) were male. During a median follow-up of 10.3 years (IQR: 8.6-11.5 years), 114 patients (21%) experienced the primary outcome. Compared to stages 0 and 1, patients with stage 3 PAV and percentage of noncalcified plaque volume of >7.5% had a more than 3-fold (adjusted HR: 3.57; 95% CI 2.12-6.00; P < 0.001) and 4-fold (adjusted HR: 4.37; 95% CI: 2.51-7.62; P < 0.001) increased risk of MACE, respectively. Addition of AI-QCT improved a model with clinical risk factors and CACS at different time points during follow-up (10-year AUC: 0.82 [95% CI: 0.78-0.87] vs 0.73 [95% CI: 0.68-0.79]; P < 0.001; net reclassification improvement: 0.21 [95% CI: 0.09-0.38]). Furthermore, AI-QCT achieved an improved area under the curve compared to Coronary Artery Disease Reporting and Data System 2.0 (10-year AUC: 0.78; 95% CI: 0.73-0.83; P = 0.023) and manual QCT (10-year AUC: 0.78; 95% CI: 0.73-0.83; P = 0.040), although net reclassification improvement was modest (0.09 [95% CI: -0.02 to 0.29] and 0.04 [95% CI: -0.05 to 0.27], respectively). CONCLUSIONS: Through 10-year follow-up, AI-QCT plaque staging showed important prognostic value for MACE and showed additional discriminatory value over clinical risk factors, CACS, and manual guideline-recommended CCTA assessment.",
+          "matched_terms": [
+            "ccta",
+            "cvd"
+          ],
+          "relevance_score": 0.5,
+          "recency_score": 0.8667,
+          "combined_score": 0.5733
+        }
+      ]
+    }
+  ],
+  "source_results": [
+    {
+      "query": "AI-empowered",
+      "source": "crossref",
+      "count": 0,
+      "items": [],
+      "note": "Skipped generic query (insufficient discriminative keywords)."
+    },
+    {
+      "query": "AI-empowered",
+      "source": "pubmed",
+      "count": 0,
+      "items": [],
+      "note": "Skipped generic query (insufficient discriminative keywords)."
+    },
+    {
+      "query": "AI-empowered",
+      "source": "openalex",
+      "count": 0,
+      "items": [],
+      "note": "Skipped generic query (insufficient discriminative keywords)."
+    },
+    {
+      "query": "AI-empowered",
+      "source": "arxiv",
+      "count": 0,
+      "items": [],
+      "note": "Skipped generic query (insufficient discriminative keywords)."
+    },
+    {
+      "query": "CCTA prognostic prediction for CVD",
+      "source": "crossref",
+      "count": 0,
+      "items": []
+    },
+    {
+      "query": "CCTA prognostic prediction for CVD",
+      "source": "pubmed",
+      "count": 1,
+      "items": [
+        {
+          "source": "pubmed",
+          "title": "AI-Guided Quantitative Plaque Staging Predicts Long-Term Cardiovascular Outcomes in Patients at Risk for Atherosclerotic CVD.",
+          "journal": "JACC. Cardiovascular imaging",
+          "year": 2024,
+          "doi": "10.1016/j.jcmg.2023.05.020",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37480907/",
+          "authors": [
+            "Nurmohamed NS",
+            "Bom MJ",
+            "Jukema RA",
+            "de Groot RJ",
+            "Driessen RS"
+          ],
+          "keywords": [
+            "Humans",
+            "Male",
+            "Female",
+            "Plaque, Atherosclerotic",
+            "Coronary Artery Disease",
+            "Artificial Intelligence",
+            "Follow-Up Studies",
+            "Predictive Value of Tests",
+            "Arteries",
+            "Coronary Angiography",
+            "AI-QCT",
+            "ASCVD",
+            "CAD",
+            "CCTA",
+            "MACE",
+            "atherosclerosis"
+          ],
+          "abstract": "BACKGROUND: The recent development of artificial intelligence-guided quantitative coronary computed tomography angiography analysis (AI-QCT) has enabled rapid analysis of atherosclerotic plaque burden and characteristics. OBJECTIVES: This study set out to investigate the 10-year prognostic value of atherosclerotic burden derived from AI-QCT and to compare the spectrum of plaque to manually assessed coronary computed tomography angiography (CCTA), coronary artery calcium scoring (CACS), and clinical risk characteristics. METHODS: This was a long-term follow-up study of 536 patients referred for suspected coronary artery disease. CCTA scans were analyzed with AI-QCT and plaque burden was classified with a plaque staging system (stage 0: 0% percentage atheroma volume [PAV]; stage 1: >0%-5% PAV; stage 2: >5%-15% PAV; stage 3: >15% PAV). The primary major adverse cardiac event (MACE) outcome was a composite of nonfatal myocardial infarction, nonfatal stroke, coronary revascularization, and all-cause mortality. RESULTS: The mean age at baseline was 58.6 years and 297 patients (55%) were male. During a median follow-up of 10.3 years (IQR: 8.6-11.5 years), 114 patients (21%) experienced the primary outcome. Compared to stages 0 and 1, patients with stage 3 PAV and percentage of noncalcified plaque volume of >7.5% had a more than 3-fold (adjusted HR: 3.57; 95% CI 2.12-6.00; P < 0.001) and 4-fold (adjusted HR: 4.37; 95% CI: 2.51-7.62; P < 0.001) increased risk of MACE, respectively. Addition of AI-QCT improved a model with clinical risk factors and CACS at different time points during follow-up (10-year AUC: 0.82 [95% CI: 0.78-0.87] vs 0.73 [95% CI: 0.68-0.79]; P < 0.001; net reclassification improvement: 0.21 [95% CI: 0.09-0.38]). Furthermore, AI-QCT achieved an improved area under the curve compared to Coronary Artery Disease Reporting and Data System 2.0 (10-year AUC: 0.78; 95% CI: 0.73-0.83; P = 0.023) and manual QCT (10-year AUC: 0.78; 95% CI: 0.73-0.83; P = 0.040), although net reclassification improvement was modest (0.09 [95% CI: -0.02 to 0.29] and 0.04 [95% CI: -0.05 to 0.27], respectively). CONCLUSIONS: Through 10-year follow-up, AI-QCT plaque staging showed important prognostic value for MACE and showed additional discriminatory value over clinical risk factors, CACS, and manual guideline-recommended CCTA assessment.",
+          "matched_terms": [
+            "ccta",
+            "cvd"
+          ],
+          "relevance_score": 0.5,
+          "recency_score": 0.8667,
+          "combined_score": 0.5733
+        }
+      ]
+    },
+    {
+      "query": "CCTA prognostic prediction for CVD",
+      "source": "openalex",
+      "count": 0,
+      "items": []
+    },
+    {
+      "query": "CCTA prognostic prediction for CVD",
+      "source": "arxiv",
+      "count": 0,
+      "items": []
+    }
+  ]
+}

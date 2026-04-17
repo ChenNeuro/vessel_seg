@@ -31,7 +31,7 @@ def _resolve_inputs(case_dir: Path | None, tree_json: Path | None, centerline_vt
 def _parse_view_spec(raw: str) -> ProjectionViewSpec:
     parts = [part.strip() for part in raw.split(":")]
     if len(parts) != 3:
-        raise ValueError(f"Invalid --view '{raw}'. Expected format name:lao_rao:cra_cau")
+        raise ValueError(f"Invalid --view '{raw}'. Expected format name:alpha_lao_rao:beta_cra_cau")
     return ProjectionViewSpec(parts[0], float(parts[1]), float(parts[2]))
 
 
@@ -41,12 +41,40 @@ def main() -> None:
     parser.add_argument("--tree-json", type=Path, default=None, help="Path to stage3 tree.json.")
     parser.add_argument("--centerline-vtp", type=Path, default=None, help="Path to stage3 centerline_repaired.vtp.")
     parser.add_argument("--out-dir", type=Path, required=True, help="Output directory for sweep artifacts.")
-    parser.add_argument("--view", action="append", default=None, help="Optional custom view spec name:lao_rao:cra_cau. Can be repeated.")
-    parser.add_argument("--heart-translation-mm", type=float, nargs=3, default=(0.0, 0.0, 0.0), help="Heart translation in world coordinates.")
-    parser.add_argument("--heart-rpy-deg", type=float, nargs=3, default=(0.0, 0.0, 0.0), help="Heart roll/pitch/yaw in degrees.")
+    parser.add_argument(
+        "--view",
+        action="append",
+        default=None,
+        help="Optional custom view spec name:alpha_lao_rao:beta_cra_cau. Can be repeated.",
+    )
+    parser.add_argument("--bed-longitudinal-mm", type=float, default=0.0, help="Bed longitudinal translation in W0.")
+    parser.add_argument("--bed-lateral-mm", type=float, default=0.0, help="Bed lateral translation in W0.")
+    parser.add_argument("--bed-height-mm", type=float, default=0.0, help="Bed height translation in W0.")
+    parser.add_argument("--bed-tilt-deg", type=float, default=0.0, help="Simplified single-axis bed tilt.")
+    parser.add_argument(
+        "--bed-from-heart-translation-mm",
+        type=float,
+        nargs=3,
+        default=(0.0, 0.0, 0.0),
+        help="Heart translation expressed in bed frame B.",
+    )
+    parser.add_argument(
+        "--bed-from-heart-rpy-deg",
+        type=float,
+        nargs=3,
+        default=(0.0, 0.0, 0.0),
+        help="Heart roll/pitch/yaw expressed in bed frame B.",
+    )
+    parser.add_argument(
+        "--coronary-frame-rpy-deg",
+        type=float,
+        nargs=3,
+        default=(0.0, 0.0, 0.0),
+        help="Residual local coronary-frame roll/pitch/yaw inside H.",
+    )
     parser.add_argument("--ecg-phase", type=float, default=0.0, help="Normalized ECG phase in [0, 1].")
-    parser.add_argument("--sid-mm", type=float, default=1200.0, help="Source to detector distance in mm.")
-    parser.add_argument("--sod-mm", type=float, default=750.0, help="Source to isocenter distance in mm.")
+    parser.add_argument("--source-to-detector-mm", type=float, default=1000.0, help="Source to detector distance in mm.")
+    parser.add_argument("--source-to-isocenter-mm", type=float, default=765.0, help="Source to isocenter distance in mm.")
     parser.add_argument("--detector-width-px", type=int, default=1024, help="Detector width in pixels.")
     parser.add_argument("--detector-height-px", type=int, default=1024, help="Detector height in pixels.")
     parser.add_argument("--pixel-spacing-mm", type=float, default=0.30, help="Detector pixel spacing in mm.")
@@ -66,11 +94,16 @@ def main() -> None:
         centerline_vtp_path=centerline_vtp,
         output_dir=out_dir,
         view_specs=view_specs,
-        heart_translation_mm=tuple(float(value) for value in args.heart_translation_mm),
-        heart_rpy_deg=tuple(float(value) for value in args.heart_rpy_deg),
+        bed_longitudinal_mm=float(args.bed_longitudinal_mm),
+        bed_lateral_mm=float(args.bed_lateral_mm),
+        bed_height_mm=float(args.bed_height_mm),
+        bed_tilt_deg=float(args.bed_tilt_deg),
+        bed_from_heart_translation_mm=tuple(float(value) for value in args.bed_from_heart_translation_mm),
+        bed_from_heart_rpy_deg=tuple(float(value) for value in args.bed_from_heart_rpy_deg),
+        coronary_frame_rpy_deg=tuple(float(value) for value in args.coronary_frame_rpy_deg),
         ecg_phase=float(args.ecg_phase),
-        sid_mm=float(args.sid_mm),
-        sod_mm=float(args.sod_mm),
+        source_to_detector_mm=float(args.source_to_detector_mm),
+        source_to_isocenter_mm=float(args.source_to_isocenter_mm),
         detector_width_px=int(args.detector_width_px),
         detector_height_px=int(args.detector_height_px),
         pixel_spacing_mm=float(args.pixel_spacing_mm),

@@ -12,6 +12,7 @@ if str(REPO_ROOT) not in sys.path:
     sys.path.insert(0, str(REPO_ROOT))
 
 from vessel_seg.reconstruction_3d2d import (  # noqa: E402
+    BedConfig,
     BranchLatentState,
     CArmConfig,
     DetectorConfig,
@@ -39,15 +40,38 @@ def main() -> None:
     parser.add_argument("--tree-json", type=Path, default=None, help="Path to stage3 tree.json.")
     parser.add_argument("--centerline-vtp", type=Path, default=None, help="Path to stage3 centerline_repaired.vtp.")
     parser.add_argument("--out-dir", type=Path, required=True, help="Output directory for synthetic projection artifacts.")
-    parser.add_argument("--lao-rao-deg", type=float, default=25.0, help="LAO/RAO angle in degrees.")
-    parser.add_argument("--cra-cau-deg", type=float, default=10.0, help="CRA/CAU angle in degrees.")
-    parser.add_argument("--sid-mm", type=float, default=1200.0, help="Source to detector distance in mm.")
-    parser.add_argument("--sod-mm", type=float, default=750.0, help="Source to isocenter distance in mm.")
+    parser.add_argument("--alpha-lao-rao-deg", type=float, default=25.0, help="C-arm alpha angle in LAO/RAO convention.")
+    parser.add_argument("--beta-cra-cau-deg", type=float, default=10.0, help="C-arm beta angle in CRA/CAU convention.")
+    parser.add_argument("--source-to-detector-mm", type=float, default=1000.0, help="Source to detector distance in mm.")
+    parser.add_argument("--source-to-isocenter-mm", type=float, default=765.0, help="Source to isocenter distance in mm.")
     parser.add_argument("--detector-width-px", type=int, default=1024, help="Detector width in pixels.")
     parser.add_argument("--detector-height-px", type=int, default=1024, help="Detector height in pixels.")
     parser.add_argument("--pixel-spacing-mm", type=float, default=0.30, help="Detector pixel spacing in mm.")
-    parser.add_argument("--heart-translation-mm", type=float, nargs=3, default=(0.0, 0.0, 0.0), help="Heart translation in world coordinates.")
-    parser.add_argument("--heart-rpy-deg", type=float, nargs=3, default=(0.0, 0.0, 0.0), help="Heart roll/pitch/yaw in degrees.")
+    parser.add_argument("--bed-longitudinal-mm", type=float, default=0.0, help="Bed longitudinal translation in W0.")
+    parser.add_argument("--bed-lateral-mm", type=float, default=0.0, help="Bed lateral translation in W0.")
+    parser.add_argument("--bed-height-mm", type=float, default=0.0, help="Bed height translation in W0.")
+    parser.add_argument("--bed-tilt-deg", type=float, default=0.0, help="Simplified single-axis bed tilt.")
+    parser.add_argument(
+        "--bed-from-heart-translation-mm",
+        type=float,
+        nargs=3,
+        default=(0.0, 0.0, 0.0),
+        help="Heart translation expressed in the current bed frame B.",
+    )
+    parser.add_argument(
+        "--bed-from-heart-rpy-deg",
+        type=float,
+        nargs=3,
+        default=(0.0, 0.0, 0.0),
+        help="Heart roll/pitch/yaw expressed in the current bed frame B.",
+    )
+    parser.add_argument(
+        "--coronary-frame-rpy-deg",
+        type=float,
+        nargs=3,
+        default=(0.0, 0.0, 0.0),
+        help="Residual local coronary-frame roll/pitch/yaw inside H.",
+    )
     parser.add_argument("--ecg-phase", type=float, default=0.0, help="Normalized ECG phase in [0, 1].")
     args = parser.parse_args()
 
@@ -60,10 +84,10 @@ def main() -> None:
     out_dir = args.out_dir if args.out_dir.is_absolute() else (REPO_ROOT / args.out_dir).resolve()
 
     c_arm = CArmConfig(
-        lao_rao_deg=float(args.lao_rao_deg),
-        cra_cau_deg=float(args.cra_cau_deg),
-        sid_mm=float(args.sid_mm),
-        sod_mm=float(args.sod_mm),
+        alpha_lao_rao_deg=float(args.alpha_lao_rao_deg),
+        beta_cra_cau_deg=float(args.beta_cra_cau_deg),
+        source_to_detector_mm=float(args.source_to_detector_mm),
+        source_to_isocenter_mm=float(args.source_to_isocenter_mm),
         detector=DetectorConfig(
             width_px=int(args.detector_width_px),
             height_px=int(args.detector_height_px),
@@ -71,13 +95,20 @@ def main() -> None:
         ),
     )
     heart_state = HeartState(
-        world_pose=Pose3D(
-            translation_mm=tuple(float(value) for value in args.heart_translation_mm),
-            rpy_deg=tuple(float(value) for value in args.heart_rpy_deg),
+        bed_from_heart=Pose3D(
+            translation_mm=tuple(float(value) for value in args.bed_from_heart_translation_mm),
+            rpy_deg=tuple(float(value) for value in args.bed_from_heart_rpy_deg),
+        ),
+        bed_config=BedConfig(
+            longitudinal_mm=float(args.bed_longitudinal_mm),
+            lateral_mm=float(args.bed_lateral_mm),
+            height_mm=float(args.bed_height_mm),
+            tilt_deg=float(args.bed_tilt_deg),
         ),
         ecg_phase=float(args.ecg_phase),
-        left_state=BranchLatentState(side_group="LCA"),
-        right_state=BranchLatentState(side_group="RCA"),
+        coronary_frame_rpy_deg=tuple(float(value) for value in args.coronary_frame_rpy_deg),
+        left_branch_state=BranchLatentState(side_group="LCA"),
+        right_branch_state=BranchLatentState(side_group="RCA"),
     )
     result = project_case_centerlines(tree_json, centerline_vtp, c_arm, heart_state=heart_state)
 

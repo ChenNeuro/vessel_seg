@@ -2,14 +2,19 @@
 
 from __future__ import annotations
 
-from pathlib import Path
 import json
+from pathlib import Path
 
 import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.patches import Polygon
 
-from .carm_geometry import pose_matrix_mm, project_points_world_to_detector, rotation_matrix_from_rpy_deg, transform_points_mm
+from .carm_geometry import (
+    observer_points_to_detector_pixels,
+    project_points_world_to_observer,
+    transform_points_mm,
+    world0_from_heart_transform,
+)
 from .contracts import CArmConfig, HeartState, ProjectedBranch2D, SyntheticProjectionResult
 
 
@@ -54,8 +59,8 @@ def _branch_metadata(tree_payload: dict[str, object]) -> dict[int, dict[str, obj
     return metadata
 
 
-def _heart_center_mm(polylines: list[np.ndarray]) -> np.ndarray:
-    """Estimate a stable heart-local origin from all branch polylines."""
+def _heart_model_origin_mm(polylines: list[np.ndarray]) -> np.ndarray:
+    """Estimate a stable model-local origin from all branch polylines."""
     if not polylines:
         return np.zeros((3,), dtype=np.float64)
     coords = np.concatenate(polylines, axis=0)
@@ -93,13 +98,6 @@ def _resample_radius_profile(profile_mm: np.ndarray, count: int) -> np.ndarray:
     return np.interp(target_x, source_x, profile_mm).astype(np.float64, copy=False)
 
 
-def _heart_world_matrix(heart_state: HeartState) -> np.ndarray:
-    world_from_heart = pose_matrix_mm(heart_state.world_pose)
-    cav_rotation = np.eye(4, dtype=np.float64)
-    cav_rotation[:3, :3] = rotation_matrix_from_rpy_deg(heart_state.cav_rpy_deg)
-    return world_from_heart @ cav_rotation
-
-
 def project_case_centerlines(
     tree_json_path: Path,
     centerline_vtp_path: Path,
@@ -112,27 +110,29 @@ def project_case_centerlines(
     polylines = read_branch_polylines(centerline_vtp_path)
     branch_metadata = _branch_metadata(tree_payload)
     radius_profiles = _load_branch_radius_profiles(tree_json_path)
-    heart_matrix = _heart_world_matrix(heart_state)
-    heart_center = _heart_center_mm(polylines)
+    world0_from_heart = world0_from_heart_transform(heart_state)
+    heart_model_origin = _heart_model_origin_mm(polylines)
 
     projected_branches: list[ProjectedBranch2D] = []
     visible_count = 0
     for branch_id, polyline in enumerate(polylines):
-        heart_polyline = polyline - heart_center.reshape(1, 3)
-        world_polyline = transform_points_mm(heart_polyline, heart_matrix)
-        points_px, valid = project_points_world_to_detector(world_polyline, c_arm)
-        rel = world_polyline
-        from .carm_geometry import carm_rotation_world
-        rotation_world = carm_rotation_world(c_arm)
-        z_axis_world = rotation_world @ np.asarray([0.0, 0.0, 1.0], dtype=np.float64)
-        source_world = rotation_world @ np.asarray([0.0, 0.0, -float(c_arm.sod_mm)], dtype=np.float64)
-        z_cam = (rel - source_world.reshape(1, 3)) @ z_axis_world
+        heart_polyline = polyline - heart_model_origin.reshape(1, 3)
+        world_polyline = transform_points_mm(heart_polyline, world0_from_heart)
+        observer_polyline, observer_valid = project_points_world_to_observer(world_polyline, c_arm)
+        points_px, pixel_valid = observer_points_to_detector_pixels(observer_polyline, c_arm)
+        valid = observer_valid & pixel_valid
+
+        z_observer = observer_polyline[:, 2]
         radius_profile = _resample_radius_profile(radius_profiles.get(branch_id, np.zeros((0,), dtype=np.float64)), polyline.shape[0])
-        projected_radii_px = np.zeros_like(z_cam, dtype=np.float64)
-        valid_depth = z_cam > 1e-6
+        projected_radii_px = np.zeros_like(z_observer, dtype=np.float64)
+        valid_depth = z_observer > 1e-6
         projected_radii_px[valid_depth] = (
-            radius_profile[valid_depth] * float(c_arm.sid_mm) / z_cam[valid_depth] / max(float(c_arm.detector.pixel_spacing_mm), 1e-6)
+            radius_profile[valid_depth]
+            * float(c_arm.source_to_detector_mm)
+            / z_observer[valid_depth]
+            / max(float(c_arm.detector.pixel_spacing_mm), 1e-6)
         )
+
         visible_points = tuple(
             (float(point[0]), float(point[1]))
             for point, is_valid in zip(points_px, valid)
@@ -179,9 +179,13 @@ def project_case_centerlines(
         metadata={
             "branch_count": len(projected_branches),
             "visible_branch_count": visible_count,
-            "detector_width_px": int(c_arm.detector.width_px),
-            "detector_height_px": int(c_arm.detector.height_px),
-            "heart_center_mm": [float(value) for value in heart_center],
+            "observer_width_px": int(c_arm.detector.width_px),
+            "observer_height_px": int(c_arm.detector.height_px),
+            "heart_model_origin_mm": [float(value) for value in heart_model_origin],
+            "alpha_lao_rao_deg": float(c_arm.alpha_lao_rao_deg),
+            "beta_cra_cau_deg": float(c_arm.beta_cra_cau_deg),
+            "source_to_detector_mm": float(c_arm.source_to_detector_mm),
+            "source_to_isocenter_mm": float(c_arm.source_to_isocenter_mm),
         },
     )
 
@@ -195,8 +199,8 @@ def save_projection_result_json(result: SyntheticProjectionResult, output_path: 
 def render_projection_preview(result: SyntheticProjectionResult, output_path: Path) -> None:
     """Render a lightweight 2D preview image for the synthetic projection."""
     output_path.parent.mkdir(parents=True, exist_ok=True)
-    width_px = int(result.metadata.get("detector_width_px", result.c_arm.detector.width_px))
-    height_px = int(result.metadata.get("detector_height_px", result.c_arm.detector.height_px))
+    width_px = int(result.metadata.get("observer_width_px", result.c_arm.detector.width_px))
+    height_px = int(result.metadata.get("observer_height_px", result.c_arm.detector.height_px))
     fig, ax = plt.subplots(figsize=(7.2, 7.2), dpi=180)
     ax.set_facecolor("black")
     fig.patch.set_facecolor("black")
@@ -233,7 +237,10 @@ def render_projection_preview(result: SyntheticProjectionResult, output_path: Pa
         "\n".join(
             [
                 f"Synthetic Projection: {result.case_id}",
-                f"LAO/RAO={result.c_arm.lao_rao_deg:.1f} deg, CRA/CAU={result.c_arm.cra_cau_deg:.1f} deg",
+                (
+                    f"alpha_LAO/RAO={result.c_arm.alpha_lao_rao_deg:.1f} deg, "
+                    f"beta_CRA/CAU={result.c_arm.beta_cra_cau_deg:.1f} deg"
+                ),
                 f"visible_branches={result.metadata.get('visible_branch_count', '?')}/{result.metadata.get('branch_count', '?')}",
                 "Preview: auto-cropped to occupied projection bbox",
             ]
@@ -266,8 +273,8 @@ def _auto_crop_axes(ax, occupied_x: list[float], occupied_y: list[float], width_
 def render_projection_wall_preview(result: SyntheticProjectionResult, output_path: Path) -> None:
     """Render a filled vessel silhouette style projection preview."""
     output_path.parent.mkdir(parents=True, exist_ok=True)
-    width_px = int(result.metadata.get("detector_width_px", result.c_arm.detector.width_px))
-    height_px = int(result.metadata.get("detector_height_px", result.c_arm.detector.height_px))
+    width_px = int(result.metadata.get("observer_width_px", result.c_arm.detector.width_px))
+    height_px = int(result.metadata.get("observer_height_px", result.c_arm.detector.height_px))
     fig, ax = plt.subplots(figsize=(7.2, 7.2), dpi=180)
     ax.set_facecolor("black")
     fig.patch.set_facecolor("black")
@@ -281,7 +288,10 @@ def render_projection_wall_preview(result: SyntheticProjectionResult, output_pat
         coords = np.asarray(branch.points_px, dtype=np.float64)
         radii = np.asarray(branch.radii_px, dtype=np.float64)
         if radii.size != coords.shape[0]:
-            fallback_radius = max(1.0, float(branch.mean_radius_mm or 1.0) / max(float(result.c_arm.detector.pixel_spacing_mm), 1e-6))
+            fallback_radius = max(
+                1.0,
+                float(branch.mean_radius_mm or 1.0) / max(float(result.c_arm.detector.pixel_spacing_mm), 1e-6),
+            )
             radii = np.full((coords.shape[0],), fallback_radius, dtype=np.float64)
         radii = np.clip(radii, 1.0, 80.0)
         occupied_x.extend(float(value) for value in coords[:, 0])
@@ -327,7 +337,10 @@ def render_projection_wall_preview(result: SyntheticProjectionResult, output_pat
         "\n".join(
             [
                 f"Synthetic Wall Projection: {result.case_id}",
-                f"LAO/RAO={result.c_arm.lao_rao_deg:.1f} deg, CRA/CAU={result.c_arm.cra_cau_deg:.1f} deg",
+                (
+                    f"alpha_LAO/RAO={result.c_arm.alpha_lao_rao_deg:.1f} deg, "
+                    f"beta_CRA/CAU={result.c_arm.beta_cra_cau_deg:.1f} deg"
+                ),
                 f"visible_branches={result.metadata.get('visible_branch_count', '?')}/{result.metadata.get('branch_count', '?')}",
                 "Wall preview: silhouette from stage4 mean radius profiles",
             ]

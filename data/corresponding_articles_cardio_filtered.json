@@ -1,0 +1,904 @@
+{
+  "generated_at": "2026-02-10T08:11:08.987442+00:00",
+  "image_path": null,
+  "ocr_text": "",
+  "queries": [
+    "AI-empowered",
+    "AI-empowered vascular disease",
+    "CCTA prognostic prediction for CVD"
+  ],
+  "results": [
+    {
+      "query": "AI-empowered",
+      "count": 0,
+      "sort_mode": "year_journal",
+      "items": []
+    },
+    {
+      "query": "AI-empowered vascular disease",
+      "count": 7,
+      "sort_mode": "year_journal",
+      "items": [
+        {
+          "source": "arxiv",
+          "title": "Microrobot Vascular Parkour: Analytic Geometry-based Path Planning with Real-time Dynamic Obstacle Avoidance",
+          "journal": "arXiv",
+          "year": 2025,
+          "doi": "",
+          "url": "http://arxiv.org/abs/2509.05500v1",
+          "authors": [
+            "Yanda Yang",
+            "Max Sokolich",
+            "Fatma Ceren Kirmizitas",
+            "Sambeeta Das",
+            "Andreas A. Malikopoulos"
+          ],
+          "abstract": "Autonomous microrobots in blood vessels could enable minimally invasive therapies, but navigation is challenged by dense, moving obstacles. We propose a real-time path planning framework that couples an analytic geometry global planner (AGP) with two reactive local escape controllers, one based on rules and one based on reinforcement learning, to handle sudden moving obstacles. Using real-time imaging, the system estimates the positions of the microrobot, obstacles, and targets and computes collision-free motions. In simulation, AGP yields shorter paths and faster planning than weighted A* (WA*), particle swarm optimization (PSO), and rapidly exploring random trees (RRT), while maintaining feasibility and determinism. We extend AGP from 2D to 3D without loss of speed. In both simulations and experiments, the combined global planner and local controllers reliably avoid moving obstacles and reach targets. The average planning time is 40 ms per frame, compatible with 25 fps image acquisition and real-time closed-loop control. These results advance autonomous microrobot navigation and targeted drug delivery in vascular environments.",
+          "matched_terms": [
+            "vascular"
+          ],
+          "relevance_score": 0.5,
+          "recency_score": 0.9333,
+          "combined_score": 0.5867
+        },
+        {
+          "source": "crossref",
+          "title": "Predator crow search optimization with explainable AI for cardiac vascular disease classification",
+          "journal": "Scientific Reports",
+          "year": 2025,
+          "doi": "10.1038/s41598-025-96003-9",
+          "url": "https://doi.org/10.1038/s41598-025-96003-9",
+          "authors": [
+            "M. M. Asha",
+            "G. Ramya"
+          ],
+          "abstract": "Abstract The proposed framework optimizes Explainable AI parameters, combining Predator crow search optimization to refine the predictive model’s performance. To prevent overfitting and enhance feature selection, an information acquisition-based technique is introduced, improving the model’s robustness and reliability. An enhanced U-Net model employing context-based partitioning is proposed for precise and automatic left ventricular segmentation, facilitating quantitative assessment. The methodology was validated using two datasets: the publicly available ACDC challenge dataset and the imATFIB dataset from internal clinical research, demonstrating significant improvements. The comparative analysis confirms the superiority of the proposed framework over existing cardiovascular disease prediction methods, achieving remarkable results of 99.72% accuracy, 96.47% precision, 98.6% recall, and 94.6% F1 measure. Additionally, qualitative analysis was performed to evaluate the interpretability and clinical relevance of the model’s predictions, ensuring that the outputs align with expert medical insights. This comprehensive approach not only advances the accuracy of CVD predictions but also provides a robust tool for medical professionals, potentially improving patient outcomes through early and precise diagnosis.",
+          "matched_terms": [
+            "disease",
+            "vascular"
+          ],
+          "relevance_score": 0.85,
+          "recency_score": 0.9333,
+          "combined_score": 0.8667
+        },
+        {
+          "source": "openalex",
+          "title": "2023 AHA/ACC/ACCP/ASPC/NLA/PCNA Guideline for the Management of Patients With Chronic Coronary Disease: A Report of the American Heart Association/American College of Cardiology Joint Committee on Clinical Practice Guidelines",
+          "journal": "Circulation",
+          "year": 2023,
+          "doi": "10.1161/cir.0000000000001168",
+          "url": "https://doi.org/10.1161/cir.0000000000001168",
+          "authors": [
+            "Salim S. Virani",
+            "L. Kristin Newby",
+            "Suzanne V. Arnold",
+            "Vera Bittner",
+            "LaPrincess C. Brewer"
+          ],
+          "abstract": "AIM: The “2023 AHA/ACC/ACCP/ASPC/NLA/PCNA Guideline for the Management of Patients With Chronic Coronary Disease” provides an update to and consolidates new evidence since the “2012 ACCF/AHA/ACP/AATS/PCNA/SCAI/STS Guideline for the Diagnosis and Management of Patients With Stable Ischemic Heart Disease” and the corresponding “2014 ACC/AHA/AATS/PCNA/SCAI/STS Focused Update of the Guideline for the Diagnosis and Management of Patients With Stable Ischemic Heart Disease.” METHODS: A comprehensive literature search was conducted from September 2021 to May 2022. Clinical studies, systematic reviews and meta-analyses, and other evidence conducted on human participants were identified that were published in English from MEDLINE (through PubMed), EMBASE, the Cochrane Library, Agency for Healthcare Research and Quality, and other selected databases relevant to this guideline. STRUCTURE: This guideline provides an evidenced-based and patient-centered approach to management of patients with chronic coronary disease, considering social determinants of health and incorporating the principles of shared decision-making and team-based care. Relevant topics include general approaches to treatment decisions, guideline-directed management and therapy to reduce symptoms and future cardiovascular events, decision-making pertaining to revascularization in patients with chronic coronary disease, recommendations for management in special populations, patient follow-up and monitoring, evidence gaps, and areas in need of future research. Where applicable, and based on availability of cost-effectiveness data, cost–value recommendations are also provided for clinicians. Many recommendations from previously published guidelines have been updated with new evidence, and new recommendations have been created when supported by published data.",
+          "matched_terms": [
+            "disease"
+          ],
+          "relevance_score": 0.5,
+          "recency_score": 0.8,
+          "combined_score": 0.56
+        },
+        {
+          "source": "arxiv",
+          "title": "Transfer Learning for Retinal Vascular Disease Detection: A Pilot Study with Diabetic Retinopathy and Retinopathy of Prematurity",
+          "journal": "arXiv",
+          "year": 2022,
+          "doi": "",
+          "url": "http://arxiv.org/abs/2201.01250v1",
+          "authors": [
+            "Guan Wang",
+            "Yusuke Kikuchi",
+            "Jinglin Yi",
+            "Qiong Zou",
+            "Rui Zhou"
+          ],
+          "abstract": "Retinal vascular diseases affect the well-being of human body and sometimes provide vital signs of otherwise undetected bodily damage. Recently, deep learning techniques have been successfully applied for detection of diabetic retinopathy (DR). The main obstacle of applying deep learning techniques to detect most other retinal vascular diseases is the limited amount of data available. In this paper, we propose a transfer learning technique that aims to utilize the feature similarities for detecting retinal vascular diseases. We choose the well-studied DR detection as a source task and identify the early detection of retinopathy of prematurity (ROP) as the target task. Our experimental results demonstrate that our DR-pretrained approach dominates in all metrics the conventional ImageNet-pretrained transfer learning approach, currently adopted in medical image analysis. Moreover, our approach is more robust with respect to the stochasticity in the training process and with respect to reduced training samples. This study suggests the potential of our proposed transfer learning approach for a broad range of retinal vascular diseases or pathologies, where data is limited.",
+          "matched_terms": [
+            "disease",
+            "vascular"
+          ],
+          "relevance_score": 0.85,
+          "recency_score": 0.7333,
+          "combined_score": 0.8267
+        },
+        {
+          "source": "crossref",
+          "title": "Prediction of depression among patients with cardiovascular disease scheduled cardiac surgery using an AI-empowered pipeline",
+          "journal": "European Heart Journal",
+          "year": 2022,
+          "doi": "10.1093/eurheartj/ehac544.2428",
+          "url": "https://doi.org/10.1093/eurheartj/ehac544.2428",
+          "authors": [
+            "V Pezoulas",
+            "K Nowakowska",
+            "J Kazmierski",
+            "D Fotiadis",
+            "A Sakellarios"
+          ],
+          "abstract": "Abstract Introduction Several studies have demonstrated, that one in three patients with cardiovascular disease (CVD) suffers from depression, and depression increases the likelihood for cardiac morbidity and mortality in the CVD population by 2–3-fold, independently of traditional risk factors or gender. Purpose The aim of this work is to predict depression in patients with CVD. Methods The clinical study was conducted in the cardiac surgical intensive care unit of The Central Clinical Hospital, the Medical University of Lodz in Poland, among patients scheduled for elective coronary artery bypass graft surgery (CABG). 224 patients signed an informed consent form, met the inclusion criteria and were enrolled in the study. All the patients had chronic coronary syndromes. The inclusion criteria were: consecutive adult patients scheduled for CABG surgery or CABG surgery with cardiac valve repair or replacement (CVR). The study population was examined by a psychiatrist the day prior to the scheduled operation, a diagnosis of major depressive disorder (MDD) was established on the basis of DSM-5 criteria. A data curation pipeline was applied to automatically remove outliers and duplicated fields in the input dataset. An AI-empowered pipeline was developed to classify patients at higher risk for depression. Random downsampling with replacement was applied to deal with the increased class imbalance by taking into consideration two confound factors, namely the Mini Mental State Examination and Hemoglobin concentration &lt;10mg/dl. The downsampling process was repeated K times. In each iteration, three bagging and boosting ML schemas were utilized for the classification task including the AdaBoost (adaptive boosting), Random Forests and Extreme Gradient boosting trees (XGBoost). To this end, a nested cross-validation process was applied for hyperparameter optimization and model validation, where: (i) a 3-fold cross-validation process was first applied to seek for the optimal set of hyperparameters based on the grid search approach by tuning core parameters, including the learning rate, number of estimators, and max depth, among others, and (ii) a stratified 5-fold cross-validation process was subsequently used to evaluate the performance of the best model from the previous stage by computing the classification accuracy, sensitivity, specificity, and area under the ROC curve (AUC). The performance evaluation results were averaged across the 5 folds and across the downsampling iterations. Shappley additive explanation analysis was finally applied to provide explainable risk factors for depression. Results sRAGE was significantly correlated with depression (r=0.32, p=0.038). The Random forests classifier presented the highest performance to predict depression (Accuracy: 0.71, Sensitivity: 0.71, Specificity: 0.75 and AUC: 0.74). Conclusions Depression can be predicted with 71% accuracy at patients with CVD and elevated sRAGE values. Funding Acknowledgement Type of funding sources: Public grant(s) – EU funding. Main funding source(s): HORIZON2020",
+          "matched_terms": [
+            "disease"
+          ],
+          "relevance_score": 0.5,
+          "recency_score": 0.7333,
+          "combined_score": 0.5467
+        },
+        {
+          "source": "crossref",
+          "title": "Hyperhomocysteinaemia is associated with low plasma apolipoprotein AI levels in patients with impaired glucose tolerance",
+          "journal": "Diabetes and Vascular Disease Research",
+          "year": 2015,
+          "doi": "10.1177/1479164115579008",
+          "url": "https://doi.org/10.1177/1479164115579008",
+          "authors": [
+            "Jia Liu",
+            "Ying Wang",
+            "Hui Fan",
+            "Li Miao",
+            "Heng Zhang"
+          ],
+          "abstract": "Homocysteine suppresses hepatic apolipoprotein AI synthesis in mice. We assessed the relationship between homocysteine and apolipoprotein AI levels in patients with impaired glucose tolerance. A total of 217 participants, including 95 impaired glucose tolerance patients and 122 healthy subjects, were classified as normal control subjects without hyperhomocysteinaemia, control subjects with hyperhomocysteinaemia, impaired glucose tolerance patients without hyperhomocysteinaemia (n-IGT) and impaired glucose tolerance patients with hyperhomocysteinaemia (H-IGT). The impaired glucose tolerance patients had higher plasma levels of homocysteine and homeostasis model assessment index of insulin resistance values, and lower plasma apolipoprotein AI levels than the normal control and control subjects with hyperhomocysteinaemia (all p",
+          "matched_terms": [
+            "disease",
+            "vascular"
+          ],
+          "relevance_score": 0.7,
+          "recency_score": 0.2667,
+          "combined_score": 0.6133
+        },
+        {
+          "source": "crossref",
+          "title": "Apo-B/AI ratio identifies cardiovascular risk in childhood:The Australian Aboriginal Birth Cohort study",
+          "journal": "Diabetes and Vascular Disease Research",
+          "year": 2009,
+          "doi": "10.1177/1479164109336046",
+          "url": "https://doi.org/10.1177/1479164109336046",
+          "authors": [
+            "Elizabeth A.C. Sellers",
+            "Gurmeet R. Singh",
+            "Susan M. Sayers"
+          ],
+          "abstract": "We describe the lipoprotein and apolipoprotein profiles and their relationship to cardiovascular risk factors in Australian Aboriginal children. This cross-sectional study within a longitudinal birth cohort study involved Australian Aboriginal children born between 1987 and 1990 and re-examined between 1998 and 2001. Height, weight, blood pressure, waist circumference, body fat percentage, cholesterol, triglycerides, HDL-c, LDL-c, apolipoprotein B and A1 were measured. Mean age was 11.4 years (52% male). Mean cholesterol, triglyceride, HDL-c and LDL-c did not differ from reference data. Measures of obesity, blood pressure and prevalence of the metabolic syndrome did not differ in those children with lipoproteins in the upper quartile of the cohort (lower quartile for HDL-c). Boys with an Apo-B/A1 ratio in the upper quartile of the cohort had higher BMI z-score, waist z-score, % body fat, diastolic blood pressure and frequency of the metabolic syndrome (p",
+          "matched_terms": [
+            "disease",
+            "vascular"
+          ],
+          "relevance_score": 0.7,
+          "recency_score": 0.0,
+          "combined_score": 0.56
+        }
+      ]
+    },
+    {
+      "query": "CCTA prognostic prediction for CVD",
+      "count": 11,
+      "sort_mode": "year_journal",
+      "items": [
+        {
+          "source": "crossref",
+          "title": "Prognostic impact of reduced kidney function in patients with suspected coronary artery disease undergoing CCTA",
+          "journal": "European Journal of Preventive Cardiology",
+          "year": 2025,
+          "doi": "10.1093/eurjpc/zwaf218",
+          "url": "https://doi.org/10.1093/eurjpc/zwaf218",
+          "authors": [
+            "Jonathan N Dahl",
+            "Louise Nissen",
+            "Marie B Nielsen",
+            "Laust D Rasmussen",
+            "Jacob Hartmann Søby"
+          ],
+          "abstract": "Abstract Aims Chronic kidney disease (CKD) and coronary artery disease (CAD) share common risk factors, but the association between kidney function [estimated glomerular filtration rate (eGFR) in mL/min/1.73 m²] and major adverse cardiovascular events (MACE) in patients undergoing coronary computed tomography angiography (CCTA) due to suspected CAD has not been established. This study investigated the association between kidney function and MACE in symptomatic patients undergoing CCTA. Methods and results A cohort study of consecutive, symptomatic patients undergoing CCTA between 2008 and 2021 (n = 70 367). CAD severity was stratified as no CAD, non-obstructive CAD, and obstructive CAD (≥50% diameter stenosis). The primary outcome was MACE (myocardial infarction, ischaemic stroke, or cardiovascular death). eGFR was calculated based on plasma-creatinine at the time of CCTA. In total, 41 156 (59%) had eGFR ≥90, 27,011 (38%) had eGFR 60–89, and 2200 (3%) had eGFR 30–59. Median follow-ups were 5.1 years, according to eGFR ≥90, 60–89, and 30–59 groups, MACE rates per 1000 person-years in patients with obstructive CAD were 14.2, 15.4, and 25.8, respectively, and in patients with non-obstructive CAD the MACE rates were 6.4, 8.0, and 14.4, respectively. Compared to patients with eGFR ≥90, hazard ratios for MACE were 1.09 [95% confidence intervals (CI) 1.00–1.19] and 1.42 (95%CI 1.18–1.69) for patients with eGFR 60–89 and 30–59, respectively. Conclusion In patients referred for CCTA due to suspected CAD, reduced kidney function was associated with an increased rate of MACE. Therefore, CKD is a strong independent cardiovascular risk factor, particularly in patients with CAD detected on CCTA.",
+          "matched_terms": [
+            "ccta"
+          ],
+          "relevance_score": 0.5,
+          "recency_score": 0.9333,
+          "combined_score": 0.5867
+        },
+        {
+          "source": "crossref",
+          "title": "Incremental prognostic value of artificial intelligence-based automated plaque characterisation on top of ischemia evaluation by CCTA and CCTA/PET",
+          "journal": "European Heart Journal - Cardiovascular Imaging",
+          "year": 2024,
+          "doi": "10.1093/ehjci/jeae142.036",
+          "url": "https://doi.org/10.1093/ehjci/jeae142.036",
+          "authors": [
+            "S Bar",
+            "T Maaniitty",
+            "P Kiatkittikul",
+            "T Nabeta",
+            "J J Bax"
+          ],
+          "abstract": "Abstract Background Artificial intelligence (AI)-based quantitative computed tomography (AI-QCT) is a novel tool for automated plaque characterisation and quantitation from coronary computed tomography angiography (CCTA). The prognostic value of various AI-QCT plaque types on top of the presence of ischemic coronary artery disease (CAD) is unknown to date. Purpose We aimed to investigate the added prognostic value of the AI-QCT plaque characteristics percent atheroma volume (PAV) %, non-calcified plaque burden (NCPB) %, and calcified plaque burden (CPB) % on top of: 1) A novel AI-based CCTA-derived ischemia algorithm (AI-QCTischemia) which predicts the presence of invasive FFR ≤0.80 using 38 morphological features from CCTA; and 2) ischemic CAD based on hybrid CCTA/15O-H2O positron emission tomography (PET) for the composite of all-cause death, myocardial infarction (MI), or unstable angina pectoris (uAP). Methods This was a cohort of 1772 symptomatic patients having undergone hybrid CCTA/15O-H2O PET perfusion imaging to assess the presence of ischemic CAD. Multivariable Cox regressions adjusted for clinical confounders (age, sex, hypertension, diabetes, smoking, typical angina) were performed and compared with the C-index. AI-QCTischemia models were: 1) AI-QCTischemia, 2) AI-QCTischemia+PAV, 3) AI-QCTischemia+NCPB, 4) AI-QCTischemia+CPB. Hybrid CCTA/PET models were: 5) hybrid CCTA/PET, 6) hybrid CCTA/PET+PAV, 7) hybrid CCTA/PET+NCPB, and 8) hybrid CCTA/PET+CPB. Results Throughout a median follow-up of 7 years, 177/1772 (10%) patients experienced the composite endpoint. The C-indexes (p-value vs. model 1) of the AI-QCTischemia models were 1) 0.729, 2) 0.748 (p=0.008), 3) 0.743 (p=0.012), and 4) 0.739 (p=0.067). The C-indexes (p-value vs. model 5) of the hybrid CCTA/PET models were: 5) 0.733, 6) 0.751 (p=0.014), 7) 0.746 (p=0.018), 8) 0.745 (p=0.058). AI-QCTischemia and hybrid CCTA/PET imaging performed similarly by means of C-statistics. Conclusions PAV and NCPB, but not CPB by AI-QCT plaque analysis improved the prediction of 7-year death, MI, or uAP when added on top of the presence of ischemic CAD, determined either by AI-QCTischemia or hybrid CCTA/PET imaging. Overall, the risk stratification based on AI-QCTischemia performed similarly as hybrid CCTA/PET imaging.C-indexes for death, MI, or uAP",
+          "matched_terms": [
+            "ccta"
+          ],
+          "relevance_score": 0.5,
+          "recency_score": 0.8667,
+          "combined_score": 0.5733
+        },
+        {
+          "source": "pubmed",
+          "title": "AI-Guided Quantitative Plaque Staging Predicts Long-Term Cardiovascular Outcomes in Patients at Risk for Atherosclerotic CVD.",
+          "journal": "JACC. Cardiovascular imaging",
+          "year": 2024,
+          "doi": "10.1016/j.jcmg.2023.05.020",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37480907/",
+          "authors": [
+            "Nurmohamed NS",
+            "Bom MJ",
+            "Jukema RA",
+            "de Groot RJ",
+            "Driessen RS"
+          ],
+          "abstract": "BACKGROUND: The recent development of artificial intelligence-guided quantitative coronary computed tomography angiography analysis (AI-QCT) has enabled rapid analysis of atherosclerotic plaque burden and characteristics. OBJECTIVES: This study set out to investigate the 10-year prognostic value of atherosclerotic burden derived from AI-QCT and to compare the spectrum of plaque to manually assessed coronary computed tomography angiography (CCTA), coronary artery calcium scoring (CACS), and clinical risk characteristics. METHODS: This was a long-term follow-up study of 536 patients referred for suspected coronary artery disease. CCTA scans were analyzed with AI-QCT and plaque burden was classified with a plaque staging system (stage 0: 0% percentage atheroma volume [PAV]; stage 1: >0%-5% PAV; stage 2: >5%-15% PAV; stage 3: >15% PAV). The primary major adverse cardiac event (MACE) outcome was a composite of nonfatal myocardial infarction, nonfatal stroke, coronary revascularization, and all-cause mortality. RESULTS: The mean age at baseline was 58.6 years and 297 patients (55%) were male. During a median follow-up of 10.3 years (IQR: 8.6-11.5 years), 114 patients (21%) experienced the primary outcome. Compared to stages 0 and 1, patients with stage 3 PAV and percentage of noncalcified plaque volume of >7.5% had a more than 3-fold (adjusted HR: 3.57; 95% CI 2.12-6.00; P < 0.001) and 4-fold (adjusted HR: 4.37; 95% CI: 2.51-7.62; P < 0.001) increased risk of MACE, respectively. Addition of AI-QCT improved a model with clinical risk factors and CACS at different time points during follow-up (10-year AUC: 0.82 [95% CI: 0.78-0.87] vs 0.73 [95% CI: 0.68-0.79]; P < 0.001; net reclassification improvement: 0.21 [95% CI: 0.09-0.38]). Furthermore, AI-QCT achieved an improved area under the curve compared to Coronary Artery Disease Reporting and Data System 2.0 (10-year AUC: 0.78; 95% CI: 0.73-0.83; P = 0.023) and manual QCT (10-year AUC: 0.78; 95% CI: 0.73-0.83; P = 0.040), although net reclassification improvement was modest (0.09 [95% CI: -0.02 to 0.29] and 0.04 [95% CI: -0.05 to 0.27], respectively). CONCLUSIONS: Through 10-year follow-up, AI-QCT plaque staging showed important prognostic value for MACE and showed additional discriminatory value over clinical risk factors, CACS, and manual guideline-recommended CCTA assessment.",
+          "matched_terms": [
+            "ccta",
+            "cvd"
+          ],
+          "relevance_score": 0.5,
+          "recency_score": 0.8667,
+          "combined_score": 0.5733
+        },
+        {
+          "source": "arxiv",
+          "title": "O2CTA: Introducing Annotations from OCT to CCTA in Coronary Plaque Analysis",
+          "journal": "arXiv",
+          "year": 2023,
+          "doi": "",
+          "url": "http://arxiv.org/abs/2303.06358v2",
+          "authors": [
+            "Jun Li",
+            "Kexin Li",
+            "Yafeng Zhou",
+            "S. Kevin Zhou"
+          ],
+          "abstract": "Targeted diagnosis and treatment plans for patients with coronary artery disease vary according to atherosclerotic plaque component. Coronary CT angiography (CCTA) is widely used for artery imaging and determining the stenosis degree. However, the limited spatial resolution and susceptibility to artifacts fail CCTA in obtaining lumen morphological characteristics and plaque composition. It can be settled by invasive optical coherence tomography (OCT) without much trouble for physicians, but bringing higher costs and potential risks to patients. Therefore, it is clinically critical to introduce annotations of plaque tissue and lumen characteristics from OCT to paired CCTA scans, denoted as \\textbf{the O2CTA problem} in this paper. We propose a method to handle the O2CTA problem. CCTA scans are first reconstructed into multi-planar reformatted (MPR) images, which agree with OCT images in term of semantic contents. The artery segment in OCT, which is manually labelled, is then spatially aligned with the entire artery in MPR images via the proposed alignment strategy. Finally, a classification model involving a 3D CNN and a Transformer, is learned to extract local features and capture dependence along arteries. Experiments on 55 paired OCT and CCTA we curate demonstrate that it is feasible to classify the CCTA based on the OCT labels, with an accuracy of 86.2%, while the manual readings of OCT and CCTA vary significantly, with a Kappa coefficient of 0.113. We will make our source codes, models, data, and results publicly available to benefit the research community.",
+          "matched_terms": [
+            "ccta"
+          ],
+          "relevance_score": 0.5,
+          "recency_score": 0.8,
+          "combined_score": 0.56
+        },
+        {
+          "source": "crossref",
+          "title": "Prediction of myocardial ischemia in coronary heart disease patients using a CCTA–Based radiomic nomogram",
+          "journal": "Frontiers in Cardiovascular Medicine",
+          "year": 2023,
+          "doi": "10.3389/fcvm.2023.1024773",
+          "url": "https://doi.org/10.3389/fcvm.2023.1024773",
+          "authors": [
+            "You-Chang Yang",
+            "Yang Dou",
+            "Zhi-Wei Wang",
+            "Ruo-Han Yin",
+            "Chang-Jie Pan"
+          ],
+          "abstract": "Objective The present study aimed to predict myocardial ischemia in coronary heart disease (CHD) patients based on the radiologic features of coronary computed tomography angiography (CCTA) combined with clinical factors. Methods The imaging and clinical data of 110 patients who underwent CCTA scan before DSA or FFR examination in Changzhou Second People’s Hospital, Nanjing Medical University (90 patients), and The First Affiliated Hospital of Soochow University (20 patients) from March 2018 to January 2022 were retrospectively analyzed. According to the digital subtraction angiography (DSA) and fractional flow reserve (FFR) results, all patients were assigned to myocardial ischemia ( n = 58) and normal myocardial blood supply ( n = 52) groups. All patients were further categorized into training ( n = 64) and internal validation ( n = 26) sets at a ratio of 7:3, and the patients from second site were used as external validation. Clinical indicators of patients were collected, the left ventricular myocardium were segmented from CCTA images using CQK software, and the radiomics features were extracted using pyradiomics software. Independent prediction models and combined prediction models were established. The predictive performance of the model was assessed by calibration curve analysis, receiver operating characteristic (ROC) curve and decision curve analysis. Results The combined model consisted of one important clinical factor and eight selected radiomic features. The area under the ROC curve (AUC) of radiomic model was 0.826 in training set, and 0.744 in the internal validation set. For the combined model, the AUCs were 0.873, 0.810, 0.800 in the training, internal validation, and external validation sets, respectively. The calibration curves demonstrated that the probability of myocardial ischemia predicted by the combined model was in good agreement with the observed values in both training and validation sets. The decision curve was within the threshold range of 0.1–1, and the clinical value of nomogram was higher than that of clinical model. Conclusion The radiomic characteristics of CCTA combined with clinical factors have a good clinical value in predicting myocardial ischemia in CHD patients.",
+          "matched_terms": [
+            "ccta"
+          ],
+          "relevance_score": 0.5,
+          "recency_score": 0.8,
+          "combined_score": 0.56
+        },
+        {
+          "source": "pubmed",
+          "title": "Association of oxidized ApoB and oxidized ApoA-I with high-risk coronary plaque features in cardiovascular disease.",
+          "journal": "JCI insight",
+          "year": 2023,
+          "doi": "10.1172/jci.insight.172893",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37698922/",
+          "authors": [
+            "Sorokin AV",
+            "Hong CG",
+            "Aponte AM",
+            "Florida EM",
+            "Tang J"
+          ],
+          "abstract": "BACKGROUND: Oxidized apolipoprotein B (oxLDL) and oxidized ApoA-I (oxHDL) are proatherogenic. Their prognostic value for assessing high-risk plaques by coronary computed tomography angiography (CCTA) is missing. METHODS: In a prospective, observational study, 306 participants with cardiovascular disease (CVD) had extensive lipoprotein profiling. Proteomics analysis was performed on isolated oxHDL, and atherosclerotic plaque assessment was accomplished by quantitative CCTA. RESULTS: Patients were predominantly White, overweight men (58.5%) on statin therapy (43.5%). Increase in LDL-C, ApoB, small dense LDL-C (P < 0.001 for all), triglycerides (P = 0.03), and lower HDL function were observed in the high oxLDL group. High oxLDL associated with necrotic burden (NB; β = 0.20; P < 0.0001) and fibrofatty burden (FFB; β = 0.15; P = 0.001) after multivariate adjustment. Low oxHDL had a significant reverse association with these plaque characteristics. Plasma oxHDL levels better predicted NB and FFB after adjustment (OR, 2.22; 95% CI, 1.27-3.88, and OR, 2.80; 95% CI, 1.71-4.58) compared with oxLDL and HDL-C. Interestingly, oxHDL associated with fibrous burden (FB) change over 3.3 years (β = 0.535; P = 0.033) when compared with oxLDL. Combined Met136 mono-oxidation and Trp132 dioxidation of HDL showed evident association with coronary artery calcium score (r = 0.786; P < 0.001) and FB (r = 0.539; P = 0.012) in high oxHDL, whereas Met136 mono-oxidation significantly associated with vulnerable plaque in low oxHDL. CONCLUSION: Our findings suggest that the investigated oxidized lipids are associated with high-risk coronary plaque features and progression over time in patients with CVD. CLINICALTRIALS: gov NCT01621594. FUNDING: National Heart, Lung, and Blood Institute at the NIH Intramural Research Program.",
+          "matched_terms": [
+            "ccta",
+            "cvd"
+          ],
+          "relevance_score": 0.3,
+          "recency_score": 0.8,
+          "combined_score": 0.4
+        },
+        {
+          "source": "crossref",
+          "title": "Synergistic prognostic value of coronary distensibility index and fractional flow reserve based cCTA for major adverse cardiac events in patients with Coronary artery disease",
+          "journal": "BMC Cardiovascular Disorders",
+          "year": 2022,
+          "doi": "10.1186/s12872-022-02655-0",
+          "url": "https://doi.org/10.1186/s12872-022-02655-0",
+          "authors": [
+            "Xiao-long Zhu",
+            "Zhi-ying Pang",
+            "Wei Jiang",
+            "Ting-yu Dong"
+          ],
+          "abstract": "Abstract Background Coronary distensibility index (CDI), as an early predictor of cardiovascular diseases, has the potential to complement coronary computed tomography angiography (cCTA)-derived fractional flow reserve (CT-FFR) for predicting major adverse cardiac events (MACEs). Thus, the prognostic value of CT-FFR combined with CDI for MACEs is worth exploring. Methods Patients with a moderate or severe single left anterior descending coronary artery stenosis were included and underwent FFR and CDI analysis based on cCTA, followed up at least 1 year, and recorded MACEs. Multivariate logistic regression analysis was performed to determine independent predictors of MACEs. The area under of receiver operating characteristic (ROC) curve was used to evaluated evaluate the diagnostic performance of CT-FFR, CDI, and a combination of the two. Results All the vessel-specific data were from LAD. 150 patients were analysed. 55 (37%) patients experienced MACEs during follow-up. Patients with CT-FFR ≤ 0.8 had higher percentage of MACEs compared with CT-FFR > 0.8 (56.3% vs.7.3%, p p p = 0.025), triglyceride ( p = 0.015), CT-FFR ≤ 0.80 ( p = 0.038), and CDI ( p p = 0.0002). Conclusion Our study provides initial evidence that combining CDI with CT-FFR shows incremental discriminatory power for MACEs over CT-FFR alone, independent of clinical risk factors. Diabetes and triglyceride are also associated with MACEs.",
+          "matched_terms": [
+            "ccta"
+          ],
+          "relevance_score": 0.5,
+          "recency_score": 0.7333,
+          "combined_score": 0.5467
+        },
+        {
+          "source": "crossref",
+          "title": "Incremental prognostic value of stress CMR in symptomatic patients with coronary stenosis on CCTA",
+          "journal": "European Heart Journal",
+          "year": 2022,
+          "doi": "10.1093/eurheartj/ehac544.277",
+          "url": "https://doi.org/10.1093/eurheartj/ehac544.277",
+          "authors": [
+            "T Pezel",
+            "T Hovasse",
+            "T Lefevre",
+            "F Sanguineti",
+            "S Champagne"
+          ],
+          "abstract": "Abstract Background Noninvasive functional imaging is often performed in patients with obstructive coronary artery disease (CAD) on coronary computed tomography angiography (CCTA). However, the prognostic value of stress cardiovascular magnetic resonance (CMR) is unknown in patients with coronary stenosis of unknown significance on CCTA. Purpose To assess the prognostic value of stress CMR in symptomatic patients with obstructive CAD of unknown significance on CCTA. Methods Between 2008–2020, consecutive symptomatic patients without known CAD referred for CCTA were screened. Patients with obstructive CAD (at least 1 ≥50% stenosis on CCTA) were further referred for stress CMR and followed for the occurrence of major adverse cardiovascular events (MACE), defined by cardiovascular death or nonfatal myocardial infarction. Results Of 2,210 patients who completed CMR, 2,038 (46.5% male, mean age 69.8±12.2 years) completed follow-up (median 6.8 [IQR 5.9–9.2] years); 281 experienced a MACE (13.8%). Inducible ischemia and late gadolinium enhancement (LGE) were significantly associated with MACE (HR: 4.51, [95% CI: 3.55–5.74]; and HR: 3.32, [95% CI: 2.55–4.32], respectively; p&lt;0.001). In multivariable Cox regression, number of segments with &gt;70% stenosis, with noncalcified plaques and number of vessels with obstructive CAD were prognosticators (p&lt;0.001). The presence of inducible ischemia and LGE were independent predictors of MACE (HR: 3.97, [95% CI: 3.43–5.13]; HR: 2.30, [95% CI: 1.52–3.33]; p&lt;0.001). After adjustment, stress CMR showed the best improvement in model discrimination and reclassification above traditional risk factors and CCTA (C-statistic improvement: 0.04; NRI=0.421; IDI=0.047). Conclusions In symptomatic patients with obstructive CAD of unknown significance on CCTA, stress CMR had incremental prognostic value to predict MACE. Funding Acknowledgement Type of funding sources: None.",
+          "matched_terms": [
+            "ccta"
+          ],
+          "relevance_score": 0.5,
+          "recency_score": 0.7333,
+          "combined_score": 0.5467
+        },
+        {
+          "source": "arxiv",
+          "title": "Artificial Intelligence to Assist in Exclusion of Coronary Atherosclerosis during CCTA Evaluation of Chest-Pain in the Emergency Department: Preparing an Application for Real-World Use",
+          "journal": "arXiv",
+          "year": 2020,
+          "doi": "",
+          "url": "http://arxiv.org/abs/2008.04802v1",
+          "authors": [
+            "Richard D. White",
+            "Barbaros S. Erdal",
+            "Mutlu Demirer",
+            "Vikash Gupta",
+            "Matthew T. Bigelow"
+          ],
+          "abstract": "Coronary Computed Tomography Angiography (CCTA) evaluation of chest-pain patients in an Emergency Department (ED) is considered appropriate. While a negative CCTA interpretation supports direct patient discharge from an ED, labor-intensive analyses are required, with accuracy in jeopardy from distractions. We describe the development of an Artificial Intelligence (AI) algorithm and workflow for assisting interpreting physicians in CCTA screening for the absence of coronary atherosclerosis. The two-phase approach consisted of (1) Phase 1 - focused on the development and preliminary testing of an algorithm for vessel-centerline extraction classification in a balanced study population (n = 500 with 50% disease prevalence) derived by retrospective random case selection; and (2) Phase 2 - concerned with simulated-clinical Trialing of the developed algorithm on a per-case basis in a more real-world study population (n = 100 with 28% disease prevalence) from an ED chest-pain series. This allowed pre-deployment evaluation of the AI-based CCTA screening application which provides a vessel-by-vessel graphic display of algorithm inference results integrated into a clinically capable viewer. Algorithm performance evaluation used Area Under the Receiver-Operating-Characteristic Curve (AUC-ROC); confusion matrices reflected ground-truth vs AI determinations. The vessel-based algorithm demonstrated strong performance with AUC-ROC = 0.96. In both Phase 1 and Phase 2, independent of disease prevalence differences, negative predictive values at the case level were very high at 95%. The rate of completion of the algorithm workflow process (96% with inference results in 55-80 seconds) in Phase 2 depended on adequate image quality. There is potential for this AI application to assist in CCTA interpretation to help extricate atherosclerosis from chest-pain presentations.",
+          "matched_terms": [
+            "ccta"
+          ],
+          "relevance_score": 0.5,
+          "recency_score": 0.6,
+          "combined_score": 0.52
+        },
+        {
+          "source": "crossref",
+          "title": "Incremental prognostic value of pericoronary adipose tissue attenuation on top of comprehensive CCTA assessment",
+          "journal": "European Heart Journal",
+          "year": 2020,
+          "doi": "10.1093/ehjci/ehaa946.0150",
+          "url": "https://doi.org/10.1093/ehjci/ehaa946.0150",
+          "authors": [
+            "P.A Van Diemen",
+            "M.J Bom",
+            "R.S Driessen",
+            "H Everaars",
+            "S.P Schumacher"
+          ],
+          "abstract": "Abstract Background Coronary computed tomography angiography (CCTA) derived parameters linked to severity and extent of atherosclerosis are associated with prognosis in patients with coronary artery disease (CAD). Furthermore, coronary inflammation, by determining pericoronary adipose tissue CT-attenuation (PCATa), can be assessed on CCTA as well and has been proposed as promising prognostic marker. Objective To assess the prognostic value of PCATa on top of traditional CCTA derived atherosclerotic parameters. Methods A total of 543 patients who underwent CCTA because of suspected CAD and in whom follow-up was obtained were included. CCTA assessment comprised; coronary artery calcium score (CACS), presence of obstructive CAD (≥50% stenosis) and high-risk plaques (HRP), total plaque volume (TPV), non-calcified plaque volume (NCPV), and PCATa. The endpoint was a composite of death and non-fatal myocardial infarction (MI). Optimal prognostic thresholds were determined for quantitative CCTA variables. Univariable Cox regression analyses were performed to determine clinical characteristics and CCTA variables associated with the endpoint, a subsequent multivariable Cox regression analysis that included variables associated with the endpoint was used to determine independent predictors of the endpoint. An additional Cox regression analysis was performed to test the incremental prognostic value of CCTA variables over clinical characteristics, significance of each sequentially added variable was tested using the likelihood ratio test. Results During a median follow-up time of 6.6 [interquartile range: 4.7–7.8] years, a total of 42 (20 MI/22 death) (8%) patients suffered an endpoint. CACS &gt;83.2, obstructive CAD, HRP, TPV &gt;269mm3, and NCPV &gt;83mm3 were all associated with occurrence of the endpoint with unadujsted hazard ratio's (HR) of; 5.37, 5.70, 3.31, 7.76, and 6.77, respectively (p&lt;0.001 for all). PCATa of the RCA above −74.4 Hounsfield units (HU) had a detrimental effect on prognosis (unadjusted HR: 1.99, p=0.037), while PCATa of the LAD nor Cx was associated with outcome (Log-rank p-value 0.255 and 0.218, respectively). PCATa of the RCA remained an independent predictor of death and MI when incorporated in a multivariable analysis inlcuding all CCTA variables and clincal chacteristics associated with the endpoint (adjusted HR: 2.11, p=0.024). Furthermore, adding PCATa of the RCA to a model that included clinical characteristics and all CCTA parameters led to an improvement of the prognostic value of the model (change in Chi-square = 4.45, p=0.035) (figure). Conclusion Coronary inflammation of the RCA determined by PCATa provides incremental prognostic value on top of traditional CCTA parameters linked to extent and severity of CAD. Figure 1. Cox regression analysis demonstrating the incremental prognostic value of sequentially added CCTA variables over clinical characteristics tested for significance using the likelihood ratio test. Funding Acknowledgement Type of funding source: None",
+          "matched_terms": [
+            "ccta"
+          ],
+          "relevance_score": 0.5,
+          "recency_score": 0.6,
+          "combined_score": 0.52
+        },
+        {
+          "source": "pubmed",
+          "title": "Prognostic Value of Coronary Computed Tomography Imaging in Patients at High Risk Without Symptoms of Coronary Artery Disease.",
+          "journal": "The American journal of cardiology",
+          "year": 2016,
+          "doi": "10.1016/j.amjcard.2015.11.058",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26754124/",
+          "authors": [
+            "Dedic A",
+            "Ten Kate GJ",
+            "Roos CJ",
+            "Neefjes LA",
+            "de Graaf MA"
+          ],
+          "abstract": "At present, traditional risk factors are used to guide cardiovascular management of asymptomatic subjects. Intensified surveillance may be warranted in those identified as high risk of developing cardiovascular disease (CVD). This study aims to determine the prognostic value of coronary computed tomography (CT) angiography (CCTA) next to the coronary artery calcium score (CACS) in patients at high CVD risk without symptoms suspect for coronary artery disease (CAD). A total of 665 patients at high risk (mean age 56 ± 9 years, 417 men), having at least one important CVD risk factor (diabetes mellitus, familial hypercholesterolemia, peripheral artery disease, or severe hypertension) or a calculated European systematic coronary risk evaluation of >10% were included from outpatient clinics at 2 academic centers. Follow-up was performed for the occurrence of adverse events including all-cause mortality, nonfatal myocardial infarction, unstable angina, or coronary revascularization. During a median follow-up of 3.0 (interquartile range 1.3 to 4.1) years, adverse events occurred in 40 subjects (6.0%). By multivariate analysis, adjusted for age, gender, and CACS, obstructive CAD on CCTA (≥50% luminal stenosis) was a significant predictor of adverse events (hazard ratio 5.9 [CI 1.3 to 26.1]). Addition of CCTA to age, gender, plus CACS, increased the C statistic from 0.81 to 0.84 and resulted in a total net reclassification index of 0.19 (p <0.01). In conclusion, CCTA has incremental prognostic value and risk reclassification benefit beyond CACS in patients without CAD symptoms but with high risk of developing CVD.",
+          "matched_terms": [
+            "ccta",
+            "cvd"
+          ],
+          "relevance_score": 0.3,
+          "recency_score": 0.3333,
+          "combined_score": 0.3067
+        }
+      ]
+    }
+  ],
+  "source_results": [
+    {
+      "query": "AI-empowered",
+      "source": "crossref",
+      "count": 0,
+      "items": []
+    },
+    {
+      "query": "AI-empowered",
+      "source": "pubmed",
+      "count": 0,
+      "items": []
+    },
+    {
+      "query": "AI-empowered",
+      "source": "openalex",
+      "count": 0,
+      "items": []
+    },
+    {
+      "query": "AI-empowered",
+      "source": "arxiv",
+      "count": 0,
+      "items": []
+    },
+    {
+      "query": "AI-empowered vascular disease",
+      "source": "crossref",
+      "count": 4,
+      "items": [
+        {
+          "source": "crossref",
+          "title": "Predator crow search optimization with explainable AI for cardiac vascular disease classification",
+          "journal": "Scientific Reports",
+          "year": 2025,
+          "doi": "10.1038/s41598-025-96003-9",
+          "url": "https://doi.org/10.1038/s41598-025-96003-9",
+          "authors": [
+            "M. M. Asha",
+            "G. Ramya"
+          ],
+          "abstract": "Abstract The proposed framework optimizes Explainable AI parameters, combining Predator crow search optimization to refine the predictive model’s performance. To prevent overfitting and enhance feature selection, an information acquisition-based technique is introduced, improving the model’s robustness and reliability. An enhanced U-Net model employing context-based partitioning is proposed for precise and automatic left ventricular segmentation, facilitating quantitative assessment. The methodology was validated using two datasets: the publicly available ACDC challenge dataset and the imATFIB dataset from internal clinical research, demonstrating significant improvements. The comparative analysis confirms the superiority of the proposed framework over existing cardiovascular disease prediction methods, achieving remarkable results of 99.72% accuracy, 96.47% precision, 98.6% recall, and 94.6% F1 measure. Additionally, qualitative analysis was performed to evaluate the interpretability and clinical relevance of the model’s predictions, ensuring that the outputs align with expert medical insights. This comprehensive approach not only advances the accuracy of CVD predictions but also provides a robust tool for medical professionals, potentially improving patient outcomes through early and precise diagnosis.",
+          "matched_terms": [
+            "disease",
+            "vascular"
+          ],
+          "relevance_score": 0.85,
+          "recency_score": 0.9333,
+          "combined_score": 0.8667
+        },
+        {
+          "source": "crossref",
+          "title": "Prediction of depression among patients with cardiovascular disease scheduled cardiac surgery using an AI-empowered pipeline",
+          "journal": "European Heart Journal",
+          "year": 2022,
+          "doi": "10.1093/eurheartj/ehac544.2428",
+          "url": "https://doi.org/10.1093/eurheartj/ehac544.2428",
+          "authors": [
+            "V Pezoulas",
+            "K Nowakowska",
+            "J Kazmierski",
+            "D Fotiadis",
+            "A Sakellarios"
+          ],
+          "abstract": "Abstract Introduction Several studies have demonstrated, that one in three patients with cardiovascular disease (CVD) suffers from depression, and depression increases the likelihood for cardiac morbidity and mortality in the CVD population by 2–3-fold, independently of traditional risk factors or gender. Purpose The aim of this work is to predict depression in patients with CVD. Methods The clinical study was conducted in the cardiac surgical intensive care unit of The Central Clinical Hospital, the Medical University of Lodz in Poland, among patients scheduled for elective coronary artery bypass graft surgery (CABG). 224 patients signed an informed consent form, met the inclusion criteria and were enrolled in the study. All the patients had chronic coronary syndromes. The inclusion criteria were: consecutive adult patients scheduled for CABG surgery or CABG surgery with cardiac valve repair or replacement (CVR). The study population was examined by a psychiatrist the day prior to the scheduled operation, a diagnosis of major depressive disorder (MDD) was established on the basis of DSM-5 criteria. A data curation pipeline was applied to automatically remove outliers and duplicated fields in the input dataset. An AI-empowered pipeline was developed to classify patients at higher risk for depression. Random downsampling with replacement was applied to deal with the increased class imbalance by taking into consideration two confound factors, namely the Mini Mental State Examination and Hemoglobin concentration &lt;10mg/dl. The downsampling process was repeated K times. In each iteration, three bagging and boosting ML schemas were utilized for the classification task including the AdaBoost (adaptive boosting), Random Forests and Extreme Gradient boosting trees (XGBoost). To this end, a nested cross-validation process was applied for hyperparameter optimization and model validation, where: (i) a 3-fold cross-validation process was first applied to seek for the optimal set of hyperparameters based on the grid search approach by tuning core parameters, including the learning rate, number of estimators, and max depth, among others, and (ii) a stratified 5-fold cross-validation process was subsequently used to evaluate the performance of the best model from the previous stage by computing the classification accuracy, sensitivity, specificity, and area under the ROC curve (AUC). The performance evaluation results were averaged across the 5 folds and across the downsampling iterations. Shappley additive explanation analysis was finally applied to provide explainable risk factors for depression. Results sRAGE was significantly correlated with depression (r=0.32, p=0.038). The Random forests classifier presented the highest performance to predict depression (Accuracy: 0.71, Sensitivity: 0.71, Specificity: 0.75 and AUC: 0.74). Conclusions Depression can be predicted with 71% accuracy at patients with CVD and elevated sRAGE values. Funding Acknowledgement Type of funding sources: Public grant(s) – EU funding. Main funding source(s): HORIZON2020",
+          "matched_terms": [
+            "disease"
+          ],
+          "relevance_score": 0.5,
+          "recency_score": 0.7333,
+          "combined_score": 0.5467
+        },
+        {
+          "source": "crossref",
+          "title": "Hyperhomocysteinaemia is associated with low plasma apolipoprotein AI levels in patients with impaired glucose tolerance",
+          "journal": "Diabetes and Vascular Disease Research",
+          "year": 2015,
+          "doi": "10.1177/1479164115579008",
+          "url": "https://doi.org/10.1177/1479164115579008",
+          "authors": [
+            "Jia Liu",
+            "Ying Wang",
+            "Hui Fan",
+            "Li Miao",
+            "Heng Zhang"
+          ],
+          "abstract": "Homocysteine suppresses hepatic apolipoprotein AI synthesis in mice. We assessed the relationship between homocysteine and apolipoprotein AI levels in patients with impaired glucose tolerance. A total of 217 participants, including 95 impaired glucose tolerance patients and 122 healthy subjects, were classified as normal control subjects without hyperhomocysteinaemia, control subjects with hyperhomocysteinaemia, impaired glucose tolerance patients without hyperhomocysteinaemia (n-IGT) and impaired glucose tolerance patients with hyperhomocysteinaemia (H-IGT). The impaired glucose tolerance patients had higher plasma levels of homocysteine and homeostasis model assessment index of insulin resistance values, and lower plasma apolipoprotein AI levels than the normal control and control subjects with hyperhomocysteinaemia (all p",
+          "matched_terms": [
+            "disease",
+            "vascular"
+          ],
+          "relevance_score": 0.7,
+          "recency_score": 0.2667,
+          "combined_score": 0.6133
+        },
+        {
+          "source": "crossref",
+          "title": "Apo-B/AI ratio identifies cardiovascular risk in childhood:The Australian Aboriginal Birth Cohort study",
+          "journal": "Diabetes and Vascular Disease Research",
+          "year": 2009,
+          "doi": "10.1177/1479164109336046",
+          "url": "https://doi.org/10.1177/1479164109336046",
+          "authors": [
+            "Elizabeth A.C. Sellers",
+            "Gurmeet R. Singh",
+            "Susan M. Sayers"
+          ],
+          "abstract": "We describe the lipoprotein and apolipoprotein profiles and their relationship to cardiovascular risk factors in Australian Aboriginal children. This cross-sectional study within a longitudinal birth cohort study involved Australian Aboriginal children born between 1987 and 1990 and re-examined between 1998 and 2001. Height, weight, blood pressure, waist circumference, body fat percentage, cholesterol, triglycerides, HDL-c, LDL-c, apolipoprotein B and A1 were measured. Mean age was 11.4 years (52% male). Mean cholesterol, triglyceride, HDL-c and LDL-c did not differ from reference data. Measures of obesity, blood pressure and prevalence of the metabolic syndrome did not differ in those children with lipoproteins in the upper quartile of the cohort (lower quartile for HDL-c). Boys with an Apo-B/A1 ratio in the upper quartile of the cohort had higher BMI z-score, waist z-score, % body fat, diastolic blood pressure and frequency of the metabolic syndrome (p",
+          "matched_terms": [
+            "disease",
+            "vascular"
+          ],
+          "relevance_score": 0.7,
+          "recency_score": 0.0,
+          "combined_score": 0.56
+        }
+      ]
+    },
+    {
+      "query": "AI-empowered vascular disease",
+      "source": "pubmed",
+      "count": 0,
+      "items": []
+    },
+    {
+      "query": "AI-empowered vascular disease",
+      "source": "openalex",
+      "count": 1,
+      "items": [
+        {
+          "source": "openalex",
+          "title": "2023 AHA/ACC/ACCP/ASPC/NLA/PCNA Guideline for the Management of Patients With Chronic Coronary Disease: A Report of the American Heart Association/American College of Cardiology Joint Committee on Clinical Practice Guidelines",
+          "journal": "Circulation",
+          "year": 2023,
+          "doi": "10.1161/cir.0000000000001168",
+          "url": "https://doi.org/10.1161/cir.0000000000001168",
+          "authors": [
+            "Salim S. Virani",
+            "L. Kristin Newby",
+            "Suzanne V. Arnold",
+            "Vera Bittner",
+            "LaPrincess C. Brewer"
+          ],
+          "abstract": "AIM: The “2023 AHA/ACC/ACCP/ASPC/NLA/PCNA Guideline for the Management of Patients With Chronic Coronary Disease” provides an update to and consolidates new evidence since the “2012 ACCF/AHA/ACP/AATS/PCNA/SCAI/STS Guideline for the Diagnosis and Management of Patients With Stable Ischemic Heart Disease” and the corresponding “2014 ACC/AHA/AATS/PCNA/SCAI/STS Focused Update of the Guideline for the Diagnosis and Management of Patients With Stable Ischemic Heart Disease.” METHODS: A comprehensive literature search was conducted from September 2021 to May 2022. Clinical studies, systematic reviews and meta-analyses, and other evidence conducted on human participants were identified that were published in English from MEDLINE (through PubMed), EMBASE, the Cochrane Library, Agency for Healthcare Research and Quality, and other selected databases relevant to this guideline. STRUCTURE: This guideline provides an evidenced-based and patient-centered approach to management of patients with chronic coronary disease, considering social determinants of health and incorporating the principles of shared decision-making and team-based care. Relevant topics include general approaches to treatment decisions, guideline-directed management and therapy to reduce symptoms and future cardiovascular events, decision-making pertaining to revascularization in patients with chronic coronary disease, recommendations for management in special populations, patient follow-up and monitoring, evidence gaps, and areas in need of future research. Where applicable, and based on availability of cost-effectiveness data, cost–value recommendations are also provided for clinicians. Many recommendations from previously published guidelines have been updated with new evidence, and new recommendations have been created when supported by published data.",
+          "matched_terms": [
+            "disease"
+          ],
+          "relevance_score": 0.5,
+          "recency_score": 0.8,
+          "combined_score": 0.56
+        }
+      ]
+    },
+    {
+      "query": "AI-empowered vascular disease",
+      "source": "arxiv",
+      "count": 2,
+      "items": [
+        {
+          "source": "arxiv",
+          "title": "Microrobot Vascular Parkour: Analytic Geometry-based Path Planning with Real-time Dynamic Obstacle Avoidance",
+          "journal": "arXiv",
+          "year": 2025,
+          "doi": "",
+          "url": "http://arxiv.org/abs/2509.05500v1",
+          "authors": [
+            "Yanda Yang",
+            "Max Sokolich",
+            "Fatma Ceren Kirmizitas",
+            "Sambeeta Das",
+            "Andreas A. Malikopoulos"
+          ],
+          "abstract": "Autonomous microrobots in blood vessels could enable minimally invasive therapies, but navigation is challenged by dense, moving obstacles. We propose a real-time path planning framework that couples an analytic geometry global planner (AGP) with two reactive local escape controllers, one based on rules and one based on reinforcement learning, to handle sudden moving obstacles. Using real-time imaging, the system estimates the positions of the microrobot, obstacles, and targets and computes collision-free motions. In simulation, AGP yields shorter paths and faster planning than weighted A* (WA*), particle swarm optimization (PSO), and rapidly exploring random trees (RRT), while maintaining feasibility and determinism. We extend AGP from 2D to 3D without loss of speed. In both simulations and experiments, the combined global planner and local controllers reliably avoid moving obstacles and reach targets. The average planning time is 40 ms per frame, compatible with 25 fps image acquisition and real-time closed-loop control. These results advance autonomous microrobot navigation and targeted drug delivery in vascular environments.",
+          "matched_terms": [
+            "vascular"
+          ],
+          "relevance_score": 0.5,
+          "recency_score": 0.9333,
+          "combined_score": 0.5867
+        },
+        {
+          "source": "arxiv",
+          "title": "Transfer Learning for Retinal Vascular Disease Detection: A Pilot Study with Diabetic Retinopathy and Retinopathy of Prematurity",
+          "journal": "arXiv",
+          "year": 2022,
+          "doi": "",
+          "url": "http://arxiv.org/abs/2201.01250v1",
+          "authors": [
+            "Guan Wang",
+            "Yusuke Kikuchi",
+            "Jinglin Yi",
+            "Qiong Zou",
+            "Rui Zhou"
+          ],
+          "abstract": "Retinal vascular diseases affect the well-being of human body and sometimes provide vital signs of otherwise undetected bodily damage. Recently, deep learning techniques have been successfully applied for detection of diabetic retinopathy (DR). The main obstacle of applying deep learning techniques to detect most other retinal vascular diseases is the limited amount of data available. In this paper, we propose a transfer learning technique that aims to utilize the feature similarities for detecting retinal vascular diseases. We choose the well-studied DR detection as a source task and identify the early detection of retinopathy of prematurity (ROP) as the target task. Our experimental results demonstrate that our DR-pretrained approach dominates in all metrics the conventional ImageNet-pretrained transfer learning approach, currently adopted in medical image analysis. Moreover, our approach is more robust with respect to the stochasticity in the training process and with respect to reduced training samples. This study suggests the potential of our proposed transfer learning approach for a broad range of retinal vascular diseases or pathologies, where data is limited.",
+          "matched_terms": [
+            "disease",
+            "vascular"
+          ],
+          "relevance_score": 0.85,
+          "recency_score": 0.7333,
+          "combined_score": 0.8267
+        }
+      ]
+    },
+    {
+      "query": "CCTA prognostic prediction for CVD",
+      "source": "crossref",
+      "count": 6,
+      "items": [
+        {
+          "source": "crossref",
+          "title": "Prognostic impact of reduced kidney function in patients with suspected coronary artery disease undergoing CCTA",
+          "journal": "European Journal of Preventive Cardiology",
+          "year": 2025,
+          "doi": "10.1093/eurjpc/zwaf218",
+          "url": "https://doi.org/10.1093/eurjpc/zwaf218",
+          "authors": [
+            "Jonathan N Dahl",
+            "Louise Nissen",
+            "Marie B Nielsen",
+            "Laust D Rasmussen",
+            "Jacob Hartmann Søby"
+          ],
+          "abstract": "Abstract Aims Chronic kidney disease (CKD) and coronary artery disease (CAD) share common risk factors, but the association between kidney function [estimated glomerular filtration rate (eGFR) in mL/min/1.73 m²] and major adverse cardiovascular events (MACE) in patients undergoing coronary computed tomography angiography (CCTA) due to suspected CAD has not been established. This study investigated the association between kidney function and MACE in symptomatic patients undergoing CCTA. Methods and results A cohort study of consecutive, symptomatic patients undergoing CCTA between 2008 and 2021 (n = 70 367). CAD severity was stratified as no CAD, non-obstructive CAD, and obstructive CAD (≥50% diameter stenosis). The primary outcome was MACE (myocardial infarction, ischaemic stroke, or cardiovascular death). eGFR was calculated based on plasma-creatinine at the time of CCTA. In total, 41 156 (59%) had eGFR ≥90, 27,011 (38%) had eGFR 60–89, and 2200 (3%) had eGFR 30–59. Median follow-ups were 5.1 years, according to eGFR ≥90, 60–89, and 30–59 groups, MACE rates per 1000 person-years in patients with obstructive CAD were 14.2, 15.4, and 25.8, respectively, and in patients with non-obstructive CAD the MACE rates were 6.4, 8.0, and 14.4, respectively. Compared to patients with eGFR ≥90, hazard ratios for MACE were 1.09 [95% confidence intervals (CI) 1.00–1.19] and 1.42 (95%CI 1.18–1.69) for patients with eGFR 60–89 and 30–59, respectively. Conclusion In patients referred for CCTA due to suspected CAD, reduced kidney function was associated with an increased rate of MACE. Therefore, CKD is a strong independent cardiovascular risk factor, particularly in patients with CAD detected on CCTA.",
+          "matched_terms": [
+            "ccta"
+          ],
+          "relevance_score": 0.5,
+          "recency_score": 0.9333,
+          "combined_score": 0.5867
+        },
+        {
+          "source": "crossref",
+          "title": "Incremental prognostic value of artificial intelligence-based automated plaque characterisation on top of ischemia evaluation by CCTA and CCTA/PET",
+          "journal": "European Heart Journal - Cardiovascular Imaging",
+          "year": 2024,
+          "doi": "10.1093/ehjci/jeae142.036",
+          "url": "https://doi.org/10.1093/ehjci/jeae142.036",
+          "authors": [
+            "S Bar",
+            "T Maaniitty",
+            "P Kiatkittikul",
+            "T Nabeta",
+            "J J Bax"
+          ],
+          "abstract": "Abstract Background Artificial intelligence (AI)-based quantitative computed tomography (AI-QCT) is a novel tool for automated plaque characterisation and quantitation from coronary computed tomography angiography (CCTA). The prognostic value of various AI-QCT plaque types on top of the presence of ischemic coronary artery disease (CAD) is unknown to date. Purpose We aimed to investigate the added prognostic value of the AI-QCT plaque characteristics percent atheroma volume (PAV) %, non-calcified plaque burden (NCPB) %, and calcified plaque burden (CPB) % on top of: 1) A novel AI-based CCTA-derived ischemia algorithm (AI-QCTischemia) which predicts the presence of invasive FFR ≤0.80 using 38 morphological features from CCTA; and 2) ischemic CAD based on hybrid CCTA/15O-H2O positron emission tomography (PET) for the composite of all-cause death, myocardial infarction (MI), or unstable angina pectoris (uAP). Methods This was a cohort of 1772 symptomatic patients having undergone hybrid CCTA/15O-H2O PET perfusion imaging to assess the presence of ischemic CAD. Multivariable Cox regressions adjusted for clinical confounders (age, sex, hypertension, diabetes, smoking, typical angina) were performed and compared with the C-index. AI-QCTischemia models were: 1) AI-QCTischemia, 2) AI-QCTischemia+PAV, 3) AI-QCTischemia+NCPB, 4) AI-QCTischemia+CPB. Hybrid CCTA/PET models were: 5) hybrid CCTA/PET, 6) hybrid CCTA/PET+PAV, 7) hybrid CCTA/PET+NCPB, and 8) hybrid CCTA/PET+CPB. Results Throughout a median follow-up of 7 years, 177/1772 (10%) patients experienced the composite endpoint. The C-indexes (p-value vs. model 1) of the AI-QCTischemia models were 1) 0.729, 2) 0.748 (p=0.008), 3) 0.743 (p=0.012), and 4) 0.739 (p=0.067). The C-indexes (p-value vs. model 5) of the hybrid CCTA/PET models were: 5) 0.733, 6) 0.751 (p=0.014), 7) 0.746 (p=0.018), 8) 0.745 (p=0.058). AI-QCTischemia and hybrid CCTA/PET imaging performed similarly by means of C-statistics. Conclusions PAV and NCPB, but not CPB by AI-QCT plaque analysis improved the prediction of 7-year death, MI, or uAP when added on top of the presence of ischemic CAD, determined either by AI-QCTischemia or hybrid CCTA/PET imaging. Overall, the risk stratification based on AI-QCTischemia performed similarly as hybrid CCTA/PET imaging.C-indexes for death, MI, or uAP",
+          "matched_terms": [
+            "ccta"
+          ],
+          "relevance_score": 0.5,
+          "recency_score": 0.8667,
+          "combined_score": 0.5733
+        },
+        {
+          "source": "crossref",
+          "title": "Prediction of myocardial ischemia in coronary heart disease patients using a CCTA–Based radiomic nomogram",
+          "journal": "Frontiers in Cardiovascular Medicine",
+          "year": 2023,
+          "doi": "10.3389/fcvm.2023.1024773",
+          "url": "https://doi.org/10.3389/fcvm.2023.1024773",
+          "authors": [
+            "You-Chang Yang",
+            "Yang Dou",
+            "Zhi-Wei Wang",
+            "Ruo-Han Yin",
+            "Chang-Jie Pan"
+          ],
+          "abstract": "Objective The present study aimed to predict myocardial ischemia in coronary heart disease (CHD) patients based on the radiologic features of coronary computed tomography angiography (CCTA) combined with clinical factors. Methods The imaging and clinical data of 110 patients who underwent CCTA scan before DSA or FFR examination in Changzhou Second People’s Hospital, Nanjing Medical University (90 patients), and The First Affiliated Hospital of Soochow University (20 patients) from March 2018 to January 2022 were retrospectively analyzed. According to the digital subtraction angiography (DSA) and fractional flow reserve (FFR) results, all patients were assigned to myocardial ischemia ( n = 58) and normal myocardial blood supply ( n = 52) groups. All patients were further categorized into training ( n = 64) and internal validation ( n = 26) sets at a ratio of 7:3, and the patients from second site were used as external validation. Clinical indicators of patients were collected, the left ventricular myocardium were segmented from CCTA images using CQK software, and the radiomics features were extracted using pyradiomics software. Independent prediction models and combined prediction models were established. The predictive performance of the model was assessed by calibration curve analysis, receiver operating characteristic (ROC) curve and decision curve analysis. Results The combined model consisted of one important clinical factor and eight selected radiomic features. The area under the ROC curve (AUC) of radiomic model was 0.826 in training set, and 0.744 in the internal validation set. For the combined model, the AUCs were 0.873, 0.810, 0.800 in the training, internal validation, and external validation sets, respectively. The calibration curves demonstrated that the probability of myocardial ischemia predicted by the combined model was in good agreement with the observed values in both training and validation sets. The decision curve was within the threshold range of 0.1–1, and the clinical value of nomogram was higher than that of clinical model. Conclusion The radiomic characteristics of CCTA combined with clinical factors have a good clinical value in predicting myocardial ischemia in CHD patients.",
+          "matched_terms": [
+            "ccta"
+          ],
+          "relevance_score": 0.5,
+          "recency_score": 0.8,
+          "combined_score": 0.56
+        },
+        {
+          "source": "crossref",
+          "title": "Synergistic prognostic value of coronary distensibility index and fractional flow reserve based cCTA for major adverse cardiac events in patients with Coronary artery disease",
+          "journal": "BMC Cardiovascular Disorders",
+          "year": 2022,
+          "doi": "10.1186/s12872-022-02655-0",
+          "url": "https://doi.org/10.1186/s12872-022-02655-0",
+          "authors": [
+            "Xiao-long Zhu",
+            "Zhi-ying Pang",
+            "Wei Jiang",
+            "Ting-yu Dong"
+          ],
+          "abstract": "Abstract Background Coronary distensibility index (CDI), as an early predictor of cardiovascular diseases, has the potential to complement coronary computed tomography angiography (cCTA)-derived fractional flow reserve (CT-FFR) for predicting major adverse cardiac events (MACEs). Thus, the prognostic value of CT-FFR combined with CDI for MACEs is worth exploring. Methods Patients with a moderate or severe single left anterior descending coronary artery stenosis were included and underwent FFR and CDI analysis based on cCTA, followed up at least 1 year, and recorded MACEs. Multivariate logistic regression analysis was performed to determine independent predictors of MACEs. The area under of receiver operating characteristic (ROC) curve was used to evaluated evaluate the diagnostic performance of CT-FFR, CDI, and a combination of the two. Results All the vessel-specific data were from LAD. 150 patients were analysed. 55 (37%) patients experienced MACEs during follow-up. Patients with CT-FFR ≤ 0.8 had higher percentage of MACEs compared with CT-FFR > 0.8 (56.3% vs.7.3%, p p p = 0.025), triglyceride ( p = 0.015), CT-FFR ≤ 0.80 ( p = 0.038), and CDI ( p p = 0.0002). Conclusion Our study provides initial evidence that combining CDI with CT-FFR shows incremental discriminatory power for MACEs over CT-FFR alone, independent of clinical risk factors. Diabetes and triglyceride are also associated with MACEs.",
+          "matched_terms": [
+            "ccta"
+          ],
+          "relevance_score": 0.5,
+          "recency_score": 0.7333,
+          "combined_score": 0.5467
+        },
+        {
+          "source": "crossref",
+          "title": "Incremental prognostic value of stress CMR in symptomatic patients with coronary stenosis on CCTA",
+          "journal": "European Heart Journal",
+          "year": 2022,
+          "doi": "10.1093/eurheartj/ehac544.277",
+          "url": "https://doi.org/10.1093/eurheartj/ehac544.277",
+          "authors": [
+            "T Pezel",
+            "T Hovasse",
+            "T Lefevre",
+            "F Sanguineti",
+            "S Champagne"
+          ],
+          "abstract": "Abstract Background Noninvasive functional imaging is often performed in patients with obstructive coronary artery disease (CAD) on coronary computed tomography angiography (CCTA). However, the prognostic value of stress cardiovascular magnetic resonance (CMR) is unknown in patients with coronary stenosis of unknown significance on CCTA. Purpose To assess the prognostic value of stress CMR in symptomatic patients with obstructive CAD of unknown significance on CCTA. Methods Between 2008–2020, consecutive symptomatic patients without known CAD referred for CCTA were screened. Patients with obstructive CAD (at least 1 ≥50% stenosis on CCTA) were further referred for stress CMR and followed for the occurrence of major adverse cardiovascular events (MACE), defined by cardiovascular death or nonfatal myocardial infarction. Results Of 2,210 patients who completed CMR, 2,038 (46.5% male, mean age 69.8±12.2 years) completed follow-up (median 6.8 [IQR 5.9–9.2] years); 281 experienced a MACE (13.8%). Inducible ischemia and late gadolinium enhancement (LGE) were significantly associated with MACE (HR: 4.51, [95% CI: 3.55–5.74]; and HR: 3.32, [95% CI: 2.55–4.32], respectively; p&lt;0.001). In multivariable Cox regression, number of segments with &gt;70% stenosis, with noncalcified plaques and number of vessels with obstructive CAD were prognosticators (p&lt;0.001). The presence of inducible ischemia and LGE were independent predictors of MACE (HR: 3.97, [95% CI: 3.43–5.13]; HR: 2.30, [95% CI: 1.52–3.33]; p&lt;0.001). After adjustment, stress CMR showed the best improvement in model discrimination and reclassification above traditional risk factors and CCTA (C-statistic improvement: 0.04; NRI=0.421; IDI=0.047). Conclusions In symptomatic patients with obstructive CAD of unknown significance on CCTA, stress CMR had incremental prognostic value to predict MACE. Funding Acknowledgement Type of funding sources: None.",
+          "matched_terms": [
+            "ccta"
+          ],
+          "relevance_score": 0.5,
+          "recency_score": 0.7333,
+          "combined_score": 0.5467
+        },
+        {
+          "source": "crossref",
+          "title": "Incremental prognostic value of pericoronary adipose tissue attenuation on top of comprehensive CCTA assessment",
+          "journal": "European Heart Journal",
+          "year": 2020,
+          "doi": "10.1093/ehjci/ehaa946.0150",
+          "url": "https://doi.org/10.1093/ehjci/ehaa946.0150",
+          "authors": [
+            "P.A Van Diemen",
+            "M.J Bom",
+            "R.S Driessen",
+            "H Everaars",
+            "S.P Schumacher"
+          ],
+          "abstract": "Abstract Background Coronary computed tomography angiography (CCTA) derived parameters linked to severity and extent of atherosclerosis are associated with prognosis in patients with coronary artery disease (CAD). Furthermore, coronary inflammation, by determining pericoronary adipose tissue CT-attenuation (PCATa), can be assessed on CCTA as well and has been proposed as promising prognostic marker. Objective To assess the prognostic value of PCATa on top of traditional CCTA derived atherosclerotic parameters. Methods A total of 543 patients who underwent CCTA because of suspected CAD and in whom follow-up was obtained were included. CCTA assessment comprised; coronary artery calcium score (CACS), presence of obstructive CAD (≥50% stenosis) and high-risk plaques (HRP), total plaque volume (TPV), non-calcified plaque volume (NCPV), and PCATa. The endpoint was a composite of death and non-fatal myocardial infarction (MI). Optimal prognostic thresholds were determined for quantitative CCTA variables. Univariable Cox regression analyses were performed to determine clinical characteristics and CCTA variables associated with the endpoint, a subsequent multivariable Cox regression analysis that included variables associated with the endpoint was used to determine independent predictors of the endpoint. An additional Cox regression analysis was performed to test the incremental prognostic value of CCTA variables over clinical characteristics, significance of each sequentially added variable was tested using the likelihood ratio test. Results During a median follow-up time of 6.6 [interquartile range: 4.7–7.8] years, a total of 42 (20 MI/22 death) (8%) patients suffered an endpoint. CACS &gt;83.2, obstructive CAD, HRP, TPV &gt;269mm3, and NCPV &gt;83mm3 were all associated with occurrence of the endpoint with unadujsted hazard ratio's (HR) of; 5.37, 5.70, 3.31, 7.76, and 6.77, respectively (p&lt;0.001 for all). PCATa of the RCA above −74.4 Hounsfield units (HU) had a detrimental effect on prognosis (unadjusted HR: 1.99, p=0.037), while PCATa of the LAD nor Cx was associated with outcome (Log-rank p-value 0.255 and 0.218, respectively). PCATa of the RCA remained an independent predictor of death and MI when incorporated in a multivariable analysis inlcuding all CCTA variables and clincal chacteristics associated with the endpoint (adjusted HR: 2.11, p=0.024). Furthermore, adding PCATa of the RCA to a model that included clinical characteristics and all CCTA parameters led to an improvement of the prognostic value of the model (change in Chi-square = 4.45, p=0.035) (figure). Conclusion Coronary inflammation of the RCA determined by PCATa provides incremental prognostic value on top of traditional CCTA parameters linked to extent and severity of CAD. Figure 1. Cox regression analysis demonstrating the incremental prognostic value of sequentially added CCTA variables over clinical characteristics tested for significance using the likelihood ratio test. Funding Acknowledgement Type of funding source: None",
+          "matched_terms": [
+            "ccta"
+          ],
+          "relevance_score": 0.5,
+          "recency_score": 0.6,
+          "combined_score": 0.52
+        }
+      ]
+    },
+    {
+      "query": "CCTA prognostic prediction for CVD",
+      "source": "pubmed",
+      "count": 3,
+      "items": [
+        {
+          "source": "pubmed",
+          "title": "AI-Guided Quantitative Plaque Staging Predicts Long-Term Cardiovascular Outcomes in Patients at Risk for Atherosclerotic CVD.",
+          "journal": "JACC. Cardiovascular imaging",
+          "year": 2024,
+          "doi": "10.1016/j.jcmg.2023.05.020",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37480907/",
+          "authors": [
+            "Nurmohamed NS",
+            "Bom MJ",
+            "Jukema RA",
+            "de Groot RJ",
+            "Driessen RS"
+          ],
+          "abstract": "BACKGROUND: The recent development of artificial intelligence-guided quantitative coronary computed tomography angiography analysis (AI-QCT) has enabled rapid analysis of atherosclerotic plaque burden and characteristics. OBJECTIVES: This study set out to investigate the 10-year prognostic value of atherosclerotic burden derived from AI-QCT and to compare the spectrum of plaque to manually assessed coronary computed tomography angiography (CCTA), coronary artery calcium scoring (CACS), and clinical risk characteristics. METHODS: This was a long-term follow-up study of 536 patients referred for suspected coronary artery disease. CCTA scans were analyzed with AI-QCT and plaque burden was classified with a plaque staging system (stage 0: 0% percentage atheroma volume [PAV]; stage 1: >0%-5% PAV; stage 2: >5%-15% PAV; stage 3: >15% PAV). The primary major adverse cardiac event (MACE) outcome was a composite of nonfatal myocardial infarction, nonfatal stroke, coronary revascularization, and all-cause mortality. RESULTS: The mean age at baseline was 58.6 years and 297 patients (55%) were male. During a median follow-up of 10.3 years (IQR: 8.6-11.5 years), 114 patients (21%) experienced the primary outcome. Compared to stages 0 and 1, patients with stage 3 PAV and percentage of noncalcified plaque volume of >7.5% had a more than 3-fold (adjusted HR: 3.57; 95% CI 2.12-6.00; P < 0.001) and 4-fold (adjusted HR: 4.37; 95% CI: 2.51-7.62; P < 0.001) increased risk of MACE, respectively. Addition of AI-QCT improved a model with clinical risk factors and CACS at different time points during follow-up (10-year AUC: 0.82 [95% CI: 0.78-0.87] vs 0.73 [95% CI: 0.68-0.79]; P < 0.001; net reclassification improvement: 0.21 [95% CI: 0.09-0.38]). Furthermore, AI-QCT achieved an improved area under the curve compared to Coronary Artery Disease Reporting and Data System 2.0 (10-year AUC: 0.78; 95% CI: 0.73-0.83; P = 0.023) and manual QCT (10-year AUC: 0.78; 95% CI: 0.73-0.83; P = 0.040), although net reclassification improvement was modest (0.09 [95% CI: -0.02 to 0.29] and 0.04 [95% CI: -0.05 to 0.27], respectively). CONCLUSIONS: Through 10-year follow-up, AI-QCT plaque staging showed important prognostic value for MACE and showed additional discriminatory value over clinical risk factors, CACS, and manual guideline-recommended CCTA assessment.",
+          "matched_terms": [
+            "ccta",
+            "cvd"
+          ],
+          "relevance_score": 0.5,
+          "recency_score": 0.8667,
+          "combined_score": 0.5733
+        },
+        {
+          "source": "pubmed",
+          "title": "Association of oxidized ApoB and oxidized ApoA-I with high-risk coronary plaque features in cardiovascular disease.",
+          "journal": "JCI insight",
+          "year": 2023,
+          "doi": "10.1172/jci.insight.172893",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37698922/",
+          "authors": [
+            "Sorokin AV",
+            "Hong CG",
+            "Aponte AM",
+            "Florida EM",
+            "Tang J"
+          ],
+          "abstract": "BACKGROUND: Oxidized apolipoprotein B (oxLDL) and oxidized ApoA-I (oxHDL) are proatherogenic. Their prognostic value for assessing high-risk plaques by coronary computed tomography angiography (CCTA) is missing. METHODS: In a prospective, observational study, 306 participants with cardiovascular disease (CVD) had extensive lipoprotein profiling. Proteomics analysis was performed on isolated oxHDL, and atherosclerotic plaque assessment was accomplished by quantitative CCTA. RESULTS: Patients were predominantly White, overweight men (58.5%) on statin therapy (43.5%). Increase in LDL-C, ApoB, small dense LDL-C (P < 0.001 for all), triglycerides (P = 0.03), and lower HDL function were observed in the high oxLDL group. High oxLDL associated with necrotic burden (NB; β = 0.20; P < 0.0001) and fibrofatty burden (FFB; β = 0.15; P = 0.001) after multivariate adjustment. Low oxHDL had a significant reverse association with these plaque characteristics. Plasma oxHDL levels better predicted NB and FFB after adjustment (OR, 2.22; 95% CI, 1.27-3.88, and OR, 2.80; 95% CI, 1.71-4.58) compared with oxLDL and HDL-C. Interestingly, oxHDL associated with fibrous burden (FB) change over 3.3 years (β = 0.535; P = 0.033) when compared with oxLDL. Combined Met136 mono-oxidation and Trp132 dioxidation of HDL showed evident association with coronary artery calcium score (r = 0.786; P < 0.001) and FB (r = 0.539; P = 0.012) in high oxHDL, whereas Met136 mono-oxidation significantly associated with vulnerable plaque in low oxHDL. CONCLUSION: Our findings suggest that the investigated oxidized lipids are associated with high-risk coronary plaque features and progression over time in patients with CVD. CLINICALTRIALS: gov NCT01621594. FUNDING: National Heart, Lung, and Blood Institute at the NIH Intramural Research Program.",
+          "matched_terms": [
+            "ccta",
+            "cvd"
+          ],
+          "relevance_score": 0.3,
+          "recency_score": 0.8,
+          "combined_score": 0.4
+        },
+        {
+          "source": "pubmed",
+          "title": "Prognostic Value of Coronary Computed Tomography Imaging in Patients at High Risk Without Symptoms of Coronary Artery Disease.",
+          "journal": "The American journal of cardiology",
+          "year": 2016,
+          "doi": "10.1016/j.amjcard.2015.11.058",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26754124/",
+          "authors": [
+            "Dedic A",
+            "Ten Kate GJ",
+            "Roos CJ",
+            "Neefjes LA",
+            "de Graaf MA"
+          ],
+          "abstract": "At present, traditional risk factors are used to guide cardiovascular management of asymptomatic subjects. Intensified surveillance may be warranted in those identified as high risk of developing cardiovascular disease (CVD). This study aims to determine the prognostic value of coronary computed tomography (CT) angiography (CCTA) next to the coronary artery calcium score (CACS) in patients at high CVD risk without symptoms suspect for coronary artery disease (CAD). A total of 665 patients at high risk (mean age 56 ± 9 years, 417 men), having at least one important CVD risk factor (diabetes mellitus, familial hypercholesterolemia, peripheral artery disease, or severe hypertension) or a calculated European systematic coronary risk evaluation of >10% were included from outpatient clinics at 2 academic centers. Follow-up was performed for the occurrence of adverse events including all-cause mortality, nonfatal myocardial infarction, unstable angina, or coronary revascularization. During a median follow-up of 3.0 (interquartile range 1.3 to 4.1) years, adverse events occurred in 40 subjects (6.0%). By multivariate analysis, adjusted for age, gender, and CACS, obstructive CAD on CCTA (≥50% luminal stenosis) was a significant predictor of adverse events (hazard ratio 5.9 [CI 1.3 to 26.1]). Addition of CCTA to age, gender, plus CACS, increased the C statistic from 0.81 to 0.84 and resulted in a total net reclassification index of 0.19 (p <0.01). In conclusion, CCTA has incremental prognostic value and risk reclassification benefit beyond CACS in patients without CAD symptoms but with high risk of developing CVD.",
+          "matched_terms": [
+            "ccta",
+            "cvd"
+          ],
+          "relevance_score": 0.3,
+          "recency_score": 0.3333,
+          "combined_score": 0.3067
+        }
+      ]
+    },
+    {
+      "query": "CCTA prognostic prediction for CVD",
+      "source": "openalex",
+      "count": 0,
+      "items": []
+    },
+    {
+      "query": "CCTA prognostic prediction for CVD",
+      "source": "arxiv",
+      "count": 2,
+      "items": [
+        {
+          "source": "arxiv",
+          "title": "O2CTA: Introducing Annotations from OCT to CCTA in Coronary Plaque Analysis",
+          "journal": "arXiv",
+          "year": 2023,
+          "doi": "",
+          "url": "http://arxiv.org/abs/2303.06358v2",
+          "authors": [
+            "Jun Li",
+            "Kexin Li",
+            "Yafeng Zhou",
+            "S. Kevin Zhou"
+          ],
+          "abstract": "Targeted diagnosis and treatment plans for patients with coronary artery disease vary according to atherosclerotic plaque component. Coronary CT angiography (CCTA) is widely used for artery imaging and determining the stenosis degree. However, the limited spatial resolution and susceptibility to artifacts fail CCTA in obtaining lumen morphological characteristics and plaque composition. It can be settled by invasive optical coherence tomography (OCT) without much trouble for physicians, but bringing higher costs and potential risks to patients. Therefore, it is clinically critical to introduce annotations of plaque tissue and lumen characteristics from OCT to paired CCTA scans, denoted as \\textbf{the O2CTA problem} in this paper. We propose a method to handle the O2CTA problem. CCTA scans are first reconstructed into multi-planar reformatted (MPR) images, which agree with OCT images in term of semantic contents. The artery segment in OCT, which is manually labelled, is then spatially aligned with the entire artery in MPR images via the proposed alignment strategy. Finally, a classification model involving a 3D CNN and a Transformer, is learned to extract local features and capture dependence along arteries. Experiments on 55 paired OCT and CCTA we curate demonstrate that it is feasible to classify the CCTA based on the OCT labels, with an accuracy of 86.2%, while the manual readings of OCT and CCTA vary significantly, with a Kappa coefficient of 0.113. We will make our source codes, models, data, and results publicly available to benefit the research community.",
+          "matched_terms": [
+            "ccta"
+          ],
+          "relevance_score": 0.5,
+          "recency_score": 0.8,
+          "combined_score": 0.56
+        },
+        {
+          "source": "arxiv",
+          "title": "Artificial Intelligence to Assist in Exclusion of Coronary Atherosclerosis during CCTA Evaluation of Chest-Pain in the Emergency Department: Preparing an Application for Real-World Use",
+          "journal": "arXiv",
+          "year": 2020,
+          "doi": "",
+          "url": "http://arxiv.org/abs/2008.04802v1",
+          "authors": [
+            "Richard D. White",
+            "Barbaros S. Erdal",
+            "Mutlu Demirer",
+            "Vikash Gupta",
+            "Matthew T. Bigelow"
+          ],
+          "abstract": "Coronary Computed Tomography Angiography (CCTA) evaluation of chest-pain patients in an Emergency Department (ED) is considered appropriate. While a negative CCTA interpretation supports direct patient discharge from an ED, labor-intensive analyses are required, with accuracy in jeopardy from distractions. We describe the development of an Artificial Intelligence (AI) algorithm and workflow for assisting interpreting physicians in CCTA screening for the absence of coronary atherosclerosis. The two-phase approach consisted of (1) Phase 1 - focused on the development and preliminary testing of an algorithm for vessel-centerline extraction classification in a balanced study population (n = 500 with 50% disease prevalence) derived by retrospective random case selection; and (2) Phase 2 - concerned with simulated-clinical Trialing of the developed algorithm on a per-case basis in a more real-world study population (n = 100 with 28% disease prevalence) from an ED chest-pain series. This allowed pre-deployment evaluation of the AI-based CCTA screening application which provides a vessel-by-vessel graphic display of algorithm inference results integrated into a clinically capable viewer. Algorithm performance evaluation used Area Under the Receiver-Operating-Characteristic Curve (AUC-ROC); confusion matrices reflected ground-truth vs AI determinations. The vessel-based algorithm demonstrated strong performance with AUC-ROC = 0.96. In both Phase 1 and Phase 2, independent of disease prevalence differences, negative predictive values at the case level were very high at 95%. The rate of completion of the algorithm workflow process (96% with inference results in 55-80 seconds) in Phase 2 depended on adequate image quality. There is potential for this AI application to assist in CCTA interpretation to help extricate atherosclerosis from chest-pain presentations.",
+          "matched_terms": [
+            "ccta"
+          ],
+          "relevance_score": 0.5,
+          "recency_score": 0.6,
+          "combined_score": 0.52
+        }
+      ]
+    }
+  ]
+}

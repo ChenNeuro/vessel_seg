@@ -1,0 +1,398 @@
+{
+  "generated_at": "2026-02-10T08:19:05.705450+00:00",
+  "source": "crossref",
+  "query": "CCTA prognostic prediction for CVD",
+  "rows": 20,
+  "items": [
+    {
+      "source": "crossref",
+      "title": "Incremental prognostic value of artificial intelligence-based automated plaque characterisation on top of ischemia evaluation by CCTA and CCTA/PET",
+      "journal": "European Heart Journal - Cardiovascular Imaging",
+      "year": 2024,
+      "doi": "10.1093/ehjci/jeae142.036",
+      "url": "https://doi.org/10.1093/ehjci/jeae142.036",
+      "authors": [
+        "S Bar",
+        "T Maaniitty",
+        "P Kiatkittikul",
+        "T Nabeta",
+        "J J Bax"
+      ],
+      "keywords": [],
+      "abstract": "Abstract Background Artificial intelligence (AI)-based quantitative computed tomography (AI-QCT) is a novel tool for automated plaque characterisation and quantitation from coronary computed tomography angiography (CCTA). The prognostic value of various AI-QCT plaque types on top of the presence of ischemic coronary artery disease (CAD) is unknown to date. Purpose We aimed to investigate the added prognostic value of the AI-QCT plaque characteristics percent atheroma volume (PAV) %, non-calcified plaque burden (NCPB) %, and calcified plaque burden (CPB) % on top of: 1) A novel AI-based CCTA-derived ischemia algorithm (AI-QCTischemia) which predicts the presence of invasive FFR ≤0.80 using 38 morphological features from CCTA; and 2) ischemic CAD based on hybrid CCTA/15O-H2O positron emission tomography (PET) for the composite of all-cause death, myocardial infarction (MI), or unstable angina pectoris (uAP). Methods This was a cohort of 1772 symptomatic patients having undergone hybrid CCTA/15O-H2O PET perfusion imaging to assess the presence of ischemic CAD. Multivariable Cox regressions adjusted for clinical confounders (age, sex, hypertension, diabetes, smoking, typical angina) were performed and compared with the C-index. AI-QCTischemia models were: 1) AI-QCTischemia, 2) AI-QCTischemia+PAV, 3) AI-QCTischemia+NCPB, 4) AI-QCTischemia+CPB. Hybrid CCTA/PET models were: 5) hybrid CCTA/PET, 6) hybrid CCTA/PET+PAV, 7) hybrid CCTA/PET+NCPB, and 8) hybrid CCTA/PET+CPB. Results Throughout a median follow-up of 7 years, 177/1772 (10%) patients experienced the composite endpoint. The C-indexes (p-value vs. model 1) of the AI-QCTischemia models were 1) 0.729, 2) 0.748 (p=0.008), 3) 0.743 (p=0.012), and 4) 0.739 (p=0.067). The C-indexes (p-value vs. model 5) of the hybrid CCTA/PET models were: 5) 0.733, 6) 0.751 (p=0.014), 7) 0.746 (p=0.018), 8) 0.745 (p=0.058). AI-QCTischemia and hybrid CCTA/PET imaging performed similarly by means of C-statistics. Conclusions PAV and NCPB, but not CPB by AI-QCT plaque analysis improved the prediction of 7-year death, MI, or uAP when added on top of the presence of ischemic CAD, determined either by AI-QCTischemia or hybrid CCTA/PET imaging. Overall, the risk stratification based on AI-QCTischemia performed similarly as hybrid CCTA/PET imaging.C-indexes for death, MI, or uAP",
+      "matched_terms": [],
+      "relevance_score": 0.0,
+      "recency_score": 0.0,
+      "combined_score": 0.0
+    },
+    {
+      "source": "crossref",
+      "title": "Protocol for development and validation of postpartum cardiovascular disease (CVD) risk prediction model incorporating reproductive and pregnancy-related candidate predictors",
+      "journal": "Diagnostic and Prognostic Research",
+      "year": 2022,
+      "doi": "10.1186/s41512-022-00137-7",
+      "url": "https://doi.org/10.1186/s41512-022-00137-7",
+      "authors": [
+        "Steven Wambua",
+        "Francesca Crowe",
+        "Shakila Thangaratinam",
+        "Dermot O’Reilly",
+        "Colin McCowan"
+      ],
+      "keywords": [],
+      "abstract": "Abstract Background Cardiovascular disease (CVD) is a leading cause of death among women. CVD is associated with reduced quality of life, significant treatment and management costs, and lost productivity. Estimating the risk of CVD would help patients at a higher risk of CVD to initiate preventive measures to reduce risk of disease. The Framingham risk score and the QRISK® score are two risk prediction models used to evaluate future CVD risk in the UK. Although the algorithms perform well in the general population, they do not take into account pregnancy complications, which are well known risk factors for CVD in women and have been highlighted in a recent umbrella review. We plan to develop a robust CVD risk prediction model to assess the additional value of pregnancy risk factors in risk prediction of CVD in women postpartum. Methods Using candidate predictors from QRISK®-3, the umbrella review identified from literature and from discussions with clinical experts and patient research partners, we will use time-to-event Cox proportional hazards models to develop and validate a 10-year risk prediction model for CVD postpartum using Clinical Practice Research Datalink (CPRD) primary care database for development and internal validation of the algorithm and the Secure Anonymised Information Linkage (SAIL) databank for external validation. We will then assess the value of additional candidate predictors to the QRISK®-3 in our internal and external validations. Discussion The developed risk prediction model will incorporate pregnancy-related factors which have been shown to be associated with future risk of CVD but have not been taken into account in current risk prediction models. Our study will therefore highlight the importance of incorporating pregnancy-related risk factors into risk prediction modeling for CVD postpartum.",
+      "matched_terms": [],
+      "relevance_score": 0.0,
+      "recency_score": 0.0,
+      "combined_score": 0.0
+    },
+    {
+      "source": "crossref",
+      "title": "330-OR: Enhancing Cardiovascular Disease (CVD) Risk Prediction Using Metabolic Profiling in the UK Biobank—Pooled Cohort Equations vs. Retinal Imaging Based Dr. Noon CVD",
+      "journal": "Diabetes",
+      "year": 2025,
+      "doi": "10.2337/db25-330-or",
+      "url": "https://doi.org/10.2337/db25-330-or",
+      "authors": [
+        "SAHIL THAKUR",
+        "SIMON NUSINOVICI",
+        "JUNGKYUNG CHO",
+        "JUNSEOK PARK",
+        "HYEONMIN KIM"
+      ],
+      "keywords": [],
+      "abstract": "Introduction and Objective: Circulating metabolites hold potential for improving cardiovascular disease (CVD) risk prediction. However, their added value to existing risk calculators like the Pooled Cohort Equations (PCE) and retina based artificial intelligence (AI) tool like Dr Noon CVD remains uncertain. Methods: This study used UK Biobank, a prospective cohort of 0.5 million participants aged 40-69 years. 17447 participants with available blood metabolic profiling and no history of CVD at baseline were included. Cox LASSO model identified a set of metabolites possibly associated with incident CVD events over 10-year follow-up in a training set of UK Biobank (50% of the individuals). The predictive performance of the PCE and Dr Noon CVD was assessed using Cox regression before and after adding the metabolites. Results: At 10 year follow-up, 563 participants had CVD events. Among the 168 metabolites - glucose, lactate, albumin, phospholipids in medium HDL, triglycerides in chylomicrons and extremely large VLDL and triglycerides in large LDL were associated with CVD events. For metabolites alone baseline Harrell’s C-index= 0.667 (95% CI: 0.635-0.699). After adding selected metabolites C-index for Dr Noon CVD improved by 2.72% from 0.711 (95% CI: 0.683-0.738) to 0.738 (95% CI: 0.712-0.765). For PCE, the performance increased by 2.93% from 0.710 (95% CI: 0.682-0.738) to 0.739 (95% CI: 0.713-0.766). For individuals with prediabetes and diabetes, the C-index improved by 5.11% (from 0.684 to 0.735) for PCE as compared to 2.86% (from 0.706 to 0.735) for Dr Noon CVD. Conclusion: Integration of metabolic profiling with CVD risk prediction models enhances performance, with similar improvements for Dr. Noon CVD and PCE. In diabetics and prediabetics, the PCE model showed a larger improvement, however, both models achieved comparable overall performance after incorporating metabolites, indicating similar final predictive performance for both approaches. Disclosure S. Thakur: Employee; Mediwhale Inc. S. Nusinovici: Employee; mediwhale. J. Cho: Employee; Mediwhale. J. Park: Employee; Mediwhale. H. Kim: Employee; Mediwhale. T. Rim: Employee; Mediwhale Inc. Stock/Shareholder; Mediwhale Inc.",
+      "matched_terms": [],
+      "relevance_score": 0.0,
+      "recency_score": 0.0,
+      "combined_score": 0.0
+    },
+    {
+      "source": "crossref",
+      "title": "CVD Monolayer MoS2 Memtransistors for Chaotic Time-Series Prediction via Reservoir Computing",
+      "journal": "Crystals",
+      "year": 2026,
+      "doi": "10.3390/cryst16020116",
+      "url": "https://doi.org/10.3390/cryst16020116",
+      "authors": [
+        "Vladislav Kurtash",
+        "Lina Jaurigue",
+        "Jörg Pezoldt"
+      ],
+      "keywords": [],
+      "abstract": "Monolayer MoS2 memtransistors offer gate-tunable hysteresis for neuromorphic reservoir computing, yet the role of operating window and fading-memory dynamics in CVD devices remains underexplored. We grow CVD monolayer MoS2, fabricate back-gated memtransistors, and use a single device as a time-multiplexed reservoir node for one-step Lorenz-63 prediction. Mobility, ON/OFF, hysteresis, and drift are quantified to identify stable, tunable bias regimes. We used a transistor with field-effect mobility on the order of 10 cm2 V−1 s−1, an ON/OFF ratio above 105, and a moderate hysteresis window quantified by H≈2.1μA·V at VDS=50 mV and H≈17μA·V at VDS=500 mV over VGS∈[−10,30] V. Performance is bias/memory-limited rather than FET-metric-limited. Sweeping gate-window and reservoir hyperparameters shows an optimum at intermediate hysteresis with moderate drift. Performance improves when the input clock matches the fading-memory time, achieving normalized root mean square error (NRMSE) = 0.09 for one-step Lorenz-63 x-prediction. Device-level statistics (discussed in the main text) show that, despite substantial scattering in electrical parameters, the resulting device-to-device NRMSE variation remains very small under fixed operating conditions. Classical FET metrics are not limiting here; NRMSE improvement instead requires engineering the hysteresis spectrum and gate stack. The demonstration of Lorenz-63 prediction using CVD-grown monolayer MoS2 memtransistors highlights their potential as a wafer-scalable platform for compact chaotic time-series predictions.",
+      "matched_terms": [],
+      "relevance_score": 0.0,
+      "recency_score": 0.0,
+      "combined_score": 0.0
+    },
+    {
+      "source": "crossref",
+      "title": "Prognostic impact of reduced kidney function in patients with suspected coronary artery disease undergoing CCTA",
+      "journal": "European Journal of Preventive Cardiology",
+      "year": 2025,
+      "doi": "10.1093/eurjpc/zwaf218",
+      "url": "https://doi.org/10.1093/eurjpc/zwaf218",
+      "authors": [
+        "Jonathan N Dahl",
+        "Louise Nissen",
+        "Marie B Nielsen",
+        "Laust D Rasmussen",
+        "Jacob Hartmann Søby"
+      ],
+      "keywords": [],
+      "abstract": "Abstract Aims Chronic kidney disease (CKD) and coronary artery disease (CAD) share common risk factors, but the association between kidney function [estimated glomerular filtration rate (eGFR) in mL/min/1.73 m²] and major adverse cardiovascular events (MACE) in patients undergoing coronary computed tomography angiography (CCTA) due to suspected CAD has not been established. This study investigated the association between kidney function and MACE in symptomatic patients undergoing CCTA. Methods and results A cohort study of consecutive, symptomatic patients undergoing CCTA between 2008 and 2021 (n = 70 367). CAD severity was stratified as no CAD, non-obstructive CAD, and obstructive CAD (≥50% diameter stenosis). The primary outcome was MACE (myocardial infarction, ischaemic stroke, or cardiovascular death). eGFR was calculated based on plasma-creatinine at the time of CCTA. In total, 41 156 (59%) had eGFR ≥90, 27,011 (38%) had eGFR 60–89, and 2200 (3%) had eGFR 30–59. Median follow-ups were 5.1 years, according to eGFR ≥90, 60–89, and 30–59 groups, MACE rates per 1000 person-years in patients with obstructive CAD were 14.2, 15.4, and 25.8, respectively, and in patients with non-obstructive CAD the MACE rates were 6.4, 8.0, and 14.4, respectively. Compared to patients with eGFR ≥90, hazard ratios for MACE were 1.09 [95% confidence intervals (CI) 1.00–1.19] and 1.42 (95%CI 1.18–1.69) for patients with eGFR 60–89 and 30–59, respectively. Conclusion In patients referred for CCTA due to suspected CAD, reduced kidney function was associated with an increased rate of MACE. Therefore, CKD is a strong independent cardiovascular risk factor, particularly in patients with CAD detected on CCTA.",
+      "matched_terms": [],
+      "relevance_score": 0.0,
+      "recency_score": 0.0,
+      "combined_score": 0.0
+    },
+    {
+      "source": "crossref",
+      "title": "Cost-effectiveness of implementing risk-based cardiovascular disease (CVD) management using updated WHO CVD risk prediction charts in India",
+      "journal": "PLOS ONE",
+      "year": 2023,
+      "doi": "10.1371/journal.pone.0285542",
+      "url": "https://doi.org/10.1371/journal.pone.0285542",
+      "authors": [
+        "Parthibane Sivanantham",
+        "Mathan Kumar S.",
+        "Saravanan Essakky",
+        "Malkeet Singh",
+        "Srobana Ghosh"
+      ],
+      "keywords": [],
+      "abstract": "Introduction The World Health Organization (WHO) has released the updated cardiovascular disease (CVD) risk prediction charts in 2019 for each of the 21 Global Burden of Disease regions. The WHO advocates countries to implement population-based CVD risk assessment and management using these updated charts for preventing and controlling CVDs. Objective To assess the cost-effectiveness of implementing risk-based CVD management using updated WHO CVD risk prediction charts in India Methods We developed a decision tree combined with Markov Model to simulate implementing two community-based CVD risk screening strategies (interventions) compared with the current no-screening scenario. In the first strategy, the whole population is initially screened using the WHO non-lab-based CVD risk assessment method, and those with ≥10% CVD risk are subjected to WHO lab-based CVD risk assessment (two-stage screening). In the second strategy, the whole population is subjected only to the lab-based CVD risk assessment (single-stage screening). A mathematical cohort of those aged ≥40 years with no history of CVD events was simulated over a lifetime horizon with three months of cycle length. Data for the model were derived from a primary study and secondary sources. Incremental cost-effectiveness ratios (ICERs) were determined for the screening strategies and sensitivity analyses. Results The discounted Incremental cost-effectiveness ratio per QALY gained for both the two-stage (US$ 105; ₹ 8,656) and single-stage (US$ 1073; ₹ 88,588) screening strategies were cost-effective at an implementation effect of 40% when compared with no screening scenario. Implementing CVD screening strategies are estimated to cause substantial reduction in the number of CVD events in the population compared to the no screening scenario. Conclusion In India, both CVD screening strategies would be cost-effective, and implementing the two-staged screening would be more cost-effective. Our findings support implementing population-based CVD screening in India. Future studies shall assess the budget impact of these strategies at different implementation coverage levels.",
+      "matched_terms": [],
+      "relevance_score": 0.0,
+      "recency_score": 0.0,
+      "combined_score": 0.0
+    },
+    {
+      "source": "crossref",
+      "title": "Advancing CVD Risk Prediction with Transformer Architectures and Statistical Risk Factor Filtering",
+      "journal": "Technologies",
+      "year": 2025,
+      "doi": "10.3390/technologies13050201",
+      "url": "https://doi.org/10.3390/technologies13050201",
+      "authors": [
+        "Parul Dubey",
+        "Pushkar Dubey",
+        "Pitshou N. Bokoro"
+      ],
+      "keywords": [],
+      "abstract": "Cardiovascular disease (CVD) remains one of the leading causes of mortality worldwide, demanding accurate and timely prediction methods. Recent advancements in artificial intelligence have shown promise in enhancing clinical decision-making for CVD diagnosis. However, many existing models fail to distinguish between statistically significant and redundant risk factors, resulting in reduced interpretability and potential overfitting. This research addresses the need for a clinically meaningful and computationally efficient prediction model. The study utilizes three real-world datasets comprising demographic, clinical, and lifestyle-based risk factors relevant to CVD. A novel methodology is proposed, integrating the HEART framework for statistical feature optimization with a Transformer-based deep learning model for classification. The HEART framework employs correlation-based filtering, Akaike information criterion (AIC), and statistical significance testing to refine feature subsets. The novelty lies in combining statistical risk factor filtration with attention-driven learning, enhancing both model performance and interpretability. The proposed model is evaluated using key metrics, including accuracy, precision, recall, F1-score, AUC, and Jaccard index. Experimental results show that the Transformer model significantly outperforms baseline models, achieving 93.1% accuracy and 0.957 AUC, confirming its potential for reliable CVD prediction.",
+      "matched_terms": [],
+      "relevance_score": 0.0,
+      "recency_score": 0.0,
+      "combined_score": 0.0
+    },
+    {
+      "source": "crossref",
+      "title": "Cardio Vascular Disease (CVD) Risk Prediction using Supervised Learning",
+      "journal": "International Journal For Multidisciplinary Research",
+      "year": 2023,
+      "doi": "10.36948/ijfmr.2023.v05i04.4183",
+      "url": "https://doi.org/10.36948/ijfmr.2023.v05i04.4183",
+      "authors": [
+        "Vartika Trivedi -",
+        "Ghanshyam Chaurasia -",
+        "Abhishek Kumar Saxena -"
+      ],
+      "keywords": [],
+      "abstract": "Our main goal is to develop a cardiovascular disease (CVD) risk prediction model using supervised learning classifiers that can be used in expert decision with maximum accuracy whether heart disease is present or not. It will prove to be very important to medicine for the diagnosis of heart diseases such as heart attack, heart failure, stroke and other cardiovascular diseases. If such predictions give good results with sufficient accuracy, we can not only avoid inaccurate diagnoses, but also save unnecessary resources. When a patient who does not have heart disease is diagnosed positively, he panics unnecessarily, and when a patient who does have heart disease and is neither diagnosed with heart disease nor has a negative result, he dies will involuntarily miss a chance to cure his illness. Such misdiagnosis is detrimental to both patients and hospitals. With more accurate predictions, we can overcome unnecessary problems.",
+      "matched_terms": [],
+      "relevance_score": 0.0,
+      "recency_score": 0.0,
+      "combined_score": 0.0
+    },
+    {
+      "source": "crossref",
+      "title": "Environment and CVD: moving from Risk Prediction to Risk Management",
+      "journal": "Current Atherosclerosis Reports",
+      "year": 2026,
+      "doi": "10.1007/s11883-025-01375-y",
+      "url": "https://doi.org/10.1007/s11883-025-01375-y",
+      "authors": [
+        "Tasveer Khawaja",
+        "El Hussain Shamsa",
+        "Sanjay Rajagopalan"
+      ],
+      "keywords": [],
+      "abstract": "Abstract Purpose of review We attempt to provide a framework for cardiovascular risk assessment related to environmental pollutants to enhance awareness of risk posed by environmental risk factors and highlight approaches for risk intervention. Recent findings Indisputable links between environmental exposures and cardiovascular outcomes exist. Although many of these relationships are well studied, such as air pollution, evidence continues to emerge regarding others, including noise, light, the built environment, and temperature. Summary When the totality of the impact from environmental exposures are considered under the paradigm of the exposome, their health impact and disease burden form a considerable part of mitigatable residual cardiovascular risk. This risk can be attenuated by policy and, to a lesser extent, individual level actions. By harnessing artificial intelligence, we can move to integrated risk exposure analysis and target those at the highest risk with interventions.",
+      "matched_terms": [],
+      "relevance_score": 0.0,
+      "recency_score": 0.0,
+      "combined_score": 0.0
+    },
+    {
+      "source": "crossref",
+      "title": "A novel prognostic prediction indicator in patients with acute pulmonary embolism: Naples prognostic score",
+      "journal": "Thrombosis Journal",
+      "year": 2023,
+      "doi": "10.1186/s12959-023-00554-8",
+      "url": "https://doi.org/10.1186/s12959-023-00554-8",
+      "authors": [
+        "Ning Zhu",
+        "Shanhong Lin",
+        "Chao Cao"
+      ],
+      "keywords": [],
+      "abstract": "Abstract Acute pulmonary embolism (APE) is a potentially fatal disease. Early risk stratification is essential to determining appropriate treatment. We aimed to investigate the predictive value of the Naples Prognostic Score (NPS) for 30-day all-cause mortality in patients with APE. In this retrospective analysis, 325 hospitalized patients with APE were divided into Groups 0 (n = 131), 1 (n = 153), and 2 (n = 41) according to the NPS. The primary outcome event was all-cause mortality during 30 days of follow-up from the day of admission. The correlation between NPS, clinical features, and outcomes in each group was evaluated. The patients were divided into two groups, survivor (n = 294) and nonsurvivor (n = 31), according to their prognosis. The results of the comparison between the three NPS groups revealed that patients with older age, faster heart rate, lower systolic blood pressure, low albumin and total cholesterol levels, high neutrophil to lymphocyte ratio (NLR), low lymphocyte-to-monocyte ratio (LMR), right heart dilatation, heart failure, malignancy, and lower extremity venous thrombosis had significantly higher 30-day all-cause mortality (P",
+      "matched_terms": [],
+      "relevance_score": 0.0,
+      "recency_score": 0.0,
+      "combined_score": 0.0
+    },
+    {
+      "source": "crossref",
+      "title": "Cardiovascular disease (CVD): assessment, prediction and policy implications",
+      "journal": "BMC Public Health",
+      "year": 2021,
+      "doi": "10.1186/s12889-021-11334-2",
+      "url": "https://doi.org/10.1186/s12889-021-11334-2",
+      "authors": [
+        "Shazia Rehman",
+        "Erum Rehman",
+        "Muhammad Ikram",
+        "Zhang Jianglin"
+      ],
+      "keywords": [],
+      "abstract": "Abstract Background The study aims to predict and assess cardiovascular disease (CVD) patterns in highly affected countries such as Pakistan, India, China, Kenya, the USA, and Sweden. The data for CVD deaths was gathered from 2005 to 2019. Methods We utilized non-homogenous discrete grey model (NDGM) to predict growth of cardiovascular deaths in selected countries. We take this process a step further by utilizing novel Synthetic Relative Growth Rate (RGR) and Synthetic Doubling Time (Dt) model to assess how many years it takes to reduce the cardiovascular deaths double in numbers. Results The results reveal that the USA and China may lead in terms of raising its number of deaths caused by CVDs till 2027. However, doubling time model suggests that USA may require 2.3 years in reducing the cardiovascular deaths. Conclusions This study is significant for the policymakers and health practitioners to ensure the execution of CVD prevention measures to overcome the growing burden of CVD deaths.",
+      "matched_terms": [],
+      "relevance_score": 0.0,
+      "recency_score": 0.0,
+      "combined_score": 0.0
+    },
+    {
+      "source": "crossref",
+      "title": "Synergistic prognostic value of coronary distensibility index and fractional flow reserve based cCTA for major adverse cardiac events in patients with Coronary artery disease",
+      "journal": "BMC Cardiovascular Disorders",
+      "year": 2022,
+      "doi": "10.1186/s12872-022-02655-0",
+      "url": "https://doi.org/10.1186/s12872-022-02655-0",
+      "authors": [
+        "Xiao-long Zhu",
+        "Zhi-ying Pang",
+        "Wei Jiang",
+        "Ting-yu Dong"
+      ],
+      "keywords": [],
+      "abstract": "Abstract Background Coronary distensibility index (CDI), as an early predictor of cardiovascular diseases, has the potential to complement coronary computed tomography angiography (cCTA)-derived fractional flow reserve (CT-FFR) for predicting major adverse cardiac events (MACEs). Thus, the prognostic value of CT-FFR combined with CDI for MACEs is worth exploring. Methods Patients with a moderate or severe single left anterior descending coronary artery stenosis were included and underwent FFR and CDI analysis based on cCTA, followed up at least 1 year, and recorded MACEs. Multivariate logistic regression analysis was performed to determine independent predictors of MACEs. The area under of receiver operating characteristic (ROC) curve was used to evaluated evaluate the diagnostic performance of CT-FFR, CDI, and a combination of the two. Results All the vessel-specific data were from LAD. 150 patients were analysed. 55 (37%) patients experienced MACEs during follow-up. Patients with CT-FFR ≤ 0.8 had higher percentage of MACEs compared with CT-FFR > 0.8 (56.3% vs.7.3%, p p p = 0.025), triglyceride ( p = 0.015), CT-FFR ≤ 0.80 ( p = 0.038), and CDI ( p p = 0.0002). Conclusion Our study provides initial evidence that combining CDI with CT-FFR shows incremental discriminatory power for MACEs over CT-FFR alone, independent of clinical risk factors. Diabetes and triglyceride are also associated with MACEs.",
+      "matched_terms": [],
+      "relevance_score": 0.0,
+      "recency_score": 0.0,
+      "combined_score": 0.0
+    },
+    {
+      "source": "crossref",
+      "title": "Incremental prognostic value of stress CMR in symptomatic patients with coronary stenosis on CCTA",
+      "journal": "European Heart Journal",
+      "year": 2022,
+      "doi": "10.1093/eurheartj/ehac544.277",
+      "url": "https://doi.org/10.1093/eurheartj/ehac544.277",
+      "authors": [
+        "T Pezel",
+        "T Hovasse",
+        "T Lefevre",
+        "F Sanguineti",
+        "S Champagne"
+      ],
+      "keywords": [],
+      "abstract": "Abstract Background Noninvasive functional imaging is often performed in patients with obstructive coronary artery disease (CAD) on coronary computed tomography angiography (CCTA). However, the prognostic value of stress cardiovascular magnetic resonance (CMR) is unknown in patients with coronary stenosis of unknown significance on CCTA. Purpose To assess the prognostic value of stress CMR in symptomatic patients with obstructive CAD of unknown significance on CCTA. Methods Between 2008–2020, consecutive symptomatic patients without known CAD referred for CCTA were screened. Patients with obstructive CAD (at least 1 ≥50% stenosis on CCTA) were further referred for stress CMR and followed for the occurrence of major adverse cardiovascular events (MACE), defined by cardiovascular death or nonfatal myocardial infarction. Results Of 2,210 patients who completed CMR, 2,038 (46.5% male, mean age 69.8±12.2 years) completed follow-up (median 6.8 [IQR 5.9–9.2] years); 281 experienced a MACE (13.8%). Inducible ischemia and late gadolinium enhancement (LGE) were significantly associated with MACE (HR: 4.51, [95% CI: 3.55–5.74]; and HR: 3.32, [95% CI: 2.55–4.32], respectively; p&lt;0.001). In multivariable Cox regression, number of segments with &gt;70% stenosis, with noncalcified plaques and number of vessels with obstructive CAD were prognosticators (p&lt;0.001). The presence of inducible ischemia and LGE were independent predictors of MACE (HR: 3.97, [95% CI: 3.43–5.13]; HR: 2.30, [95% CI: 1.52–3.33]; p&lt;0.001). After adjustment, stress CMR showed the best improvement in model discrimination and reclassification above traditional risk factors and CCTA (C-statistic improvement: 0.04; NRI=0.421; IDI=0.047). Conclusions In symptomatic patients with obstructive CAD of unknown significance on CCTA, stress CMR had incremental prognostic value to predict MACE. Funding Acknowledgement Type of funding sources: None.",
+      "matched_terms": [],
+      "relevance_score": 0.0,
+      "recency_score": 0.0,
+      "combined_score": 0.0
+    },
+    {
+      "source": "crossref",
+      "title": "Blood glucose may be an alternative to cholesterol in CVD risk prediction charts",
+      "journal": "Cardiovascular Diabetology",
+      "year": 2013,
+      "doi": "10.1186/1475-2840-12-24",
+      "url": "https://doi.org/10.1186/1475-2840-12-24",
+      "authors": [
+        "Julia Braun",
+        "Matthias Bopp",
+        "David Faeh"
+      ],
+      "keywords": [],
+      "abstract": "Abstract Background Established risk models for the prediction of cardiovascular disease (CVD) include blood pressure, smoking and cholesterol parameters. The use of total cholesterol for CVD risk prediction has been questioned, particularly for primary prevention. We evaluated whether glucose could be used instead of total cholesterol for prediction of fatal CVD using data with long follow-up. Methods We followed-up 6,095 men and women aged ≥16 years who participated 1977-79 in a community based health study and were anonymously linked with the Swiss National Cohort until the end of 2008. During follow-up, 727 participants died of CVD. Based on the ESC SCORE methodology (Weibull regression), we used age, sex, blood pressure, smoking, and fasting glucose or total cholesterol. The mean Brier score (BS), area under the receiver-operating characteristic curve (AUC) and integrated discrimination improvement (IDI) were used for model comparison. We validated our models internally using cross-validation and externally using another data set. Results In our models, the p-value of total cholesterol was 0.046, that of glucose was p -5 vs. 2232x10 -5 ; AUC: 0.9181 vs. 0.9169, IDI: 0.009 with p-value 0.026) and could well discriminate the overall risk of persons with high and low concentrations. The external validation confirmed these findings. Conclusions Our study suggests that instead of total cholesterol glucose can be used in models predicting overall CVD mortality risk.",
+      "matched_terms": [],
+      "relevance_score": 0.0,
+      "recency_score": 0.0,
+      "combined_score": 0.0
+    },
+    {
+      "source": "crossref",
+      "title": "Hyperparameter Tuning in Machine Learning Classifiers: Performance Insights for CVD Prediction",
+      "journal": "Journal of Carcinogenesis",
+      "year": 2025,
+      "doi": "10.64149/j.carcinog.24.3s.583-592",
+      "url": "https://doi.org/10.64149/j.carcinog.24.3s.583-592",
+      "authors": [
+        "Maitri Bhavsar",
+        "Dr. Manish Patel"
+      ],
+      "keywords": [],
+      "abstract": "Globally, Cardiovascular Diseases (CVDs) continue to be a leading cause of morbidity and mortality, placing a significant burden on healthcare systems. Managing the risk factors linked to CVDs requires early identification and resolution. In this article, machine learning techniques (MLT) for predicting heart disease were presented. This approach presents the effects of dimension reduction and hyper-parameter adjustment on the prediction of heart disease. Furthermore, to aid in the prediction of cardiovascular diseases (SVCs), six classifiers are used: Random Forest (RF), Gradient Boosting (GB), Support Vector Classifier (SVC), Decision Tree (DT), Adaboost (AB), ensemble classifier (EC), and one type of dimensional reduction model based on principal component analysis (PCA). Grid search cross validation (GridSearchCV) is used as an automated hyper-parameter tuning algorithm. Thirty percent of the 920 patients with 14 attributes used in the Jupyter Notebook are test data. Evaluation measures that include precision, accuracy, recall, F1-score, confusion matrix, and receiver operating characteristic (ROC) curve are used to assess the performance of six classifiers.",
+      "matched_terms": [],
+      "relevance_score": 0.0,
+      "recency_score": 0.0,
+      "combined_score": 0.0
+    },
+    {
+      "source": "crossref",
+      "title": "Abstract P070: Long-term Cumulative Blood Pressure Improves CVD Risk Prediction Algorithms",
+      "journal": "Circulation",
+      "year": 2016,
+      "doi": "10.1161/circ.133.suppl_1.p070",
+      "url": "https://doi.org/10.1161/circ.133.suppl_1.p070",
+      "authors": [
+        "Norrina B Allen",
+        "Hongyan Ning",
+        "Donald Lloyd-Jones"
+      ],
+      "keywords": [],
+      "abstract": "Background: Published risk prediction algorithms only include current BP; however, long-term BP patterns are associated with atherosclerotic (AS)CVD incidence. We tested whether the long-term (5- and 10-year) cumulative blood pressure improves 10 year ASCVD prediction. Methods: This study used the Lifetime Risk Pooling Project (LRPP) including the Framingham, CARDIA and ARIC cohorts. Participants with 15- and 20-year follow-up (5- and 10- years prior to risk calculation and 10 year follow-up), no history of prior CVD, and between the ages of 45 and 65 at the time of risk estimation were included. We calculated 10 year ASCVD risk using the 2013 ACC/AHA 10-year ASCVD Pooled Cohort Equations. Study-specific coefficients were calculated. Differences in the C-statistic, the category-free net reclassification index (NRI) and improved discrimination index (IDI) were examined between the model with baseline as compared to the model with cumulative SBP. Analyses were stratified by gender. Results: Among 11,475 individuals (42.4% male and 12.7% African American), those in the highest tertile of cumulative SBP were older, more likely to be male, and had a higher burden of other CVD risk factors. Overall, 1,487 (13%) participants experienced a CVD event (mean follow-up time was 12 years). ASCVD incidence rates increased with higher tertiles of cumulative SBP from 4 events per 1,000 person-years in the lowest tertile to 8 and 18 in the second and third tertiles, respectively. No significant improvements were seen in the C-statistic when including 5- or 10-year cumulative SBP (see table). However, the replacement cumulative SBP resulted in significant improvements in model reclassification of NRI and IDI with greater improvements for the 10- than 5-year cumulative measure. Conclusions: Measures of cumulative BP can improve the ability of CVD risk prediction models to correctly classify individuals. Additional studies on the inclusion of these measures in future risk prediction algorithms are warranted.",
+      "matched_terms": [],
+      "relevance_score": 0.0,
+      "recency_score": 0.0,
+      "combined_score": 0.0
+    },
+    {
+      "source": "crossref",
+      "title": "Accurate machine learning-based CVD risk prediction in primary care may reduce the need for routine healthcare checks",
+      "journal": "European Heart Journal - Digital Health",
+      "year": 2026,
+      "doi": "10.1093/ehjdh/ztaf143.096",
+      "url": "https://doi.org/10.1093/ehjdh/ztaf143.096",
+      "authors": [
+        "K Dziopa"
+      ],
+      "keywords": [],
+      "abstract": "Abstract Background/Introduction Guideline recommended cardiovascular risk prediction models, such as QRISK3 [1] (commonly used in the UK), PCE [2] (US), and SCORE2 (Europe) are used in clinical practice to identify people at risk of future heart disease, enabling risk-based management and prevention of disease. Their routine application is however limited by the need to actively measure key variables in the clinic. Financial constraints for screening services and testing, coupled with limited population attendance, results in incomplete coverage. In the UK, over a 5-year period only around 60% of those eligible for a National Health Service health check were invited, and of these, only a half attended. Methods A set of partial models was developed to predict the 10-year risk of cardiovascular disease (CVD) and major CVD (including atrial fibrillation, heart failure, and peripheral arterial disease), using combinations of 14 predictors. This approach allows for application in settings where only a subset of variables is available. The set of partial models was evaluated across five studies carried out in the UK and the Netherlands, jointly comprising 105,550 participants. Results A total of 4,096 unique models were trained to predict 10-year major CVD risk, showing nearly identical performance when evaluated against both CVD and major CVD outcomes. The c-statistic ranged between: quartiles (Q1: 0.71 and Q3: 0.73 across the five studies. This was comparable to the performance of the PCE (Q1: 0.70, Q3: 0.74, 10 predictors) and SCORE2 (Q1: 0.71, Q3: 0.75, 8 predictors). Due to the large number of required predictors (22/23 for men/women) the QRISK3 was evaluated in a single cohort: c-statistic 0.72 (95% CI 0.72; 0.73). Model performance remained adequate when focussing on the set of partial models using 2-4 predictors: c-statistic Q1: 0.70 and Q3: 0.71. The partial models demonstrated reasonable calibration across most studies, observing a limited risk underestimation in two cohorts. Partial models excluding traditional risk factors such blood pressure and lipids demonstrated similar performance to models incorporating these variables. Conclusions These results demonstrate that even with only a subset of predictor variables, the partial models approach can generate clinically relevant predictions of 10-year (major) cardiovascular disease risk, supporting earlier and more effective treatment decisions. The set of partial models are accessible through a python-based API (https://gitlab.com/cvd_in_t2dm/array-of-cvd-prediction-models), allowing for integration in personal or clinical care dashboards.",
+      "matched_terms": [],
+      "relevance_score": 0.0,
+      "recency_score": 0.0,
+      "combined_score": 0.0
+    },
+    {
+      "source": "crossref",
+      "title": "DI CVD TRI Layer CX Classifier for Secure IoT Enabled Risk Prediction Model",
+      "journal": "Journal of Machine and Computing",
+      "year": 2025,
+      "doi": "10.53759/7669/jmc202505124",
+      "url": "https://doi.org/10.53759/7669/jmc202505124",
+      "authors": [
+        "Thumilvannan S",
+        "Balamanigandan R"
+      ],
+      "keywords": [],
+      "abstract": "This paper introduces a novel Di-CVD Tri-Layer CX Classifier, an IoT-integrated and machine learning (ML)-driven framework, to predict the individual and joint risk of diabetes (DB) and heart disease (HD). The proposed model comprises three phases: secure IoT-based data collection using Enhanced BGV encryption with Dynamic Distributed Hashing (DDH); a feature extraction (FE) phase leveraging (IGO) Information Gain Ratio and disease-specific ranking and a three-step classifier—Cm-Ro (FS) feature selection, hierarchical XGBoost classification, and synergistic prioritized risk scoring. By integrating multi-attribute features, rule-free optimization, and enhanced interoperability, the model addresses critical challenges such as heterogeneous data formats, poor feature relevance, and low interoperability in previous studies. When compared to conventional classifiers such as SVM and standard XGBoost, experimental evaluation on the NHANES dataset shows improved performance in terms of accuracy (ACC), recall (R), precision (P), and F1-score. The outcomes validate the framework’s effectiveness in early, secure, and individualized risk prediction, offering substantial support for timely interventions and enhanced patient care.",
+      "matched_terms": [],
+      "relevance_score": 0.0,
+      "recency_score": 0.0,
+      "combined_score": 0.0
+    },
+    {
+      "source": "crossref",
+      "title": "A potential prognostic prediction model of colon adenocarcinoma with recurrence based on prognostic lncRNA signatures",
+      "journal": "Human Genomics",
+      "year": 2020,
+      "doi": "10.1186/s40246-020-00270-8",
+      "url": "https://doi.org/10.1186/s40246-020-00270-8",
+      "authors": [
+        "Lipeng Jin",
+        "Chenyao Li",
+        "Tao Liu",
+        "Lei Wang"
+      ],
+      "keywords": [],
+      "abstract": "Abstract Background Colon adenocarcinoma (COAD) is one of the common gastrointestinal malignant diseases, with high mortality rate and poor prognosis due to delayed diagnosis. This study aimed to construct a prognostic prediction model for patients with colon adenocarcinoma (COAD) recurrence. Methods Differently expressed RNAs (DERs) between recurrence and non-recurrence COAD samples were identified based on expression profile data from the NCBI Gene Expression Omnibus (GEO) repository and The Cancer Genome Atlas (TCGA) database. Then, recurrent COAD discriminating classifier was established using SMV-RFE algorithm, and receiver operating characteristic curve was used to assess the predictive power of classifier. Furthermore, the prognostic prediction model was constructed based on univariate and multivariate Cox regression analysis, and Kaplan-Meier survival curve analysis was used to estimate this model. Furthermore, the co-expression network of DElncRNAs and DEmRNAs was constructed followed by GO and KEGG pathway enrichment analysis. Results A total of 54 optimized signature DElncRNAs were screened and SMV classifier was constructed, which presented a high accuracy to distinguish recurrence and non-recurrence COAD samples. Furthermore, six independent prognostic lncRNAs signatures (LINC00852, ZNF667-AS1, FOXP1-IT1, LINC01560, TAF1A-AS1, and LINC00174) in COAD patients with recurrence were screened, and the prognostic prediction model for recurrent COAD was constructed, which possessed a relative satisfying predicted ability both in the training dataset and validation dataset. Furthermore, the DEmRNAs in the co-expression network were mainly enriched in glycan biosynthesis, cardiac muscle contraction, and colorectal cancer. Conclusions Our study revealed that six lncRNA signatures acted as an independent prognostic biomarker for patients with COAD recurrence.",
+      "matched_terms": [],
+      "relevance_score": 0.0,
+      "recency_score": 0.0,
+      "combined_score": 0.0
+    },
+    {
+      "source": "crossref",
+      "title": "Enhanced Machine Learning Model for CVD Prediction Using Principal Component Analysis (PCA)",
+      "journal": "International Journal for Global Academic &amp; Scientific Research",
+      "year": 2025,
+      "doi": "10.55938/ijgasr.v4i2.202",
+      "url": "https://doi.org/10.55938/ijgasr.v4i2.202",
+      "authors": [
+        "Shailendra Chaurasia",
+        "A.K Sachan"
+      ],
+      "keywords": [],
+      "abstract": "The World Health Organization (WHO) report says that each year, cardiovascular diseases are the leading reason for around 17.9 million deaths across the globe. This is a more serious problem in low- and middle-income countries where there are barriers to early check-ups and specific treatments. The quicker and better detection of heart attacks helps reduce the risk of death. Based on previous methods, the study takes the Cleveland Heart Disease dataset from the UCI Machine Learning repository and uses it to design and check best machine learning models that take advantage of standardization, Principal Component Analysis (PCA) and hyperparameter tuning. We used machine learning algorithms such as Support Vector Machine, k-Nearest Neighbors, Logistic Regression and a Multi Layer Perceptron model, all combined under a Voting Classifier. With a 98.33% accuracy, 98.25% F1-score, 96.55% precision, and 100% recall on test data, the enhanced hybrid model (Voting Classifier) leaves all other models far behind in performance. The hybrid model had small gaps between train and test values for metrics, with 1.24% accuracy difference, 1.29% F1-score difference, 3.45% precision difference and -0.92% recall difference. Incorporating Principal Component Analysis (PCA) lowered the number of dimensions used while increasing accuracy, precision and F1 scores for a number of models. The results suggest that the use of Principal Component Analysis (PCA)-combined hybrid models leads to better, more understandable and trustworthy tools for predicting CVD. Strengthening predictive models for CVD risk assessment is now possible, supporting prompt clinical choices and helping patients improve.",
+      "matched_terms": [],
+      "relevance_score": 0.0,
+      "recency_score": 0.0,
+      "combined_score": 0.0
+    }
+  ]
+}

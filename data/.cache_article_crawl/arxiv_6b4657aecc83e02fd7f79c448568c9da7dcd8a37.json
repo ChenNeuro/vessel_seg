@@ -1,0 +1,469 @@
+{
+  "generated_at": "2026-02-10T08:19:09.988482+00:00",
+  "source": "arxiv",
+  "query": "CCTA prognostic prediction for CVD",
+  "rows": 20,
+  "items": [
+    {
+      "source": "arxiv",
+      "title": "Prognostication of chronic disorders of consciousness using brain functional networks and clinical characteristics",
+      "journal": "arXiv",
+      "year": 2018,
+      "doi": "",
+      "url": "http://arxiv.org/abs/1801.03268v3",
+      "authors": [
+        "Ming Song",
+        "Yi Yang",
+        "Jianghong He",
+        "Zhengyi Yang",
+        "Shan Yu"
+      ],
+      "keywords": [
+        "q-bio.NC"
+      ],
+      "abstract": "Disorders of consciousness are a heterogeneous mixture of different diseases or injuries. Although some indicators and models have been proposed for prognostication, any single method when used alone carries a high risk of false prediction. This study aimed to develop a multidomain prognostic model that combines resting state functional MRI with three clinical characteristics to predict one year outcomes at the single-subject level. The model discriminated between patients who would later recover consciousness and those who would not with an accuracy of around 90% on three datasets from two medical centers. It was also able to identify the prognostic importance of different predictors, including brain functions and clinical characteristics. To our knowledge, this is the first implementation reported of a multidomain prognostic model based on resting state functional MRI and clinical characteristics in chronic disorders of consciousness. We therefore suggest that this novel prognostic model is accurate, robust, and interpretable.",
+      "matched_terms": [],
+      "relevance_score": 0.0,
+      "recency_score": 0.0,
+      "combined_score": 0.0
+    },
+    {
+      "source": "arxiv",
+      "title": "Radiomics-enhanced Deep Multi-task Learning for Outcome Prediction in Head and Neck Cancer",
+      "journal": "arXiv",
+      "year": 2022,
+      "doi": "10.1007/978-3-031-27420-6_14",
+      "url": "http://arxiv.org/abs/2211.05409v1",
+      "authors": [
+        "Mingyuan Meng",
+        "Lei Bi",
+        "Dagan Feng",
+        "Jinman Kim"
+      ],
+      "keywords": [
+        "eess.IV",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "abstract": "Outcome prediction is crucial for head and neck cancer patients as it can provide prognostic information for early treatment planning. Radiomics methods have been widely used for outcome prediction from medical images. However, these methods are limited by their reliance on intractable manual segmentation of tumor regions. Recently, deep learning methods have been proposed to perform end-to-end outcome prediction so as to remove the reliance on manual segmentation. Unfortunately, without segmentation masks, these methods will take the whole image as input, such that makes them difficult to focus on tumor regions and potentially unable to fully leverage the prognostic information within the tumor regions. In this study, we propose a radiomics-enhanced deep multi-task framework for outcome prediction from PET/CT images, in the context of HEad and neCK TumOR segmentation and outcome prediction challenge (HECKTOR 2022). In our framework, our novelty is to incorporate radiomics as an enhancement to our recently proposed Deep Multi-task Survival model (DeepMTS). The DeepMTS jointly learns to predict the survival risk scores of patients and the segmentation masks of tumor regions. Radiomics features are extracted from the predicted tumor regions and combined with the predicted survival risk scores for final outcome prediction, through which the prognostic information in tumor regions can be further leveraged. Our method achieved a C-index of 0.681 on the testing set, placing the 2nd on the leaderboard with only 0.00068 lower in C-index than the 1st place.",
+      "matched_terms": [],
+      "relevance_score": 0.0,
+      "recency_score": 0.0,
+      "combined_score": 0.0
+    },
+    {
+      "source": "arxiv",
+      "title": "No evidence of histology subtype-specific prognostic signatures among lung adenocarcinoma and squamous cell carcinoma patients at early stages",
+      "journal": "arXiv",
+      "year": 2014,
+      "doi": "",
+      "url": "http://arxiv.org/abs/1408.2616v2",
+      "authors": [
+        "Suyan Tian",
+        "Chi Wang",
+        "Ming-Wen An"
+      ],
+      "keywords": [
+        "stat.AP",
+        "q-bio.GN",
+        "q-bio.QM"
+      ],
+      "abstract": "Background Non-small cell lung cancer (NSCLC) is the predominant histological type of lung cancer, accounting for up to 85% of cases. Disease stage is commonly used to determine adjuvant treatment eligibility of NSCLC patients, however, it is an imprecise predictor of the prognosis of an individual patient. Currently, many researchers resort to microarray technology for identifying relevant genetic prognostic markers, with particular attention on trimming or extending a Cox regression model. Among NSCLC, adenocarcinoma (AC) and squamous cell carcinoma (SCC) are two major histology subtypes. It has been demonstrated that there exist fundamental differences in the underlying mechanisms between them, which motivated us to postulate there might exist specific genes relevant to prognosis of each histology subtype. Results In this article, we propose a simple filterer feature selection algorithm with a Cox regression model as the base. Applying this method to a real-world microarray data, no evidence has been found to support the existence of histology-specific prognostic gene signature. Nevertheless, a 31-gene prognostic gene signature for the early-stage AC and SCC samples is obtained, which provides comparable performance when compared with other relevant signatures. Conclusions Our proposal is conceptually simple and straightforward to implement. Therefore, it is expected that other researchers, especially those with less statistical knowledge and experience, can adapt this method readily to test their own research hypotheses.",
+      "matched_terms": [],
+      "relevance_score": 0.0,
+      "recency_score": 0.0,
+      "combined_score": 0.0
+    },
+    {
+      "source": "arxiv",
+      "title": "O2CTA: Introducing Annotations from OCT to CCTA in Coronary Plaque Analysis",
+      "journal": "arXiv",
+      "year": 2023,
+      "doi": "",
+      "url": "http://arxiv.org/abs/2303.06358v2",
+      "authors": [
+        "Jun Li",
+        "Kexin Li",
+        "Yafeng Zhou",
+        "S. Kevin Zhou"
+      ],
+      "keywords": [
+        "eess.IV",
+        "cs.CV"
+      ],
+      "abstract": "Targeted diagnosis and treatment plans for patients with coronary artery disease vary according to atherosclerotic plaque component. Coronary CT angiography (CCTA) is widely used for artery imaging and determining the stenosis degree. However, the limited spatial resolution and susceptibility to artifacts fail CCTA in obtaining lumen morphological characteristics and plaque composition. It can be settled by invasive optical coherence tomography (OCT) without much trouble for physicians, but bringing higher costs and potential risks to patients. Therefore, it is clinically critical to introduce annotations of plaque tissue and lumen characteristics from OCT to paired CCTA scans, denoted as \\textbf{the O2CTA problem} in this paper. We propose a method to handle the O2CTA problem. CCTA scans are first reconstructed into multi-planar reformatted (MPR) images, which agree with OCT images in term of semantic contents. The artery segment in OCT, which is manually labelled, is then spatially aligned with the entire artery in MPR images via the proposed alignment strategy. Finally, a classification model involving a 3D CNN and a Transformer, is learned to extract local features and capture dependence along arteries. Experiments on 55 paired OCT and CCTA we curate demonstrate that it is feasible to classify the CCTA based on the OCT labels, with an accuracy of 86.2%, while the manual readings of OCT and CCTA vary significantly, with a Kappa coefficient of 0.113. We will make our source codes, models, data, and results publicly available to benefit the research community.",
+      "matched_terms": [],
+      "relevance_score": 0.0,
+      "recency_score": 0.0,
+      "combined_score": 0.0
+    },
+    {
+      "source": "arxiv",
+      "title": "A Combined Deep Learning-Gradient Boosting Machine Framework for Fluid Intelligence Prediction",
+      "journal": "arXiv",
+      "year": 2019,
+      "doi": "10.1007/978-3-030-31901-4_1",
+      "url": "http://arxiv.org/abs/1910.07640v1",
+      "authors": [
+        "Yeeleng S. Vang",
+        "Yingxin Cao",
+        "Xiaohui Xie"
+      ],
+      "keywords": [
+        "cs.CV",
+        "q-bio.NC"
+      ],
+      "abstract": "The ABCD Neurocognitive Prediction Challenge is a community driven competition asking competitors to develop algorithms to predict fluid intelligence score from T1-w MRIs. In this work, we propose a deep learning combined with gradient boosting machine framework to solve this task. We train a convolutional neural network to compress the high dimensional MRI data and learn meaningful image features by predicting the 123 continuous-valued derived data provided with each MRI. These extracted features are then used to train a gradient boosting machine that predicts the residualized fluid intelligence score. Our approach achieved mean square error (MSE) scores of 18.4374, 68.7868, and 96.1806 for the training, validation, and test set respectively.",
+      "matched_terms": [],
+      "relevance_score": 0.0,
+      "recency_score": 0.0,
+      "combined_score": 0.0
+    },
+    {
+      "source": "arxiv",
+      "title": "Language Models are Few-shot Learners for Prognostic Prediction",
+      "journal": "arXiv",
+      "year": 2023,
+      "doi": "",
+      "url": "http://arxiv.org/abs/2302.12692v4",
+      "authors": [
+        "Zekai Chen",
+        "Mariann Micsinai Balan",
+        "Kevin Brown"
+      ],
+      "keywords": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG",
+        "q-bio.QM"
+      ],
+      "abstract": "Clinical prediction is an essential task in the healthcare industry. However, the recent success of transformers, on which large language models are built, has not been extended to this domain. In this research, we explore the use of transformers and language models in prognostic prediction for immunotherapy using real-world patients' clinical data and molecular profiles. This paper investigates the potential of transformers to improve clinical prediction compared to conventional machine learning approaches and addresses the challenge of few-shot learning in predicting rare disease areas. The study benchmarks the efficacy of baselines and language models on prognostic prediction across multiple cancer types and investigates the impact of different pretrained language models under few-shot regimes. The results demonstrate significant improvements in accuracy and highlight the potential of NLP in clinical research to improve early detection and intervention for different diseases.",
+      "matched_terms": [],
+      "relevance_score": 0.0,
+      "recency_score": 0.0,
+      "combined_score": 0.0
+    },
+    {
+      "source": "arxiv",
+      "title": "Identification of prognostic and predictive biomarkers in high-dimensional data with PPLasso",
+      "journal": "arXiv",
+      "year": 2022,
+      "doi": "",
+      "url": "http://arxiv.org/abs/2202.01970v2",
+      "authors": [
+        "Wencan Zhu",
+        "Céline Lévy-Leduc",
+        "Nils Ternès"
+      ],
+      "keywords": [
+        "stat.ME"
+      ],
+      "abstract": "In clinical trials, identification of prognostic and predictive biomarkers is essential to precision medicine. Prognostic biomarkers can be useful for the prevention of the occurrence of the disease, and predictive biomarkers can be used to identify patients with potential benefit from the treatment. Previous researches were mainly focused on clinical characteristics, and the use of genomic data in such an area is hardly studied. A new method is required to simultaneously select prognostic and predictive biomarkers in high dimensional genomic data where biomarkers are highly correlated. We propose a novel approach called PPLasso (Prognostic Predictive Lasso) integrating prognostic and predictive effects into one statistical model. PPLasso also takes into account the correlations between biomarkers that can alter the biomarker selection accuracy. Our method consists in transforming the design matrix to remove the correlations between the biomarkers before applying the generalized Lasso. In a comprehensive numerical evaluation, we show that PPLasso outperforms the traditional Lasso approach on both prognostic and predictive biomarker identification in various scenarios. Finally, our method is applied to publicly available transcriptomic data from clinical trial RV144. Our method is implemented in the PPLasso R package available from the Comprehensive R Archive Network (CRAN).",
+      "matched_terms": [],
+      "relevance_score": 0.0,
+      "recency_score": 0.0,
+      "combined_score": 0.0
+    },
+    {
+      "source": "arxiv",
+      "title": "TransCC: Transformer Network for Coronary Artery CCTA Segmentation",
+      "journal": "arXiv",
+      "year": 2023,
+      "doi": "",
+      "url": "http://arxiv.org/abs/2310.04779v1",
+      "authors": [
+        "Chenchu Xu",
+        "Meng Li",
+        "Xue Wu"
+      ],
+      "keywords": [
+        "eess.IV",
+        "cs.CV"
+      ],
+      "abstract": "The accurate segmentation of Coronary Computed Tomography Angiography (CCTA) images holds substantial clinical value for the early detection and treatment of Coronary Heart Disease (CHD). The Transformer, utilizing a self-attention mechanism, has demonstrated commendable performance in the realm of medical image processing. However, challenges persist in coronary segmentation tasks due to (1) the damage to target local structures caused by fixed-size image patch embedding, and (2) the critical role of both global and local features in medical image segmentation tasks.To address these challenges, we propose a deep learning framework, TransCC, that effectively amalgamates the Transformer and convolutional neural networks for CCTA segmentation. Firstly, we introduce a Feature Interaction Extraction (FIE) module designed to capture the characteristics of image patches, thereby circumventing the loss of semantic information inherent in the original method. Secondly, we devise a Multilayer Enhanced Perceptron (MEP) to augment attention to local information within spatial dimensions, serving as a complement to the self-attention mechanism. Experimental results indicate that TransCC outperforms existing methods in segmentation performance, boasting an average Dice coefficient of 0.730 and an average Intersection over Union (IoU) of 0.582. These results underscore the effectiveness of TransCC in CCTA image segmentation.",
+      "matched_terms": [],
+      "relevance_score": 0.0,
+      "recency_score": 0.0,
+      "combined_score": 0.0
+    },
+    {
+      "source": "arxiv",
+      "title": "Self-Contrastive Weakly Supervised Learning Framework for Prognostic Prediction Using Whole Slide Images",
+      "journal": "arXiv",
+      "year": 2024,
+      "doi": "10.1371/journal.pdig.0000972",
+      "url": "http://arxiv.org/abs/2405.15264v1",
+      "authors": [
+        "Saul Fuster",
+        "Farbod Khoraminia",
+        "Julio Silva-Rodríguez",
+        "Umay Kiraz",
+        "Geert J. L. H. van Leenders"
+      ],
+      "keywords": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "abstract": "We present a pioneering investigation into the application of deep learning techniques to analyze histopathological images for addressing the substantial challenge of automated prognostic prediction. Prognostic prediction poses a unique challenge as the ground truth labels are inherently weak, and the model must anticipate future events that are not directly observable in the image. To address this challenge, we propose a novel three-part framework comprising of a convolutional network based tissue segmentation algorithm for region of interest delineation, a contrastive learning module for feature extraction, and a nested multiple instance learning classification module. Our study explores the significance of various regions of interest within the histopathological slides and exploits diverse learning scenarios. The pipeline is initially validated on artificially generated data and a simpler diagnostic task. Transitioning to prognostic prediction, tasks become more challenging. Employing bladder cancer as use case, our best models yield an AUC of 0.721 and 0.678 for recurrence and treatment outcome prediction respectively.",
+      "matched_terms": [],
+      "relevance_score": 0.0,
+      "recency_score": 0.0,
+      "combined_score": 0.0
+    },
+    {
+      "source": "arxiv",
+      "title": "Treatment Outcome Prediction for Intracerebral Hemorrhage via Generative Prognostic Model with Imaging and Tabular Data",
+      "journal": "arXiv",
+      "year": 2023,
+      "doi": "",
+      "url": "http://arxiv.org/abs/2307.12858v1",
+      "authors": [
+        "Wenao Ma",
+        "Cheng Chen",
+        "Jill Abrigo",
+        "Calvin Hoi-Kwan Mak",
+        "Yuqi Gong"
+      ],
+      "keywords": [
+        "cs.CV"
+      ],
+      "abstract": "Intracerebral hemorrhage (ICH) is the second most common and deadliest form of stroke. Despite medical advances, predicting treat ment outcomes for ICH remains a challenge. This paper proposes a novel prognostic model that utilizes both imaging and tabular data to predict treatment outcome for ICH. Our model is trained on observational data collected from non-randomized controlled trials, providing reliable predictions of treatment success. Specifically, we propose to employ a variational autoencoder model to generate a low-dimensional prognostic score, which can effectively address the selection bias resulting from the non-randomized controlled trials. Importantly, we develop a variational distributions combination module that combines the information from imaging data, non-imaging clinical data, and treatment assignment to accurately generate the prognostic score. We conducted extensive experiments on a real-world clinical dataset of intracerebral hemorrhage. Our proposed method demonstrates a substantial improvement in treatment outcome prediction compared to existing state-of-the-art approaches. Code is available at https://github.com/med-air/TOP-GPM",
+      "matched_terms": [],
+      "relevance_score": 0.0,
+      "recency_score": 0.0,
+      "combined_score": 0.0
+    },
+    {
+      "source": "arxiv",
+      "title": "Will Large Language Models Transform Clinical Prediction?",
+      "journal": "arXiv",
+      "year": 2025,
+      "doi": "10.1186/s41512-025-00211-w",
+      "url": "http://arxiv.org/abs/2505.18246v2",
+      "authors": [
+        "Yusuf Yildiz",
+        "Goran Nenadic",
+        "Meghna Jani",
+        "David A. Jenkins"
+      ],
+      "keywords": [
+        "cs.CY",
+        "cs.CL"
+      ],
+      "abstract": "Objective: Large language models (LLMs) are attracting increasing interest in healthcare. This commentary evaluates the potential of LLMs to improve clinical prediction models (CPMs) for diagnostic and prognostic tasks, with a focus on their ability to process longitudinal electronic health record (EHR) data. Findings: LLMs show promise in handling multimodal and longitudinal EHR data and can support multi-outcome predictions for diverse health conditions. However, methodological, validation, infrastructural, and regulatory chal- lenges remain. These include inadequate methods for time-to-event modelling, poor calibration of predictions, limited external validation, and bias affecting underrepresented groups. High infrastructure costs and the absence of clear regulatory frameworks further prevent adoption. Implications: Further work and interdisciplinary collaboration are needed to support equitable and effective integra- tion into the clinical prediction. Developing temporally aware, fair, and explainable models should be a priority focus for transforming clinical prediction workflow.",
+      "matched_terms": [],
+      "relevance_score": 0.0,
+      "recency_score": 0.0,
+      "combined_score": 0.0
+    },
+    {
+      "source": "arxiv",
+      "title": "A metric for assessing and optimizing data-driven prognostic algorithms for predictive maintenance",
+      "journal": "arXiv",
+      "year": 2023,
+      "doi": "10.1016/j.ress.2023.109723",
+      "url": "http://arxiv.org/abs/2306.03759v2",
+      "authors": [
+        "Antonios Kamariotis",
+        "Konstantinos Tatsis",
+        "Eleni Chatzi",
+        "Kai Goebel",
+        "Daniel Straub"
+      ],
+      "keywords": [
+        "stat.AP"
+      ],
+      "abstract": "Prognostic Health Management aims to predict the Remaining Useful Life (RUL) of degrading components/systems utilizing monitoring data. These RUL predictions form the basis for optimizing maintenance planning in a Predictive Maintenance (PdM) paradigm. We here propose a metric for assessing data-driven prognostic algorithms based on their impact on downstream PdM decisions. The metric is defined in association with a decision setting and a corresponding PdM policy. We consider two typical PdM decision settings, namely component ordering and/or replacement planning, for which we investigate and improve PdM policies that are commonly utilized in the literature. All policies are evaluated via the data-based estimation of the long-run expected maintenance cost per unit time, using monitored run-to-failure experiments. The policy evaluation enables the estimation of the proposed metric. We employ the metric as an objective function for optimizing heuristic PdM policies and algorithms' hyperparameters. The effect of different PdM policies on the metric is initially investigated through a theoretical numerical example. Subsequently, we employ four data-driven prognostic algorithms on a simulated turbofan engine degradation problem, and investigate the joint effect of prognostic algorithm and PdM policy on the metric, resulting in a decision-oriented performance assessment of these algorithms.",
+      "matched_terms": [],
+      "relevance_score": 0.0,
+      "recency_score": 0.0,
+      "combined_score": 0.0
+    },
+    {
+      "source": "arxiv",
+      "title": "Artificial Intelligence to Assist in Exclusion of Coronary Atherosclerosis during CCTA Evaluation of Chest-Pain in the Emergency Department: Preparing an Application for Real-World Use",
+      "journal": "arXiv",
+      "year": 2020,
+      "doi": "",
+      "url": "http://arxiv.org/abs/2008.04802v1",
+      "authors": [
+        "Richard D. White",
+        "Barbaros S. Erdal",
+        "Mutlu Demirer",
+        "Vikash Gupta",
+        "Matthew T. Bigelow"
+      ],
+      "keywords": [
+        "eess.IV",
+        "cs.CV",
+        "physics.med-ph"
+      ],
+      "abstract": "Coronary Computed Tomography Angiography (CCTA) evaluation of chest-pain patients in an Emergency Department (ED) is considered appropriate. While a negative CCTA interpretation supports direct patient discharge from an ED, labor-intensive analyses are required, with accuracy in jeopardy from distractions. We describe the development of an Artificial Intelligence (AI) algorithm and workflow for assisting interpreting physicians in CCTA screening for the absence of coronary atherosclerosis. The two-phase approach consisted of (1) Phase 1 - focused on the development and preliminary testing of an algorithm for vessel-centerline extraction classification in a balanced study population (n = 500 with 50% disease prevalence) derived by retrospective random case selection; and (2) Phase 2 - concerned with simulated-clinical Trialing of the developed algorithm on a per-case basis in a more real-world study population (n = 100 with 28% disease prevalence) from an ED chest-pain series. This allowed pre-deployment evaluation of the AI-based CCTA screening application which provides a vessel-by-vessel graphic display of algorithm inference results integrated into a clinically capable viewer. Algorithm performance evaluation used Area Under the Receiver-Operating-Characteristic Curve (AUC-ROC); confusion matrices reflected ground-truth vs AI determinations. The vessel-based algorithm demonstrated strong performance with AUC-ROC = 0.96. In both Phase 1 and Phase 2, independent of disease prevalence differences, negative predictive values at the case level were very high at 95%. The rate of completion of the algorithm workflow process (96% with inference results in 55-80 seconds) in Phase 2 depended on adequate image quality. There is potential for this AI application to assist in CCTA interpretation to help extricate atherosclerosis from chest-pain presentations.",
+      "matched_terms": [],
+      "relevance_score": 0.0,
+      "recency_score": 0.0,
+      "combined_score": 0.0
+    },
+    {
+      "source": "arxiv",
+      "title": "A Dynamic Prognostic Prediction Method for Colorectal Cancer Liver Metastasis",
+      "journal": "arXiv",
+      "year": 2025,
+      "doi": "",
+      "url": "http://arxiv.org/abs/2505.03123v2",
+      "authors": [
+        "Wei Yang",
+        "Yiran Zhu",
+        "Yan su",
+        "Zesheng Li",
+        "Chengchang Pan"
+      ],
+      "keywords": [
+        "eess.IV",
+        "cs.CV",
+        "cs.MM"
+      ],
+      "abstract": "Colorectal cancer liver metastasis (CRLM) exhibits high postoperative recurrence and pronounced prognostic heterogeneity, challenging individualized management. Existing prognostic approaches often rely on static representations from a single postoperative snapshot, and fail to jointly capture tumor spatial distribution, longitudinal disease dynamics, and multimodal clinical information, limiting predictive accuracy. We propose DyPro, a deep learning framework that infers postoperative latent trajectories via residual dynamic evolution. Starting from an initial patient representation, DyPro generates a 12-step sequence of trajectory snapshots through autoregressive residual updates and integrates them to predict recurrence and survival outcomes. On the MSKCC CRLM dataset, DyPro achieves strong discrimination under repeated stratified 5-fold cross-validation, reaching a C-index of 0.755 for OS and 0.714 for DFS, with OS AUC@1y of 0.920 and OS IBS of 0.143. DyPro provides quantitative risk cues to support adjuvant therapy planning and follow-up scheduling.",
+      "matched_terms": [],
+      "relevance_score": 0.0,
+      "recency_score": 0.0,
+      "combined_score": 0.0
+    },
+    {
+      "source": "arxiv",
+      "title": "A Metabolic-Imaging Integrated Model for Prognostic Prediction in Colorectal Liver Metastases",
+      "journal": "arXiv",
+      "year": 2025,
+      "doi": "",
+      "url": "http://arxiv.org/abs/2507.19734v1",
+      "authors": [
+        "Qinlong Li",
+        "Pu Sun",
+        "Guanlin Zhu",
+        "Tianjiao Liang",
+        "Honggang QI"
+      ],
+      "keywords": [
+        "eess.IV",
+        "cs.CV",
+        "cs.LG",
+        "q-bio.QM"
+      ],
+      "abstract": "Prognostic evaluation in patients with colorectal liver metastases (CRLM) remains challenging due to suboptimal accuracy of conventional clinical models. This study developed and validated a robust machine learning model for predicting postoperative recurrence risk. Preliminary ensemble models achieved exceptionally high performance (AUC $>$ 0.98) but incorporated postoperative features, introducing data leakage risks. To enhance clinical applicability, we restricted input variables to preoperative baseline clinical parameters and radiomic features from contrast-enhanced CT imaging, specifically targeting recurrence prediction at 3, 6, and 12 months postoperatively. The 3-month recurrence prediction model demonstrated optimal performance with an AUC of 0.723 in cross-validation. Decision curve analysis revealed that across threshold probabilities of 0.55-0.95, the model consistently provided greater net benefit than \"treat-all\" or \"treat-none\" strategies, supporting its utility in postoperative surveillance and therapeutic decision-making. This study successfully developed a robust predictive model for early CRLM recurrence with confirmed clinical utility. Importantly, it highlights the critical risk of data leakage in clinical prognostic modeling and proposes a rigorous framework to mitigate this issue, enhancing model reliability and translational value in real-world settings.",
+      "matched_terms": [],
+      "relevance_score": 0.0,
+      "recency_score": 0.0,
+      "combined_score": 0.0
+    },
+    {
+      "source": "arxiv",
+      "title": "A CHAID Based Performance Prediction Model in Educational Data Mining",
+      "journal": "arXiv",
+      "year": 2010,
+      "doi": "",
+      "url": "http://arxiv.org/abs/1002.1144v1",
+      "authors": [
+        "M. Ramaswami",
+        "R. Bhaskaran"
+      ],
+      "keywords": [
+        "cs.LG"
+      ],
+      "abstract": "The performance in higher secondary school education in India is a turning point in the academic lives of all students. As this academic performance is influenced by many factors, it is essential to develop predictive data mining model for students' performance so as to identify the slow learners and study the influence of the dominant factors on their academic performance. In the present investigation, a survey cum experimental methodology was adopted to generate a database and it was constructed from a primary and a secondary source. While the primary data was collected from the regular students, the secondary data was gathered from the school and office of the Chief Educational Officer (CEO). A total of 1000 datasets of the year 2006 from five different schools in three different districts of Tamilnadu were collected. The raw data was preprocessed in terms of filling up missing values, transforming values in one form into another and relevant attribute/ variable selection. As a result, we had 772 student records, which were used for CHAID prediction model construction. A set of prediction rules were extracted from CHIAD prediction model and the efficiency of the generated CHIAD prediction model was found. The accuracy of the present model was compared with other model and it has been found to be satisfactory.",
+      "matched_terms": [],
+      "relevance_score": 0.0,
+      "recency_score": 0.0,
+      "combined_score": 0.0
+    },
+    {
+      "source": "arxiv",
+      "title": "FRAMR-EMR: Framework for Prognostic Predictive Model Development Using Electronic Medical Record Data with a Case Study in Osteoarthritis Risk",
+      "journal": "arXiv",
+      "year": 2017,
+      "doi": "",
+      "url": "http://arxiv.org/abs/1705.09563v2",
+      "authors": [
+        "Jason Black",
+        "Amanda Terry",
+        "Daniel Lizotte"
+      ],
+      "keywords": [
+        "stat.AP"
+      ],
+      "abstract": "Background-Prognostic predictive models are used in the delivery of primary care to estimate a patients risk of future disease development. Electronic medical record, EMR, data can be used for the construction of these models. Objectives- To provide a framework for those seeking to develop prognostic predictive models using EMR data, and to illustrate these steps using osteoarthritis risk estimation as an example. FRAMR-EMR-The FRAmework for Modelling Risk from EMR data, FRAMR-EMR, was created, which outlines step-by-step guidance for the construction of a prognostic predictive model using EMR data. Throughout these steps, several potential pitfalls specific to using EMR data for predictive purposes are described and methods for addressing them are suggested. Case Study-We used the DELPHI, DELiver Primary Healthcare Information, database to develop our prognostic predictive model for estimation of osteoarthritis risk. We constructed a retrospective cohort of 28447 eligible primary care patients. Patients were included if they had an encounter with their primary care practitioner between 1 January 2008 and 31 December 2009. Patients were excluded if they had a diagnosis of osteoarthritis prior to baseline. Construction of a prognostic predictive model following FRAMR-EMR yielded a predictive model capable of estimating 5-year risk of osteoarthritis diagnosis. Logistic regression was used to predict osteoarthritis based on age, sex, BMI, previous leg injury, and osteoporosis. Internal validation of the models performance demonstrated good discrimination and moderate calibration. Conclusions-This study provides guidance to those interested in developing prognostic predictive models based on EMR data. The production of high quality prognostic predictive models allows for practitioner communication of accurately estimated risks of developing future disease among primary care patients.",
+      "matched_terms": [],
+      "relevance_score": 0.0,
+      "recency_score": 0.0,
+      "combined_score": 0.0
+    },
+    {
+      "source": "arxiv",
+      "title": "Bayesian prognostic covariate adjustment",
+      "journal": "arXiv",
+      "year": 2020,
+      "doi": "",
+      "url": "http://arxiv.org/abs/2012.13112v1",
+      "authors": [
+        "David Walsh",
+        "Alejandro Schuler",
+        "Diana Hall",
+        "Jon Walsh",
+        "Charles Fisher"
+      ],
+      "keywords": [
+        "stat.ME",
+        "stat.AP",
+        "stat.ML"
+      ],
+      "abstract": "Historical data about disease outcomes can be integrated into the analysis of clinical trials in many ways. We build on existing literature that uses prognostic scores from a predictive model to increase the efficiency of treatment effect estimates via covariate adjustment. Here we go further, utilizing a Bayesian framework that combines prognostic covariate adjustment with an empirical prior distribution learned from the predictive performances of the prognostic model on past trials. The Bayesian approach interpolates between prognostic covariate adjustment with strict type I error control when the prior is diffuse, and a single-arm trial when the prior is sharply peaked. This method is shown theoretically to offer a substantial increase in statistical power, while limiting the type I error rate under reasonable conditions. We demonstrate the utility of our method in simulations and with an analysis of a past Alzheimer's disease clinical trial.",
+      "matched_terms": [],
+      "relevance_score": 0.0,
+      "recency_score": 0.0,
+      "combined_score": 0.0
+    },
+    {
+      "source": "arxiv",
+      "title": "Efficient Online Hyperparameter Optimization for Kernel Ridge Regression with Applications to Traffic Time Series Prediction",
+      "journal": "arXiv",
+      "year": 2018,
+      "doi": "",
+      "url": "http://arxiv.org/abs/1811.00620v1",
+      "authors": [
+        "Hongyuan Zhan",
+        "Gabriel Gomes",
+        "Xiaoye S. Li",
+        "Kamesh Madduri",
+        "Kesheng Wu"
+      ],
+      "keywords": [
+        "cs.LG",
+        "stat.ML"
+      ],
+      "abstract": "Computational efficiency is an important consideration for deploying machine learning models for time series prediction in an online setting. Machine learning algorithms adjust model parameters automatically based on the data, but often require users to set additional parameters, known as hyperparameters. Hyperparameters can significantly impact prediction accuracy. Traffic measurements, typically collected online by sensors, are serially correlated. Moreover, the data distribution may change gradually. A typical adaptation strategy is periodically re-tuning the model hyperparameters, at the cost of computational burden. In this work, we present an efficient and principled online hyperparameter optimization algorithm for Kernel Ridge regression applied to traffic prediction problems. In tests with real traffic measurement data, our approach requires as little as one-seventh of the computation time of other tuning methods, while achieving better or similar prediction accuracy.",
+      "matched_terms": [],
+      "relevance_score": 0.0,
+      "recency_score": 0.0,
+      "combined_score": 0.0
+    },
+    {
+      "source": "arxiv",
+      "title": "\"Within-trial\" prognostic score adjustment is targeted maximum likelihood estimation",
+      "journal": "arXiv",
+      "year": 2025,
+      "doi": "",
+      "url": "http://arxiv.org/abs/2507.23446v2",
+      "authors": [
+        "Emilie Højbjerre-Frandsen",
+        "Alejandro Schuler"
+      ],
+      "keywords": [
+        "stat.ME"
+      ],
+      "abstract": "Adjustment for ``super'' or ``prognostic'' composite covariates has become more popular in randomized trials recently. These prognostic covariates are often constructed from historical data by fitting a predictive model of the outcome on the raw covariates. A natural question that we have been asked by applied researchers is whether this can be done without the historical data: can the prognostic covariate be constructed or derived from the trial data itself, possibly using different folds of the data, before adjusting for it? Here we clarify that such ``within-trial'' prognostic adjustment is nothing more than a form of targeted maximum likelihood estimation (TMLE), a well-studied procedure for optimal inference. We demonstrate the equivalence with a simulation study and discuss the pros and cons of within-trial prognostic adjustment (standard efficient estimation) relative to standard TMLE and standard prognostic adjustment with historical data.",
+      "matched_terms": [],
+      "relevance_score": 0.0,
+      "recency_score": 0.0,
+      "combined_score": 0.0
+    }
+  ]
+}

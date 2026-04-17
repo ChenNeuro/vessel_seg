@@ -1,0 +1,3679 @@
+{
+  "generated_at": "2026-02-10T07:08:43.334102+00:00",
+  "image_path": null,
+  "ocr_text": "",
+  "queries": [
+    "CCTA prognostic prediction for CVD",
+    "Nature Medicine",
+    "JACC",
+    "Circulation",
+    "JAMA",
+    "Vascular disease",
+    "AI-empowered"
+  ],
+  "results": [
+    {
+      "query": "CCTA prognostic prediction for CVD",
+      "source": "crossref",
+      "count": 12,
+      "items": [
+        {
+          "title": "CCTA-FFR Registry for Risk Prediction",
+          "journal": "Case Medical Research",
+          "year": 2019,
+          "doi": "10.31525/ct1-nct04037163",
+          "url": "https://doi.org/10.31525/ct1-nct04037163",
+          "authors": []
+        },
+        {
+          "title": "S12-2 Prognostic Value of Cardiac MRI in Patients with Coronary Artery Disease",
+          "journal": "CVD Prevention and Control",
+          "year": 2009,
+          "doi": "10.1016/s1875-4570(09)60089-9",
+          "url": "https://doi.org/10.1016/s1875-4570(09)60089-9",
+          "authors": [
+            "Hajime Sakuma"
+          ]
+        },
+        {
+          "title": "Cardiovascular Disease (CVD) Prediction using Deep Learning Algorithm",
+          "journal": "International Journal of Science and Research (IJSR)",
+          "year": 2023,
+          "doi": "10.21275/sr23603180631",
+          "url": "https://doi.org/10.21275/sr23603180631",
+          "authors": [
+            "Sarita Rathi Vijay Gadicha"
+          ]
+        },
+        {
+          "title": "S26-1 Metabolic Syndrome and Risk Prediction in Health Data Study",
+          "journal": "CVD Prevention and Control",
+          "year": 2009,
+          "doi": "10.1016/s1875-4570(09)60138-8",
+          "url": "https://doi.org/10.1016/s1875-4570(09)60138-8",
+          "authors": [
+            "Ming-Fong Chen"
+          ]
+        },
+        {
+          "title": "P-37 Myocardial Infarction: New Prognostic Factors Augmentation Index and Pulse Wave Velocity",
+          "journal": "CVD Prevention and Control",
+          "year": 2009,
+          "doi": "10.1016/s1875-4570(09)60231-x",
+          "url": "https://doi.org/10.1016/s1875-4570(09)60231-x",
+          "authors": [
+            "Nadezda Alexandrovna Bylova",
+            "Irina Mukharbekovna Plieva",
+            "Gregory Pavlovich Arutyunov"
+          ]
+        },
+        {
+          "title": "P2389Head-to-head comparison between framingham risk score, cacs, ccta, spect and hybrid spect/ccta in long-term prediction of major adverse cardiac events",
+          "journal": "European Heart Journal",
+          "year": 2017,
+          "doi": "10.1093/eurheartj/ehx502.p2389",
+          "url": "https://doi.org/10.1093/eurheartj/ehx502.p2389",
+          "authors": [
+            "O.F. Clerc",
+            "T.A. Fuchs",
+            "S. Dougoud",
+            "A.P. Pazhenkottil",
+            "O. Gaemperli"
+          ]
+        },
+        {
+          "title": "Incremental prognostic value of artificial intelligence-based automated plaque characterisation on top of ischemia evaluation by CCTA and CCTA/PET",
+          "journal": "European Heart Journal - Cardiovascular Imaging",
+          "year": 2024,
+          "doi": "10.1093/ehjci/jeae142.036",
+          "url": "https://doi.org/10.1093/ehjci/jeae142.036",
+          "authors": [
+            "S Bar",
+            "T Maaniitty",
+            "P Kiatkittikul",
+            "T Nabeta",
+            "J J Bax"
+          ]
+        },
+        {
+          "title": "CAC score adds no incremental prognostic information to CCTA for cardiovascular events in symptomatic patients",
+          "journal": "Nature Reviews Cardiology",
+          "year": 2012,
+          "doi": "10.1038/nrcardio.2011.191",
+          "url": "https://doi.org/10.1038/nrcardio.2011.191",
+          "authors": []
+        },
+        {
+          "title": "Prognostic Value Of A Novel Artificial Intelligence-based CCTA-derived Ischemia Algorithm In Patients With Suspected Coronary Artery Disease: Comparison Against Hybrid CCTA/PET Perfusion Imaging",
+          "journal": "Journal of Cardiovascular Computed Tomography",
+          "year": 2023,
+          "doi": "10.1016/j.jcct.2023.05.010",
+          "url": "https://doi.org/10.1016/j.jcct.2023.05.010",
+          "authors": [
+            "T. Maaniitty",
+            "S. Bär",
+            "T. Nabeta",
+            "A. Saraste",
+            "J. Bax"
+          ]
+        },
+        {
+          "title": "Comments on the prognostic value of hybrid CCTA-PET in coronary artery disease",
+          "journal": "International Journal of Cardiology",
+          "year": 2025,
+          "doi": "10.1016/j.ijcard.2025.133592",
+          "url": "https://doi.org/10.1016/j.ijcard.2025.133592",
+          "authors": [
+            "Zhen Li",
+            "Gang Wang"
+          ]
+        },
+        {
+          "title": "Long term prognostic value for a normal CCTA",
+          "journal": "Journal of Cardiovascular Computed Tomography",
+          "year": 2022,
+          "doi": "10.1016/j.jcct.2022.07.006",
+          "url": "https://doi.org/10.1016/j.jcct.2022.07.006",
+          "authors": [
+            "Luay Alalawi",
+            "Matthew J. Budoff"
+          ]
+        },
+        {
+          "title": "P-100 Prognostic Implications of Myocardial Performance Index (Tei Index) Among Patients with Acute Coronary Syndrome",
+          "journal": "CVD Prevention and Control",
+          "year": 2009,
+          "doi": "10.1016/s1875-4570(09)60292-8",
+          "url": "https://doi.org/10.1016/s1875-4570(09)60292-8",
+          "authors": [
+            "Gertie May Bernabe Plameras",
+            "Maureen V. Valentin",
+            "Crismelita M. Banez"
+          ]
+        }
+      ]
+    },
+    {
+      "query": "CCTA prognostic prediction for CVD",
+      "source": "pubmed",
+      "count": 3,
+      "items": [
+        {
+          "title": "AI-Guided Quantitative Plaque Staging Predicts Long-Term Cardiovascular Outcomes in Patients at Risk for Atherosclerotic CVD.",
+          "journal": "JACC. Cardiovascular imaging",
+          "year": 2024,
+          "doi": "10.1016/j.jcmg.2023.05.020",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37480907/",
+          "authors": [
+            "Nurmohamed NS",
+            "Bom MJ",
+            "Jukema RA",
+            "de Groot RJ",
+            "Driessen RS"
+          ]
+        },
+        {
+          "title": "Association of oxidized ApoB and oxidized ApoA-I with high-risk coronary plaque features in cardiovascular disease.",
+          "journal": "JCI insight",
+          "year": 2023,
+          "doi": "10.1172/jci.insight.172893",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37698922/",
+          "authors": [
+            "Sorokin AV",
+            "Hong CG",
+            "Aponte AM",
+            "Florida EM",
+            "Tang J"
+          ]
+        },
+        {
+          "title": "Prognostic Value of Coronary Computed Tomography Imaging in Patients at High Risk Without Symptoms of Coronary Artery Disease.",
+          "journal": "The American journal of cardiology",
+          "year": 2016,
+          "doi": "10.1016/j.amjcard.2015.11.058",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26754124/",
+          "authors": [
+            "Dedic A",
+            "Ten Kate GJ",
+            "Roos CJ",
+            "Neefjes LA",
+            "de Graaf MA"
+          ]
+        }
+      ]
+    },
+    {
+      "query": "CCTA prognostic prediction for CVD",
+      "source": "openalex",
+      "count": 12,
+      "items": [
+        {
+          "title": "ACC/AHA 2007 Guidelines for the Management of Patients With Unstable Angina/Non–ST-Elevation Myocardial Infarction",
+          "journal": "Circulation",
+          "year": 2007,
+          "doi": "10.1161/circulationaha.107.181940",
+          "url": "https://doi.org/10.1161/circulationaha.107.181940",
+          "authors": [
+            "Jeffrey L. Anderson",
+            "Cynthia D. Adams",
+            "Elliott M. Antman",
+            "Charles R. Bridges",
+            "Robert M. Califf"
+          ]
+        },
+        {
+          "title": "2023 AHA/ACC/ACCP/ASPC/NLA/PCNA Guideline for the Management of Patients With Chronic Coronary Disease: A Report of the American Heart Association/American College of Cardiology Joint Committee on Clinical Practice Guidelines",
+          "journal": "Circulation",
+          "year": 2023,
+          "doi": "10.1161/cir.0000000000001168",
+          "url": "https://doi.org/10.1161/cir.0000000000001168",
+          "authors": [
+            "Salim S. Virani",
+            "L. Kristin Newby",
+            "Suzanne V. Arnold",
+            "Vera Bittner",
+            "LaPrincess C. Brewer"
+          ]
+        },
+        {
+          "title": "The Swedish CArdioPulmonary BioImage Study: objectives and design",
+          "journal": "Journal of Internal Medicine",
+          "year": 2015,
+          "doi": "10.1111/joim.12384",
+          "url": "https://doi.org/10.1111/joim.12384",
+          "authors": [
+            "Göran Bergström",
+            "G Berglund",
+            "Anders Blomberg",
+            "John Brandberg",
+            "Gunnar Engström"
+          ]
+        },
+        {
+          "title": "An EAPCI Expert Consensus Document on Ischaemia with Non-Obstructive Coronary Arteries in Collaboration with European Society of Cardiology Working Group on Coronary Pathophysiology &amp; Microcirculation Endorsed by Coronary Vasomotor Disorders International Study Group",
+          "journal": "European Heart Journal",
+          "year": 2020,
+          "doi": "10.1093/eurheartj/ehaa503",
+          "url": "https://doi.org/10.1093/eurheartj/ehaa503",
+          "authors": [
+            "Vijay Kunadian",
+            "Alaide Chieffo",
+            "Paolo G. Camici",
+            "Colin Berry",
+            "Javier Escaned"
+          ]
+        },
+        {
+          "title": "2010 ACCF/AHA guideline for assessment of cardiovascular risk in asymptomatic adults: A report of the American College of Cardiology Foundation/American Heart Association Task Force on Practice Guidelines",
+          "journal": "Carolina Digital Repository (University of North Carolina at Chapel Hill)",
+          "year": 2019,
+          "doi": "10.17615/fqnb-n505",
+          "url": "https://cdr.lib.unc.edu/record/uuid:5e21c25e-ca0a-4e7d-a854-54f632470635",
+          "authors": [
+            "Philip Greenland"
+          ]
+        },
+        {
+          "title": "Comparison of Framingham, PROCAM, SCORE, and Diamond Forrester to predict coronary atherosclerosis and cardiovascular events",
+          "journal": "Journal of Nuclear Cardiology",
+          "year": 2011,
+          "doi": "10.1007/s12350-011-9425-5",
+          "url": "https://doi.org/10.1007/s12350-011-9425-5",
+          "authors": [
+            "Mathijs O. Versteylen",
+            "Ivo A. Joosen",
+            "Leslee J. Shaw",
+            "Jagat Narula",
+            "Leonard Hofstra"
+          ]
+        },
+        {
+          "title": "Deep-Learning for Epicardial Adipose Tissue Assessment With Computed Tomography",
+          "journal": "JACC. Cardiovascular imaging",
+          "year": 2023,
+          "doi": "10.1016/j.jcmg.2022.11.018",
+          "url": "https://doi.org/10.1016/j.jcmg.2022.11.018",
+          "authors": [
+            "Henry West",
+            "Muhammad Siddique",
+            "Michelle C. Williams",
+            "Lucrezia della Volpe",
+            "Ria Desai"
+          ]
+        },
+        {
+          "title": "Age-related risk of major adverse cardiac event risk and coronary artery disease extent and severity by coronary CT angiography: results from 15 187 patients from the International Multisite CONFIRM Study",
+          "journal": "European Heart Journal - Cardiovascular Imaging",
+          "year": 2014,
+          "doi": "10.1093/ehjci/jet132",
+          "url": "https://doi.org/10.1093/ehjci/jet132",
+          "authors": [
+            "Ryo Nakazato",
+            "Reza Arsanjani",
+            "Susanne Achenbach",
+            "Heidi Gransar",
+            "Victor Cheng"
+          ]
+        },
+        {
+          "title": "Serial assessment of arterial stiffness by cardio-ankle vascular index for prediction of future cardiovascular events in patients with coronary artery disease",
+          "journal": "Hypertension Research",
+          "year": 2014,
+          "doi": "10.1038/hr.2014.116",
+          "url": "https://doi.org/10.1038/hr.2014.116",
+          "authors": [
+            "Kenichiro Otsuka",
+            "Shota Fukuda",
+            "Kenei Shimada",
+            "Kenji Suzuki",
+            "Koki Nakanishi"
+          ]
+        },
+        {
+          "title": "Comparison of International Guidelines for Assessment of Suspected Stable Angina",
+          "journal": "JACC. Cardiovascular imaging",
+          "year": 2018,
+          "doi": "10.1016/j.jcmg.2018.06.021",
+          "url": "https://doi.org/10.1016/j.jcmg.2018.06.021",
+          "authors": [
+            "Philip D Adamson",
+            "David E. Newby",
+            "C. Larry Hill",
+            "Adrian Coles",
+            "Pamela S. Douglas"
+          ]
+        },
+        {
+          "title": "Proteomics and lipidomics in atherosclerotic cardiovascular disease risk prediction",
+          "journal": "European Heart Journal",
+          "year": 2023,
+          "doi": "10.1093/eurheartj/ehad161",
+          "url": "https://doi.org/10.1093/eurheartj/ehad161",
+          "authors": [
+            "Nick S. Nurmohamed",
+            "Jordan M Kraaijenhof",
+            "Manuel Mayr",
+            "Stephen J. Nicholls",
+            "Wolfgang Köenig"
+          ]
+        },
+        {
+          "title": "Predictive value of targeted proteomics for coronary plaque morphology in patients with suspected coronary artery disease",
+          "journal": "EBioMedicine",
+          "year": 2018,
+          "doi": "10.1016/j.ebiom.2018.12.033",
+          "url": "https://doi.org/10.1016/j.ebiom.2018.12.033",
+          "authors": [
+            "Michiel J. Bom",
+            "Evgeni Levin",
+            "Roel S. Driessen",
+            "Ibrahim Danad",
+            "Cornelis C. van Kuijk"
+          ]
+        }
+      ]
+    },
+    {
+      "query": "CCTA prognostic prediction for CVD",
+      "source": "arxiv",
+      "count": 12,
+      "items": [
+        {
+          "title": "Prognostication of chronic disorders of consciousness using brain functional networks and clinical characteristics",
+          "journal": "arXiv",
+          "year": 2018,
+          "doi": "",
+          "url": "http://arxiv.org/abs/1801.03268v3",
+          "authors": [
+            "Ming Song",
+            "Yi Yang",
+            "Jianghong He",
+            "Zhengyi Yang",
+            "Shan Yu"
+          ]
+        },
+        {
+          "title": "Radiomics-enhanced Deep Multi-task Learning for Outcome Prediction in Head and Neck Cancer",
+          "journal": "arXiv",
+          "year": 2022,
+          "doi": "10.1007/978-3-031-27420-6_14",
+          "url": "http://arxiv.org/abs/2211.05409v1",
+          "authors": [
+            "Mingyuan Meng",
+            "Lei Bi",
+            "Dagan Feng",
+            "Jinman Kim"
+          ]
+        },
+        {
+          "title": "No evidence of histology subtype-specific prognostic signatures among lung adenocarcinoma and squamous cell carcinoma patients at early stages",
+          "journal": "arXiv",
+          "year": 2014,
+          "doi": "",
+          "url": "http://arxiv.org/abs/1408.2616v2",
+          "authors": [
+            "Suyan Tian",
+            "Chi Wang",
+            "Ming-Wen An"
+          ]
+        },
+        {
+          "title": "O2CTA: Introducing Annotations from OCT to CCTA in Coronary Plaque Analysis",
+          "journal": "arXiv",
+          "year": 2023,
+          "doi": "",
+          "url": "http://arxiv.org/abs/2303.06358v2",
+          "authors": [
+            "Jun Li",
+            "Kexin Li",
+            "Yafeng Zhou",
+            "S. Kevin Zhou"
+          ]
+        },
+        {
+          "title": "A Combined Deep Learning-Gradient Boosting Machine Framework for Fluid Intelligence Prediction",
+          "journal": "arXiv",
+          "year": 2019,
+          "doi": "10.1007/978-3-030-31901-4_1",
+          "url": "http://arxiv.org/abs/1910.07640v1",
+          "authors": [
+            "Yeeleng S. Vang",
+            "Yingxin Cao",
+            "Xiaohui Xie"
+          ]
+        },
+        {
+          "title": "Language Models are Few-shot Learners for Prognostic Prediction",
+          "journal": "arXiv",
+          "year": 2023,
+          "doi": "",
+          "url": "http://arxiv.org/abs/2302.12692v4",
+          "authors": [
+            "Zekai Chen",
+            "Mariann Micsinai Balan",
+            "Kevin Brown"
+          ]
+        },
+        {
+          "title": "Identification of prognostic and predictive biomarkers in high-dimensional data with PPLasso",
+          "journal": "arXiv",
+          "year": 2022,
+          "doi": "",
+          "url": "http://arxiv.org/abs/2202.01970v2",
+          "authors": [
+            "Wencan Zhu",
+            "Céline Lévy-Leduc",
+            "Nils Ternès"
+          ]
+        },
+        {
+          "title": "TransCC: Transformer Network for Coronary Artery CCTA Segmentation",
+          "journal": "arXiv",
+          "year": 2023,
+          "doi": "",
+          "url": "http://arxiv.org/abs/2310.04779v1",
+          "authors": [
+            "Chenchu Xu",
+            "Meng Li",
+            "Xue Wu"
+          ]
+        },
+        {
+          "title": "Self-Contrastive Weakly Supervised Learning Framework for Prognostic Prediction Using Whole Slide Images",
+          "journal": "arXiv",
+          "year": 2024,
+          "doi": "10.1371/journal.pdig.0000972",
+          "url": "http://arxiv.org/abs/2405.15264v1",
+          "authors": [
+            "Saul Fuster",
+            "Farbod Khoraminia",
+            "Julio Silva-Rodríguez",
+            "Umay Kiraz",
+            "Geert J. L. H. van Leenders"
+          ]
+        },
+        {
+          "title": "Treatment Outcome Prediction for Intracerebral Hemorrhage via Generative Prognostic Model with Imaging and Tabular Data",
+          "journal": "arXiv",
+          "year": 2023,
+          "doi": "",
+          "url": "http://arxiv.org/abs/2307.12858v1",
+          "authors": [
+            "Wenao Ma",
+            "Cheng Chen",
+            "Jill Abrigo",
+            "Calvin Hoi-Kwan Mak",
+            "Yuqi Gong"
+          ]
+        },
+        {
+          "title": "Will Large Language Models Transform Clinical Prediction?",
+          "journal": "arXiv",
+          "year": 2025,
+          "doi": "10.1186/s41512-025-00211-w",
+          "url": "http://arxiv.org/abs/2505.18246v2",
+          "authors": [
+            "Yusuf Yildiz",
+            "Goran Nenadic",
+            "Meghna Jani",
+            "David A. Jenkins"
+          ]
+        },
+        {
+          "title": "A metric for assessing and optimizing data-driven prognostic algorithms for predictive maintenance",
+          "journal": "arXiv",
+          "year": 2023,
+          "doi": "10.1016/j.ress.2023.109723",
+          "url": "http://arxiv.org/abs/2306.03759v2",
+          "authors": [
+            "Antonios Kamariotis",
+            "Konstantinos Tatsis",
+            "Eleni Chatzi",
+            "Kai Goebel",
+            "Daniel Straub"
+          ]
+        }
+      ]
+    },
+    {
+      "query": "Nature Medicine",
+      "source": "crossref",
+      "count": 12,
+      "items": [
+        {
+          "title": "Medicine: Medicine and Biochemistry",
+          "journal": "Nature",
+          "year": 1968,
+          "doi": "10.1038/220323c0",
+          "url": "https://doi.org/10.1038/220323c0",
+          "authors": []
+        },
+        {
+          "title": "About Nature Medicine",
+          "journal": "Nature Medicine",
+          "year": 2002,
+          "doi": "10.1038/nm0602-533",
+          "url": "https://doi.org/10.1038/nm0602-533",
+          "authors": []
+        },
+        {
+          "title": "Nature Medicine, reloaded",
+          "journal": "Nature Medicine",
+          "year": 2010,
+          "doi": "10.1038/nm0110-1",
+          "url": "https://doi.org/10.1038/nm0110-1",
+          "authors": []
+        },
+        {
+          "title": "Nature Medicine 2.0",
+          "journal": "Nature Medicine",
+          "year": 2007,
+          "doi": "10.1038/nm0107-1",
+          "url": "https://doi.org/10.1038/nm0107-1",
+          "authors": []
+        },
+        {
+          "title": "Medicine: Bad medicine",
+          "journal": "Nature",
+          "year": 2014,
+          "doi": "10.1038/505616a",
+          "url": "https://doi.org/10.1038/505616a",
+          "authors": [
+            "Alison Abbott"
+          ]
+        },
+        {
+          "title": "Medicine, money, morality",
+          "journal": "Nature India",
+          "year": 2016,
+          "doi": "10.1038/nindia.2016.123",
+          "url": "https://doi.org/10.1038/nindia.2016.123",
+          "authors": []
+        },
+        {
+          "title": "Inside View: Hua Medicine",
+          "journal": "Nature",
+          "year": 2014,
+          "doi": "10.1038/nj0436",
+          "url": "https://doi.org/10.1038/nj0436",
+          "authors": []
+        },
+        {
+          "title": "Reproductive medicine",
+          "journal": "Nature",
+          "year": 2005,
+          "doi": "10.1038/news051017-6",
+          "url": "https://doi.org/10.1038/news051017-6",
+          "authors": [
+            "Erika Check"
+          ]
+        },
+        {
+          "title": "Animal Nature and Human Nature",
+          "journal": "Psychosomatic Medicine",
+          "year": 1975,
+          "doi": "10.1097/00006842-197511000-00012",
+          "url": "https://doi.org/10.1097/00006842-197511000-00012",
+          "authors": [
+            "H. W."
+          ]
+        },
+        {
+          "title": "Medicine",
+          "journal": "Nature",
+          "year": 1939,
+          "doi": "10.1038/144370d0",
+          "url": "https://doi.org/10.1038/144370d0",
+          "authors": []
+        },
+        {
+          "title": "Dark Age medicine",
+          "journal": "Nature",
+          "year": 2004,
+          "doi": "10.1038/news041011-4",
+          "url": "https://doi.org/10.1038/news041011-4",
+          "authors": [
+            "Sabine Louët"
+          ]
+        },
+        {
+          "title": "Preventive medicine: Dual protection",
+          "journal": "Nature China",
+          "year": 2013,
+          "doi": "10.1038/nchina.2013.83",
+          "url": "https://doi.org/10.1038/nchina.2013.83",
+          "authors": [
+            "Felix Cheung"
+          ]
+        }
+      ]
+    },
+    {
+      "query": "Nature Medicine",
+      "source": "pubmed",
+      "count": 12,
+      "items": [
+        {
+          "title": "Nature medicine 2.0.",
+          "journal": "Nature medicine",
+          "year": 2007,
+          "doi": "10.1038/nm0107-1",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17206107/",
+          "authors": []
+        },
+        {
+          "title": "Nature Medicine, reloaded.",
+          "journal": "Nature medicine",
+          "year": 2010,
+          "doi": "10.1038/nm0110-1",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20057388/",
+          "authors": []
+        },
+        {
+          "title": "Targeting metastatic cancer.",
+          "journal": "Nature medicine",
+          "year": 2021,
+          "doi": "10.1038/s41591-020-01195-4",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33442008/",
+          "authors": [
+            "Ganesh K",
+            "Massagué J"
+          ]
+        },
+        {
+          "title": "Heterogeneous aging across multiple organ systems and prediction of chronic disease and mortality.",
+          "journal": "Nature medicine",
+          "year": 2023,
+          "doi": "10.1038/s41591-023-02296-6",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37024597/",
+          "authors": [
+            "Tian YE",
+            "Cropley V",
+            "Maier AB",
+            "Lautenschlager NT",
+            "Breakspear M"
+          ]
+        },
+        {
+          "title": "Food as medicine: translating the evidence.",
+          "journal": "Nature medicine",
+          "year": 2023,
+          "doi": "10.1038/s41591-023-02330-7",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37041384/",
+          "authors": []
+        },
+        {
+          "title": "The Future of Medicine.",
+          "journal": "Nature medicine",
+          "year": 2025,
+          "doi": "10.1038/s41591-024-03464-y",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39843852/",
+          "authors": []
+        },
+        {
+          "title": "Rethinking evidence in medicine.",
+          "journal": "Nature medicine",
+          "year": 2023,
+          "doi": "10.1038/s41591-022-02186-3",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36694061/",
+          "authors": []
+        },
+        {
+          "title": "Precision nutrition for cardiometabolic diseases.",
+          "journal": "Nature medicine",
+          "year": 2025,
+          "doi": "10.1038/s41591-025-03669-9",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40307513/",
+          "authors": [
+            "Guasch-Ferré M",
+            "Wittenbecher C",
+            "Palmnäs M",
+            "Ben-Yacov O",
+            "Blaak EE"
+          ]
+        },
+        {
+          "title": "Transforming transplant medicine.",
+          "journal": "Nature medicine",
+          "year": 2022,
+          "doi": "10.1038/s41591-022-02152-z",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36581756/",
+          "authors": [
+            "O'Leary K"
+          ]
+        },
+        {
+          "title": "About time.",
+          "journal": "Nature medicine",
+          "year": 2018,
+          "doi": "10.1038/s41591-018-0069-8",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29875465/",
+          "authors": [
+            "Chakradhar S"
+          ]
+        },
+        {
+          "title": "Treating tinnitus.",
+          "journal": "Nature medicine",
+          "year": 2020,
+          "doi": "10.1038/s41591-020-1138-3",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33154587/",
+          "authors": [
+            "Stower H"
+          ]
+        },
+        {
+          "title": "Targeting porphyria.",
+          "journal": "Nature medicine",
+          "year": 2020,
+          "doi": "10.1038/s41591-020-0987-0",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32651574/",
+          "authors": [
+            "Stower H"
+          ]
+        }
+      ]
+    },
+    {
+      "query": "Nature Medicine",
+      "source": "openalex",
+      "count": 12,
+      "items": [
+        {
+          "title": "The Nature of Suffering and the Goals of Medicine",
+          "journal": "New England Journal of Medicine",
+          "year": 1982,
+          "doi": "10.1056/nejm198203183061104",
+          "url": "https://doi.org/10.1056/nejm198203183061104",
+          "authors": [
+            "Eric J. Cassel"
+          ]
+        },
+        {
+          "title": "The Nature of Suffering and the Goals of Medicine",
+          "journal": "Loss Grief & Care",
+          "year": 1998,
+          "doi": "10.1300/j132v08n01_18",
+          "url": "https://doi.org/10.1300/j132v08n01_18",
+          "authors": [
+            "Eric J. Cassell"
+          ]
+        },
+        {
+          "title": "Calcium Orthophosphates in Nature, Biology and Medicine",
+          "journal": "Materials",
+          "year": 2009,
+          "doi": "10.3390/ma2020399",
+          "url": "https://doi.org/10.3390/ma2020399",
+          "authors": [
+            "Sergey V. Dorozhkin"
+          ]
+        },
+        {
+          "title": "Natures Medicines: Traditional Knowledge and Intellectual Property Management. Case Studies from the National Institutes of Health (NIH), USA",
+          "journal": "Current Drug Discovery Technologies",
+          "year": 2005,
+          "doi": "10.2174/157016305775202937",
+          "url": "https://doi.org/10.2174/157016305775202937",
+          "authors": [
+            "Ranjan Gupta",
+            "Bjarne Gabrielsen",
+            "Steven Ferguson"
+          ]
+        },
+        {
+          "title": "Streptomyces in nature and medicine: the antibiotic makers",
+          "journal": "Choice Reviews Online",
+          "year": 2008,
+          "doi": "10.5860/choice.45-3774",
+          "url": "https://doi.org/10.5860/choice.45-3774",
+          "authors": []
+        },
+        {
+          "title": "[Nature medicine as intoxicant].",
+          "journal": "PubMed",
+          "year": 1997,
+          "doi": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9148484",
+          "authors": [
+            "Solbakken Am",
+            "G Rørbakken",
+            "T Gundersen"
+          ]
+        },
+        {
+          "title": "Phytochemical antioxidants for health and medicine A move towards nature",
+          "journal": "Biotechnology and Molecular Biology Reviews",
+          "year": 2007,
+          "doi": "10.5897/bmbr2007.0009",
+          "url": "http://academicjournals.org/journal/BMBR/article-abstract/D24CCDA11042",
+          "authors": [
+            "Duduku Krishnaiah",
+            "Rosalam Sarbatly",
+            "Awang Bono"
+          ]
+        },
+        {
+          "title": "Compatibility between cold-natured medicine CP and hot-natured medicine AZ synergistically mitigates colitis mice through attenuating inflammation and restoring gut barrier",
+          "journal": "Journal of Ethnopharmacology",
+          "year": 2022,
+          "doi": "10.1016/j.jep.2022.115902",
+          "url": "https://doi.org/10.1016/j.jep.2022.115902",
+          "authors": [
+            "Yanyang Li",
+            "Yue-Xian He",
+            "Ye-Qun Wu",
+            "Chang Liu",
+            "Ling-Zhi Ren"
+          ]
+        },
+        {
+          "title": "The Nature of Suffering and the Goals of Medicine",
+          "journal": "Annals of Internal Medicine",
+          "year": 1992,
+          "doi": "10.7326/0003-4819-116-12-1038_2",
+          "url": "https://doi.org/10.7326/0003-4819-116-12-1038_2",
+          "authors": []
+        },
+        {
+          "title": "Nano-enhanced nature medicine for ischemic stroke: Opportunities and challenges",
+          "journal": "Biomedical Technology",
+          "year": 2024,
+          "doi": "10.1016/j.bmt.2024.07.001",
+          "url": "https://doi.org/10.1016/j.bmt.2024.07.001",
+          "authors": [
+            "Jihao Yang",
+            "Lingyi Guo",
+            "Jun Liao",
+            "Huaqiang Yi"
+          ]
+        },
+        {
+          "title": "Standardization of exercise intensity and consideration of a dose–response is essential. Commentary on “Exercise-linked FNDC5/irisin rescues synaptic plasticity and memory defects in Alzheimer's models”, by Lourenco et al., published 2019 in Nature Medicine",
+          "journal": "Journal of sport and health science/Journal of Sport and Health Science",
+          "year": 2019,
+          "doi": "10.1016/j.jshs.2019.03.006",
+          "url": "https://doi.org/10.1016/j.jshs.2019.03.006",
+          "authors": [
+            "Thomas Gronwald",
+            "Ana Cristina de Bem Alves",
+            "Eric Murillo‐Rodríguez",
+            "Alexandra Latini",
+            "Juliane Schuette"
+          ]
+        },
+        {
+          "title": "The Nature of Suffering and the Goals of Medicine",
+          "journal": "European Journal of Cancer Care",
+          "year": 2005,
+          "doi": "10.1111/j.1365-2354.2005.00561.x",
+          "url": "https://doi.org/10.1111/j.1365-2354.2005.00561.x",
+          "authors": [
+            "Meinir Krishnasamy"
+          ]
+        }
+      ]
+    },
+    {
+      "query": "Nature Medicine",
+      "source": "arxiv",
+      "count": 12,
+      "items": [
+        {
+          "title": "Holistic Artificial Intelligence in Medicine; improved performance and explainability",
+          "journal": "arXiv",
+          "year": 2025,
+          "doi": "",
+          "url": "http://arxiv.org/abs/2507.00205v1",
+          "authors": [
+            "Periklis Petridis",
+            "Georgios Margaritis",
+            "Vasiliki Stoumpou",
+            "Dimitris Bertsimas"
+          ]
+        },
+        {
+          "title": "Mathematical and Statistical Techniques for Systems Medicine: The Wnt Signaling Pathway as a Case Study",
+          "journal": "arXiv",
+          "year": 2015,
+          "doi": "",
+          "url": "http://arxiv.org/abs/1502.01902v2",
+          "authors": [
+            "Adam L. MacLean",
+            "Heather A. Harrington",
+            "Michael P. H. Stumpf",
+            "Helen M. Byrne"
+          ]
+        },
+        {
+          "title": "Bandit Algorithms for Precision Medicine",
+          "journal": "arXiv",
+          "year": 2021,
+          "doi": "",
+          "url": "http://arxiv.org/abs/2108.04782v1",
+          "authors": [
+            "Yangyi Lu",
+            "Ziping Xu",
+            "Ambuj Tewari"
+          ]
+        },
+        {
+          "title": "Assessing Foundation Models' Transferability to Physiological Signals in Precision Medicine",
+          "journal": "arXiv",
+          "year": 2024,
+          "doi": "",
+          "url": "http://arxiv.org/abs/2412.03427v1",
+          "authors": [
+            "Matthias Christenson",
+            "Cove Geary",
+            "Brian Locke",
+            "Pranav Koirala",
+            "Warren Woodrich Pettine"
+          ]
+        },
+        {
+          "title": "Neuromorphic Pattern Generation Circuits for Bioelectronic Medicine",
+          "journal": "arXiv",
+          "year": 2021,
+          "doi": "",
+          "url": "http://arxiv.org/abs/2102.09630v1",
+          "authors": [
+            "Elisa Donati",
+            "Renate Krause",
+            "Giacomo Indiveri"
+          ]
+        },
+        {
+          "title": "Structural and Topological Nature of Plasticity in Sheared Granular Materials",
+          "journal": "arXiv",
+          "year": 2018,
+          "doi": "10.1038/s41467-018-05329-8",
+          "url": "http://arxiv.org/abs/1806.09416v1",
+          "authors": [
+            "Yixin Cao",
+            "Jindong Li",
+            "Binquan Kou",
+            "Chengjie Xia",
+            "Zhifeng Li"
+          ]
+        },
+        {
+          "title": "Human-like object concept representations emerge naturally in multimodal large language models",
+          "journal": "arXiv",
+          "year": 2024,
+          "doi": "10.1038/s42256-025-01049-z",
+          "url": "http://arxiv.org/abs/2407.01067v3",
+          "authors": [
+            "Changde Du",
+            "Kaicheng Fu",
+            "Bincheng Wen",
+            "Yi Sun",
+            "Jie Peng"
+          ]
+        },
+        {
+          "title": "Precision-medicine-toolbox: An open-source python package for facilitation of quantitative medical imaging and radiomics analysis",
+          "journal": "arXiv",
+          "year": 2022,
+          "doi": "10.1016/j.simpa.2023.100508",
+          "url": "http://arxiv.org/abs/2202.13965v1",
+          "authors": [
+            "Sergey Primakov",
+            "Elizaveta Lavrova",
+            "Zohaib Salahuddin",
+            "Henry C Woodruff",
+            "Philippe Lambin"
+          ]
+        },
+        {
+          "title": "The state of quantum computing applications in health and medicine",
+          "journal": "arXiv",
+          "year": 2023,
+          "doi": "10.1017/qut.2023.4",
+          "url": "http://arxiv.org/abs/2301.09106v2",
+          "authors": [
+            "Frederik F. Flöther"
+          ]
+        },
+        {
+          "title": "An experimental algorithm for identifying the topological nature of Kondo and mixed valence insulators",
+          "journal": "arXiv",
+          "year": 2013,
+          "doi": "",
+          "url": "http://arxiv.org/abs/1311.7111v3",
+          "authors": [
+            "M. Neupane",
+            "N. Alidoust",
+            "Suyang Xu",
+            "Chang Liu",
+            "I. Belopolski"
+          ]
+        },
+        {
+          "title": "Refuting \"Debunking the GAMLSS Myth: Simplicity Reigns in Pulmonary Function Diagnostics\"",
+          "journal": "arXiv",
+          "year": 2025,
+          "doi": "10.1016/j.rmed.2025.108557",
+          "url": "http://arxiv.org/abs/2512.09179v1",
+          "authors": [
+            "Robert A. Rigby",
+            "Mikis D. Stasinopoulos",
+            "Achim Zeileis",
+            "Sanja Stanojevic",
+            "Gillian Heller"
+          ]
+        },
+        {
+          "title": "Understanding Clinical Decision-Making in Traditional East Asian Medicine through Dimensionality Reduction: An Empirical Investigation",
+          "journal": "arXiv",
+          "year": 2024,
+          "doi": "10.1016/j.compbiomed.2025.111081",
+          "url": "http://arxiv.org/abs/2409.19531v1",
+          "authors": [
+            "Hyojin Bae",
+            "Bongsu Kang",
+            "Chang-Eop Kim"
+          ]
+        }
+      ]
+    },
+    {
+      "query": "JACC",
+      "source": "crossref",
+      "count": 12,
+      "items": [
+        {
+          "title": "JACC",
+          "journal": "JACC",
+          "year": 2025,
+          "doi": "10.1016/j.jacc.2025.10.009",
+          "url": "https://doi.org/10.1016/j.jacc.2025.10.009",
+          "authors": [
+            "Harlan M. Krumholz"
+          ]
+        },
+        {
+          "title": "JACC: Asia",
+          "journal": "JACC: Asia",
+          "year": 2021,
+          "doi": "10.1016/j.jacasi.2021.03.001",
+          "url": "https://doi.org/10.1016/j.jacasi.2021.03.001",
+          "authors": [
+            "Jian'an Wang"
+          ]
+        },
+        {
+          "title": "JACC: CardioOncology",
+          "journal": "JACC: CardioOncology",
+          "year": 2022,
+          "doi": "10.1016/j.jaccao.2022.02.006",
+          "url": "https://doi.org/10.1016/j.jaccao.2022.02.006",
+          "authors": [
+            "Bonnie Ky"
+          ]
+        },
+        {
+          "title": "JACC: CardioOncology",
+          "journal": "JACC: CardioOncology",
+          "year": 2020,
+          "doi": "10.1016/j.jaccao.2020.10.005",
+          "url": "https://doi.org/10.1016/j.jaccao.2020.10.005",
+          "authors": [
+            "Bonnie Ky"
+          ]
+        },
+        {
+          "title": "JACC: Asia",
+          "journal": "JACC: Asia",
+          "year": 2021,
+          "doi": "10.1016/j.jacasi.2021.04.003",
+          "url": "https://doi.org/10.1016/j.jacasi.2021.04.003",
+          "authors": [
+            "Valentin Fuster",
+            "Justine Varieur Turco"
+          ]
+        },
+        {
+          "title": "JACC: Advances",
+          "journal": "JACC: Advances",
+          "year": 2023,
+          "doi": "10.1016/j.jacadv.2022.100195",
+          "url": "https://doi.org/10.1016/j.jacadv.2022.100195",
+          "authors": [
+            "Candice K. Silversides",
+            "Valentin Fuster"
+          ]
+        },
+        {
+          "title": "JACC: CardioOncology",
+          "journal": "JACC: CardioOncology",
+          "year": 2021,
+          "doi": "10.1016/j.jaccao.2021.08.006",
+          "url": "https://doi.org/10.1016/j.jaccao.2021.08.006",
+          "authors": [
+            "Bonnie Ky",
+            "Valentin Fuster"
+          ]
+        },
+        {
+          "title": "Why JACC: Heart Failure ?",
+          "journal": "JACC: Heart Failure",
+          "year": 2013,
+          "doi": "10.1016/j.jchf.2012.12.001",
+          "url": "https://doi.org/10.1016/j.jchf.2012.12.001",
+          "authors": [
+            "Christopher O'Connor"
+          ]
+        },
+        {
+          "title": "JACC: Heart Failure",
+          "journal": "JACC: Heart Failure",
+          "year": 2022,
+          "doi": "10.1016/j.jchf.2022.03.001",
+          "url": "https://doi.org/10.1016/j.jchf.2022.03.001",
+          "authors": [
+            "Biykem Bozkurt"
+          ]
+        },
+        {
+          "title": "Correction",
+          "journal": "JACC",
+          "year": 2025,
+          "doi": "10.1016/j.jacc.2025.10.006",
+          "url": "https://doi.org/10.1016/j.jacc.2025.10.006",
+          "authors": []
+        },
+        {
+          "title": "A New Chapter for Guidelines in JACC",
+          "journal": "JACC",
+          "year": 2025,
+          "doi": "10.1016/j.jacc.2025.04.051",
+          "url": "https://doi.org/10.1016/j.jacc.2025.04.051",
+          "authors": [
+            "Harlan M. Krumholz"
+          ]
+        },
+        {
+          "title": "Vision for JACC: Case Reports",
+          "journal": "JACC: Case Reports",
+          "year": 2019,
+          "doi": "10.1016/j.jaccas.2019.05.022",
+          "url": "https://doi.org/10.1016/j.jaccas.2019.05.022",
+          "authors": [
+            "Julia Grapsa"
+          ]
+        }
+      ]
+    },
+    {
+      "query": "JACC",
+      "source": "pubmed",
+      "count": 12,
+      "items": [
+        {
+          "title": "JACC: CardioOncology: The Meaning of Family.",
+          "journal": "JACC. CardioOncology",
+          "year": 2021,
+          "doi": "10.1016/j.jaccao.2021.08.006",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34604811/",
+          "authors": [
+            "Ky B",
+            "Fuster V"
+          ]
+        },
+        {
+          "title": "JACC: CardioOncology: Reflections on Tremendous Growth With Gratitude.",
+          "journal": "JACC. CardioOncology",
+          "year": 2022,
+          "doi": "10.1016/j.jaccao.2022.02.006",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35492823/",
+          "authors": [
+            "Ky B"
+          ]
+        },
+        {
+          "title": "JACC: Asia 2023 Young Author Achievement Award Winner.",
+          "journal": "JACC. Asia",
+          "year": 2024,
+          "doi": "10.1016/j.jacasi.2024.03.004",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38765659/",
+          "authors": [
+            "Wang J"
+          ]
+        },
+        {
+          "title": "JACC: CardioOncology 2022 Young Author Award Highlight.",
+          "journal": "JACC. CardioOncology",
+          "year": 2023,
+          "doi": "10.1016/j.jaccao.2023.03.003",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37144108/",
+          "authors": [
+            "Ky B"
+          ]
+        },
+        {
+          "title": "JACC Journals' Pathway Forward With AI Tools: The Future Is Now.",
+          "journal": "JACC. CardioOncology",
+          "year": 2023,
+          "doi": "10.1016/j.jaccao.2023.03.001",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37144104/",
+          "authors": [
+            "Fuster V",
+            "Bozkurt B",
+            "Chandrashekhar Y",
+            "Grapsa J",
+            "Ky B"
+          ]
+        },
+        {
+          "title": "JACC Journals' Pathway Forward With AI Tools: The Future Is Now.",
+          "journal": "JACC. Asia",
+          "year": 2023,
+          "doi": "10.1016/j.jacasi.2023.03.002",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37181383/",
+          "authors": [
+            "Fuster V",
+            "Bozkurt B",
+            "Chandrashekhar Y",
+            "Grapsa J",
+            "Ky B"
+          ]
+        },
+        {
+          "title": "JACC: CardioOncology: Poised to Serve a Maturing, Collaborative Field.",
+          "journal": "JACC. CardioOncology",
+          "year": 2019,
+          "doi": "10.1016/j.jaccao.2019.06.001",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34396170/",
+          "authors": [
+            "Ky B"
+          ]
+        },
+        {
+          "title": "Electrophysiological Manifestations of Cardiac Amyloidosis: JACC: CardioOncology State-of-the-Art Review.",
+          "journal": "JACC. CardioOncology",
+          "year": 2021,
+          "doi": "10.1016/j.jaccao.2021.07.010",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34729522/",
+          "authors": [
+            "Hartnett J",
+            "Jaber W",
+            "Maurer M",
+            "Sperry B",
+            "Hanna M"
+          ]
+        },
+        {
+          "title": "JACC: Asia Proudly Recognizes the 2022 Young Author Awardees.",
+          "journal": "JACC. Asia",
+          "year": 2023,
+          "doi": "10.1016/j.jacasi.2023.04.003",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37323865/",
+          "authors": [
+            "Wang J"
+          ]
+        },
+        {
+          "title": "Cancer Development in Atherosclerotic Cardiovascular Disease: JACC: CardioOncology Short-Form Primer.",
+          "journal": "JACC. CardioOncology",
+          "year": 2025,
+          "doi": "10.1016/j.jaccao.2025.05.016",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40841105/",
+          "authors": [
+            "Dalman JM",
+            "Moore KJ"
+          ]
+        },
+        {
+          "title": "Diversity in Cardio-Oncology Clinical Trials: JACC: CardioOncology How To.",
+          "journal": "JACC. CardioOncology",
+          "year": 2024,
+          "doi": "10.1016/j.jaccao.2024.03.012",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38983389/",
+          "authors": [
+            "Martei YM",
+            "Afari HA",
+            "Guerra CE"
+          ]
+        },
+        {
+          "title": "JACC: Asia: Born of a Global Passion, Driven by Quality.",
+          "journal": "JACC. Asia",
+          "year": 2021,
+          "doi": "10.1016/j.jacasi.2021.04.003",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36338367/",
+          "authors": [
+            "Fuster V",
+            "Turco JV"
+          ]
+        }
+      ]
+    },
+    {
+      "query": "JACC",
+      "source": "openalex",
+      "count": 12,
+      "items": [
+        {
+          "title": "Cardiovascular Magnetic Resonance in Myocarditis: A JACC White Paper",
+          "journal": "Journal of the American College of Cardiology",
+          "year": 2009,
+          "doi": "10.1016/j.jacc.2009.02.007",
+          "url": "https://doi.org/10.1016/j.jacc.2009.02.007",
+          "authors": [
+            "Matthias G. Friedrich",
+            "Udo Sechtem",
+            "Jeanette Schulz‐Menger",
+            "Godtfred Holmvang",
+            "Pauline Alakija"
+          ]
+        },
+        {
+          "title": "Profile of the JACC Study",
+          "journal": "Journal of Epidemiology",
+          "year": 2005,
+          "doi": "10.2188/jea.15.s4",
+          "url": "https://doi.org/10.2188/jea.15.s4",
+          "authors": [
+            "Akiko Tamakoshi",
+            "Takesumi Yoshimura",
+            "Yutaka Inaba",
+            "Yoshinori Ito",
+            "Yoshiyuki Watanabe"
+          ]
+        },
+        {
+          "title": "Japan Collaborative Cohort Study for Evaluation of Cancer Risk Sponsored by Monbusho(JACC Study).",
+          "journal": "Journal of Epidemiology",
+          "year": 2001,
+          "doi": "10.2188/jea.11.144",
+          "url": "https://doi.org/10.2188/jea.11.144",
+          "authors": [
+            "Yoshiyuki Ohno",
+            "Akiko Tamakoshi",
+            "JACC Study Group"
+          ]
+        },
+        {
+          "title": "Self-Reported Sleep Duration as a Predictor of All-Cause Mortality: Results from the JACC Study, Japan",
+          "journal": "SLEEP",
+          "year": 2004,
+          "doi": "10.1093/sleep/27.1.51",
+          "url": "https://doi.org/10.1093/sleep/27.1.51",
+          "authors": [
+            "Akiko Tamakoshi",
+            "Yoshiyuki Ohno",
+            "Ohno, Yoshiyuki"
+          ]
+        },
+        {
+          "title": "JACC. Cardiovascular interventions",
+          "journal": "",
+          "year": 2008,
+          "doi": "",
+          "url": "https://www.sciencedirect.com/science/journal/19368798",
+          "authors": [
+            "ScienceDirect"
+          ]
+        },
+        {
+          "title": "Association of Sleep Duration with Mortality from Cardiovascular Disease and Other Causes for Japanese Men and Women: the JACC Study",
+          "journal": "SLEEP",
+          "year": 2009,
+          "doi": "10.1093/sleep/32.3.295",
+          "url": "https://doi.org/10.1093/sleep/32.3.295",
+          "authors": [
+            "Satoyo Ikehara",
+            "Hiroyasu Iso",
+            "Chigusa Date",
+            "Shogo Kikuchi",
+            "Yoshiyuki Watanabe"
+          ]
+        },
+        {
+          "title": "Smoking Cessation and Mortality from Cardiovascular Disease among Japanese Men and Women: The JACC Study",
+          "journal": "American Journal of Epidemiology",
+          "year": 2005,
+          "doi": "10.1093/aje/kwi027",
+          "url": "https://doi.org/10.1093/aje/kwi027",
+          "authors": [
+            "Hiroyasu Iso"
+          ]
+        },
+        {
+          "title": "Associations of dietary magnesium intake with mortality from cardiovascular disease: The JACC study",
+          "journal": "Atherosclerosis",
+          "year": 2012,
+          "doi": "10.1016/j.atherosclerosis.2012.01.034",
+          "url": "https://doi.org/10.1016/j.atherosclerosis.2012.01.034",
+          "authors": [
+            "Wen Zhang",
+            "Hiroyasu Iso",
+            "Tetsuya Ohira",
+            "Chigusa Date",
+            "Akiko Tamakoshi"
+          ]
+        },
+        {
+          "title": "Reproducibility and Validity of a Self-administered Food Frequency Questionnaire Used in the JACC Study",
+          "journal": "Journal of Epidemiology",
+          "year": 2005,
+          "doi": "10.2188/jea.15.s9",
+          "url": "https://doi.org/10.2188/jea.15.s9",
+          "authors": [
+            "Chigusa Date",
+            "Mitsuru Fukui",
+            "Akio Yamamoto",
+            "Kenji Wakai",
+            "Azusa Ozeki"
+          ]
+        },
+        {
+          "title": "Site-specific cancer risk due to diabetes mellitus history: evidence from the Japan Collaborative Cohort (JACC) Study.",
+          "journal": "PubMed",
+          "year": 2006,
+          "doi": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16839219",
+          "authors": [
+            "M. Monirul H. Khan",
+            "Mitsuru Mori",
+            "Yoshihisa Fujino",
+            "Akira Shibata",
+            "Fumio Sakauchi"
+          ]
+        },
+        {
+          "title": "Fruit, vegetable and bean intake and mortality from cardiovascular disease among Japanese men and women: the JACC Study",
+          "journal": "British Journal Of Nutrition",
+          "year": 2009,
+          "doi": "10.1017/s0007114508143586",
+          "url": "https://doi.org/10.1017/s0007114508143586",
+          "authors": [
+            "Junko Nagura",
+            "Hiroyasu Iso",
+            "Yoshiyuki Watanabe",
+            "Koutatsu Maruyama",
+            "Chigusa Date"
+          ]
+        },
+        {
+          "title": "Daytime napping and mortality, with a special reference to cardiovascular disease: the JACC study",
+          "journal": "International Journal of Epidemiology",
+          "year": 2009,
+          "doi": "10.1093/ije/dyp327",
+          "url": "https://doi.org/10.1093/ije/dyp327",
+          "authors": [
+            "Norimasa Tanabe",
+            "Hiroyasu Iso",
+            "Nao Seki",
+            "Hiroshi Suzuki",
+            "Hiroshi Yatsuya"
+          ]
+        }
+      ]
+    },
+    {
+      "query": "JACC",
+      "source": "arxiv",
+      "count": 4,
+      "items": [
+        {
+          "title": "JACC: An OpenACC Runtime Framework with Kernel-Level and Multi-GPU Parallelization",
+          "journal": "arXiv",
+          "year": 2021,
+          "doi": "10.1109/HiPC53243.2021.00032",
+          "url": "http://arxiv.org/abs/2110.14340v3",
+          "authors": [
+            "Kazuaki Matsumura",
+            "Simon Garcia De Gonzalo",
+            "Antonio J. Peña"
+          ]
+        },
+        {
+          "title": "Boosting Java Performance using GPGPUs",
+          "journal": "arXiv",
+          "year": 2015,
+          "doi": "",
+          "url": "http://arxiv.org/abs/1508.06791v1",
+          "authors": [
+            "James Clarkson",
+            "Christos Kotselidis",
+            "Gavin Brown",
+            "Mikel Luján"
+          ]
+        },
+        {
+          "title": "Limitations of ROC on Imbalanced Data: Evaluation of LVAD Mortality Risk Scores",
+          "journal": "arXiv",
+          "year": 2020,
+          "doi": "10.1016/j.jtcvs.2021.07.041",
+          "url": "http://arxiv.org/abs/2010.16253v1",
+          "authors": [
+            "Faezeh Movahedi",
+            "Rema Padman",
+            "James F. Antaki"
+          ]
+        },
+        {
+          "title": "Lumen boundary detection using neutrosophic c-means in IVOCT images",
+          "journal": "arXiv",
+          "year": 2019,
+          "doi": "",
+          "url": "http://arxiv.org/abs/1902.03489v2",
+          "authors": [
+            "Mohammad Habibi",
+            "Ahmad Ayatollahi",
+            "Niyoosha Dallalazar",
+            "Ali Kermani"
+          ]
+        }
+      ]
+    },
+    {
+      "query": "Circulation",
+      "source": "crossref",
+      "count": 12,
+      "items": [
+        {
+          "title": "Circulation: European Perspectives",
+          "journal": "Circulation",
+          "year": 2006,
+          "doi": "10.1161/circ.113.13.f49",
+          "url": "https://doi.org/10.1161/circ.113.13.f49",
+          "authors": []
+        },
+        {
+          "title": "Circulation: European Perspectives",
+          "journal": "Circulation",
+          "year": 2006,
+          "doi": "10.1161/circ.113.9.f33",
+          "url": "https://doi.org/10.1161/circ.113.9.f33",
+          "authors": []
+        },
+        {
+          "title": "Circulation: European Perspectives",
+          "journal": "Circulation",
+          "year": 2006,
+          "doi": "10.1161/circ.113.8.f29",
+          "url": "https://doi.org/10.1161/circ.113.8.f29",
+          "authors": []
+        },
+        {
+          "title": "Circulation: European Perspectives",
+          "journal": "Circulation",
+          "year": 2006,
+          "doi": "10.1161/circ.113.12.f45",
+          "url": "https://doi.org/10.1161/circ.113.12.f45",
+          "authors": []
+        },
+        {
+          "title": "Circulation",
+          "journal": "Circulation",
+          "year": 2015,
+          "doi": "10.1161/01.cir.0000469149.89784.de",
+          "url": "https://doi.org/10.1161/01.cir.0000469149.89784.de",
+          "authors": []
+        },
+        {
+          "title": "Circulation: European Perspectives",
+          "journal": "Circulation",
+          "year": 2006,
+          "doi": "10.1161/circ.113.11.f41",
+          "url": "https://doi.org/10.1161/circ.113.11.f41",
+          "authors": []
+        },
+        {
+          "title": "Circulation: European Perspectives",
+          "journal": "Circulation",
+          "year": 2006,
+          "doi": "10.1161/circ.113.10.f37",
+          "url": "https://doi.org/10.1161/circ.113.10.f37",
+          "authors": []
+        },
+        {
+          "title": "Circulation",
+          "journal": "Circulation",
+          "year": 2015,
+          "doi": "10.1161/01.cir.0000460076.01902.26",
+          "url": "https://doi.org/10.1161/01.cir.0000460076.01902.26",
+          "authors": []
+        },
+        {
+          "title": "Circulation",
+          "journal": "Circulation",
+          "year": 2016,
+          "doi": "10.1161/cir.0000000000000362",
+          "url": "https://doi.org/10.1161/cir.0000000000000362",
+          "authors": []
+        },
+        {
+          "title": "Stroke in\n            <i>Circulation</i>\n            and the\n            <i>Circulation</i>\n            Subspecialty Journals",
+          "journal": "Circulation",
+          "year": 2012,
+          "doi": "10.1161/circulationaha.112.113969",
+          "url": "https://doi.org/10.1161/circulationaha.112.113969",
+          "authors": []
+        },
+        {
+          "title": "Pulmonary Hypertension in\n            <i>Circulation</i>\n            and the\n            <i>Circulation</i>\n            Subspecialty Journals",
+          "journal": "Circulation",
+          "year": 2012,
+          "doi": "10.1161/circulationaha.112.111450",
+          "url": "https://doi.org/10.1161/circulationaha.112.111450",
+          "authors": []
+        },
+        {
+          "title": "Circulation Research",
+          "journal": "Circulation Research",
+          "year": 2017,
+          "doi": "10.1161/res.0000000000000162",
+          "url": "https://doi.org/10.1161/res.0000000000000162",
+          "authors": []
+        }
+      ]
+    },
+    {
+      "query": "Circulation",
+      "source": "pubmed",
+      "count": 12,
+      "items": [
+        {
+          "title": "Physiology of the fetal and transitional circulation.",
+          "journal": "Seminars in fetal & neonatal medicine",
+          "year": 2015,
+          "doi": "10.1016/j.siny.2015.04.003",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25921445/",
+          "authors": [
+            "Finnemore A",
+            "Groves A"
+          ]
+        },
+        {
+          "title": "The fetal circulation.",
+          "journal": "Prenatal diagnosis",
+          "year": 2004,
+          "doi": "10.1002/pd.1062",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15614842/",
+          "authors": [
+            "Kiserud T",
+            "Acharya G"
+          ]
+        },
+        {
+          "title": "Control of the foetal circulation.",
+          "journal": "The Journal of experimental biology",
+          "year": 1982,
+          "doi": "10.1242/jeb.100.1.129",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6757366/",
+          "authors": [
+            "Mott JC"
+          ]
+        },
+        {
+          "title": "Leukocyte circulation: one-way or round-trip? Lessons from primary immunodeficiency patients.",
+          "journal": "Journal of leukocyte biology",
+          "year": 2004,
+          "doi": "10.1189/jlb.1103529",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15075352/",
+          "authors": [
+            "Badolato R"
+          ]
+        },
+        {
+          "title": "[BLOOD CIRCULATION].",
+          "journal": "Monatsschrift fur Kinderheilkunde",
+          "year": 1964,
+          "doi": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/14316383/",
+          "authors": [
+            "GRASER F"
+          ]
+        },
+        {
+          "title": "The hyperdynamic circulation in cirrhosis: an overview.",
+          "journal": "Pharmacology & therapeutics",
+          "year": 2001,
+          "doi": "10.1016/s0163-7258(01)00124-3",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11516477/",
+          "authors": [
+            "Blendis L",
+            "Wong F"
+          ]
+        },
+        {
+          "title": "[Hyperdynamic circulation in patients with liver cirrhosis and portal hypertension].",
+          "journal": "The Korean journal of gastroenterology = Taehan Sohwagi Hakhoe chi",
+          "year": 2009,
+          "doi": "10.4166/kjg.2009.54.3.143",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19844149/",
+          "authors": [
+            "Kim MY",
+            "Baik SK"
+          ]
+        },
+        {
+          "title": "Near-infrared spectroscopy: exposing the dark (venous) side of the circulation.",
+          "journal": "Paediatric anaesthesia",
+          "year": 2014,
+          "doi": "10.1111/pan.12301",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24267637/",
+          "authors": [
+            "Scott JP",
+            "Hoffman GM"
+          ]
+        },
+        {
+          "title": "Pulmonary circulation and systemic circulation: similar problems, different solutions.",
+          "journal": "Advances in experimental medicine and biology",
+          "year": 1990,
+          "doi": "10.1007/978-1-4684-8181-5_65",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2128992/",
+          "authors": [
+            "Farhi LE",
+            "Sheehan DW"
+          ]
+        },
+        {
+          "title": "Regulatory mechanisms in the retinal and choroidal circulation.",
+          "journal": "Ophthalmic research",
+          "year": 2000,
+          "doi": "10.1159/000055622",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11015035/",
+          "authors": [
+            "Delaey C",
+            "Van De Voorde J"
+          ]
+        },
+        {
+          "title": "The coronary circulation.",
+          "journal": "Physiological reviews",
+          "year": 1946,
+          "doi": "10.1152/physrev.1946.26.1.28",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21012599/",
+          "authors": [
+            "GREGG DE"
+          ]
+        },
+        {
+          "title": "The Aortic Isthmus: A Significant yet Underexplored Watershed of the Fetal Circulation.",
+          "journal": "Fetal diagnosis and therapy",
+          "year": 2016,
+          "doi": "10.1159/000446942",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27379710/",
+          "authors": [
+            "Tynan D",
+            "Alphonse J",
+            "Henry A",
+            "Welsh AW"
+          ]
+        }
+      ]
+    },
+    {
+      "query": "Circulation",
+      "source": "openalex",
+      "count": 12,
+      "items": [
+        {
+          "title": "GENERAL CIRCULATION EXPERIMENTS WITH THE PRIMITIVE EQUATIONS",
+          "journal": "Monthly Weather Review",
+          "year": 1963,
+          "doi": "10.1175/1520-0493(1963)091<0099:gcewtp>2.3.co;2",
+          "url": "https://doi.org/10.1175/1520-0493(1963)091<0099:gcewtp>2.3.co;2",
+          "authors": [
+            "Joseph Smagorinsky"
+          ]
+        },
+        {
+          "title": "Some statistical methods useful in circulation research.",
+          "journal": "Circulation Research",
+          "year": 1980,
+          "doi": "10.1161/01.res.47.1.1",
+          "url": "https://doi.org/10.1161/01.res.47.1.1",
+          "authors": [
+            "Stanley L. Wallenstein",
+            "C L Zucker",
+            "Joseph L. Fleiss"
+          ]
+        },
+        {
+          "title": "Some simple solutions for heat‐induced tropical circulation",
+          "journal": "Quarterly Journal of the Royal Meteorological Society",
+          "year": 1980,
+          "doi": "10.1002/qj.49710644905",
+          "url": "https://doi.org/10.1002/qj.49710644905",
+          "authors": [
+            "A. E. Gill"
+          ]
+        },
+        {
+          "title": "Isopycnal Mixing in Ocean Circulation Models",
+          "journal": "Journal of Physical Oceanography",
+          "year": 1990,
+          "doi": "10.1175/1520-0485(1990)020<0150:imiocm>2.0.co;2",
+          "url": "https://doi.org/10.1175/1520-0485(1990)020<0150:imiocm>2.0.co;2",
+          "authors": [
+            "Peter R. Gent",
+            "James C. McWilliams"
+          ]
+        },
+        {
+          "title": "Classification, Seasonality and Persistence of Low-Frequency Atmospheric Circulation Patterns",
+          "journal": "Monthly Weather Review",
+          "year": 1987,
+          "doi": "10.1175/1520-0493(1987)115<1083:csapol>2.0.co;2",
+          "url": "https://doi.org/10.1175/1520-0493(1987)115<1083:csapol>2.0.co;2",
+          "authors": [
+            "Anthony G. Barnston",
+            "Robert E. Livezey"
+          ]
+        },
+        {
+          "title": "Annular Modes in the Extratropical Circulation. Part I: Month-to-Month Variability*",
+          "journal": "Journal of Climate",
+          "year": 2000,
+          "doi": "10.1175/1520-0442(2000)013<1000:amitec>2.0.co;2",
+          "url": "https://doi.org/10.1175/1520-0442(2000)013<1000:amitec>2.0.co;2",
+          "authors": [
+            "David W. J. Thompson",
+            "John M. Wallace"
+          ]
+        },
+        {
+          "title": "Different glacier status with atmospheric circulations in Tibetan Plateau and surroundings",
+          "journal": "Nature Climate Change",
+          "year": 2012,
+          "doi": "10.1038/nclimate1580",
+          "url": "https://doi.org/10.1038/nclimate1580",
+          "authors": [
+            "Tandong Yao",
+            "Lonnie G. Thompson",
+            "Wei Yang",
+            "Wusheng Yu",
+            "Yang Gao"
+          ]
+        },
+        {
+          "title": "A simple hydrologically based model of land surface water and energy fluxes for general circulation models",
+          "journal": "Journal of Geophysical Research Atmospheres",
+          "year": 1994,
+          "doi": "10.1029/94jd00483",
+          "url": "https://doi.org/10.1029/94jd00483",
+          "authors": [
+            "Xu Liang",
+            "Dennis P. Lettenmaier",
+            "Eric F. Wood",
+            "Stephen J. Burges"
+          ]
+        },
+        {
+          "title": "The monsoon circulation of the Indian Ocean",
+          "journal": "Progress In Oceanography",
+          "year": 2001,
+          "doi": "10.1016/s0079-6611(01)00083-0",
+          "url": "https://doi.org/10.1016/s0079-6611(01)00083-0",
+          "authors": [
+            "Friedrich Schott",
+            "Julian P. McCreary"
+          ]
+        },
+        {
+          "title": "Amphipathic polyethyleneglycols effectively prolong the circulation time of liposomes",
+          "journal": "FEBS Letters",
+          "year": 1990,
+          "doi": "10.1016/0014-5793(90)81016-h",
+          "url": "https://doi.org/10.1016/0014-5793(90)81016-h",
+          "authors": [
+            "Alexander L. Klibanov",
+            "Kazuo Maruyama",
+            "Vladimir P. Torchilin",
+            "Leaf Huang"
+          ]
+        },
+        {
+          "title": "Description of Global-Scale Circulation Cells in the Tropics with a 40–50 Day Period",
+          "journal": "Journal of the Atmospheric Sciences",
+          "year": 1972,
+          "doi": "10.1175/1520-0469(1972)029<1109:dogscc>2.0.co;2",
+          "url": "https://doi.org/10.1175/1520-0469(1972)029<1109:dogscc>2.0.co;2",
+          "authors": [
+            "Roland A. Madden",
+            "Paul Julian"
+          ]
+        },
+        {
+          "title": "Circulation in the Western Mediterranean Sea",
+          "journal": "Journal of Marine Systems",
+          "year": 1999,
+          "doi": "10.1016/s0924-7963(98)00078-5",
+          "url": "https://doi.org/10.1016/s0924-7963(98)00078-5",
+          "authors": [
+            "Claude Millot"
+          ]
+        }
+      ]
+    },
+    {
+      "query": "Circulation",
+      "source": "arxiv",
+      "count": 12,
+      "items": [
+        {
+          "title": "Earth's Rotation Causes Global Atmospheric Circulation",
+          "journal": "arXiv",
+          "year": 2022,
+          "doi": "",
+          "url": "http://arxiv.org/abs/2206.14887v3",
+          "authors": [
+            "Alexander V. Kochin"
+          ]
+        },
+        {
+          "title": "Long-term variations in solar meridional circulation from geomagnetic data: implications for solar dynamo theory",
+          "journal": "arXiv",
+          "year": 2007,
+          "doi": "",
+          "url": "http://arxiv.org/abs/physics/0703187v2",
+          "authors": [
+            "K. Georgieva",
+            "B. Kirov"
+          ]
+        },
+        {
+          "title": "JIGSAW-GEO (1.0): locally orthogonal staggered unstructured grid generation for general circulation modelling on the sphere",
+          "journal": "arXiv",
+          "year": 2016,
+          "doi": "10.5194/gmd-10-2117-2017",
+          "url": "http://arxiv.org/abs/1611.08996v4",
+          "authors": [
+            "Darren Engwirda"
+          ]
+        },
+        {
+          "title": "An estimate of the circulation generated by a bluff body",
+          "journal": "arXiv",
+          "year": 2006,
+          "doi": "",
+          "url": "http://arxiv.org/abs/physics/0605256v3",
+          "authors": [
+            "T. S. Morton"
+          ]
+        },
+        {
+          "title": "Effect of slip on circulation inside a droplet",
+          "journal": "arXiv",
+          "year": 2013,
+          "doi": "",
+          "url": "http://arxiv.org/abs/1311.5903v1",
+          "authors": [
+            "Joseph J Thalakkottor",
+            "Kamran Mohseni"
+          ]
+        },
+        {
+          "title": "Circulation of a digital community currency",
+          "journal": "arXiv",
+          "year": 2022,
+          "doi": "10.1038/s41598-023-33184-1",
+          "url": "http://arxiv.org/abs/2207.08941v2",
+          "authors": [
+            "Carolina E S Mattsson",
+            "Teodoro Criscione",
+            "Frank W Takes"
+          ]
+        },
+        {
+          "title": "Dynamics of the Thermohaline Circulation under Wind forcing",
+          "journal": "arXiv",
+          "year": 2001,
+          "doi": "",
+          "url": "http://arxiv.org/abs/math/0108085v1",
+          "authors": [
+            "Hongjun Gao",
+            "Jinqiao Duan"
+          ]
+        },
+        {
+          "title": "An idealized general circulation model for the atmospheric circulation on the ice giants",
+          "journal": "arXiv",
+          "year": 2025,
+          "doi": "10.1051/0004-6361/202554015",
+          "url": "http://arxiv.org/abs/2509.17217v1",
+          "authors": [
+            "Ilai Guendelman",
+            "Yoahi Kaspi"
+          ]
+        },
+        {
+          "title": "Optimal Surfaces for Turbulent Circulation Statistics",
+          "journal": "arXiv",
+          "year": 2025,
+          "doi": "",
+          "url": "http://arxiv.org/abs/2509.07903v1",
+          "authors": [
+            "L. Moriconi"
+          ]
+        },
+        {
+          "title": "Intermittency of velocity circulation in quantum turbulence",
+          "journal": "arXiv",
+          "year": 2020,
+          "doi": "10.1103/PhysRevX.11.011053",
+          "url": "http://arxiv.org/abs/2010.07875v3",
+          "authors": [
+            "Nicolás P. Müller",
+            "Juan Ignacio Polanco",
+            "Giorgio Krstulovic"
+          ]
+        },
+        {
+          "title": "Meridional Circulation and Global Solar Oscillations",
+          "journal": "arXiv",
+          "year": 2007,
+          "doi": "10.1007/s11207-008-9232-6",
+          "url": "http://arxiv.org/abs/0710.1773v1",
+          "authors": [
+            "Markus Roth",
+            "Michael Stix"
+          ]
+        },
+        {
+          "title": "Circulation in turbulent flow through a contraction",
+          "journal": "arXiv",
+          "year": 2024,
+          "doi": "10.1080/14685248.2023.2284187",
+          "url": "http://arxiv.org/abs/2401.12757v1",
+          "authors": [
+            "Vivek Mugundhan",
+            "Sigurdur T. Thoroddsen"
+          ]
+        }
+      ]
+    },
+    {
+      "query": "JAMA",
+      "source": "crossref",
+      "count": 12,
+      "items": [
+        {
+          "title": "JAMA",
+          "journal": "JAMA",
+          "year": 2025,
+          "doi": "10.1001/jama.2024.18835",
+          "url": "https://doi.org/10.1001/jama.2024.18835",
+          "authors": []
+        },
+        {
+          "title": "JAMA",
+          "journal": "JAMA",
+          "year": 2016,
+          "doi": "10.1001/jama.2015.14098",
+          "url": "https://doi.org/10.1001/jama.2015.14098",
+          "authors": []
+        },
+        {
+          "title": "JAMA",
+          "journal": "JAMA",
+          "year": 2019,
+          "doi": "10.1001/jama.2018.15169",
+          "url": "https://doi.org/10.1001/jama.2018.15169",
+          "authors": []
+        },
+        {
+          "title": "JAMA",
+          "journal": "JAMA",
+          "year": 2014,
+          "doi": "10.1001/jama.2013.279768",
+          "url": "https://doi.org/10.1001/jama.2013.279768",
+          "authors": []
+        },
+        {
+          "title": "JAMA",
+          "journal": "JAMA",
+          "year": 2021,
+          "doi": "10.1001/jama.2020.18191",
+          "url": "https://doi.org/10.1001/jama.2020.18191",
+          "authors": []
+        },
+        {
+          "title": "JAMA",
+          "journal": "JAMA",
+          "year": 2016,
+          "doi": "10.1001/jama.2015.14615",
+          "url": "https://doi.org/10.1001/jama.2015.14615",
+          "authors": []
+        },
+        {
+          "title": "JAMA",
+          "journal": "JAMA",
+          "year": 2023,
+          "doi": "10.1001/jama.2022.16096",
+          "url": "https://doi.org/10.1001/jama.2022.16096",
+          "authors": []
+        },
+        {
+          "title": "JAMA",
+          "journal": "JAMA",
+          "year": 2019,
+          "doi": "10.1001/jama.2018.15587",
+          "url": "https://doi.org/10.1001/jama.2018.15587",
+          "authors": []
+        },
+        {
+          "title": "JAMA",
+          "journal": "JAMA",
+          "year": 2016,
+          "doi": "10.1001/jama.2015.14550",
+          "url": "https://doi.org/10.1001/jama.2015.14550",
+          "authors": []
+        },
+        {
+          "title": "JAMA",
+          "journal": "JAMA",
+          "year": 2025,
+          "doi": "10.1001/jama.2024.18898",
+          "url": "https://doi.org/10.1001/jama.2024.18898",
+          "authors": []
+        },
+        {
+          "title": "JAMA",
+          "journal": "JAMA",
+          "year": 2025,
+          "doi": "10.1001/jama.2024.18947",
+          "url": "https://doi.org/10.1001/jama.2024.18947",
+          "authors": []
+        },
+        {
+          "title": "JAMA",
+          "journal": "JAMA",
+          "year": 2020,
+          "doi": "10.1001/jama.2019.13239",
+          "url": "https://doi.org/10.1001/jama.2019.13239",
+          "authors": []
+        }
+      ]
+    },
+    {
+      "query": "JAMA",
+      "source": "pubmed",
+      "count": 0,
+      "items": [],
+      "error": "HTTPSConnectionPool(host='eutils.ncbi.nlm.nih.gov', port=443): Max retries exceeded with url: /entrez/eutils/esearch.fcgi?db=pubmed&term=JAMA&retmax=12&retmode=json&sort=relevance (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))"
+    },
+    {
+      "query": "JAMA",
+      "source": "openalex",
+      "count": 12,
+      "items": [
+        {
+          "title": "Executive Summary of the Third Report of the National Cholesterol Education Program (NCEP) Expert Panel on Detection, Evaluation, and Treatment of High Blood Cholesterol in Adults (Adult Treatment Panel III)",
+          "journal": "JAMA",
+          "year": 2001,
+          "doi": "10.1001/jama.285.19.2486",
+          "url": "https://doi.org/10.1001/jama.285.19.2486",
+          "authors": [
+            "Evaluation Expert Panel on Detection"
+          ]
+        },
+        {
+          "title": "Histochemistry: Theoretical and Applied",
+          "journal": "Journal of the American Medical Association",
+          "year": 1953,
+          "doi": "10.1001/jama.1953.02940280072039",
+          "url": "https://doi.org/10.1001/jama.1953.02940280072039",
+          "authors": []
+        },
+        {
+          "title": "AJCC Cancer Staging Manual",
+          "journal": "JAMA",
+          "year": 2010,
+          "doi": "10.1001/jama.2010.1525",
+          "url": "https://doi.org/10.1001/jama.2010.1525",
+          "authors": [
+            "James R. Egner"
+          ]
+        },
+        {
+          "title": "Risks and benefits of estrogen plus progestin in healthy postmenopausal women. Principal results from the Women's Health Initiative Randomized Controlled Trial. Writing Group for the Women's Health Initiative Investigators. <i>JAMA</i> 2002; 288(3): 321-333",
+          "journal": "Journal of Family Planning and Reproductive Health Care",
+          "year": 2002,
+          "doi": "10.1783/147118902101196685",
+          "url": "https://doi.org/10.1783/147118902101196685",
+          "authors": [
+            "Dr Ailsa Gebbie"
+          ]
+        },
+        {
+          "title": "Handbook of Emotion Regulation",
+          "journal": "JAMA",
+          "year": 2007,
+          "doi": "10.1001/jama.298.15.1808",
+          "url": "https://doi.org/10.1001/jama.298.15.1808",
+          "authors": [
+            "Kelly G. Lambert"
+          ]
+        },
+        {
+          "title": "AMERICAN PUBLIC HEALTH ASSOCIATION",
+          "journal": "Journal of the American Medical Association",
+          "year": 1910,
+          "doi": "10.1001/jama.1910.04330120065030",
+          "url": "https://doi.org/10.1001/jama.1910.04330120065030",
+          "authors": [
+            "Charles O. Probst"
+          ]
+        },
+        {
+          "title": "The Organization of Behavior: A Neuropsychological Theory",
+          "journal": "Journal of the American Medical Association",
+          "year": 1950,
+          "doi": "10.1001/jama.1950.02910470083028",
+          "url": "https://doi.org/10.1001/jama.1950.02910470083028",
+          "authors": [
+            "Therese Mahoney",
+            "Margaret Halliday",
+            "Adams",
+            "E Admit",
+            "Adrian"
+          ]
+        },
+        {
+          "title": "Gait Analysis: Normal and Pathological Function",
+          "journal": "JAMA",
+          "year": 1992,
+          "doi": "10.1001/jama.1992.03490220101046",
+          "url": "https://doi.org/10.1001/jama.1992.03490220101046",
+          "authors": [
+            "Jacquelin Perry",
+            "Judith M. Burnfield",
+            "M Burnfield"
+          ]
+        },
+        {
+          "title": "The vanguard of the Islamic revolution: the Jama `at-i Islami of Pakistan",
+          "journal": "Choice Reviews Online",
+          "year": 1995,
+          "doi": "10.5860/choice.32-3538",
+          "url": "https://doi.org/10.5860/choice.32-3538",
+          "authors": []
+        },
+        {
+          "title": "Perception of the Visual World",
+          "journal": "Archives of Ophthalmology",
+          "year": 1952,
+          "doi": "10.1001/archopht.1952.01700030123016",
+          "url": "https://doi.org/10.1001/archopht.1952.01700030123016",
+          "authors": []
+        },
+        {
+          "title": "The Sixth Report of the Joint National Committee on Prevention, Detection, Evaluation, and Treatment of High Blood Pressure",
+          "journal": "Archives of Internal Medicine",
+          "year": 1997,
+          "doi": "10.1001/archinte.1997.00440420033005",
+          "url": "https://doi.org/10.1001/archinte.1997.00440420033005",
+          "authors": []
+        },
+        {
+          "title": "New Introductory Lectures on Psycho-Analysis.",
+          "journal": "Archives of Neurology And Psychiatry",
+          "year": 1935,
+          "doi": "10.1001/archneurpsyc.1935.02250170221019",
+          "url": "https://doi.org/10.1001/archneurpsyc.1935.02250170221019",
+          "authors": []
+        }
+      ]
+    },
+    {
+      "query": "JAMA",
+      "source": "arxiv",
+      "count": 12,
+      "items": [
+        {
+          "title": "Evaluating Contrast Localizer for Identifying Causal Units in Social & Mathematical Tasks in Language Models",
+          "journal": "arXiv",
+          "year": 2025,
+          "doi": "",
+          "url": "http://arxiv.org/abs/2508.08276v3",
+          "authors": [
+            "Yassine Jamaa",
+            "Badr AlKhamissi",
+            "Satrajit Ghosh",
+            "Martin Schrimpf"
+          ]
+        },
+        {
+          "title": "The Voynich Codex Decoded: Statistical Symbolism and Scroll-Wide Logic",
+          "journal": "arXiv",
+          "year": 2025,
+          "doi": "",
+          "url": "http://arxiv.org/abs/2505.02261v1",
+          "authors": [
+            "Suhaib A. Jama"
+          ]
+        },
+        {
+          "title": "An empirical study of task and feature correlations in the reuse of pre-trained models",
+          "journal": "arXiv",
+          "year": 2025,
+          "doi": "",
+          "url": "http://arxiv.org/abs/2506.01975v3",
+          "authors": [
+            "Jama Hussein Mohamud",
+            "Willie Brink"
+          ]
+        },
+        {
+          "title": "Attention-Based Deep Neural Networks for Detection of Cancerous and Precancerous Esophagus Tissue on Histopathological Slides",
+          "journal": "arXiv",
+          "year": 2018,
+          "doi": "10.1001/jamanetworkopen.2019.14645",
+          "url": "http://arxiv.org/abs/1811.08513v2",
+          "authors": [
+            "Naofumi Tomita",
+            "Behnaz Abdollahi",
+            "Jason Wei",
+            "Bing Ren",
+            "Arief Suriawinata"
+          ]
+        },
+        {
+          "title": "AI Workflow, External Validation, and Development in Eye Disease Diagnosis",
+          "journal": "arXiv",
+          "year": 2024,
+          "doi": "10.1001/jamanetworkopen.2025.17204",
+          "url": "http://arxiv.org/abs/2409.15087v2",
+          "authors": [
+            "Qingyu Chen",
+            "Tiarnan D L Keenan",
+            "Elvira Agron",
+            "Alexis Allot",
+            "Emily Guan"
+          ]
+        },
+        {
+          "title": "Assessing the livability within the 15-minute city concept based on mobile phone data",
+          "journal": "arXiv",
+          "year": 2026,
+          "doi": "",
+          "url": "http://arxiv.org/abs/2601.14307v1",
+          "authors": [
+            "Tianqi Wang",
+            "Teemu Jama",
+            "Henrikki Tenkanen"
+          ]
+        },
+        {
+          "title": "Demystifying the COVID-19 vaccine discourse on Twitter",
+          "journal": "arXiv",
+          "year": 2022,
+          "doi": "",
+          "url": "http://arxiv.org/abs/2208.13523v1",
+          "authors": [
+            "Zainab Zaidi",
+            "Mengbin Ye",
+            "Fergus John Samon",
+            "Abdisalam Jama",
+            "Binduja Gopalakrishnan"
+          ]
+        },
+        {
+          "title": "Fast Development of ASR in African Languages using Self Supervised Speech Representation Learning",
+          "journal": "arXiv",
+          "year": 2021,
+          "doi": "",
+          "url": "http://arxiv.org/abs/2103.08993v1",
+          "authors": [
+            "Jama Hussein Mohamud",
+            "Lloyd Acquaye Thompson",
+            "Aissatou Ndoye",
+            "Laurent Besacier"
+          ]
+        },
+        {
+          "title": "Hybrid Integration of InGaN Lasers in a Foundry-Fabricated Visible-Light Photonics Platform",
+          "journal": "arXiv",
+          "year": 2025,
+          "doi": "",
+          "url": "http://arxiv.org/abs/2510.16699v1",
+          "authors": [
+            "Xin Mu",
+            "Frank Weiss",
+            "Hongyao Chua",
+            "Robert Lawrowski",
+            "Jared C. Mikkelsen"
+          ]
+        },
+        {
+          "title": "Leveraging LLMs as Meta-Judges: A Multi-Agent Framework for Evaluating LLM Judgments",
+          "journal": "arXiv",
+          "year": 2025,
+          "doi": "",
+          "url": "http://arxiv.org/abs/2504.17087v1",
+          "authors": [
+            "Yuran Li",
+            "Jama Hussein Mohamud",
+            "Chongren Sun",
+            "Di Wu",
+            "Benoit Boulet"
+          ]
+        },
+        {
+          "title": "Original Research By Young Twinkle Students (ORBYTS): Ephemeris Refinement of Transiting Exoplanets II",
+          "journal": "arXiv",
+          "year": 2020,
+          "doi": "10.3847/2515-5172/aba42b",
+          "url": "http://arxiv.org/abs/2007.07232v1",
+          "authors": [
+            "Billy Edwards",
+            "Lara Anisman",
+            "Quentin Changeat",
+            "Mario Morvan",
+            "Sam Wright"
+          ]
+        },
+        {
+          "title": "Benchmarking Large Language Models on Answering and Explaining Challenging Medical Questions",
+          "journal": "arXiv",
+          "year": 2024,
+          "doi": "",
+          "url": "http://arxiv.org/abs/2402.18060v5",
+          "authors": [
+            "Hanjie Chen",
+            "Zhouxiang Fang",
+            "Yash Singla",
+            "Mark Dredze"
+          ]
+        }
+      ]
+    },
+    {
+      "query": "Vascular disease",
+      "source": "crossref",
+      "count": 12,
+      "items": [
+        {
+          "title": "Vascular Disease and Risk Factors in Chronic Kidney Disease",
+          "journal": "Vascular Disease Prevention",
+          "year": 2005,
+          "doi": "10.2174/156727005774329645",
+          "url": "https://doi.org/10.2174/156727005774329645",
+          "authors": [
+            "Johanna Kohlhagen",
+            "John Kelly"
+          ]
+        },
+        {
+          "title": "Oral Infection and Vascular Disease",
+          "journal": "Vascular Disease Prevention",
+          "year": 2007,
+          "doi": "10.2174/156727007782331786",
+          "url": "https://doi.org/10.2174/156727007782331786",
+          "authors": [
+            "Jukka H. Meurman",
+            "Mariano Sanz",
+            "Sok-Ja Janket"
+          ]
+        },
+        {
+          "title": "Reviewers for Diabetes and Vascular Disease Research: 2020",
+          "journal": "Diabetes and Vascular Disease Research",
+          "year": 2020,
+          "doi": "10.1177/1479164120912148",
+          "url": "https://doi.org/10.1177/1479164120912148",
+          "authors": []
+        },
+        {
+          "title": "Vascular Disease and Insulin-Like Growth Factor-1",
+          "journal": "Vascular Disease Prevention",
+          "year": 2007,
+          "doi": "10.2174/156727007782331795",
+          "url": "https://doi.org/10.2174/156727007782331795",
+          "authors": [
+            "Georgios Efstratiadis",
+            "Georgios Tsiaousis",
+            "Vasilios Athyros"
+          ]
+        },
+        {
+          "title": "Reviewers for Diabetes and Vascular Disease Research: 2018",
+          "journal": "Diabetes and Vascular Disease Research",
+          "year": 2019,
+          "doi": "10.1177/1479164119841707",
+          "url": "https://doi.org/10.1177/1479164119841707",
+          "authors": []
+        },
+        {
+          "title": "Reviewers for Diabetes and Vascular Disease Research: 2017",
+          "journal": "Diabetes and Vascular Disease Research",
+          "year": 2018,
+          "doi": "10.1177/1479164118756126",
+          "url": "https://doi.org/10.1177/1479164118756126",
+          "authors": []
+        },
+        {
+          "title": "Lifestyle Changes and Pharmacological Risk Factor Modification for Effective Vascular Disease Prevention",
+          "journal": "Vascular Disease Prevention",
+          "year": 2004,
+          "doi": "10.2174/1567270043404926",
+          "url": "https://doi.org/10.2174/1567270043404926",
+          "authors": [
+            "Debabrata Mukherjee"
+          ]
+        },
+        {
+          "title": "Current Development in Tissue-Engineered Vascular Grafts",
+          "journal": "Vascular Disease Prevention",
+          "year": 2007,
+          "doi": "10.2174/156727007782331803",
+          "url": "https://doi.org/10.2174/156727007782331803",
+          "authors": [
+            "Athanasios Tsatsaris",
+            "Despina Perrea"
+          ]
+        },
+        {
+          "title": "Diabetes and Vascular Disease Research: A new beginning",
+          "journal": "Diabetes and Vascular Disease Research",
+          "year": 2009,
+          "doi": "10.1177/1479164109338779",
+          "url": "https://doi.org/10.1177/1479164109338779",
+          "authors": [
+            "Peter J. Grant"
+          ]
+        },
+        {
+          "title": "Diabetes mellitus and vascular disease: targeting cardiometabolic risk",
+          "journal": "Diabetes and Vascular Disease Research",
+          "year": 2008,
+          "doi": "10.3132/dvdr.2008.001",
+          "url": "https://doi.org/10.3132/dvdr.2008.001",
+          "authors": [
+            "Peter J Grant"
+          ]
+        },
+        {
+          "title": "Depression and Vascular Disease: Conceptual Issues, Relationships and Clinical Implications",
+          "journal": "Vascular Disease Prevention",
+          "year": 2006,
+          "doi": "10.2174/156727006778019059",
+          "url": "https://doi.org/10.2174/156727006778019059",
+          "authors": [
+            "Roy R. Reeves",
+            "Ethel S. Rose"
+          ]
+        },
+        {
+          "title": "Are Cerebrovascular White Matter Lesions an Early Sign of Vascular Cognitive Impairment and Vascular Dementia?",
+          "journal": "Vascular Disease Prevention",
+          "year": 2006,
+          "doi": "10.2174/156727006778019130",
+          "url": "https://doi.org/10.2174/156727006778019130",
+          "authors": [
+            "Hidekazu Tomimoto"
+          ]
+        }
+      ]
+    },
+    {
+      "query": "Vascular disease",
+      "source": "pubmed",
+      "count": 12,
+      "items": [
+        {
+          "title": "Peripheral Vascular Disease.",
+          "journal": "Home healthcare now",
+          "year": 2020,
+          "doi": "10.1097/NHH.0000000000000936",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33165098/",
+          "authors": [
+            "Swenty CF",
+            "Hall M"
+          ]
+        },
+        {
+          "title": "Complications of Vascular Disease.",
+          "journal": "Anesthesiology clinics",
+          "year": 2022,
+          "doi": "10.1016/j.anclin.2022.08.006",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36328617/",
+          "authors": [
+            "Kiefer J",
+            "Mazzeffi M"
+          ]
+        },
+        {
+          "title": "Vascular disease. Preface.",
+          "journal": "Cardiology clinics",
+          "year": 2015,
+          "doi": "10.1016/j.ccl.2014.10.001",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25439338/",
+          "authors": [
+            "Clavijo LC"
+          ]
+        },
+        {
+          "title": "Vascular disease in scleroderma.",
+          "journal": "Clinical reviews in allergy & immunology",
+          "year": 2009,
+          "doi": "10.1007/s12016-008-8106-x",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19067252/",
+          "authors": [
+            "Wigley FM"
+          ]
+        },
+        {
+          "title": "RNA methylation in vascular disease: a systematic review.",
+          "journal": "Journal of cardiothoracic surgery",
+          "year": 2022,
+          "doi": "10.1186/s13019-022-02077-1",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36536469/",
+          "authors": [
+            "Shu Y",
+            "Guo Y",
+            "Zheng Y",
+            "He S",
+            "Shi Z"
+          ]
+        },
+        {
+          "title": "Preoperative Assessment of Patients with Vascular Disease.",
+          "journal": "The Surgical clinics of North America",
+          "year": 2023,
+          "doi": "10.1016/j.suc.2023.05.005",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37455026/",
+          "authors": [
+            "Beaulieu RJ"
+          ]
+        },
+        {
+          "title": "Peripheral Vascular Imaging Focusing on Nonatherosclerotic Disease.",
+          "journal": "Radiologic clinics of North America",
+          "year": 2020,
+          "doi": "10.1016/j.rcl.2020.02.007",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32471547/",
+          "authors": [
+            "François CJ"
+          ]
+        },
+        {
+          "title": "Keeping an eye on vascular disease.",
+          "journal": "Vascular medicine (London, England)",
+          "year": 2021,
+          "doi": "10.1177/1358863X211008528",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33823703/",
+          "authors": [
+            "Cameron SJ",
+            "Engel R"
+          ]
+        },
+        {
+          "title": "Sex and Gender Determinants of Vascular Disease in the Global Context.",
+          "journal": "The Canadian journal of cardiology",
+          "year": 2022,
+          "doi": "10.1016/j.cjca.2022.05.025",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35667597/",
+          "authors": [
+            "Dev R",
+            "Adams AM",
+            "Raparelli V",
+            "Norris CM",
+            "Pilote L"
+          ]
+        },
+        {
+          "title": "Part II: Cutaneous manifestations of peripheral vascular disease.",
+          "journal": "Journal of the American Academy of Dermatology",
+          "year": 2023,
+          "doi": "10.1016/j.jaad.2021.05.077",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35504485/",
+          "authors": [
+            "Raja A",
+            "Karch J",
+            "Shih AF",
+            "De La Garza H",
+            "De Zepeda Diaz AJ"
+          ]
+        },
+        {
+          "title": "Endothelial Dysfunction and Inflammatory Markers of Vascular Disease.",
+          "journal": "Current vascular pharmacology",
+          "year": 2021,
+          "doi": "10.2174/1570161118666200421142542",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32316894/",
+          "authors": [
+            "Balta S"
+          ]
+        },
+        {
+          "title": "MicroRNAs in endothelial cell homeostasis and vascular disease.",
+          "journal": "Current opinion in hematology",
+          "year": 2018,
+          "doi": "10.1097/MOH.0000000000000424",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29547400/",
+          "authors": [
+            "Fernández-Hernando C",
+            "Suárez Y"
+          ]
+        }
+      ]
+    },
+    {
+      "query": "Vascular disease",
+      "source": "openalex",
+      "count": 12,
+      "items": [
+        {
+          "title": "Major Lipids, Apolipoproteins, and Risk of Vascular Disease",
+          "journal": "JAMA",
+          "year": 2009,
+          "doi": "10.1001/jama.2009.1619",
+          "url": "https://doi.org/10.1001/jama.2009.1619",
+          "authors": [
+            "Emanuele Di Angelantonio"
+          ]
+        },
+        {
+          "title": "Hyperhomocysteinemia: An Independent Risk Factor for Vascular Disease",
+          "journal": "New England Journal of Medicine",
+          "year": 1991,
+          "doi": "10.1056/nejm199104253241701",
+          "url": "https://doi.org/10.1056/nejm199104253241701",
+          "authors": [
+            "Robert Clarke",
+            "Leslie Daly",
+            "Killian Robinson",
+            "E. R. Naughten",
+            "S. F. Cahalane"
+          ]
+        },
+        {
+          "title": "Pravastatin in elderly individuals at risk of vascular disease (PROSPER): a randomised controlled trial",
+          "journal": "The Lancet",
+          "year": 2002,
+          "doi": "10.1016/s0140-6736(02)11600-x",
+          "url": "https://doi.org/10.1016/s0140-6736(02)11600-x",
+          "authors": [
+            "James Shepherd",
+            "Gerard J. Blauw",
+            "Michael Murphy",
+            "Edward Bollen",
+            "Brendan M. Buckley"
+          ]
+        },
+        {
+          "title": "Homocysteine Lowering with Folic Acid and B Vitamins in Vascular Disease",
+          "journal": "New England Journal of Medicine",
+          "year": 2006,
+          "doi": "10.1056/nejmoa060900",
+          "url": "https://doi.org/10.1056/nejmoa060900",
+          "authors": [
+            "Eva Lonn"
+          ]
+        },
+        {
+          "title": "Plasma homocysteine as a risk factor for vascular disease. The European Concerted Action Project.",
+          "journal": "PubMed",
+          "year": 1997,
+          "doi": "10.1001/jama.1997.03540460039030",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9178790",
+          "authors": [
+            "Ian M. Graham",
+            "L E Daly",
+            "H M Refsum",
+            "K Robinson",
+            "L E Brattström"
+          ]
+        },
+        {
+          "title": "AHA/ACC Guidelines for Secondary Prevention for Patients With Coronary and Other Atherosclerotic Vascular Disease: 2006 Update",
+          "journal": "Circulation",
+          "year": 2006,
+          "doi": "10.1161/circulationaha.106.174516",
+          "url": "https://doi.org/10.1161/circulationaha.106.174516",
+          "authors": [
+            "Sidney C. Smith",
+            "Jerilyn K. Allen",
+            "Steven N. Blair",
+            "Robert O. Bonow",
+            "Lawrence Brass"
+          ]
+        },
+        {
+          "title": "Aspirin in the primary and secondary prevention of vascular disease: collaborative meta-analysis of individual participant data from randomised trials",
+          "journal": "The Lancet",
+          "year": 2009,
+          "doi": "10.1016/s0140-6736(09)60503-1",
+          "url": "https://doi.org/10.1016/s0140-6736(09)60503-1",
+          "authors": [
+            "Colin Baigent"
+          ]
+        },
+        {
+          "title": "Effects of Anacetrapib in Patients with Atherosclerotic Vascular Disease",
+          "journal": "New England Journal of Medicine",
+          "year": 2017,
+          "doi": "10.1056/nejmoa1706444",
+          "url": "https://doi.org/10.1056/nejmoa1706444",
+          "authors": [
+            "Louise Bowman"
+          ]
+        },
+        {
+          "title": "The Pathology of Hypertensive Pulmonary Vascular Disease",
+          "journal": "Circulation",
+          "year": 1958,
+          "doi": "10.1161/01.cir.18.4.533",
+          "url": "https://doi.org/10.1161/01.cir.18.4.533",
+          "authors": [
+            "Donald Heath",
+            "Jesse E. Edwards"
+          ]
+        },
+        {
+          "title": "Poor Control of Risk Factors for Vascular Disease Among Adults With Previously Diagnosed Diabetes",
+          "journal": "JAMA",
+          "year": 2004,
+          "doi": "10.1001/jama.291.3.335",
+          "url": "https://doi.org/10.1001/jama.291.3.335",
+          "authors": [
+            "Sharon Saydah"
+          ]
+        },
+        {
+          "title": "Secondary prevention of vascular disease by prolonged antiplatelet treatment",
+          "journal": "BMJ",
+          "year": 1988,
+          "doi": "10.1136/bmj.296.6618.320",
+          "url": "https://doi.org/10.1136/bmj.296.6618.320",
+          "authors": [
+            "Antiplatelet Trialists' Collaboration"
+          ]
+        },
+        {
+          "title": "Tissue Angiotensin and Pathobiology of Vascular Disease",
+          "journal": "Hypertension",
+          "year": 2001,
+          "doi": "10.1161/01.hyp.37.4.1047",
+          "url": "https://doi.org/10.1161/01.hyp.37.4.1047",
+          "authors": [
+            "Victor J. Dzau"
+          ]
+        }
+      ]
+    },
+    {
+      "query": "Vascular disease",
+      "source": "arxiv",
+      "count": 12,
+      "items": [
+        {
+          "title": "How reproducible are data-driven subtypes of Alzheimer's disease atrophy?",
+          "journal": "arXiv",
+          "year": 2024,
+          "doi": "10.1177/13872877251415019",
+          "url": "http://arxiv.org/abs/2412.00160v1",
+          "authors": [
+            "Emma Prevot",
+            "Cameron Shand",
+            "Neil Oxtoby",
+            "for Alzheimer's Disease Neuroimaging Initiative"
+          ]
+        },
+        {
+          "title": "Self-organized clustering, prediction, and superposition of long-term cognitive decline from short-term individual cognitive test scores in Alzheimer's disease",
+          "journal": "arXiv",
+          "year": 2024,
+          "doi": "",
+          "url": "http://arxiv.org/abs/2402.12205v1",
+          "authors": [
+            "Hiroyuki Sato",
+            "Keisuke Suzuki",
+            "Atsushi Hashizume",
+            "Ryoichi Hanazawa",
+            "Masanao Sasaki"
+          ]
+        },
+        {
+          "title": "High-dimensional regression over disease subgroups",
+          "journal": "arXiv",
+          "year": 2016,
+          "doi": "",
+          "url": "http://arxiv.org/abs/1611.00953v2",
+          "authors": [
+            "Frank Dondelinger",
+            "Sach Mukherjee",
+            "The Alzheimer's Disease Neuroimaging Initiative"
+          ]
+        },
+        {
+          "title": "Bayesian inference and role of astrocytes in amyloid-beta dynamics with modelling of Alzheimer's disease using clinical data",
+          "journal": "arXiv",
+          "year": 2023,
+          "doi": "",
+          "url": "http://arxiv.org/abs/2306.12520v1",
+          "authors": [
+            "Hina Shaheen",
+            "Roderick Melnik",
+            "The Alzheimer's Disease Neuroimaging Initiative"
+          ]
+        },
+        {
+          "title": "Diagnosis of Alzheimer's Disease via Multi-modality 3D Convolutional Neural Network",
+          "journal": "arXiv",
+          "year": 2019,
+          "doi": "10.3389/fnins.2019.00509",
+          "url": "http://arxiv.org/abs/1902.09904v1",
+          "authors": [
+            "Yechong Huang",
+            "Jiahang Xu",
+            "Yuncheng Zhou",
+            "Tong Tong",
+            "Xiahai Zhuang"
+          ]
+        },
+        {
+          "title": "DeepAD: A Robust Deep Learning Model of Alzheimer's Disease Progression for Real-World Clinical Applications",
+          "journal": "arXiv",
+          "year": 2022,
+          "doi": "",
+          "url": "http://arxiv.org/abs/2203.09096v5",
+          "authors": [
+            "Somaye Hashemifar",
+            "Claudia Iriondo",
+            "Evan Casey",
+            "Mohsen Hejrati",
+            "for Alzheimer's Disease Neuroimaging Initiative"
+          ]
+        },
+        {
+          "title": "Ontology Based Information Extraction for Disease Intelligence",
+          "journal": "arXiv",
+          "year": 2012,
+          "doi": "10.7815/ijorcs.26.2012.051",
+          "url": "http://arxiv.org/abs/1211.3497v1",
+          "authors": [
+            "Prabath Chaminda Abeysiriwardana",
+            "Saluka R Kodituwakku"
+          ]
+        },
+        {
+          "title": "Spatio-Temporal Graph Deep Learning with Stochastic Differential Equations for Uncovering Alzheimer's Disease Progression",
+          "journal": "arXiv",
+          "year": 2025,
+          "doi": "",
+          "url": "http://arxiv.org/abs/2509.21735v3",
+          "authors": [
+            "Houliang Zhou",
+            "Rong Zhou",
+            "Yangying Liu",
+            "Kanhao Zhao",
+            "Li Shen"
+          ]
+        },
+        {
+          "title": "Uncertainty-Aware Genomic Classification of Alzheimer's Disease: A Transformer-Based Ensemble Approach with Monte Carlo Dropout",
+          "journal": "arXiv",
+          "year": 2025,
+          "doi": "",
+          "url": "http://arxiv.org/abs/2506.00662v1",
+          "authors": [
+            "Taeho Jo",
+            "Eun Hye Lee",
+            "Alzheimer's Disease Sequencing Project"
+          ]
+        },
+        {
+          "title": "A Weighted Prognostic Covariate Adjustment Method for Efficient and Powerful Treatment Effect Inferences in Randomized Controlled Trials",
+          "journal": "arXiv",
+          "year": 2023,
+          "doi": "",
+          "url": "http://arxiv.org/abs/2309.14256v1",
+          "authors": [
+            "Alyssa M. Vanderbeek",
+            "Anna A. Vidovszky",
+            "Jessica L. Ross",
+            "Arman Sabbaghi",
+            "Jonathan R. Walsh"
+          ]
+        },
+        {
+          "title": "Modeling Vascular Branching Alterations in Polycystic Kidney Disease",
+          "journal": "arXiv",
+          "year": 2022,
+          "doi": "",
+          "url": "http://arxiv.org/abs/2301.07179v1",
+          "authors": [
+            "Timothy L. Kline"
+          ]
+        },
+        {
+          "title": "Enhancing Longitudinal Clinical Trial Efficiency with Digital Twins and Prognostic Covariate-Adjusted Mixed Models for Repeated Measures (PROCOVA-MMRM)",
+          "journal": "arXiv",
+          "year": 2024,
+          "doi": "",
+          "url": "http://arxiv.org/abs/2404.17576v1",
+          "authors": [
+            "Jessica L. Ross",
+            "Arman Sabbaghi",
+            "Run Zhuang",
+            "Daniele Bertolini",
+            "the Alzheimer's Disease Cooperative Study"
+          ]
+        }
+      ]
+    },
+    {
+      "query": "AI-empowered",
+      "source": "crossref",
+      "count": 12,
+      "items": [
+        {
+          "title": "AI-empowered neural processing for personal and biomedical assistance",
+          "journal": "Research Features",
+          "year": 2023,
+          "doi": "10.26904/rf-148-4809923428",
+          "url": "https://doi.org/10.26904/rf-148-4809923428",
+          "authors": []
+        },
+        {
+          "title": "AI empowered metasurfaces",
+          "journal": "Light: Science &amp; Applications",
+          "year": 2020,
+          "doi": "10.1038/s41377-020-0332-x",
+          "url": "https://doi.org/10.1038/s41377-020-0332-x",
+          "authors": [
+            "Shuang Zhang"
+          ]
+        },
+        {
+          "title": "Semantics‐Empowered Big Data Processing with Applications",
+          "journal": "AI Magazine",
+          "year": 2015,
+          "doi": "10.1609/aimag.v36i1.2566",
+          "url": "https://doi.org/10.1609/aimag.v36i1.2566",
+          "authors": [
+            "Krishnaprasad Thirunarayan",
+            "Amit Sheth"
+          ]
+        },
+        {
+          "title": "Research on English Learning Empowered by AI Technology",
+          "journal": "Education Journal",
+          "year": 2025,
+          "doi": "10.31058/j.edu.2025.81012",
+          "url": "https://doi.org/10.31058/j.edu.2025.81012",
+          "authors": [
+            "Zhihao Sun"
+          ]
+        },
+        {
+          "title": "AI-empowered human microbiome research",
+          "journal": "Gut",
+          "year": 2025,
+          "doi": "10.1136/gutjnl-2025-335946",
+          "url": "https://doi.org/10.1136/gutjnl-2025-335946",
+          "authors": [
+            "Tian Zhou",
+            "Fangqing Zhao"
+          ]
+        },
+        {
+          "title": "AI-empowered social robots in early childhood classrooms: roles, challenges, and opportunities",
+          "journal": "AI, Brain and Child",
+          "year": 2025,
+          "doi": "10.1007/s44436-025-00013-3",
+          "url": "https://doi.org/10.1007/s44436-025-00013-3",
+          "authors": [
+            "Hay Mar Myat Kyaw",
+            "Lin Zou",
+            "Junnan Yu",
+            "Yixun Li"
+          ]
+        },
+        {
+          "title": "An Innovative Career Management Platform Empowered by AI, Big Data, and Blockchain Technologies: Focusing on Female Engineers",
+          "journal": "Webology",
+          "year": 2022,
+          "doi": "10.14704/web/v19i1/web19284",
+          "url": "https://doi.org/10.14704/web/v19i1/web19284",
+          "authors": [
+            "Jiyoung Jang",
+            "Suna Kyun"
+          ]
+        },
+        {
+          "title": "Correction: AI-empowered social robots in early childhood classrooms: roles, challenges, and opportunities",
+          "journal": "AI, Brain and Child",
+          "year": 2025,
+          "doi": "10.1007/s44436-025-00022-2",
+          "url": "https://doi.org/10.1007/s44436-025-00022-2",
+          "authors": [
+            "Hay Mar Myat Kyaw",
+            "Lin Zou",
+            "Junnan Yu",
+            "Yixun Li"
+          ]
+        },
+        {
+          "title": "AI-empowered Qualitative Data Analysis",
+          "journal": "CommonHealth",
+          "year": 2025,
+          "doi": "10.15367/vd6f8w75",
+          "url": "https://doi.org/10.15367/vd6f8w75",
+          "authors": [
+            "Christopher Wheldon",
+            "Ryan McKee"
+          ]
+        },
+        {
+          "title": "Impact of AI-Empowered Learning and Development",
+          "journal": "International Journal For Multidisciplinary Research",
+          "year": 2025,
+          "doi": "10.36948/ijfmr.2025.v07i03.46604",
+          "url": "https://doi.org/10.36948/ijfmr.2025.v07i03.46604",
+          "authors": [
+            "Pintu Kumar"
+          ]
+        },
+        {
+          "title": "AI-Empowered Instructional Design: Current Implementations, Systemic Challenges, and Emerging Paradigms",
+          "journal": "Education Journal",
+          "year": 2025,
+          "doi": "10.31058/j.edu.2025.83031",
+          "url": "https://doi.org/10.31058/j.edu.2025.83031",
+          "authors": [
+            "Huimin Xu"
+          ]
+        },
+        {
+          "title": "AI-Empowered Precision Training and Intelligent Monitoring of Athletics",
+          "journal": "Journal of Human Movement Science",
+          "year": 2025,
+          "doi": "10.23977/jhms.2025.060111",
+          "url": "https://doi.org/10.23977/jhms.2025.060111",
+          "authors": []
+        }
+      ]
+    },
+    {
+      "query": "AI-empowered",
+      "source": "pubmed",
+      "count": 12,
+      "items": [
+        {
+          "title": "Editorial: AI empowered cerebro-cardiovascular health engineering.",
+          "journal": "Frontiers in physiology",
+          "year": 2023,
+          "doi": "10.3389/fphys.2023.1335573",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38148898/",
+          "authors": [
+            "Xu L",
+            "Guo Z",
+            "Zheng D",
+            "Zhang J",
+            "Chen F"
+          ]
+        },
+        {
+          "title": "AI-empowered human microbiome research.",
+          "journal": "Gut",
+          "year": 2025,
+          "doi": "10.1136/gutjnl-2025-335946",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40983504/",
+          "authors": [
+            "Zhou T",
+            "Zhao F"
+          ]
+        },
+        {
+          "title": "AI-empowered visualization of nucleic acid testing.",
+          "journal": "Life sciences",
+          "year": 2024,
+          "doi": "10.1016/j.lfs.2024.123209",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39488264/",
+          "authors": [
+            "Lu Z",
+            "Wang X",
+            "Chen J"
+          ]
+        },
+        {
+          "title": "Artificial Intelligence (AI)-Empowered Echocardiography Interpretation: A State-of-the-Art Review.",
+          "journal": "Journal of clinical medicine",
+          "year": 2021,
+          "doi": "10.3390/jcm10071391",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33808513/",
+          "authors": [
+            "Akkus Z",
+            "Aly YH",
+            "Attia IZ",
+            "Lopez-Jimenez F",
+            "Arruda-Olson AM"
+          ]
+        },
+        {
+          "title": "AI empowered metasurfaces.",
+          "journal": "Light, science & applications",
+          "year": 2020,
+          "doi": "10.1038/s41377-020-0332-x",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32528668/",
+          "authors": [
+            "Zhang S"
+          ]
+        },
+        {
+          "title": "AI-Empowered Evidence-Based Research and Clinical Decision-Making.",
+          "journal": "Journal of evidence-based medicine",
+          "year": 2025,
+          "doi": "10.1111/jebm.70014",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40120138/",
+          "authors": [
+            "Luo X",
+            "Ge L",
+            "Zhang L",
+            "Chen Y",
+            "Du L"
+          ]
+        },
+        {
+          "title": "Unleashing the potential: AI empowered advanced metasurface research.",
+          "journal": "Nanophotonics (Berlin, Germany)",
+          "year": 2024,
+          "doi": "10.1515/nanoph-2023-0759",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39679237/",
+          "authors": [
+            "Fu Y",
+            "Zhou X",
+            "Yu Y",
+            "Chen J",
+            "Wang S"
+          ]
+        },
+        {
+          "title": "Editorial: AI-empowered services for interconnected smart plant protection systems.",
+          "journal": "Frontiers in plant science",
+          "year": 2024,
+          "doi": "10.3389/fpls.2024.1359627",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38584950/",
+          "authors": [
+            "Zheng X"
+          ]
+        },
+        {
+          "title": "AI-Empowered Computational Examination of Chest Imaging for COVID-19 Treatment: A Review.",
+          "journal": "Frontiers in artificial intelligence",
+          "year": 2021,
+          "doi": "10.3389/frai.2021.612914",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34368756/",
+          "authors": [
+            "Deng H",
+            "Li X"
+          ]
+        },
+        {
+          "title": "AI-empowered super-resolution microscopy: a revolution in nanoscale cellular imaging.",
+          "journal": "Nature methods",
+          "year": 2025,
+          "doi": "10.1038/s41592-025-02871-4",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41476113/",
+          "authors": [
+            "Li S",
+            "Meng X",
+            "Zhou B",
+            "Tian W",
+            "Chen L"
+          ]
+        },
+        {
+          "title": "Towards next-generation diagnostic pathology: AI-empowered label-free multiphoton microscopy.",
+          "journal": "Light, science & applications",
+          "year": 2024,
+          "doi": "10.1038/s41377-024-01597-w",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39277586/",
+          "authors": [
+            "Wang S",
+            "Pan J",
+            "Zhang X",
+            "Li Y",
+            "Liu W"
+          ]
+        },
+        {
+          "title": "AI-empowered integrative structural characterization of m(6)A methyltransferase complex.",
+          "journal": "Cell research",
+          "year": 2022,
+          "doi": "10.1038/s41422-022-00741-8",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36357785/",
+          "authors": [
+            "Yan X",
+            "Pei K",
+            "Guan Z",
+            "Liu F",
+            "Yan J"
+          ]
+        }
+      ]
+    },
+    {
+      "query": "AI-empowered",
+      "source": "openalex",
+      "count": 12,
+      "items": [
+        {
+          "title": "The Roadmap to 6G: AI Empowered Wireless Networks",
+          "journal": "Rare & Special e-Zone (The Hong Kong University of Science and Technology)",
+          "year": 2019,
+          "doi": "10.1109/mcom.2019.1900271",
+          "url": "http://lbdiscover.ust.hk/uresolver?url_ver=Z39.88-2004&rft_val_fmt=info:ofi/fmt:kev:mtx:journal&rfr_id=info:sid/HKUST:SPI&rft.genre=article&rft.issn=0163-6804&rft.volume=v. 57&rft.issue=(8)&rft.date=2019&rft.spage=84&rft.aulast=Letaief&rft.aufirst=K.B.&rft.atitle=The+Roadmap+to+6G%3A+AI+Empowered+Wireless+Networks&rft.title=IEEE+Communications+Magazine",
+          "authors": [
+            "Khaled B. Letaief",
+            "Wei Chen",
+            "Yuanming Shi",
+            "Jun Zhang",
+            "Ying–Jun Angela Zhang"
+          ]
+        },
+        {
+          "title": "AI meets UAVs: A survey on AI empowered UAV perception systems for precision agriculture",
+          "journal": "Neurocomputing",
+          "year": 2022,
+          "doi": "10.1016/j.neucom.2022.11.020",
+          "url": "https://doi.org/10.1016/j.neucom.2022.11.020",
+          "authors": [
+            "Jinya Su",
+            "Xiaoyong Zhu",
+            "Shihua Li",
+            "Wen‐Hua Chen"
+          ]
+        },
+        {
+          "title": "Adoption of AI-empowered industrial robots in auto component manufacturing companies",
+          "journal": "Production Planning & Control",
+          "year": 2021,
+          "doi": "10.1080/09537287.2021.1882689",
+          "url": "https://doi.org/10.1080/09537287.2021.1882689",
+          "authors": [
+            "Rajasshrie Pillai",
+            "Brijesh Sivathanu",
+            "Marcello M. Mariani",
+            "Nripendra P. Rana",
+            "Bai Yang"
+          ]
+        },
+        {
+          "title": "AI empowers conservation biology",
+          "journal": "Nature",
+          "year": 2019,
+          "doi": "10.1038/d41586-019-00746-1",
+          "url": "https://doi.org/10.1038/d41586-019-00746-1",
+          "authors": [
+            "Roberta Kwok"
+          ]
+        },
+        {
+          "title": "AI Empowered Communication Systems for Intelligent Transportation Systems",
+          "journal": "IEEE Transactions on Intelligent Transportation Systems",
+          "year": 2020,
+          "doi": "10.1109/tits.2020.3017183",
+          "url": "https://doi.org/10.1109/tits.2020.3017183",
+          "authors": [
+            "Zhihan Lv",
+            "Ranran Lou",
+            "Amit Kumar Singh"
+          ]
+        },
+        {
+          "title": "AI-empowered, blockchain and SDN integrated security architecture for IoT network of cyber physical systems",
+          "journal": "Computer Communications",
+          "year": 2021,
+          "doi": "10.1016/j.comcom.2021.09.029",
+          "url": "https://doi.org/10.1016/j.comcom.2021.09.029",
+          "authors": [
+            "Sohaib Latif",
+            "Fang B. Xian Wen",
+            "Celestine Iwendi",
+            "Li-li F. Wang",
+            "Syed Muhammad Mohsin"
+          ]
+        },
+        {
+          "title": "AI-empowered IoT Security for Smart Cities",
+          "journal": "ACM Transactions on Internet Technology",
+          "year": 2021,
+          "doi": "10.1145/3406115",
+          "url": "https://doi.org/10.1145/3406115",
+          "authors": [
+            "Zhihan Lv",
+            "Liang Qiao",
+            "Amit Kumar Singh",
+            "Qingjun Wang"
+          ]
+        },
+        {
+          "title": "Secure-Enhanced Federated Learning for AI-Empowered Electric Vehicle Energy Prediction",
+          "journal": "IEEE Consumer Electronics Magazine",
+          "year": 2021,
+          "doi": "10.1109/mce.2021.3116917",
+          "url": "https://doi.org/10.1109/mce.2021.3116917",
+          "authors": [
+            "Weizheng Wang",
+            "Fida Hussain Memon",
+            "Zhuotao Lian",
+            "Zhimeng Yin",
+            "Thippa Reddy Gadekallu"
+          ]
+        },
+        {
+          "title": "Smart radio environments empowered by reconfigurable AI meta-surfaces: an idea whose time has come",
+          "journal": "EURASIP Journal on Wireless Communications and Networking",
+          "year": 2019,
+          "doi": "10.1186/s13638-019-1438-9",
+          "url": "https://doi.org/10.1186/s13638-019-1438-9",
+          "authors": [
+            "Marco Di Renzo",
+            "Mérouane Debbah",
+            "Dinh-Thuy Phan-Huy",
+            "Alessio Zappone",
+            "Mohamed‐Slim Alouini"
+          ]
+        },
+        {
+          "title": "AI-Empowered Fog/Edge Resource Management for IoT Applications: A Comprehensive Review, Research Challenges, and Future Perspectives",
+          "journal": "IEEE Communications Surveys & Tutorials",
+          "year": 2023,
+          "doi": "10.1109/comst.2023.3338015",
+          "url": "https://doi.org/10.1109/comst.2023.3338015",
+          "authors": [
+            "Guneet Kaur Walia",
+            "Mohit Kumar",
+            "Sukhpal Singh Gill"
+          ]
+        },
+        {
+          "title": "Too Late to be Creative? AI-Empowered Tools in Creative Processes",
+          "journal": "CHI Conference on Human Factors in Computing Systems Extended Abstracts",
+          "year": 2022,
+          "doi": "10.1145/3491101.3503549",
+          "url": "https://doi.org/10.1145/3491101.3503549",
+          "authors": [
+            "Angel Hsing‐Chi Hwang"
+          ]
+        },
+        {
+          "title": "Blockchain and AI-Empowered Healthcare Insurance Fraud Detection: an Analysis, Architecture, and Future Prospects",
+          "journal": "IEEE Access",
+          "year": 2022,
+          "doi": "10.1109/access.2022.3194569",
+          "url": "https://doi.org/10.1109/access.2022.3194569",
+          "authors": [
+            "Khyati Kapadiya",
+            "Usha Patel",
+            "Rajesh Gupta",
+            "Mohammad Dahman Alshehri",
+            "Sudeep Tanwar"
+          ]
+        }
+      ]
+    },
+    {
+      "query": "AI-empowered",
+      "source": "arxiv",
+      "count": 12,
+      "items": [
+        {
+          "title": "Do AI tutors empower or enslave learners? Toward a critical use of AI in education",
+          "journal": "arXiv",
+          "year": 2025,
+          "doi": "",
+          "url": "http://arxiv.org/abs/2507.06878v1",
+          "authors": [
+            "Lucile Favero",
+            "Juan-Antonio Pérez-Ortiz",
+            "Tanja Käser",
+            "Nuria Oliver"
+          ]
+        },
+        {
+          "title": "DeBiasMe: De-biasing Human-AI Interactions with Metacognitive AIED (AI in Education) Interventions",
+          "journal": "arXiv",
+          "year": 2025,
+          "doi": "",
+          "url": "http://arxiv.org/abs/2504.16770v1",
+          "authors": [
+            "Chaeyeon Lim"
+          ]
+        },
+        {
+          "title": "AI-Empowered Multiple Access for 6G: A Survey of Spectrum Sensing, Protocol Designs, and Optimizations",
+          "journal": "arXiv",
+          "year": 2024,
+          "doi": "",
+          "url": "http://arxiv.org/abs/2406.13335v1",
+          "authors": [
+            "Xuelin Cao",
+            "Bo Yang",
+            "Kaining Wang",
+            "Xinghua Li",
+            "Zhiwen Yu"
+          ]
+        },
+        {
+          "title": "Towards AI-Empowered Crowdsourcing",
+          "journal": "arXiv",
+          "year": 2022,
+          "doi": "",
+          "url": "http://arxiv.org/abs/2212.14676v2",
+          "authors": [
+            "Shipeng Wang",
+            "Qingzhong Li",
+            "Lizhen Cui",
+            "Zhongmin Yan",
+            "Yonghui Xu"
+          ]
+        },
+        {
+          "title": "\"I Don't Use AI for Everything\": Exploring Utility, Attitude, and Responsibility of AI-empowered Tools in Software Development",
+          "journal": "arXiv",
+          "year": 2024,
+          "doi": "",
+          "url": "http://arxiv.org/abs/2409.13343v2",
+          "authors": [
+            "Shidong Pan",
+            "Litian Wang",
+            "Tianyi Zhang",
+            "Zhenchang Xing",
+            "Yanjie Zhao"
+          ]
+        },
+        {
+          "title": "Human-Centered AI Applications for Canada's Immigration Settlement Sector",
+          "journal": "arXiv",
+          "year": 2024,
+          "doi": "",
+          "url": "http://arxiv.org/abs/2409.01461v1",
+          "authors": [
+            "Isar Nejadgholi",
+            "Maryam Molamohammadi",
+            "Kimiya Missaghi",
+            "Samir Bakhtawar"
+          ]
+        },
+        {
+          "title": "AI-Empowered Catalyst Discovery: A Survey from Classical Machine Learning Approaches to Large Language Models",
+          "journal": "arXiv",
+          "year": 2025,
+          "doi": "",
+          "url": "http://arxiv.org/abs/2502.13626v1",
+          "authors": [
+            "Yuanyuan Xu",
+            "Hanchen Wang",
+            "Wenjie Zhang",
+            "Lexing Xie",
+            "Yin Chen"
+          ]
+        },
+        {
+          "title": "My Voice, Your Voice, Our Voice: Attitudes Towards Collective Governance of a Choral AI Dataset",
+          "journal": "arXiv",
+          "year": 2024,
+          "doi": "",
+          "url": "http://arxiv.org/abs/2412.01433v1",
+          "authors": [
+            "Jennifer Ding",
+            "Eva Jäger",
+            "Victoria Ivanova",
+            "Mercedes Bunz"
+          ]
+        },
+        {
+          "title": "Designing the Future of Entrepreneurship Education: Exploring an AI-Empowered Scaffold System for Business Plan Development",
+          "journal": "arXiv",
+          "year": 2025,
+          "doi": "10.1109/ICAIE64856.2025.11158485",
+          "url": "http://arxiv.org/abs/2505.23326v1",
+          "authors": [
+            "Junhua Zhu",
+            "Lan Luo"
+          ]
+        },
+        {
+          "title": "AI-Empowered VNF Migration as a Cost-Loss-Effective Solution for Network Resilience",
+          "journal": "arXiv",
+          "year": 2021,
+          "doi": "10.1109/WCNCW49093.2021.9420029",
+          "url": "http://arxiv.org/abs/2101.09343v1",
+          "authors": [
+            "Amina Lejla Ibrahimpasic",
+            "Bin Han",
+            "Hans D. Schotten"
+          ]
+        },
+        {
+          "title": "Generative AI-empowered Effective Physical-Virtual Synchronization in the Vehicular Metaverse",
+          "journal": "arXiv",
+          "year": 2023,
+          "doi": "",
+          "url": "http://arxiv.org/abs/2301.07636v2",
+          "authors": [
+            "Minrui Xu",
+            "Dusit Niyato",
+            "Hongliang Zhang",
+            "Jiawen Kang",
+            "Zehui Xiong"
+          ]
+        },
+        {
+          "title": "AI-Empowered Persuasive Video Generation: A Survey",
+          "journal": "arXiv",
+          "year": 2021,
+          "doi": "",
+          "url": "http://arxiv.org/abs/2112.09401v1",
+          "authors": [
+            "Chang Liu",
+            "Han Yu"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,180 @@
+{
+  "generated_at": "2026-02-10T06:50:31.156848+00:00",
+  "image_path": null,
+  "ocr_text": "",
+  "queries": [
+    "CCTA prognostic prediction for CVD",
+    "AI-empowered vascular disease"
+  ],
+  "results": [
+    {
+      "query": "CCTA prognostic prediction for CVD",
+      "source": "crossref",
+      "count": 3,
+      "items": [
+        {
+          "title": "CCTA-FFR Registry for Risk Prediction",
+          "journal": "Case Medical Research",
+          "year": 2019,
+          "doi": "10.31525/ct1-nct04037163",
+          "url": "https://doi.org/10.31525/ct1-nct04037163",
+          "authors": []
+        },
+        {
+          "title": "S12-2 Prognostic Value of Cardiac MRI in Patients with Coronary Artery Disease",
+          "journal": "CVD Prevention and Control",
+          "year": 2009,
+          "doi": "10.1016/s1875-4570(09)60089-9",
+          "url": "https://doi.org/10.1016/s1875-4570(09)60089-9",
+          "authors": [
+            "Hajime Sakuma"
+          ]
+        },
+        {
+          "title": "Cardiovascular Disease (CVD) Prediction using Deep Learning Algorithm",
+          "journal": "International Journal of Science and Research (IJSR)",
+          "year": 2023,
+          "doi": "10.21275/sr23603180631",
+          "url": "https://doi.org/10.21275/sr23603180631",
+          "authors": [
+            "Sarita Rathi Vijay Gadicha"
+          ]
+        }
+      ]
+    },
+    {
+      "query": "CCTA prognostic prediction for CVD",
+      "source": "pubmed",
+      "count": 3,
+      "items": [
+        {
+          "title": "AI-Guided Quantitative Plaque Staging Predicts Long-Term Cardiovascular Outcomes in Patients at Risk for Atherosclerotic CVD.",
+          "journal": "JACC. Cardiovascular imaging",
+          "year": 2024,
+          "doi": "10.1016/j.jcmg.2023.05.020",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37480907/",
+          "authors": [
+            "Nurmohamed NS",
+            "Bom MJ",
+            "Jukema RA",
+            "de Groot RJ",
+            "Driessen RS"
+          ]
+        },
+        {
+          "title": "Association of oxidized ApoB and oxidized ApoA-I with high-risk coronary plaque features in cardiovascular disease.",
+          "journal": "JCI insight",
+          "year": 2023,
+          "doi": "10.1172/jci.insight.172893",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37698922/",
+          "authors": [
+            "Sorokin AV",
+            "Hong CG",
+            "Aponte AM",
+            "Florida EM",
+            "Tang J"
+          ]
+        },
+        {
+          "title": "Prognostic Value of Coronary Computed Tomography Imaging in Patients at High Risk Without Symptoms of Coronary Artery Disease.",
+          "journal": "The American journal of cardiology",
+          "year": 2016,
+          "doi": "10.1016/j.amjcard.2015.11.058",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26754124/",
+          "authors": [
+            "Dedic A",
+            "Ten Kate GJ",
+            "Roos CJ",
+            "Neefjes LA",
+            "de Graaf MA"
+          ]
+        }
+      ]
+    },
+    {
+      "query": "AI-empowered vascular disease",
+      "source": "crossref",
+      "count": 3,
+      "items": [
+        {
+          "title": "AI-empowered neural processing for personal and biomedical assistance",
+          "journal": "Research Features",
+          "year": 2023,
+          "doi": "10.26904/rf-148-4809923428",
+          "url": "https://doi.org/10.26904/rf-148-4809923428",
+          "authors": []
+        },
+        {
+          "title": "Application of AI-empowered scenario-based simulation teaching mode in cardiovascular disease education",
+          "journal": "BMC Medical Education",
+          "year": 2024,
+          "doi": "10.1186/s12909-024-05977-z",
+          "url": "https://doi.org/10.1186/s12909-024-05977-z",
+          "authors": [
+            "Koulong Zheng",
+            "Zhiyu Shen",
+            "Zanhao Chen",
+            "Chang Che",
+            "Huixia Zhu"
+          ]
+        },
+        {
+          "title": "AI empowered metasurfaces",
+          "journal": "Light: Science &amp; Applications",
+          "year": 2020,
+          "doi": "10.1038/s41377-020-0332-x",
+          "url": "https://doi.org/10.1038/s41377-020-0332-x",
+          "authors": [
+            "Shuang Zhang"
+          ]
+        }
+      ]
+    },
+    {
+      "query": "AI-empowered vascular disease",
+      "source": "pubmed",
+      "count": 3,
+      "items": [
+        {
+          "title": "Fabry Cardiomyopathy: Current Practice and Future Directions.",
+          "journal": "Cells",
+          "year": 2021,
+          "doi": "10.3390/cells10061532",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34204530/",
+          "authors": [
+            "Yim J",
+            "Yau O",
+            "Yeung DF",
+            "Tsang TSM"
+          ]
+        },
+        {
+          "title": "Artificial intelligence-powered nanomedicine.",
+          "journal": "Chemical Society reviews",
+          "year": 2026,
+          "doi": "10.1039/d5cs01406a",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41636234/",
+          "authors": [
+            "Luo G",
+            "Jiang X",
+            "Hu C",
+            "Li L",
+            "Yan L"
+          ]
+        },
+        {
+          "title": "The Collapse of Brain Clearance: Glymphatic-Venous Failure, Aquaporin-4 Breakdown, and AI-Empowered Precision Neurotherapeutics in Intracranial Hypertension.",
+          "journal": "International journal of molecular sciences",
+          "year": 2025,
+          "doi": "10.3390/ijms26157223",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40806356/",
+          "authors": [
+            "Șerban M",
+            "Toader C",
+            "Covache-Busuioc RA"
+          ]
+        }
+      ]
+    }
+  ]
+}
